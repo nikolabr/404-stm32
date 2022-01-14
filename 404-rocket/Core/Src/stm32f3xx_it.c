@@ -57,9 +57,8 @@
 /* External variables --------------------------------------------------------*/
 extern DMA_HandleTypeDef hdma_adc1;
 extern TIM_HandleTypeDef htim1;
-extern uint32_t adc_value;
 /* USER CODE BEGIN EV */
-
+extern uint32_t adc_value;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -210,6 +209,8 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE END DMA1_Channel1_IRQn 0 */
   HAL_DMA_IRQHandler(&hdma_adc1);
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
+
+  HAL_NVIC_DisableIRQ(DMA1_Channel1_IRQn);
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
 }
