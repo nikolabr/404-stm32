@@ -81,9 +81,8 @@ static void MX_USART2_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	struct bno055_accel_t accel_data;
-	struct bno055_gyro_t gyro_data;
-	char output[64];
+	struct bno055_euler_double_t orientation_data;
+	char output[128];
 	HAL_StatusTypeDef stat;
 
 	uint8_t chip_id;
@@ -139,12 +138,10 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  bno055_read_accel_xyz(&accel_data);
-	  bno055_read_gyro_xyz(&gyro_data);
-	  memset(output, 0, 64);
-	  //snprintf(output, 64, "Gyro: %d %d %d | Accel: %d %d %d \r\n", gyro_data.x, gyro_data.y, gyro_data.z, accel_data.x, accel_data.y, accel_data.z);
-	  snprintf(output, 64, "%d %d %d \r\n", gyro_data.x, gyro_data.y, gyro_data.z);
-	  stat = HAL_UART_Transmit(&huart2, output, 64, 100);
+	  bno055_convert_double_euler_hpr_rad(&orientation_data);
+	  memset(output, 0, 128);
+	  snprintf(output, 128, "%lf %lf %lf \r\n", orientation_data.h, orientation_data.p, orientation_data.r);
+	  stat = HAL_UART_Transmit(&huart2, output, 128, 100);
 	  HAL_Delay(150);
 	  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
 
