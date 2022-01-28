@@ -1,0 +1,5 @@
+{
+        "stm32-for-vscode.armToolchainPath": "/usr/bin",
+        "cortex-debug.openocdPath": "/home/zavod404/.config/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/openocd/0.11.0-2.1/.content/bin/openocd",
+        "cortex-debug.armToolchainPath": "/usr/bin"
+}

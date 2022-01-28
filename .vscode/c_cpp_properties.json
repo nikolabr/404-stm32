@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [],
+      "defines": [],
+      "compilerPath": null
+    }
+  ],
+  "version": 4
+}
