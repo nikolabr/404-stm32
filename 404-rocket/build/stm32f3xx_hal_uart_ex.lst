@@ -1,29 +1,29 @@
-ARM GAS  /tmp/ccgzYV0G.s 			page 1
+ARM GAS  /tmp/ccTgqUxq.s 			page 1
 
 
    1              		.cpu cortex-m4
-   2              		.eabi_attribute 27, 1
-   3              		.eabi_attribute 28, 1
-   4              		.eabi_attribute 20, 1
-   5              		.eabi_attribute 21, 1
-   6              		.eabi_attribute 23, 3
-   7              		.eabi_attribute 24, 1
-   8              		.eabi_attribute 25, 1
-   9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 1
-  11              		.eabi_attribute 34, 1
-  12              		.eabi_attribute 18, 4
-  13              		.file	"stm32f3xx_hal_uart_ex.c"
-  14              		.text
-  15              	.Ltext0:
-  16              		.cfi_sections	.debug_frame
-  17              		.section	.text.UARTEx_Wakeup_AddressConfig,"ax",%progbits
-  18              		.align	1
-  19              		.arch armv7e-m
-  20              		.syntax unified
-  21              		.thumb
-  22              		.thumb_func
-  23              		.fpu fpv4-sp-d16
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"stm32f3xx_hal_uart_ex.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.UARTEx_Wakeup_AddressConfig,"ax",%progbits
+  20              		.align	1
+  21              		.syntax unified
+  22              		.thumb
+  23              		.thumb_func
   25              	UARTEx_Wakeup_AddressConfig:
   26              	.LVL0:
   27              	.LFB132:
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * This software component is licensed by ST under BSD 3-Clause license,
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * the "License"; You may not use this file except in compliance with the
-ARM GAS  /tmp/ccgzYV0G.s 			page 2
+ARM GAS  /tmp/ccTgqUxq.s 			page 2
 
 
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * License. You may obtain a copy of the License at:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Parity: If the parity is enabled, then the MSB bit of the data written
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****              in the data register is transmitted but is changed by the parity bit.
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Hardware flow control
-ARM GAS  /tmp/ccgzYV0G.s 			page 3
+ARM GAS  /tmp/ccTgqUxq.s 			page 3
 
 
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Receiver/transmitter modes
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       5-bit value defining the time between the end of the last stop bit, in a
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       transmitted message, and the de-activation of the DE (Driver Enable) signal.
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       It is expressed in sample time units (1/8 or 1/16 bit time, depending on the
-ARM GAS  /tmp/ccgzYV0G.s 			page 4
+ARM GAS  /tmp/ccTgqUxq.s 			page 4
 
 
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       oversampling rate).
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     return HAL_ERROR;
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 5
+ARM GAS  /tmp/ccTgqUxq.s 			page 5
 
 
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   if (huart->AdvancedInit.AdvFeatureInit != UART_ADVFEATURE_NO_INIT)
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  256:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****             the HAL_UARTEx_WakeupCallback can be implemented in the user file.
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****    */
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
-ARM GAS  /tmp/ccgzYV0G.s 			page 6
+ARM GAS  /tmp/ccTgqUxq.s 			page 6
 
 
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  313:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (+) HAL_UARTEx_ReceiveToIdle_DMA()
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** @endverbatim
-ARM GAS  /tmp/ccgzYV0G.s 			page 7
+ARM GAS  /tmp/ccTgqUxq.s 			page 7
 
 
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @{
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  370:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_StopModeWakeUpSourceConfig(UART_HandleTypeDef *huart, UART_WakeUpTypeD
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** {
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  /tmp/ccgzYV0G.s 			page 8
+ARM GAS  /tmp/ccTgqUxq.s 			page 8
 
 
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t tickstart;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  427:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Process Locked */
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 9
+ARM GAS  /tmp/ccTgqUxq.s 			page 9
 
 
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Set UESM bit */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
  485:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     if ((pData == NULL) || (Size == 0U))
-ARM GAS  /tmp/ccgzYV0G.s 			page 10
+ARM GAS  /tmp/ccTgqUxq.s 			page 10
 
 
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  541:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
  542:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       /* Check if RXNE flag is set */
-ARM GAS  /tmp/ccgzYV0G.s 			page 11
+ARM GAS  /tmp/ccTgqUxq.s 			page 11
 
 
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       if (__HAL_UART_GET_FLAG(huart, UART_FLAG_RXNE))
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  598:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @retval HAL status
  599:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   */
  600:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t S
-ARM GAS  /tmp/ccgzYV0G.s 			page 12
+ARM GAS  /tmp/ccTgqUxq.s 			page 12
 
 
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  655:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *        the received data is handled as a set of uint16_t. In this case, Size must indicate the 
  656:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *        of uint16_t available through pData.
  657:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @param huart UART handle.
-ARM GAS  /tmp/ccgzYV0G.s 			page 13
+ARM GAS  /tmp/ccTgqUxq.s 			page 13
 
 
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @param pData Pointer to data buffer (uint8_t or uint16_t data elements).
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @}
  713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   */
  714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 14
+ARM GAS  /tmp/ccTgqUxq.s 			page 14
 
 
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** /** @addtogroup UARTEx_Private_Functions
@@ -838,530 +838,523 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   64              		.section	.text.HAL_RS485Ex_Init,"ax",%progbits
   65              		.align	1
   66              		.global	HAL_RS485Ex_Init
-ARM GAS  /tmp/ccgzYV0G.s 			page 15
+ARM GAS  /tmp/ccTgqUxq.s 			page 15
 
 
   67              		.syntax unified
   68              		.thumb
   69              		.thumb_func
-  70              		.fpu fpv4-sp-d16
-  72              	HAL_RS485Ex_Init:
-  73              	.LVL1:
-  74              	.LFB123:
+  71              	HAL_RS485Ex_Init:
+  72              	.LVL1:
+  73              	.LFB123:
  150:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t temp;
-  75              		.loc 1 150 1 is_stmt 1 view -0
-  76              		.cfi_startproc
-  77              		@ args = 0, pretend = 0, frame = 0
-  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  74              		.loc 1 150 1 is_stmt 1 view -0
+  75              		.cfi_startproc
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
  151:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-  79              		.loc 1 151 3 view .LVU7
+  78              		.loc 1 151 3 view .LVU7
  154:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
-  80              		.loc 1 154 3 view .LVU8
+  79              		.loc 1 154 3 view .LVU8
  154:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
-  81              		.loc 1 154 6 is_stmt 0 view .LVU9
-  82 0000 0028     		cmp	r0, #0
-  83 0002 3CD0     		beq	.L7
+  80              		.loc 1 154 6 is_stmt 0 view .LVU9
+  81 0000 0028     		cmp	r0, #0
+  82 0002 3CD0     		beq	.L7
  150:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t temp;
-  84              		.loc 1 150 1 view .LVU10
-  85 0004 F8B5     		push	{r3, r4, r5, r6, r7, lr}
-  86              	.LCFI2:
-  87              		.cfi_def_cfa_offset 24
-  88              		.cfi_offset 3, -24
-  89              		.cfi_offset 4, -20
-  90              		.cfi_offset 5, -16
-  91              		.cfi_offset 6, -12
-  92              		.cfi_offset 7, -8
-  93              		.cfi_offset 14, -4
-  94 0006 0F46     		mov	r7, r1
-  95 0008 1646     		mov	r6, r2
-  96 000a 1D46     		mov	r5, r3
-  97 000c 0446     		mov	r4, r0
+  83              		.loc 1 150 1 view .LVU10
+  84 0004 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  85              	.LCFI2:
+  86              		.cfi_def_cfa_offset 24
+  87              		.cfi_offset 3, -24
+  88              		.cfi_offset 4, -20
+  89              		.cfi_offset 5, -16
+  90              		.cfi_offset 6, -12
+  91              		.cfi_offset 7, -8
+  92              		.cfi_offset 14, -4
+  93 0006 0F46     		mov	r7, r1
+  94 0008 1646     		mov	r6, r2
+  95 000a 1D46     		mov	r5, r3
+  96 000c 0446     		mov	r4, r0
  159:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-  98              		.loc 1 159 3 is_stmt 1 view .LVU11
+  97              		.loc 1 159 3 is_stmt 1 view .LVU11
  162:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-  99              		.loc 1 162 3 view .LVU12
+  98              		.loc 1 162 3 view .LVU12
  165:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 100              		.loc 1 165 3 view .LVU13
+  99              		.loc 1 165 3 view .LVU13
  168:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 101              		.loc 1 168 3 view .LVU14
+ 100              		.loc 1 168 3 view .LVU14
  170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 102              		.loc 1 170 3 view .LVU15
+ 101              		.loc 1 170 3 view .LVU15
  170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 103              		.loc 1 170 12 is_stmt 0 view .LVU16
- 104 000e 836F     		ldr	r3, [r0, #120]
- 105              	.LVL2:
+ 102              		.loc 1 170 12 is_stmt 0 view .LVU16
+ 103 000e 836F     		ldr	r3, [r0, #120]
+ 104              	.LVL2:
  170:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 106              		.loc 1 170 6 view .LVU17
- 107 0010 63B3     		cbz	r3, .L12
- 108              	.LVL3:
- 109              	.L5:
+ 105              		.loc 1 170 6 view .LVU17
+ 106 0010 63B3     		cbz	r3, .L12
+ 107              	.LVL3:
+ 108              	.L5:
  191:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 110              		.loc 1 191 3 is_stmt 1 view .LVU18
+ 109              		.loc 1 191 3 is_stmt 1 view .LVU18
  191:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 16
+ 110              		.loc 1 191 17 is_stmt 0 view .LVU19
+ARM GAS  /tmp/ccTgqUxq.s 			page 16
 
 
- 111              		.loc 1 191 17 is_stmt 0 view .LVU19
- 112 0012 2423     		movs	r3, #36
- 113 0014 A367     		str	r3, [r4, #120]
+ 111 0012 2423     		movs	r3, #36
+ 112 0014 A367     		str	r3, [r4, #120]
  194:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 114              		.loc 1 194 3 is_stmt 1 view .LVU20
- 115 0016 2268     		ldr	r2, [r4]
- 116 0018 1368     		ldr	r3, [r2]
- 117 001a 23F00103 		bic	r3, r3, #1
- 118 001e 1360     		str	r3, [r2]
+ 113              		.loc 1 194 3 is_stmt 1 view .LVU20
+ 114 0016 2268     		ldr	r2, [r4]
+ 115 0018 1368     		ldr	r3, [r2]
+ 116 001a 23F00103 		bic	r3, r3, #1
+ 117 001e 1360     		str	r3, [r2]
  197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 119              		.loc 1 197 3 view .LVU21
+ 118              		.loc 1 197 3 view .LVU21
  197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 120              		.loc 1 197 7 is_stmt 0 view .LVU22
- 121 0020 2046     		mov	r0, r4
- 122 0022 FFF7FEFF 		bl	UART_SetConfig
- 123              	.LVL4:
+ 119              		.loc 1 197 7 is_stmt 0 view .LVU22
+ 120 0020 2046     		mov	r0, r4
+ 121 0022 FFF7FEFF 		bl	UART_SetConfig
+ 122              	.LVL4:
  197:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 124              		.loc 1 197 6 view .LVU23
- 125 0026 0128     		cmp	r0, #1
- 126 0028 1FD0     		beq	.L4
+ 123              		.loc 1 197 6 view .LVU23
+ 124 0026 0128     		cmp	r0, #1
+ 125 0028 1FD0     		beq	.L4
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 127              		.loc 1 202 3 is_stmt 1 view .LVU24
+ 126              		.loc 1 202 3 is_stmt 1 view .LVU24
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 128              		.loc 1 202 26 is_stmt 0 view .LVU25
- 129 002a 636A     		ldr	r3, [r4, #36]
+ 127              		.loc 1 202 26 is_stmt 0 view .LVU25
+ 128 002a 636A     		ldr	r3, [r4, #36]
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 130              		.loc 1 202 6 view .LVU26
- 131 002c 1BBB     		cbnz	r3, .L13
- 132              	.L6:
+ 129              		.loc 1 202 6 view .LVU26
+ 130 002c 1BBB     		cbnz	r3, .L13
+ 131              	.L6:
  208:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 133              		.loc 1 208 3 is_stmt 1 view .LVU27
- 134 002e 2268     		ldr	r2, [r4]
- 135 0030 9368     		ldr	r3, [r2, #8]
- 136 0032 43F48043 		orr	r3, r3, #16384
- 137 0036 9360     		str	r3, [r2, #8]
+ 132              		.loc 1 208 3 is_stmt 1 view .LVU27
+ 133 002e 2268     		ldr	r2, [r4]
+ 134 0030 9368     		ldr	r3, [r2, #8]
+ 135 0032 43F48043 		orr	r3, r3, #16384
+ 136 0036 9360     		str	r3, [r2, #8]
  211:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 138              		.loc 1 211 3 view .LVU28
- 139 0038 2268     		ldr	r2, [r4]
- 140 003a 9368     		ldr	r3, [r2, #8]
- 141 003c 23F40043 		bic	r3, r3, #32768
- 142 0040 3B43     		orrs	r3, r3, r7
- 143 0042 9360     		str	r3, [r2, #8]
+ 137              		.loc 1 211 3 view .LVU28
+ 138 0038 2268     		ldr	r2, [r4]
+ 139 003a 9368     		ldr	r3, [r2, #8]
+ 140 003c 23F40043 		bic	r3, r3, #32768
+ 141 0040 3B43     		orrs	r3, r3, r7
+ 142 0042 9360     		str	r3, [r2, #8]
  214:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   temp |= (DeassertionTime << UART_CR1_DEDT_ADDRESS_LSB_POS);
- 144              		.loc 1 214 3 view .LVU29
- 145              	.LVL5:
+ 143              		.loc 1 214 3 view .LVU29
+ 144              	.LVL5:
  215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT | USART_CR1_DEAT), temp);
- 146              		.loc 1 215 3 view .LVU30
+ 145              		.loc 1 215 3 view .LVU30
  215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT | USART_CR1_DEAT), temp);
- 147              		.loc 1 215 28 is_stmt 0 view .LVU31
- 148 0044 2904     		lsls	r1, r5, #16
+ 146              		.loc 1 215 28 is_stmt 0 view .LVU31
+ 147 0044 2D04     		lsls	r5, r5, #16
+ 148              	.LVL6:
  215:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   MODIFY_REG(huart->Instance->CR1, (USART_CR1_DEDT | USART_CR1_DEAT), temp);
  149              		.loc 1 215 8 view .LVU32
- 150 0046 41EA4652 		orr	r2, r1, r6, lsl #21
- 151              	.LVL6:
+ 150 0046 45EA4655 		orr	r5, r5, r6, lsl #21
+ 151              	.LVL7:
  216:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  152              		.loc 1 216 3 is_stmt 1 view .LVU33
  153 004a 2368     		ldr	r3, [r4]
-ARM GAS  /tmp/ccgzYV0G.s 			page 17
+ARM GAS  /tmp/ccTgqUxq.s 			page 17
 
 
- 154 004c 1968     		ldr	r1, [r3]
- 155 004e 21F07F71 		bic	r1, r1, #66846720
- 156 0052 21F44031 		bic	r1, r1, #196608
- 157 0056 1143     		orrs	r1, r1, r2
- 158 0058 1960     		str	r1, [r3]
+ 154 004c 1A68     		ldr	r2, [r3]
+ 155 004e 22F07F72 		bic	r2, r2, #66846720
+ 156 0052 22F44032 		bic	r2, r2, #196608
+ 157 0056 2A43     		orrs	r2, r2, r5
+ 158 0058 1A60     		str	r2, [r3]
  219:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  159              		.loc 1 219 3 view .LVU34
  160 005a 2268     		ldr	r2, [r4]
- 161              	.LVL7:
- 219:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 162              		.loc 1 219 3 is_stmt 0 view .LVU35
- 163 005c 1368     		ldr	r3, [r2]
- 164 005e 43F00103 		orr	r3, r3, #1
- 165 0062 1360     		str	r3, [r2]
+ 161 005c 1368     		ldr	r3, [r2]
+ 162 005e 43F00103 		orr	r3, r3, #1
+ 163 0062 1360     		str	r3, [r2]
  222:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 166              		.loc 1 222 3 is_stmt 1 view .LVU36
+ 164              		.loc 1 222 3 view .LVU35
  222:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 167              		.loc 1 222 11 is_stmt 0 view .LVU37
- 168 0064 2046     		mov	r0, r4
- 169 0066 FFF7FEFF 		bl	UART_CheckIdleState
- 170              	.LVL8:
- 171              	.L4:
+ 165              		.loc 1 222 11 is_stmt 0 view .LVU36
+ 166 0064 2046     		mov	r0, r4
+ 167 0066 FFF7FEFF 		bl	UART_CheckIdleState
+ 168              	.LVL8:
+ 169              	.L4:
  223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 172              		.loc 1 223 1 view .LVU38
- 173 006a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 174              	.LVL9:
- 175              	.L12:
+ 170              		.loc 1 223 1 view .LVU37
+ 171 006a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 172              	.LVL9:
+ 173              	.L12:
  173:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 176              		.loc 1 173 5 is_stmt 1 view .LVU39
+ 174              		.loc 1 173 5 is_stmt 1 view .LVU38
  173:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 177              		.loc 1 173 17 is_stmt 0 view .LVU40
- 178 006c 80F87430 		strb	r3, [r0, #116]
+ 175              		.loc 1 173 17 is_stmt 0 view .LVU39
+ 176 006c 80F87430 		strb	r3, [r0, #116]
  187:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** #endif /* (USE_HAL_UART_REGISTER_CALLBACKS) */
- 179              		.loc 1 187 5 is_stmt 1 view .LVU41
- 180 0070 FFF7FEFF 		bl	HAL_UART_MspInit
- 181              	.LVL10:
+ 177              		.loc 1 187 5 is_stmt 1 view .LVU40
+ 178 0070 FFF7FEFF 		bl	HAL_UART_MspInit
+ 179              	.LVL10:
  187:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** #endif /* (USE_HAL_UART_REGISTER_CALLBACKS) */
- 182              		.loc 1 187 5 is_stmt 0 view .LVU42
- 183 0074 CDE7     		b	.L5
- 184              	.L13:
+ 180              		.loc 1 187 5 is_stmt 0 view .LVU41
+ 181 0074 CDE7     		b	.L5
+ 182              	.L13:
  204:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 185              		.loc 1 204 5 is_stmt 1 view .LVU43
- 186 0076 2046     		mov	r0, r4
- 187 0078 FFF7FEFF 		bl	UART_AdvFeatureConfig
- 188              	.LVL11:
- 189 007c D7E7     		b	.L6
- 190              	.LVL12:
- 191              	.L7:
- 192              	.LCFI3:
- 193              		.cfi_def_cfa_offset 0
- 194              		.cfi_restore 3
- 195              		.cfi_restore 4
- 196              		.cfi_restore 5
- 197              		.cfi_restore 6
- 198              		.cfi_restore 7
- 199              		.cfi_restore 14
+ 183              		.loc 1 204 5 is_stmt 1 view .LVU42
+ 184 0076 2046     		mov	r0, r4
+ 185 0078 FFF7FEFF 		bl	UART_AdvFeatureConfig
+ 186              	.LVL11:
+ 187 007c D7E7     		b	.L6
+ 188              	.LVL12:
+ 189              	.L7:
+ 190              	.LCFI3:
+ 191              		.cfi_def_cfa_offset 0
+ 192              		.cfi_restore 3
+ 193              		.cfi_restore 4
+ 194              		.cfi_restore 5
+ 195              		.cfi_restore 6
+ 196              		.cfi_restore 7
+ 197              		.cfi_restore 14
  156:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccgzYV0G.s 			page 18
+ 198              		.loc 1 156 12 is_stmt 0 view .LVU43
+ 199 007e 0120     		movs	r0, #1
+ 200              	.LVL13:
+ARM GAS  /tmp/ccTgqUxq.s 			page 18
 
 
- 200              		.loc 1 156 12 is_stmt 0 view .LVU44
- 201 007e 0120     		movs	r0, #1
- 202              	.LVL13:
  223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 203              		.loc 1 223 1 view .LVU45
- 204 0080 7047     		bx	lr
- 205              		.cfi_endproc
- 206              	.LFE123:
- 208              		.section	.text.HAL_UARTEx_WakeupCallback,"ax",%progbits
- 209              		.align	1
- 210              		.weak	HAL_UARTEx_WakeupCallback
- 211              		.syntax unified
- 212              		.thumb
- 213              		.thumb_func
- 214              		.fpu fpv4-sp-d16
- 216              	HAL_UARTEx_WakeupCallback:
- 217              	.LVL14:
- 218              	.LFB124:
+ 201              		.loc 1 223 1 view .LVU44
+ 202 0080 7047     		bx	lr
+ 203              		.cfi_endproc
+ 204              	.LFE123:
+ 206              		.section	.text.HAL_UARTEx_WakeupCallback,"ax",%progbits
+ 207              		.align	1
+ 208              		.weak	HAL_UARTEx_WakeupCallback
+ 209              		.syntax unified
+ 210              		.thumb
+ 211              		.thumb_func
+ 213              	HAL_UARTEx_WakeupCallback:
+ 214              	.LVL14:
+ 215              	.LFB124:
  251:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Prevent unused argument(s) compilation warning */
- 219              		.loc 1 251 1 is_stmt 1 view -0
- 220              		.cfi_startproc
- 221              		@ args = 0, pretend = 0, frame = 0
- 222              		@ frame_needed = 0, uses_anonymous_args = 0
- 223              		@ link register save eliminated.
+ 216              		.loc 1 251 1 is_stmt 1 view -0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 220              		@ link register save eliminated.
  253:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 224              		.loc 1 253 3 view .LVU47
+ 221              		.loc 1 253 3 view .LVU46
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 225              		.loc 1 258 1 is_stmt 0 view .LVU48
- 226 0000 7047     		bx	lr
- 227              		.cfi_endproc
- 228              	.LFE124:
- 230              		.section	.text.HAL_MultiProcessorEx_AddressLength_Set,"ax",%progbits
- 231              		.align	1
- 232              		.global	HAL_MultiProcessorEx_AddressLength_Set
- 233              		.syntax unified
- 234              		.thumb
- 235              		.thumb_func
- 236              		.fpu fpv4-sp-d16
- 238              	HAL_MultiProcessorEx_AddressLength_Set:
- 239              	.LVL15:
- 240              	.LFB125:
+ 222              		.loc 1 258 1 is_stmt 0 view .LVU47
+ 223 0000 7047     		bx	lr
+ 224              		.cfi_endproc
+ 225              	.LFE124:
+ 227              		.section	.text.HAL_MultiProcessorEx_AddressLength_Set,"ax",%progbits
+ 228              		.align	1
+ 229              		.global	HAL_MultiProcessorEx_AddressLength_Set
+ 230              		.syntax unified
+ 231              		.thumb
+ 232              		.thumb_func
+ 234              	HAL_MultiProcessorEx_AddressLength_Set:
+ 235              	.LVL15:
+ 236              	.LFB125:
  333:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
- 241              		.loc 1 333 1 is_stmt 1 view -0
- 242              		.cfi_startproc
- 243              		@ args = 0, pretend = 0, frame = 0
- 244              		@ frame_needed = 0, uses_anonymous_args = 0
+ 237              		.loc 1 333 1 is_stmt 1 view -0
+ 238              		.cfi_startproc
+ 239              		@ args = 0, pretend = 0, frame = 0
+ 240              		@ frame_needed = 0, uses_anonymous_args = 0
  335:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 245              		.loc 1 335 3 view .LVU50
+ 241              		.loc 1 335 3 view .LVU49
  335:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 246              		.loc 1 335 6 is_stmt 0 view .LVU51
- 247 0000 B8B1     		cbz	r0, .L17
+ 242              		.loc 1 335 6 is_stmt 0 view .LVU50
+ 243 0000 B8B1     		cbz	r0, .L17
  333:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Check the UART handle allocation */
- 248              		.loc 1 333 1 view .LVU52
- 249 0002 08B5     		push	{r3, lr}
- 250              	.LCFI4:
- 251              		.cfi_def_cfa_offset 8
- 252              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccgzYV0G.s 			page 19
-
-
- 253              		.cfi_offset 14, -4
- 254 0004 0346     		mov	r3, r0
+ 244              		.loc 1 333 1 view .LVU51
+ 245 0002 08B5     		push	{r3, lr}
+ 246              	.LCFI4:
+ 247              		.cfi_def_cfa_offset 8
+ 248              		.cfi_offset 3, -8
+ 249              		.cfi_offset 14, -4
+ 250 0004 0346     		mov	r3, r0
  341:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 255              		.loc 1 341 3 is_stmt 1 view .LVU53
+ 251              		.loc 1 341 3 is_stmt 1 view .LVU52
  343:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 256              		.loc 1 343 3 view .LVU54
+ARM GAS  /tmp/ccTgqUxq.s 			page 19
+
+
+ 252              		.loc 1 343 3 view .LVU53
  343:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 257              		.loc 1 343 17 is_stmt 0 view .LVU55
- 258 0006 2422     		movs	r2, #36
- 259 0008 8267     		str	r2, [r0, #120]
+ 253              		.loc 1 343 17 is_stmt 0 view .LVU54
+ 254 0006 2422     		movs	r2, #36
+ 255 0008 8267     		str	r2, [r0, #120]
  346:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 260              		.loc 1 346 3 is_stmt 1 view .LVU56
- 261 000a 0068     		ldr	r0, [r0]
- 262              	.LVL16:
+ 256              		.loc 1 346 3 is_stmt 1 view .LVU55
+ 257 000a 0068     		ldr	r0, [r0]
+ 258              	.LVL16:
  346:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 263              		.loc 1 346 3 is_stmt 0 view .LVU57
- 264 000c 0268     		ldr	r2, [r0]
- 265 000e 22F00102 		bic	r2, r2, #1
- 266 0012 0260     		str	r2, [r0]
+ 259              		.loc 1 346 3 is_stmt 0 view .LVU56
+ 260 000c 0268     		ldr	r2, [r0]
+ 261 000e 22F00102 		bic	r2, r2, #1
+ 262 0012 0260     		str	r2, [r0]
  349:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 267              		.loc 1 349 3 is_stmt 1 view .LVU58
- 268 0014 1868     		ldr	r0, [r3]
- 269 0016 4268     		ldr	r2, [r0, #4]
- 270 0018 22F01002 		bic	r2, r2, #16
- 271 001c 1143     		orrs	r1, r1, r2
- 272              	.LVL17:
+ 263              		.loc 1 349 3 is_stmt 1 view .LVU57
+ 264 0014 1868     		ldr	r0, [r3]
+ 265 0016 4268     		ldr	r2, [r0, #4]
+ 266 0018 22F01002 		bic	r2, r2, #16
+ 267 001c 1143     		orrs	r1, r1, r2
+ 268              	.LVL17:
  349:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 273              		.loc 1 349 3 is_stmt 0 view .LVU59
- 274 001e 4160     		str	r1, [r0, #4]
+ 269              		.loc 1 349 3 is_stmt 0 view .LVU58
+ 270 001e 4160     		str	r1, [r0, #4]
  352:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 275              		.loc 1 352 3 is_stmt 1 view .LVU60
- 276 0020 1968     		ldr	r1, [r3]
- 277 0022 0A68     		ldr	r2, [r1]
- 278 0024 42F00102 		orr	r2, r2, #1
- 279 0028 0A60     		str	r2, [r1]
+ 271              		.loc 1 352 3 is_stmt 1 view .LVU59
+ 272 0020 1968     		ldr	r1, [r3]
+ 273 0022 0A68     		ldr	r2, [r1]
+ 274 0024 42F00102 		orr	r2, r2, #1
+ 275 0028 0A60     		str	r2, [r1]
  355:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 280              		.loc 1 355 3 view .LVU61
+ 276              		.loc 1 355 3 view .LVU60
  355:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 281              		.loc 1 355 11 is_stmt 0 view .LVU62
- 282 002a 1846     		mov	r0, r3
- 283 002c FFF7FEFF 		bl	UART_CheckIdleState
- 284              	.LVL18:
+ 277              		.loc 1 355 11 is_stmt 0 view .LVU61
+ 278 002a 1846     		mov	r0, r3
+ 279 002c FFF7FEFF 		bl	UART_CheckIdleState
+ 280              	.LVL18:
  356:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 285              		.loc 1 356 1 view .LVU63
- 286 0030 08BD     		pop	{r3, pc}
- 287              	.LVL19:
- 288              	.L17:
- 289              	.LCFI5:
- 290              		.cfi_def_cfa_offset 0
- 291              		.cfi_restore 3
- 292              		.cfi_restore 14
+ 281              		.loc 1 356 1 view .LVU62
+ 282 0030 08BD     		pop	{r3, pc}
+ 283              	.LVL19:
+ 284              	.L17:
+ 285              	.LCFI5:
+ 286              		.cfi_def_cfa_offset 0
+ 287              		.cfi_restore 3
+ 288              		.cfi_restore 14
  337:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 293              		.loc 1 337 12 view .LVU64
- 294 0032 0120     		movs	r0, #1
- 295              	.LVL20:
+ 289              		.loc 1 337 12 view .LVU63
+ 290 0032 0120     		movs	r0, #1
+ 291              	.LVL20:
  356:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 296              		.loc 1 356 1 view .LVU65
-ARM GAS  /tmp/ccgzYV0G.s 			page 20
+ 292              		.loc 1 356 1 view .LVU64
+ 293 0034 7047     		bx	lr
+ 294              		.cfi_endproc
+ 295              	.LFE125:
+ 297              		.section	.text.HAL_UARTEx_StopModeWakeUpSourceConfig,"ax",%progbits
+ 298              		.align	1
+ARM GAS  /tmp/ccTgqUxq.s 			page 20
 
 
- 297 0034 7047     		bx	lr
- 298              		.cfi_endproc
- 299              	.LFE125:
- 301              		.section	.text.HAL_UARTEx_StopModeWakeUpSourceConfig,"ax",%progbits
- 302              		.align	1
- 303              		.global	HAL_UARTEx_StopModeWakeUpSourceConfig
- 304              		.syntax unified
- 305              		.thumb
- 306              		.thumb_func
- 307              		.fpu fpv4-sp-d16
- 309              	HAL_UARTEx_StopModeWakeUpSourceConfig:
- 310              	.LVL21:
- 311              	.LFB126:
+ 299              		.global	HAL_UARTEx_StopModeWakeUpSourceConfig
+ 300              		.syntax unified
+ 301              		.thumb
+ 302              		.thumb_func
+ 304              	HAL_UARTEx_StopModeWakeUpSourceConfig:
+ 305              	.LVL21:
+ 306              	.LFB126:
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
- 312              		.loc 1 371 1 is_stmt 1 view -0
- 313              		.cfi_startproc
- 314              		@ args = 0, pretend = 0, frame = 8
- 315              		@ frame_needed = 0, uses_anonymous_args = 0
+ 307              		.loc 1 371 1 is_stmt 1 view -0
+ 308              		.cfi_startproc
+ 309              		@ args = 0, pretend = 0, frame = 8
+ 310              		@ frame_needed = 0, uses_anonymous_args = 0
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
- 316              		.loc 1 371 1 is_stmt 0 view .LVU67
- 317 0000 10B5     		push	{r4, lr}
- 318              	.LCFI6:
- 319              		.cfi_def_cfa_offset 8
- 320              		.cfi_offset 4, -8
- 321              		.cfi_offset 14, -4
- 322 0002 84B0     		sub	sp, sp, #16
- 323              	.LCFI7:
- 324              		.cfi_def_cfa_offset 24
- 325 0004 04AB     		add	r3, sp, #16
- 326 0006 03E90600 		stmdb	r3, {r1, r2}
+ 311              		.loc 1 371 1 is_stmt 0 view .LVU66
+ 312 0000 10B5     		push	{r4, lr}
+ 313              	.LCFI6:
+ 314              		.cfi_def_cfa_offset 8
+ 315              		.cfi_offset 4, -8
+ 316              		.cfi_offset 14, -4
+ 317 0002 84B0     		sub	sp, sp, #16
+ 318              	.LCFI7:
+ 319              		.cfi_def_cfa_offset 24
+ 320 0004 04AB     		add	r3, sp, #16
+ 321 0006 03E90600 		stmdb	r3, {r1, r2}
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t tickstart;
- 327              		.loc 1 372 3 is_stmt 1 view .LVU68
- 328              	.LVL22:
+ 322              		.loc 1 372 3 is_stmt 1 view .LVU67
+ 323              	.LVL22:
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 329              		.loc 1 373 3 view .LVU69
+ 324              		.loc 1 373 3 view .LVU68
  376:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* check the wake-up selection parameter */
- 330              		.loc 1 376 3 view .LVU70
+ 325              		.loc 1 376 3 view .LVU69
  378:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 331              		.loc 1 378 3 view .LVU71
+ 326              		.loc 1 378 3 view .LVU70
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 332              		.loc 1 381 3 view .LVU72
+ 327              		.loc 1 381 3 view .LVU71
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 333              		.loc 1 381 3 view .LVU73
- 334 000a 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 335 000e 012B     		cmp	r3, #1
- 336 0010 33D0     		beq	.L26
- 337 0012 0446     		mov	r4, r0
+ 328              		.loc 1 381 3 view .LVU72
+ 329 000a 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ 330 000e 012B     		cmp	r3, #1
+ 331 0010 33D0     		beq	.L26
+ 332 0012 0446     		mov	r4, r0
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 338              		.loc 1 381 3 discriminator 2 view .LVU74
- 339 0014 0123     		movs	r3, #1
- 340 0016 80F87430 		strb	r3, [r0, #116]
+ 333              		.loc 1 381 3 discriminator 2 view .LVU73
+ 334 0014 0123     		movs	r3, #1
+ 335 0016 80F87430 		strb	r3, [r0, #116]
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 341              		.loc 1 381 3 discriminator 2 view .LVU75
+ 336              		.loc 1 381 3 discriminator 2 view .LVU74
  383:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 342              		.loc 1 383 3 discriminator 2 view .LVU76
+ 337              		.loc 1 383 3 discriminator 2 view .LVU75
  383:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 343              		.loc 1 383 17 is_stmt 0 discriminator 2 view .LVU77
-ARM GAS  /tmp/ccgzYV0G.s 			page 21
-
-
- 344 001a 2423     		movs	r3, #36
- 345 001c 8367     		str	r3, [r0, #120]
+ 338              		.loc 1 383 17 is_stmt 0 discriminator 2 view .LVU76
+ 339 001a 2423     		movs	r3, #36
+ 340 001c 8367     		str	r3, [r0, #120]
  386:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 346              		.loc 1 386 3 is_stmt 1 discriminator 2 view .LVU78
- 347 001e 0268     		ldr	r2, [r0]
- 348 0020 1368     		ldr	r3, [r2]
- 349 0022 23F00103 		bic	r3, r3, #1
- 350 0026 1360     		str	r3, [r2]
+ 341              		.loc 1 386 3 is_stmt 1 discriminator 2 view .LVU77
+ 342 001e 0268     		ldr	r2, [r0]
+ 343 0020 1368     		ldr	r3, [r2]
+ARM GAS  /tmp/ccTgqUxq.s 			page 21
+
+
+ 344 0022 23F00103 		bic	r3, r3, #1
+ 345 0026 1360     		str	r3, [r2]
  389:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 351              		.loc 1 389 3 discriminator 2 view .LVU79
- 352 0028 0168     		ldr	r1, [r0]
- 353 002a 8B68     		ldr	r3, [r1, #8]
- 354 002c 23F44013 		bic	r3, r3, #3145728
- 355 0030 029A     		ldr	r2, [sp, #8]
- 356 0032 1343     		orrs	r3, r3, r2
- 357 0034 8B60     		str	r3, [r1, #8]
+ 346              		.loc 1 389 3 discriminator 2 view .LVU78
+ 347 0028 0168     		ldr	r1, [r0]
+ 348 002a 8B68     		ldr	r3, [r1, #8]
+ 349 002c 23F44013 		bic	r3, r3, #3145728
+ 350 0030 029A     		ldr	r2, [sp, #8]
+ 351 0032 1343     		orrs	r3, r3, r2
+ 352 0034 8B60     		str	r3, [r1, #8]
  391:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 358              		.loc 1 391 3 discriminator 2 view .LVU80
+ 353              		.loc 1 391 3 discriminator 2 view .LVU79
  391:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 359              		.loc 1 391 6 is_stmt 0 discriminator 2 view .LVU81
- 360 0036 A2B1     		cbz	r2, .L29
- 361              	.LVL23:
- 362              	.L24:
+ 354              		.loc 1 391 6 is_stmt 0 discriminator 2 view .LVU80
+ 355 0036 A2B1     		cbz	r2, .L29
+ 356              	.LVL23:
+ 357              	.L24:
  397:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 363              		.loc 1 397 3 is_stmt 1 view .LVU82
- 364 0038 2268     		ldr	r2, [r4]
- 365 003a 1368     		ldr	r3, [r2]
- 366 003c 43F00103 		orr	r3, r3, #1
- 367 0040 1360     		str	r3, [r2]
+ 358              		.loc 1 397 3 is_stmt 1 view .LVU81
+ 359 0038 2268     		ldr	r2, [r4]
+ 360 003a 1368     		ldr	r3, [r2]
+ 361 003c 43F00103 		orr	r3, r3, #1
+ 362 0040 1360     		str	r3, [r2]
  400:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 368              		.loc 1 400 3 view .LVU83
+ 363              		.loc 1 400 3 view .LVU82
  400:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 369              		.loc 1 400 15 is_stmt 0 view .LVU84
- 370 0042 FFF7FEFF 		bl	HAL_GetTick
- 371              	.LVL24:
- 372 0046 0346     		mov	r3, r0
- 373              	.LVL25:
+ 364              		.loc 1 400 15 is_stmt 0 view .LVU83
+ 365 0042 FFF7FEFF 		bl	HAL_GetTick
+ 366              	.LVL24:
+ 367 0046 0346     		mov	r3, r0
+ 368              	.LVL25:
  403:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 374              		.loc 1 403 3 is_stmt 1 view .LVU85
+ 369              		.loc 1 403 3 is_stmt 1 view .LVU84
  403:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 375              		.loc 1 403 7 is_stmt 0 view .LVU86
- 376 0048 6FF07E42 		mvn	r2, #-33554432
- 377 004c 0092     		str	r2, [sp]
- 378 004e 0022     		movs	r2, #0
- 379 0050 4FF48001 		mov	r1, #4194304
- 380 0054 2046     		mov	r0, r4
- 381              	.LVL26:
+ 370              		.loc 1 403 7 is_stmt 0 view .LVU85
+ 371 0048 6FF07E42 		mvn	r2, #-33554432
+ 372 004c 0092     		str	r2, [sp]
+ 373 004e 0022     		movs	r2, #0
+ 374 0050 4FF48001 		mov	r1, #4194304
+ 375 0054 2046     		mov	r0, r4
+ 376              	.LVL26:
  403:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 382              		.loc 1 403 7 view .LVU87
- 383 0056 FFF7FEFF 		bl	UART_WaitOnFlagUntilTimeout
- 384              	.LVL27:
+ 377              		.loc 1 403 7 view .LVU86
+ 378 0056 FFF7FEFF 		bl	UART_WaitOnFlagUntilTimeout
+ 379              	.LVL27:
  403:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 385              		.loc 1 403 6 view .LVU88
- 386 005a 40B9     		cbnz	r0, .L27
+ 380              		.loc 1 403 6 view .LVU87
+ 381 005a 40B9     		cbnz	r0, .L27
  410:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 387              		.loc 1 410 5 is_stmt 1 view .LVU89
+ 382              		.loc 1 410 5 is_stmt 1 view .LVU88
  410:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccgzYV0G.s 			page 22
+ 383              		.loc 1 410 19 is_stmt 0 view .LVU89
+ 384 005c 2023     		movs	r3, #32
+ 385 005e A367     		str	r3, [r4, #120]
+ 386 0060 06E0     		b	.L25
+ 387              	.LVL28:
+ 388              	.L29:
+ARM GAS  /tmp/ccTgqUxq.s 			page 22
 
 
- 388              		.loc 1 410 19 is_stmt 0 view .LVU90
- 389 005c 2023     		movs	r3, #32
- 390 005e A367     		str	r3, [r4, #120]
- 391 0060 06E0     		b	.L25
- 392              	.LVL28:
- 393              	.L29:
  393:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 394              		.loc 1 393 5 is_stmt 1 view .LVU91
- 395 0062 04AB     		add	r3, sp, #16
- 396 0064 13E90600 		ldmdb	r3, {r1, r2}
- 397 0068 FFF7FEFF 		bl	UARTEx_Wakeup_AddressConfig
- 398              	.LVL29:
+ 389              		.loc 1 393 5 is_stmt 1 view .LVU90
+ 390 0062 04AB     		add	r3, sp, #16
+ 391 0064 13E90600 		ldmdb	r3, {r1, r2}
+ 392 0068 FFF7FEFF 		bl	UARTEx_Wakeup_AddressConfig
+ 393              	.LVL29:
  393:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 399              		.loc 1 393 5 is_stmt 0 view .LVU92
- 400 006c E4E7     		b	.L24
- 401              	.L27:
+ 394              		.loc 1 393 5 is_stmt 0 view .LVU91
+ 395 006c E4E7     		b	.L24
+ 396              	.L27:
  405:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 402              		.loc 1 405 12 view .LVU93
- 403 006e 0320     		movs	r0, #3
- 404              	.L25:
- 405              	.LVL30:
+ 397              		.loc 1 405 12 view .LVU92
+ 398 006e 0320     		movs	r0, #3
+ 399              	.L25:
+ 400              	.LVL30:
  414:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 406              		.loc 1 414 3 is_stmt 1 view .LVU94
+ 401              		.loc 1 414 3 is_stmt 1 view .LVU93
  414:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 407              		.loc 1 414 3 view .LVU95
- 408 0070 0023     		movs	r3, #0
- 409 0072 84F87430 		strb	r3, [r4, #116]
+ 402              		.loc 1 414 3 view .LVU94
+ 403 0070 0023     		movs	r3, #0
+ 404 0072 84F87430 		strb	r3, [r4, #116]
  414:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 410              		.loc 1 414 3 view .LVU96
+ 405              		.loc 1 414 3 view .LVU95
  416:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 411              		.loc 1 416 3 view .LVU97
- 412              	.LVL31:
- 413              	.L23:
+ 406              		.loc 1 416 3 view .LVU96
+ 407              	.LVL31:
+ 408              	.L23:
  417:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 414              		.loc 1 417 1 is_stmt 0 view .LVU98
- 415 0076 04B0     		add	sp, sp, #16
- 416              	.LCFI8:
- 417              		.cfi_remember_state
- 418              		.cfi_def_cfa_offset 8
- 419              		@ sp needed
- 420 0078 10BD     		pop	{r4, pc}
- 421              	.LVL32:
- 422              	.L26:
- 423              	.LCFI9:
- 424              		.cfi_restore_state
+ 409              		.loc 1 417 1 is_stmt 0 view .LVU97
+ 410 0076 04B0     		add	sp, sp, #16
+ 411              	.LCFI8:
+ 412              		.cfi_remember_state
+ 413              		.cfi_def_cfa_offset 8
+ 414              		@ sp needed
+ 415 0078 10BD     		pop	{r4, pc}
+ 416              	.LVL32:
+ 417              	.L26:
+ 418              	.LCFI9:
+ 419              		.cfi_restore_state
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 425              		.loc 1 381 3 view .LVU99
- 426 007a 0220     		movs	r0, #2
- 427              	.LVL33:
+ 420              		.loc 1 381 3 view .LVU98
+ 421 007a 0220     		movs	r0, #2
+ 422              	.LVL33:
  381:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 428              		.loc 1 381 3 view .LVU100
- 429 007c FBE7     		b	.L23
- 430              		.cfi_endproc
- 431              	.LFE126:
- 433              		.section	.text.HAL_UARTEx_EnableStopMode,"ax",%progbits
- 434              		.align	1
- 435              		.global	HAL_UARTEx_EnableStopMode
-ARM GAS  /tmp/ccgzYV0G.s 			page 23
+ 423              		.loc 1 381 3 view .LVU99
+ 424 007c FBE7     		b	.L23
+ 425              		.cfi_endproc
+ 426              	.LFE126:
+ 428              		.section	.text.HAL_UARTEx_EnableStopMode,"ax",%progbits
+ 429              		.align	1
+ 430              		.global	HAL_UARTEx_EnableStopMode
+ 431              		.syntax unified
+ 432              		.thumb
+ 433              		.thumb_func
+ 435              	HAL_UARTEx_EnableStopMode:
+ 436              	.LVL34:
+ 437              	.LFB127:
+ARM GAS  /tmp/ccTgqUxq.s 			page 23
 
 
- 436              		.syntax unified
- 437              		.thumb
- 438              		.thumb_func
- 439              		.fpu fpv4-sp-d16
- 441              	HAL_UARTEx_EnableStopMode:
- 442              	.LVL34:
- 443              	.LFB127:
  426:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Process Locked */
- 444              		.loc 1 426 1 is_stmt 1 view -0
- 445              		.cfi_startproc
- 446              		@ args = 0, pretend = 0, frame = 0
- 447              		@ frame_needed = 0, uses_anonymous_args = 0
- 448              		@ link register save eliminated.
+ 438              		.loc 1 426 1 is_stmt 1 view -0
+ 439              		.cfi_startproc
+ 440              		@ args = 0, pretend = 0, frame = 0
+ 441              		@ frame_needed = 0, uses_anonymous_args = 0
+ 442              		@ link register save eliminated.
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 449              		.loc 1 428 3 view .LVU102
+ 443              		.loc 1 428 3 view .LVU101
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 450              		.loc 1 428 3 view .LVU103
- 451 0000 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 452 0004 012B     		cmp	r3, #1
- 453 0006 10D0     		beq	.L33
+ 444              		.loc 1 428 3 view .LVU102
+ 445 0000 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ 446 0004 012B     		cmp	r3, #1
+ 447 0006 10D0     		beq	.L33
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 454              		.loc 1 428 3 discriminator 2 view .LVU104
- 455 0008 0123     		movs	r3, #1
- 456 000a 80F87430 		strb	r3, [r0, #116]
- 457              	.L32:
+ 448              		.loc 1 428 3 discriminator 2 view .LVU103
+ 449 0008 0123     		movs	r3, #1
+ 450 000a 80F87430 		strb	r3, [r0, #116]
+ 451              	.L32:
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 458              		.loc 1 428 3 discriminator 1 view .LVU105
+ 452              		.loc 1 428 3 discriminator 1 view .LVU104
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 459              		.loc 1 431 3 discriminator 1 view .LVU106
- 460              	.LBB22:
+ 453              		.loc 1 431 3 discriminator 1 view .LVU105
+ 454              	.LBB22:
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 461              		.loc 1 431 3 discriminator 1 view .LVU107
+ 455              		.loc 1 431 3 discriminator 1 view .LVU106
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 462              		.loc 1 431 3 discriminator 1 view .LVU108
+ 456              		.loc 1 431 3 discriminator 1 view .LVU107
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 463              		.loc 1 431 3 discriminator 1 view .LVU109
- 464 000e 0268     		ldr	r2, [r0]
- 465              	.LVL35:
- 466              	.LBB23:
- 467              	.LBI23:
- 468              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
+ 457              		.loc 1 431 3 discriminator 1 view .LVU108
+ 458 000e 0268     		ldr	r2, [r0]
+ 459              	.LVL35:
+ 460              	.LBB23:
+ 461              	.LBI23:
+ 462              		.file 2 "Drivers/CMSIS/Include/cmsis_gcc.h"
    1:Drivers/CMSIS/Include/cmsis_gcc.h **** /**************************************************************************//**
    2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
@@ -1378,9 +1371,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   14:Drivers/CMSIS/Include/cmsis_gcc.h ****  * You may obtain a copy of the License at
   15:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   16:Drivers/CMSIS/Include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
-ARM GAS  /tmp/ccgzYV0G.s 			page 24
-
-
   17:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   18:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
@@ -1388,6 +1378,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
   23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
+ARM GAS  /tmp/ccTgqUxq.s 			page 24
+
+
   24:Drivers/CMSIS/Include/cmsis_gcc.h **** 
   25:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
   26:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_H
@@ -1438,9 +1431,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   71:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
   72:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
   73:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
-ARM GAS  /tmp/ccgzYV0G.s 			page 25
-
-
   74:Drivers/CMSIS/Include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
   75:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
@@ -1448,6 +1438,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
   80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
+ARM GAS  /tmp/ccTgqUxq.s 			page 25
+
+
   81:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
   82:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT16_WRITE { uint16_t v; };
   83:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic pop
@@ -1498,9 +1491,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  128:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  129:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __enable_irq(void)
  130:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccgzYV0G.s 			page 26
-
-
  131:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
  132:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  133:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1508,6 +1498,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  135:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
  137:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
+ARM GAS  /tmp/ccTgqUxq.s 			page 26
+
+
  138:Drivers/CMSIS/Include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
  139:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  140:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __disable_irq(void)
@@ -1558,9 +1551,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  185:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  186:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  187:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
-ARM GAS  /tmp/ccgzYV0G.s 			page 27
-
-
  188:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  189:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Control Register (non-secure)
  190:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
@@ -1568,6 +1558,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  192:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  193:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_CONTROL_NS(uint32_t control)
  194:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  /tmp/ccTgqUxq.s 			page 27
+
+
  195:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control_ns, %0" : : "r" (control) : "memory");
  196:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  197:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1618,9 +1611,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  242:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  243:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer
  244:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer (PSP).
-ARM GAS  /tmp/ccgzYV0G.s 			page 28
-
-
  245:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSP Register value
  246:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  247:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
@@ -1628,6 +1618,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  249:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  250:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  251:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp"  : "=r" (result) );
+ARM GAS  /tmp/ccTgqUxq.s 			page 28
+
+
  252:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  253:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  254:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1678,9 +1671,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  299:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
  300:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  301:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_MSP(void)
-ARM GAS  /tmp/ccgzYV0G.s 			page 29
-
-
  302:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  303:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  304:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1688,6 +1678,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  306:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  308:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  /tmp/ccTgqUxq.s 			page 29
+
+
  309:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  310:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  311:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1738,9 +1731,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  356:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_SP_NS(void)
  357:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  358:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccgzYV0G.s 			page 30
-
-
  359:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  360:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, sp_ns" : "=r" (result) );
  361:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1748,6 +1738,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  363:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  364:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  365:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ARM GAS  /tmp/ccTgqUxq.s 			page 30
+
+
  366:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Stack Pointer (non-secure)
  367:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Stack Pointer (SP) when in secure state.
  368:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfStack  Stack Pointer value to set
@@ -1798,9 +1791,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  413:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  414:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask, %0" : : "r" (priMask) : "memory");
  415:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccgzYV0G.s 			page 31
-
-
  416:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  417:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  418:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
@@ -1808,6 +1798,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  420:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Priority Mask (non-secure)
  421:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Priority Mask Register when in secure state.
  422:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    priMask  Priority Mask
+ARM GAS  /tmp/ccTgqUxq.s 			page 31
+
+
  423:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  424:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PRIMASK_NS(uint32_t priMask)
  425:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1858,9 +1851,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  470:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  471:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  472:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Base Priority (non-secure)
-ARM GAS  /tmp/ccgzYV0G.s 			page 32
-
-
  473:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Base Priority register when in secure state.
  474:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Base Priority register value
  475:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1868,6 +1858,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  477:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  478:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  /tmp/ccTgqUxq.s 			page 32
+
+
  480:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, basepri_ns" : "=r" (result) );
  481:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  482:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1918,9 +1911,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  527:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_FAULTMASK(void)
  528:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  529:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccgzYV0G.s 			page 33
-
-
  530:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  531:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, faultmask" : "=r" (result) );
  532:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1928,6 +1918,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  534:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  535:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  536:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
+ARM GAS  /tmp/ccTgqUxq.s 			page 33
+
+
  537:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  538:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Fault Mask (non-secure)
  539:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Fault Mask register when in secure state.
@@ -1978,9 +1971,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  584:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer Limit
  585:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  586:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence zero is returned always in non-secure
-ARM GAS  /tmp/ccgzYV0G.s 			page 34
-
-
  587:Drivers/CMSIS/Include/cmsis_gcc.h ****   mode.
  588:Drivers/CMSIS/Include/cmsis_gcc.h ****   
  589:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer Limit (PSPLIM).
@@ -1988,6 +1978,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  591:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  592:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSPLIM(void)
  593:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  /tmp/ccTgqUxq.s 			page 34
+
+
  594:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) && \
  595:Drivers/CMSIS/Include/cmsis_gcc.h ****     (!defined (__ARM_FEATURE_CMSE) || (__ARM_FEATURE_CMSE < 3)))
  596:Drivers/CMSIS/Include/cmsis_gcc.h ****     // without main extensions, the non-secure PSPLIM is RAZ/WI
@@ -2038,9 +2031,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  641:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure PSPLIM is RAZ/WI
  642:Drivers/CMSIS/Include/cmsis_gcc.h ****   (void)ProcStackPtrLimit;
  643:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
-ARM GAS  /tmp/ccgzYV0G.s 			page 35
-
-
  644:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR psplim, %0" : : "r" (ProcStackPtrLimit));
  645:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  646:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2048,6 +2038,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  648:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  649:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE  ) && (__ARM_FEATURE_CMSE   == 3))
  650:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
+ARM GAS  /tmp/ccTgqUxq.s 			page 35
+
+
  651:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer (non-secure)
  652:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  653:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored.
@@ -2098,9 +2091,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  698:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  699:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Main Stack Pointer Limit(MSPLIM) when in sec
  700:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSPLIM Register value
-ARM GAS  /tmp/ccgzYV0G.s 			page 36
-
-
  701:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  702:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_MSPLIM_NS(void)
  703:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2108,6 +2098,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  705:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure MSPLIM is RAZ/WI
  706:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
  707:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
+ARM GAS  /tmp/ccTgqUxq.s 			page 36
+
+
  708:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  709:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msplim_ns" : "=r" (result) );
  710:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
@@ -2158,9 +2151,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  755:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  756:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  757:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif /* ((defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)) || \
-ARM GAS  /tmp/ccgzYV0G.s 			page 37
-
-
  758:Drivers/CMSIS/Include/cmsis_gcc.h ****            (defined (__ARM_ARCH_8M_BASE__ ) && (__ARM_ARCH_8M_BASE__ == 1))    ) */
  759:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  760:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2168,6 +2158,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  762:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get FPSCR
  763:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Floating Point Status/Control register.
  764:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Floating Point Status/Control register value
+ARM GAS  /tmp/ccTgqUxq.s 			page 37
+
+
  765:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  766:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
  767:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2218,9 +2211,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  812:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  813:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ##########################  Core Instruction Access  ######################### */
  814:Drivers/CMSIS/Include/cmsis_gcc.h **** /** \defgroup CMSIS_Core_InstructionInterface CMSIS Core Instruction Interface
-ARM GAS  /tmp/ccgzYV0G.s 			page 38
-
-
  815:Drivers/CMSIS/Include/cmsis_gcc.h ****   Access to dedicated instructions
  816:Drivers/CMSIS/Include/cmsis_gcc.h ****   @{
  817:Drivers/CMSIS/Include/cmsis_gcc.h **** */
@@ -2228,6 +2218,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  819:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Define macros for porting to both thumb1 and thumb2.
  820:Drivers/CMSIS/Include/cmsis_gcc.h ****  * For thumb1, use low register (r0-r7), specified by constraint "l"
  821:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Otherwise, use general registers, specified by constraint "r" */
+ARM GAS  /tmp/ccTgqUxq.s 			page 38
+
+
  822:Drivers/CMSIS/Include/cmsis_gcc.h **** #if defined (__thumb__) && !defined (__thumb2__)
  823:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=l" (r)
  824:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+l" (r)
@@ -2278,9 +2271,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  869:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  870:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  871:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 39
-
-
  872:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  873:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Synchronization Barrier
  874:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Acts as a special kind of Data Memory Barrier.
@@ -2288,6 +2278,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  876:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  877:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __DSB(void)
  878:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  /tmp/ccTgqUxq.s 			page 39
+
+
  879:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("dsb 0xF":::"memory");
  880:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  881:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2338,9 +2331,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  926:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  927:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  928:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccgzYV0G.s 			page 40
-
-
  929:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order (16 bit)
  930:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order in a 16-bit value and returns the signed 16-bit result. For exam
  931:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
@@ -2348,6 +2338,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  933:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  934:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE int16_t __REVSH(int16_t value)
  935:Drivers/CMSIS/Include/cmsis_gcc.h **** {
+ARM GAS  /tmp/ccTgqUxq.s 			page 40
+
+
  936:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
  937:Drivers/CMSIS/Include/cmsis_gcc.h ****   return (int16_t)__builtin_bswap16(value);
  938:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
@@ -2398,9 +2391,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  983:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  984:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  985:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
-ARM GAS  /tmp/ccgzYV0G.s 			page 41
-
-
  986:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
  987:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1))    )
  988:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("rbit %0, %1" : "=r" (result) : "r" (value) );
@@ -2408,6 +2398,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
  990:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t s = (4U /*sizeof(v)*/ * 8U) - 1U; /* extra shift needed at end */
  991:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  992:Drivers/CMSIS/Include/cmsis_gcc.h ****   result = value;                      /* r will be reversed bits of v; first get LSB of v */
+ARM GAS  /tmp/ccTgqUxq.s 			page 41
+
+
  993:Drivers/CMSIS/Include/cmsis_gcc.h ****   for (value >>= 1U; value != 0U; value >>= 1U)
  994:Drivers/CMSIS/Include/cmsis_gcc.h ****   {
  995:Drivers/CMSIS/Include/cmsis_gcc.h ****     result <<= 1U;
@@ -2458,9 +2451,6 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
 1040:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
 1041:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   LDR Exclusive (16 bit)
 1042:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive LDR instruction for 16 bit values.
-ARM GAS  /tmp/ccgzYV0G.s 			page 42
-
-
 1043:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
 1044:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return        value of type uint16_t at (*ptr)
 1045:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -2468,6 +2458,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
 1047:Drivers/CMSIS/Include/cmsis_gcc.h **** {
 1048:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t result;
 1049:Drivers/CMSIS/Include/cmsis_gcc.h **** 
+ARM GAS  /tmp/ccTgqUxq.s 			page 42
+
+
 1050:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8)
 1051:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrexh %0, %1" : "=r" (result) : "Q" (*addr) );
 1052:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
@@ -2487,40 +2480,37 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
 1066:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return        value of type uint32_t at (*ptr)
 1067:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
 1068:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __LDREXW(volatile uint32_t *addr)
- 469              		.loc 2 1068 31 discriminator 1 view .LVU110
- 470              	.LBB24:
+ 463              		.loc 2 1068 31 discriminator 1 view .LVU109
+ 464              	.LBB24:
 1069:Drivers/CMSIS/Include/cmsis_gcc.h **** {
 1070:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t result;
- 471              		.loc 2 1070 5 discriminator 1 view .LVU111
+ 465              		.loc 2 1070 5 discriminator 1 view .LVU110
 1071:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 1072:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrex %0, %1" : "=r" (result) : "Q" (*addr) );
- 472              		.loc 2 1072 4 discriminator 1 view .LVU112
- 473              		.syntax unified
- 474              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 475 0010 52E8003F 		ldrex r3, [r2]
- 476              	@ 0 "" 2
- 477              	.LVL36:
+ 466              		.loc 2 1072 4 discriminator 1 view .LVU111
+ 467              		.syntax unified
+ 468              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 469 0010 52E8003F 		ldrex r3, [r2]
+ 470              	@ 0 "" 2
+ 471              	.LVL36:
 1073:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 478              		.loc 2 1073 4 discriminator 1 view .LVU113
- 479              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU114
- 480              		.thumb
- 481              		.syntax unified
- 482              	.LBE24:
- 483              	.LBE23:
+ 472              		.loc 2 1073 4 discriminator 1 view .LVU112
+ 473              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU113
+ 474              		.thumb
+ 475              		.syntax unified
+ 476              	.LBE24:
+ 477              	.LBE23:
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 484              		.loc 1 431 3 discriminator 1 view .LVU115
- 485 0014 43F00203 		orr	r3, r3, #2
- 486              	.LVL37:
+ 478              		.loc 1 431 3 discriminator 1 view .LVU114
+ 479 0014 43F00203 		orr	r3, r3, #2
+ 480              	.LVL37:
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 487              		.loc 1 431 3 is_stmt 1 discriminator 1 view .LVU116
- 488              	.LBB25:
- 489              	.LBI25:
+ 481              		.loc 1 431 3 is_stmt 1 discriminator 1 view .LVU115
+ 482              	.LBB25:
+ 483              	.LBI25:
 1074:Drivers/CMSIS/Include/cmsis_gcc.h **** }
 1075:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 1076:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccgzYV0G.s 			page 43
-
-
 1077:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
 1078:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   STR Exclusive (8 bit)
 1079:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Executes a exclusive STR instruction for 8 bit values.
@@ -2528,6 +2518,9 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
 1081:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to location
 1082:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          0  Function succeeded
 1083:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          1  Function failed
+ARM GAS  /tmp/ccTgqUxq.s 			page 43
+
+
 1084:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
 1085:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __STREXB(uint8_t value, volatile uint8_t *addr)
 1086:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -2564,1172 +2557,1167 @@ ARM GAS  /tmp/ccgzYV0G.s 			page 1
 1117:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          1  Function failed
 1118:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
 1119:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __STREXW(uint32_t value, volatile uint32_t *addr)
- 490              		.loc 2 1119 31 discriminator 1 view .LVU117
- 491              	.LBB26:
+ 484              		.loc 2 1119 31 discriminator 1 view .LVU116
+ 485              	.LBB26:
 1120:Drivers/CMSIS/Include/cmsis_gcc.h **** {
 1121:Drivers/CMSIS/Include/cmsis_gcc.h ****    uint32_t result;
- 492              		.loc 2 1121 4 discriminator 1 view .LVU118
+ 486              		.loc 2 1121 4 discriminator 1 view .LVU117
 1122:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 1123:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("strex %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" (value) );
- 493              		.loc 2 1123 4 discriminator 1 view .LVU119
- 494              		.syntax unified
- 495              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 496 0018 42E80031 		strex r1, r3, [r2]
- 497              	@ 0 "" 2
- 498              	.LVL38:
+ 487              		.loc 2 1123 4 discriminator 1 view .LVU118
+ 488              		.syntax unified
+ 489              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 490 0018 42E80031 		strex r1, r3, [r2]
+ 491              	@ 0 "" 2
+ 492              	.LVL38:
 1124:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
-ARM GAS  /tmp/ccgzYV0G.s 			page 44
+ 493              		.loc 2 1124 4 discriminator 1 view .LVU119
+ 494              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU120
+ 495              		.thumb
+ 496              		.syntax unified
+ 497              	.LBE26:
+ 498              	.LBE25:
+ 431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccTgqUxq.s 			page 44
 
 
- 499              		.loc 2 1124 4 discriminator 1 view .LVU120
- 500              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU121
- 501              		.thumb
- 502              		.syntax unified
- 503              	.LBE26:
- 504              	.LBE25:
+ 499              		.loc 1 431 3 discriminator 1 view .LVU121
+ 500 001c 0029     		cmp	r1, #0
+ 501 001e F6D1     		bne	.L32
+ 502              	.LBE22:
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 505              		.loc 1 431 3 discriminator 1 view .LVU122
- 506 001c 0029     		cmp	r1, #0
- 507 001e F6D1     		bne	.L32
- 508              	.LBE22:
- 431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 509              		.loc 1 431 3 is_stmt 1 discriminator 2 view .LVU123
+ 503              		.loc 1 431 3 is_stmt 1 discriminator 2 view .LVU122
  434:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 510              		.loc 1 434 3 discriminator 2 view .LVU124
+ 504              		.loc 1 434 3 discriminator 2 view .LVU123
  434:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 511              		.loc 1 434 3 discriminator 2 view .LVU125
- 512 0020 0023     		movs	r3, #0
- 513              	.LVL39:
+ 505              		.loc 1 434 3 discriminator 2 view .LVU124
+ 506 0020 0023     		movs	r3, #0
+ 507              	.LVL39:
  434:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 514              		.loc 1 434 3 is_stmt 0 discriminator 2 view .LVU126
- 515 0022 80F87430 		strb	r3, [r0, #116]
+ 508              		.loc 1 434 3 is_stmt 0 discriminator 2 view .LVU125
+ 509 0022 80F87430 		strb	r3, [r0, #116]
  434:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 516              		.loc 1 434 3 is_stmt 1 discriminator 2 view .LVU127
+ 510              		.loc 1 434 3 is_stmt 1 discriminator 2 view .LVU126
  436:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 517              		.loc 1 436 3 discriminator 2 view .LVU128
+ 511              		.loc 1 436 3 discriminator 2 view .LVU127
  436:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 518              		.loc 1 436 10 is_stmt 0 discriminator 2 view .LVU129
- 519 0026 1846     		mov	r0, r3
- 520              	.LVL40:
+ 512              		.loc 1 436 10 is_stmt 0 discriminator 2 view .LVU128
+ 513 0026 1846     		mov	r0, r3
+ 514              	.LVL40:
  436:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 521              		.loc 1 436 10 discriminator 2 view .LVU130
- 522 0028 7047     		bx	lr
- 523              	.LVL41:
- 524              	.L33:
+ 515              		.loc 1 436 10 discriminator 2 view .LVU129
+ 516 0028 7047     		bx	lr
+ 517              	.LVL41:
+ 518              	.L33:
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 525              		.loc 1 428 3 view .LVU131
- 526 002a 0220     		movs	r0, #2
- 527              	.LVL42:
+ 519              		.loc 1 428 3 view .LVU130
+ 520 002a 0220     		movs	r0, #2
+ 521              	.LVL42:
  437:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 528              		.loc 1 437 1 view .LVU132
- 529 002c 7047     		bx	lr
- 530              		.cfi_endproc
- 531              	.LFE127:
- 533              		.section	.text.HAL_UARTEx_DisableStopMode,"ax",%progbits
- 534              		.align	1
- 535              		.global	HAL_UARTEx_DisableStopMode
- 536              		.syntax unified
- 537              		.thumb
- 538              		.thumb_func
- 539              		.fpu fpv4-sp-d16
- 541              	HAL_UARTEx_DisableStopMode:
- 542              	.LVL43:
- 543              	.LFB128:
+ 522              		.loc 1 437 1 view .LVU131
+ 523 002c 7047     		bx	lr
+ 524              		.cfi_endproc
+ 525              	.LFE127:
+ 527              		.section	.text.HAL_UARTEx_DisableStopMode,"ax",%progbits
+ 528              		.align	1
+ 529              		.global	HAL_UARTEx_DisableStopMode
+ 530              		.syntax unified
+ 531              		.thumb
+ 532              		.thumb_func
+ 534              	HAL_UARTEx_DisableStopMode:
+ 535              	.LVL43:
+ 536              	.LFB128:
  445:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Process Locked */
- 544              		.loc 1 445 1 is_stmt 1 view -0
- 545              		.cfi_startproc
-ARM GAS  /tmp/ccgzYV0G.s 			page 45
+ 537              		.loc 1 445 1 is_stmt 1 view -0
+ 538              		.cfi_startproc
+ 539              		@ args = 0, pretend = 0, frame = 0
+ 540              		@ frame_needed = 0, uses_anonymous_args = 0
+ 541              		@ link register save eliminated.
+ 447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 542              		.loc 1 447 3 view .LVU133
+ 447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 543              		.loc 1 447 3 view .LVU134
+ 544 0000 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ARM GAS  /tmp/ccTgqUxq.s 			page 45
 
 
- 546              		@ args = 0, pretend = 0, frame = 0
- 547              		@ frame_needed = 0, uses_anonymous_args = 0
- 548              		@ link register save eliminated.
+ 545 0004 012B     		cmp	r3, #1
+ 546 0006 10D0     		beq	.L37
  447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 549              		.loc 1 447 3 view .LVU134
+ 547              		.loc 1 447 3 discriminator 2 view .LVU135
+ 548 0008 0123     		movs	r3, #1
+ 549 000a 80F87430 		strb	r3, [r0, #116]
+ 550              	.L36:
  447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 550              		.loc 1 447 3 view .LVU135
- 551 0000 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 552 0004 012B     		cmp	r3, #1
- 553 0006 10D0     		beq	.L37
- 447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 554              		.loc 1 447 3 discriminator 2 view .LVU136
- 555 0008 0123     		movs	r3, #1
- 556 000a 80F87430 		strb	r3, [r0, #116]
- 557              	.L36:
- 447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 558              		.loc 1 447 3 discriminator 1 view .LVU137
+ 551              		.loc 1 447 3 discriminator 1 view .LVU136
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 559              		.loc 1 450 3 discriminator 1 view .LVU138
- 560              	.LBB27:
+ 552              		.loc 1 450 3 discriminator 1 view .LVU137
+ 553              	.LBB27:
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 561              		.loc 1 450 3 discriminator 1 view .LVU139
+ 554              		.loc 1 450 3 discriminator 1 view .LVU138
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 562              		.loc 1 450 3 discriminator 1 view .LVU140
+ 555              		.loc 1 450 3 discriminator 1 view .LVU139
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 563              		.loc 1 450 3 discriminator 1 view .LVU141
- 564 000e 0268     		ldr	r2, [r0]
- 565              	.LVL44:
- 566              	.LBB28:
- 567              	.LBI28:
+ 556              		.loc 1 450 3 discriminator 1 view .LVU140
+ 557 000e 0268     		ldr	r2, [r0]
+ 558              	.LVL44:
+ 559              	.LBB28:
+ 560              	.LBI28:
 1068:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 568              		.loc 2 1068 31 discriminator 1 view .LVU142
- 569              	.LBB29:
+ 561              		.loc 2 1068 31 discriminator 1 view .LVU141
+ 562              	.LBB29:
 1070:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 570              		.loc 2 1070 5 discriminator 1 view .LVU143
+ 563              		.loc 2 1070 5 discriminator 1 view .LVU142
 1072:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 571              		.loc 2 1072 4 discriminator 1 view .LVU144
- 572              		.syntax unified
- 573              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 574 0010 52E8003F 		ldrex r3, [r2]
- 575              	@ 0 "" 2
- 576              	.LVL45:
+ 564              		.loc 2 1072 4 discriminator 1 view .LVU143
+ 565              		.syntax unified
+ 566              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 567 0010 52E8003F 		ldrex r3, [r2]
+ 568              	@ 0 "" 2
+ 569              	.LVL45:
 1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 577              		.loc 2 1073 4 discriminator 1 view .LVU145
+ 570              		.loc 2 1073 4 discriminator 1 view .LVU144
 1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 578              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU146
- 579              		.thumb
- 580              		.syntax unified
- 581              	.LBE29:
- 582              	.LBE28:
+ 571              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU145
+ 572              		.thumb
+ 573              		.syntax unified
+ 574              	.LBE29:
+ 575              	.LBE28:
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 583              		.loc 1 450 3 discriminator 1 view .LVU147
- 584 0014 23F00203 		bic	r3, r3, #2
- 585              	.LVL46:
+ 576              		.loc 1 450 3 discriminator 1 view .LVU146
+ 577 0014 23F00203 		bic	r3, r3, #2
+ 578              	.LVL46:
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 586              		.loc 1 450 3 is_stmt 1 discriminator 1 view .LVU148
- 587              	.LBB30:
-ARM GAS  /tmp/ccgzYV0G.s 			page 46
-
-
- 588              	.LBI30:
+ 579              		.loc 1 450 3 is_stmt 1 discriminator 1 view .LVU147
+ 580              	.LBB30:
+ 581              	.LBI30:
 1119:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 589              		.loc 2 1119 31 discriminator 1 view .LVU149
- 590              	.LBB31:
+ 582              		.loc 2 1119 31 discriminator 1 view .LVU148
+ 583              	.LBB31:
 1121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 591              		.loc 2 1121 4 discriminator 1 view .LVU150
+ 584              		.loc 2 1121 4 discriminator 1 view .LVU149
 1123:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 592              		.loc 2 1123 4 discriminator 1 view .LVU151
- 593              		.syntax unified
- 594              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 595 0018 42E80031 		strex r1, r3, [r2]
- 596              	@ 0 "" 2
- 597              	.LVL47:
- 598              		.loc 2 1124 4 discriminator 1 view .LVU152
- 599              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU153
- 600              		.thumb
- 601              		.syntax unified
- 602              	.LBE31:
- 603              	.LBE30:
+ 585              		.loc 2 1123 4 discriminator 1 view .LVU150
+ARM GAS  /tmp/ccTgqUxq.s 			page 46
+
+
+ 586              		.syntax unified
+ 587              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 588 0018 42E80031 		strex r1, r3, [r2]
+ 589              	@ 0 "" 2
+ 590              	.LVL47:
+ 591              		.loc 2 1124 4 discriminator 1 view .LVU151
+ 592              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU152
+ 593              		.thumb
+ 594              		.syntax unified
+ 595              	.LBE31:
+ 596              	.LBE30:
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 604              		.loc 1 450 3 discriminator 1 view .LVU154
- 605 001c 0029     		cmp	r1, #0
- 606 001e F6D1     		bne	.L36
- 607              	.LBE27:
+ 597              		.loc 1 450 3 discriminator 1 view .LVU153
+ 598 001c 0029     		cmp	r1, #0
+ 599 001e F6D1     		bne	.L36
+ 600              	.LBE27:
  450:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 608              		.loc 1 450 3 is_stmt 1 discriminator 2 view .LVU155
+ 601              		.loc 1 450 3 is_stmt 1 discriminator 2 view .LVU154
  453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 609              		.loc 1 453 3 discriminator 2 view .LVU156
+ 602              		.loc 1 453 3 discriminator 2 view .LVU155
  453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 610              		.loc 1 453 3 discriminator 2 view .LVU157
- 611 0020 0023     		movs	r3, #0
- 612              	.LVL48:
+ 603              		.loc 1 453 3 discriminator 2 view .LVU156
+ 604 0020 0023     		movs	r3, #0
+ 605              	.LVL48:
  453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 613              		.loc 1 453 3 is_stmt 0 discriminator 2 view .LVU158
- 614 0022 80F87430 		strb	r3, [r0, #116]
+ 606              		.loc 1 453 3 is_stmt 0 discriminator 2 view .LVU157
+ 607 0022 80F87430 		strb	r3, [r0, #116]
  453:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 615              		.loc 1 453 3 is_stmt 1 discriminator 2 view .LVU159
+ 608              		.loc 1 453 3 is_stmt 1 discriminator 2 view .LVU158
  455:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 616              		.loc 1 455 3 discriminator 2 view .LVU160
+ 609              		.loc 1 455 3 discriminator 2 view .LVU159
  455:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 617              		.loc 1 455 10 is_stmt 0 discriminator 2 view .LVU161
- 618 0026 1846     		mov	r0, r3
- 619              	.LVL49:
+ 610              		.loc 1 455 10 is_stmt 0 discriminator 2 view .LVU160
+ 611 0026 1846     		mov	r0, r3
+ 612              	.LVL49:
  455:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
- 620              		.loc 1 455 10 discriminator 2 view .LVU162
- 621 0028 7047     		bx	lr
- 622              	.LVL50:
- 623              	.L37:
+ 613              		.loc 1 455 10 discriminator 2 view .LVU161
+ 614 0028 7047     		bx	lr
+ 615              	.LVL50:
+ 616              	.L37:
  447:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 624              		.loc 1 447 3 view .LVU163
- 625 002a 0220     		movs	r0, #2
- 626              	.LVL51:
+ 617              		.loc 1 447 3 view .LVU162
+ 618 002a 0220     		movs	r0, #2
+ 619              	.LVL51:
  456:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 627              		.loc 1 456 1 view .LVU164
- 628 002c 7047     		bx	lr
- 629              		.cfi_endproc
- 630              	.LFE128:
-ARM GAS  /tmp/ccgzYV0G.s 			page 47
+ 620              		.loc 1 456 1 view .LVU163
+ 621 002c 7047     		bx	lr
+ 622              		.cfi_endproc
+ 623              	.LFE128:
+ 625              		.section	.text.HAL_UARTEx_ReceiveToIdle,"ax",%progbits
+ 626              		.align	1
+ 627              		.global	HAL_UARTEx_ReceiveToIdle
+ 628              		.syntax unified
+ 629              		.thumb
+ 630              		.thumb_func
+ 632              	HAL_UARTEx_ReceiveToIdle:
+ 633              	.LVL52:
+ARM GAS  /tmp/ccTgqUxq.s 			page 47
 
 
- 632              		.section	.text.HAL_UARTEx_ReceiveToIdle,"ax",%progbits
- 633              		.align	1
- 634              		.global	HAL_UARTEx_ReceiveToIdle
- 635              		.syntax unified
- 636              		.thumb
- 637              		.thumb_func
- 638              		.fpu fpv4-sp-d16
- 640              	HAL_UARTEx_ReceiveToIdle:
- 641              	.LVL52:
- 642              	.LFB129:
+ 634              	.LFB129:
  477:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint8_t  *pdata8bits;
- 643              		.loc 1 477 1 is_stmt 1 view -0
- 644              		.cfi_startproc
- 645              		@ args = 4, pretend = 0, frame = 0
- 646              		@ frame_needed = 0, uses_anonymous_args = 0
+ 635              		.loc 1 477 1 is_stmt 1 view -0
+ 636              		.cfi_startproc
+ 637              		@ args = 4, pretend = 0, frame = 0
+ 638              		@ frame_needed = 0, uses_anonymous_args = 0
  477:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint8_t  *pdata8bits;
- 647              		.loc 1 477 1 is_stmt 0 view .LVU166
- 648 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
- 649              	.LCFI10:
- 650              		.cfi_def_cfa_offset 32
- 651              		.cfi_offset 4, -32
- 652              		.cfi_offset 5, -28
- 653              		.cfi_offset 6, -24
- 654              		.cfi_offset 7, -20
- 655              		.cfi_offset 8, -16
- 656              		.cfi_offset 9, -12
- 657              		.cfi_offset 10, -8
- 658              		.cfi_offset 14, -4
- 659 0004 1D46     		mov	r5, r3
- 660 0006 089E     		ldr	r6, [sp, #32]
+ 639              		.loc 1 477 1 is_stmt 0 view .LVU165
+ 640 0000 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+ 641              	.LCFI10:
+ 642              		.cfi_def_cfa_offset 32
+ 643              		.cfi_offset 4, -32
+ 644              		.cfi_offset 5, -28
+ 645              		.cfi_offset 6, -24
+ 646              		.cfi_offset 7, -20
+ 647              		.cfi_offset 8, -16
+ 648              		.cfi_offset 9, -12
+ 649              		.cfi_offset 10, -8
+ 650              		.cfi_offset 14, -4
+ 651 0004 1D46     		mov	r5, r3
+ 652 0006 089E     		ldr	r6, [sp, #32]
  478:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint16_t *pdata16bits;
- 661              		.loc 1 478 3 is_stmt 1 view .LVU167
+ 653              		.loc 1 478 3 is_stmt 1 view .LVU166
  479:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint16_t uhMask;
- 662              		.loc 1 479 3 view .LVU168
+ 654              		.loc 1 479 3 view .LVU167
  480:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t tickstart;
- 663              		.loc 1 480 3 view .LVU169
+ 655              		.loc 1 480 3 view .LVU168
  481:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 664              		.loc 1 481 3 view .LVU170
+ 656              		.loc 1 481 3 view .LVU169
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 665              		.loc 1 484 3 view .LVU171
+ 657              		.loc 1 484 3 view .LVU170
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 666              		.loc 1 484 12 is_stmt 0 view .LVU172
- 667 0008 C36F     		ldr	r3, [r0, #124]
- 668              	.LVL53:
+ 658              		.loc 1 484 12 is_stmt 0 view .LVU171
+ 659 0008 C36F     		ldr	r3, [r0, #124]
+ 660              	.LVL53:
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 669              		.loc 1 484 6 view .LVU173
- 670 000a 202B     		cmp	r3, #32
- 671 000c 40F0A580 		bne	.L56
- 672 0010 0446     		mov	r4, r0
- 673 0012 0F46     		mov	r7, r1
- 674 0014 9146     		mov	r9, r2
+ 661              		.loc 1 484 6 view .LVU172
+ 662 000a 202B     		cmp	r3, #32
+ 663 000c 40F0A580 		bne	.L56
+ 664 0010 0446     		mov	r4, r0
+ 665 0012 0F46     		mov	r7, r1
+ 666 0014 9146     		mov	r9, r2
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 675              		.loc 1 486 5 is_stmt 1 view .LVU174
+ 667              		.loc 1 486 5 is_stmt 1 view .LVU173
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 676              		.loc 1 486 8 is_stmt 0 view .LVU175
- 677 0016 0029     		cmp	r1, #0
- 678 0018 00F0A280 		beq	.L57
-ARM GAS  /tmp/ccgzYV0G.s 			page 48
+ 668              		.loc 1 486 8 is_stmt 0 view .LVU174
+ 669 0016 0029     		cmp	r1, #0
+ 670 0018 00F0A280 		beq	.L57
+ 486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
+ 671              		.loc 1 486 25 discriminator 1 view .LVU175
+ 672 001c 002A     		cmp	r2, #0
+ 673 001e 00F0A180 		beq	.L58
+ 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 674              		.loc 1 491 5 is_stmt 1 view .LVU176
+ 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 675              		.loc 1 491 5 view .LVU177
+ 676 0022 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ARM GAS  /tmp/ccTgqUxq.s 			page 48
 
 
- 486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 679              		.loc 1 486 25 discriminator 1 view .LVU176
- 680 001c 002A     		cmp	r2, #0
- 681 001e 00F0A180 		beq	.L58
+ 677 0026 012B     		cmp	r3, #1
+ 678 0028 00F09E80 		beq	.L59
  491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 682              		.loc 1 491 5 is_stmt 1 view .LVU177
+ 679              		.loc 1 491 5 discriminator 2 view .LVU178
+ 680 002c 0123     		movs	r3, #1
+ 681 002e 80F87430 		strb	r3, [r0, #116]
  491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 683              		.loc 1 491 5 view .LVU178
- 684 0022 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 685 0026 012B     		cmp	r3, #1
- 686 0028 00F09E80 		beq	.L59
- 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 687              		.loc 1 491 5 discriminator 2 view .LVU179
- 688 002c 0123     		movs	r3, #1
- 689 002e 80F87430 		strb	r3, [r0, #116]
- 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 690              		.loc 1 491 5 discriminator 2 view .LVU180
+ 682              		.loc 1 491 5 discriminator 2 view .LVU179
  493:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->RxState = HAL_UART_STATE_BUSY_RX;
- 691              		.loc 1 493 5 discriminator 2 view .LVU181
+ 683              		.loc 1 493 5 discriminator 2 view .LVU180
  493:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->RxState = HAL_UART_STATE_BUSY_RX;
- 692              		.loc 1 493 22 is_stmt 0 discriminator 2 view .LVU182
- 693 0032 0022     		movs	r2, #0
- 694              	.LVL54:
+ 684              		.loc 1 493 22 is_stmt 0 discriminator 2 view .LVU181
+ 685 0032 0022     		movs	r2, #0
+ 686              	.LVL54:
  493:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->RxState = HAL_UART_STATE_BUSY_RX;
- 695              		.loc 1 493 22 discriminator 2 view .LVU183
- 696 0034 C0F88020 		str	r2, [r0, #128]
+ 687              		.loc 1 493 22 discriminator 2 view .LVU182
+ 688 0034 C0F88020 		str	r2, [r0, #128]
  494:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->ReceptionType = HAL_UART_RECEPTION_TOIDLE;
- 697              		.loc 1 494 5 is_stmt 1 discriminator 2 view .LVU184
+ 689              		.loc 1 494 5 is_stmt 1 discriminator 2 view .LVU183
  494:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->ReceptionType = HAL_UART_RECEPTION_TOIDLE;
- 698              		.loc 1 494 20 is_stmt 0 discriminator 2 view .LVU185
- 699 0038 2222     		movs	r2, #34
- 700 003a C267     		str	r2, [r0, #124]
+ 690              		.loc 1 494 20 is_stmt 0 discriminator 2 view .LVU184
+ 691 0038 2222     		movs	r2, #34
+ 692 003a C267     		str	r2, [r0, #124]
  495:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 701              		.loc 1 495 5 is_stmt 1 discriminator 2 view .LVU186
+ 693              		.loc 1 495 5 is_stmt 1 discriminator 2 view .LVU185
  495:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 702              		.loc 1 495 26 is_stmt 0 discriminator 2 view .LVU187
- 703 003c 0366     		str	r3, [r0, #96]
+ 694              		.loc 1 495 26 is_stmt 0 discriminator 2 view .LVU186
+ 695 003c 0366     		str	r3, [r0, #96]
  498:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 704              		.loc 1 498 5 is_stmt 1 discriminator 2 view .LVU188
+ 696              		.loc 1 498 5 is_stmt 1 discriminator 2 view .LVU187
  498:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 705              		.loc 1 498 17 is_stmt 0 discriminator 2 view .LVU189
- 706 003e FFF7FEFF 		bl	HAL_GetTick
- 707              	.LVL55:
+ 697              		.loc 1 498 17 is_stmt 0 discriminator 2 view .LVU188
+ 698 003e FFF7FEFF 		bl	HAL_GetTick
+ 699              	.LVL55:
  498:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 708              		.loc 1 498 17 discriminator 2 view .LVU190
- 709 0042 8046     		mov	r8, r0
- 710              	.LVL56:
+ 700              		.loc 1 498 17 discriminator 2 view .LVU189
+ 701 0042 8046     		mov	r8, r0
+ 702              	.LVL56:
  500:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->RxXferCount = Size;
- 711              		.loc 1 500 5 is_stmt 1 discriminator 2 view .LVU191
+ 703              		.loc 1 500 5 is_stmt 1 discriminator 2 view .LVU190
  500:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     huart->RxXferCount = Size;
- 712              		.loc 1 500 24 is_stmt 0 discriminator 2 view .LVU192
- 713 0044 A4F85890 		strh	r9, [r4, #88]	@ movhi
+ 704              		.loc 1 500 24 is_stmt 0 discriminator 2 view .LVU191
+ 705 0044 A4F85890 		strh	r9, [r4, #88]	@ movhi
  501:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 714              		.loc 1 501 5 is_stmt 1 discriminator 2 view .LVU193
+ 706              		.loc 1 501 5 is_stmt 1 discriminator 2 view .LVU192
  501:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 715              		.loc 1 501 24 is_stmt 0 discriminator 2 view .LVU194
- 716 0048 A4F85A90 		strh	r9, [r4, #90]	@ movhi
-ARM GAS  /tmp/ccgzYV0G.s 			page 49
+ 707              		.loc 1 501 24 is_stmt 0 discriminator 2 view .LVU193
+ 708 0048 A4F85A90 		strh	r9, [r4, #90]	@ movhi
+ 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
+ 709              		.loc 1 504 5 is_stmt 1 discriminator 2 view .LVU194
+ 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
+ 710              		.loc 1 504 5 discriminator 2 view .LVU195
+ 711 004c A368     		ldr	r3, [r4, #8]
+ 712 004e B3F5805F 		cmp	r3, #4096
+ 713 0052 06D0     		beq	.L63
+ 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
+ 714              		.loc 1 504 5 discriminator 2 view .LVU196
+ARM GAS  /tmp/ccTgqUxq.s 			page 49
 
 
+ 715 0054 A3B9     		cbnz	r3, .L43
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 717              		.loc 1 504 5 is_stmt 1 discriminator 2 view .LVU195
+ 716              		.loc 1 504 5 discriminator 5 view .LVU197
+ 717 0056 2269     		ldr	r2, [r4, #16]
+ 718 0058 72B9     		cbnz	r2, .L44
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 718              		.loc 1 504 5 discriminator 2 view .LVU196
- 719 004c A368     		ldr	r3, [r4, #8]
- 720 004e B3F5805F 		cmp	r3, #4096
- 721 0052 06D0     		beq	.L63
+ 719              		.loc 1 504 5 discriminator 7 view .LVU198
+ 720 005a FF22     		movs	r2, #255
+ 721 005c A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 722 0060 14E0     		b	.L42
+ 723              	.L63:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 722              		.loc 1 504 5 discriminator 2 view .LVU197
- 723 0054 A3B9     		cbnz	r3, .L43
+ 724              		.loc 1 504 5 discriminator 1 view .LVU199
+ 725 0062 2269     		ldr	r2, [r4, #16]
+ 726 0064 22B9     		cbnz	r2, .L41
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 724              		.loc 1 504 5 discriminator 5 view .LVU198
- 725 0056 2269     		ldr	r2, [r4, #16]
- 726 0058 72B9     		cbnz	r2, .L44
+ 727              		.loc 1 504 5 discriminator 3 view .LVU200
+ 728 0066 40F2FF12 		movw	r2, #511
+ 729 006a A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 730 006e 0DE0     		b	.L42
+ 731              	.L41:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 727              		.loc 1 504 5 discriminator 7 view .LVU199
- 728 005a FF22     		movs	r2, #255
- 729 005c A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 730 0060 14E0     		b	.L42
- 731              	.L63:
+ 732              		.loc 1 504 5 discriminator 4 view .LVU201
+ 733 0070 FF22     		movs	r2, #255
+ 734 0072 A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 735 0076 09E0     		b	.L42
+ 736              	.L44:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 732              		.loc 1 504 5 discriminator 1 view .LVU200
- 733 0062 2269     		ldr	r2, [r4, #16]
- 734 0064 22B9     		cbnz	r2, .L41
+ 737              		.loc 1 504 5 discriminator 8 view .LVU202
+ 738 0078 7F22     		movs	r2, #127
+ 739 007a A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 740 007e 05E0     		b	.L42
+ 741              	.L43:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 735              		.loc 1 504 5 discriminator 3 view .LVU201
- 736 0066 40F2FF12 		movw	r2, #511
- 737 006a A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 738 006e 0DE0     		b	.L42
- 739              	.L41:
+ 742              		.loc 1 504 5 discriminator 6 view .LVU203
+ 743 0080 B3F1805F 		cmp	r3, #268435456
+ 744 0084 0ED0     		beq	.L64
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 740              		.loc 1 504 5 discriminator 4 view .LVU202
- 741 0070 FF22     		movs	r2, #255
- 742 0072 A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 743 0076 09E0     		b	.L42
- 744              	.L44:
+ 745              		.loc 1 504 5 discriminator 10 view .LVU204
+ 746 0086 0022     		movs	r2, #0
+ 747 0088 A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 748              	.L42:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 745              		.loc 1 504 5 discriminator 8 view .LVU203
- 746 0078 7F22     		movs	r2, #127
- 747 007a A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 748 007e 05E0     		b	.L42
- 749              	.L43:
- 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 750              		.loc 1 504 5 discriminator 6 view .LVU204
- 751 0080 B3F1805F 		cmp	r3, #268435456
- 752 0084 0ED0     		beq	.L64
- 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 753              		.loc 1 504 5 discriminator 10 view .LVU205
- 754 0086 0022     		movs	r2, #0
- 755 0088 A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 756              	.L42:
- 504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 757              		.loc 1 504 5 discriminator 13 view .LVU206
+ 749              		.loc 1 504 5 discriminator 13 view .LVU205
  505:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 758              		.loc 1 505 5 discriminator 13 view .LVU207
+ 750              		.loc 1 505 5 discriminator 13 view .LVU206
  505:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 759              		.loc 1 505 12 is_stmt 0 discriminator 13 view .LVU208
-ARM GAS  /tmp/ccgzYV0G.s 			page 50
-
-
- 760 008c B4F85C90 		ldrh	r9, [r4, #92]
- 761              	.LVL57:
+ 751              		.loc 1 505 12 is_stmt 0 discriminator 13 view .LVU207
+ 752 008c B4F85C90 		ldrh	r9, [r4, #92]
+ 753              	.LVL57:
  508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 762              		.loc 1 508 5 is_stmt 1 discriminator 13 view .LVU209
+ 754              		.loc 1 508 5 is_stmt 1 discriminator 13 view .LVU208
  508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 763              		.loc 1 508 8 is_stmt 0 discriminator 13 view .LVU210
- 764 0090 B3F5805F 		cmp	r3, #4096
- 765 0094 10D0     		beq	.L65
+ 755              		.loc 1 508 8 is_stmt 0 discriminator 13 view .LVU209
+ 756 0090 B3F5805F 		cmp	r3, #4096
+ 757 0094 10D0     		beq	.L65
  516:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 766              		.loc 1 516 19 view .LVU211
- 767 0096 4FF0000A 		mov	r10, #0
- 768              	.LVL58:
- 769              	.L47:
+ARM GAS  /tmp/ccTgqUxq.s 			page 50
+
+
+ 758              		.loc 1 516 19 view .LVU210
+ 759 0096 4FF0000A 		mov	r10, #0
+ 760              	.LVL58:
+ 761              	.L47:
  519:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 770              		.loc 1 519 5 is_stmt 1 view .LVU212
+ 762              		.loc 1 519 5 is_stmt 1 view .LVU211
  519:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 771              		.loc 1 519 5 view .LVU213
- 772 009a 0023     		movs	r3, #0
- 773 009c 84F87430 		strb	r3, [r4, #116]
+ 763              		.loc 1 519 5 view .LVU212
+ 764 009a 0023     		movs	r3, #0
+ 765 009c 84F87430 		strb	r3, [r4, #116]
  519:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 774              		.loc 1 519 5 view .LVU214
+ 766              		.loc 1 519 5 view .LVU213
  522:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 775              		.loc 1 522 5 view .LVU215
+ 767              		.loc 1 522 5 view .LVU214
  522:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 776              		.loc 1 522 12 is_stmt 0 view .LVU216
- 777 00a0 2B80     		strh	r3, [r5]	@ movhi
+ 768              		.loc 1 522 12 is_stmt 0 view .LVU215
+ 769 00a0 2B80     		strh	r3, [r5]	@ movhi
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 778              		.loc 1 525 5 is_stmt 1 view .LVU217
+ 770              		.loc 1 525 5 is_stmt 1 view .LVU216
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 779              		.loc 1 525 11 is_stmt 0 view .LVU218
- 780 00a2 27E0     		b	.L48
- 781              	.LVL59:
- 782              	.L64:
+ 771              		.loc 1 525 11 is_stmt 0 view .LVU217
+ 772 00a2 27E0     		b	.L48
+ 773              	.LVL59:
+ 774              	.L64:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 783              		.loc 1 504 5 is_stmt 1 discriminator 9 view .LVU219
- 784 00a4 2269     		ldr	r2, [r4, #16]
- 785 00a6 1AB9     		cbnz	r2, .L46
+ 775              		.loc 1 504 5 is_stmt 1 discriminator 9 view .LVU218
+ 776 00a4 2269     		ldr	r2, [r4, #16]
+ 777 00a6 1AB9     		cbnz	r2, .L46
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 786              		.loc 1 504 5 discriminator 11 view .LVU220
- 787 00a8 7F22     		movs	r2, #127
- 788 00aa A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 789 00ae EDE7     		b	.L42
- 790              	.L46:
+ 778              		.loc 1 504 5 discriminator 11 view .LVU219
+ 779 00a8 7F22     		movs	r2, #127
+ 780 00aa A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 781 00ae EDE7     		b	.L42
+ 782              	.L46:
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
- 791              		.loc 1 504 5 discriminator 12 view .LVU221
- 792 00b0 3F22     		movs	r2, #63
- 793 00b2 A4F85C20 		strh	r2, [r4, #92]	@ movhi
- 794 00b6 E9E7     		b	.L42
- 795              	.LVL60:
- 796              	.L65:
+ 783              		.loc 1 504 5 discriminator 12 view .LVU220
+ 784 00b0 3F22     		movs	r2, #63
+ 785 00b2 A4F85C20 		strh	r2, [r4, #92]	@ movhi
+ 786 00b6 E9E7     		b	.L42
+ 787              	.LVL60:
+ 788              	.L65:
  508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 797              		.loc 1 508 71 is_stmt 0 discriminator 1 view .LVU222
- 798 00b8 2369     		ldr	r3, [r4, #16]
+ 789              		.loc 1 508 71 is_stmt 0 discriminator 1 view .LVU221
+ 790 00b8 2369     		ldr	r3, [r4, #16]
  508:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 799              		.loc 1 508 56 discriminator 1 view .LVU223
- 800 00ba 13B1     		cbz	r3, .L61
+ 791              		.loc 1 508 56 discriminator 1 view .LVU222
+ 792 00ba 13B1     		cbz	r3, .L61
  516:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
-ARM GAS  /tmp/ccgzYV0G.s 			page 51
-
-
- 801              		.loc 1 516 19 view .LVU224
- 802 00bc 4FF0000A 		mov	r10, #0
- 803 00c0 EBE7     		b	.L47
- 804              	.L61:
+ 793              		.loc 1 516 19 view .LVU223
+ 794 00bc 4FF0000A 		mov	r10, #0
+ 795 00c0 EBE7     		b	.L47
+ 796              	.L61:
  511:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 805              		.loc 1 511 19 view .LVU225
- 806 00c2 BA46     		mov	r10, r7
+ 797              		.loc 1 511 19 view .LVU224
+ 798 00c2 BA46     		mov	r10, r7
  510:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       pdata16bits = (uint16_t *) pData;
- 807              		.loc 1 510 19 view .LVU226
- 808 00c4 0027     		movs	r7, #0
- 809              	.LVL61:
+ 799              		.loc 1 510 19 view .LVU225
+ARM GAS  /tmp/ccTgqUxq.s 			page 51
+
+
+ 800 00c4 0027     		movs	r7, #0
+ 801              	.LVL61:
  510:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       pdata16bits = (uint16_t *) pData;
- 810              		.loc 1 510 19 view .LVU227
- 811 00c6 E8E7     		b	.L47
- 812              	.LVL62:
- 813              	.L68:
+ 802              		.loc 1 510 19 view .LVU226
+ 803 00c6 E8E7     		b	.L47
+ 804              	.LVL62:
+ 805              	.L68:
  537:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 814              		.loc 1 537 11 is_stmt 1 view .LVU228
+ 806              		.loc 1 537 11 is_stmt 1 view .LVU227
  537:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 815              		.loc 1 537 26 is_stmt 0 view .LVU229
- 816 00c8 2023     		movs	r3, #32
- 817 00ca E367     		str	r3, [r4, #124]
+ 807              		.loc 1 537 26 is_stmt 0 view .LVU228
+ 808 00c8 2023     		movs	r3, #32
+ 809 00ca E367     		str	r3, [r4, #124]
  539:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 818              		.loc 1 539 11 is_stmt 1 view .LVU230
+ 810              		.loc 1 539 11 is_stmt 1 view .LVU229
  539:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 819              		.loc 1 539 18 is_stmt 0 view .LVU231
- 820 00cc 0020     		movs	r0, #0
- 821 00ce 45E0     		b	.L39
- 822              	.L69:
+ 811              		.loc 1 539 18 is_stmt 0 view .LVU230
+ 812 00cc 0020     		movs	r0, #0
+ 813 00ce 45E0     		b	.L39
+ 814              	.L69:
  548:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata16bits++;
- 823              		.loc 1 548 11 is_stmt 1 view .LVU232
+ 815              		.loc 1 548 11 is_stmt 1 view .LVU231
  548:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata16bits++;
- 824              		.loc 1 548 52 is_stmt 0 view .LVU233
- 825 00d0 9B8C     		ldrh	r3, [r3, #36]
+ 816              		.loc 1 548 52 is_stmt 0 view .LVU232
+ 817 00d0 9B8C     		ldrh	r3, [r3, #36]
  548:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata16bits++;
- 826              		.loc 1 548 26 view .LVU234
- 827 00d2 09EA0303 		and	r3, r9, r3
+ 818              		.loc 1 548 26 view .LVU233
+ 819 00d2 09EA0303 		and	r3, r9, r3
  548:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata16bits++;
- 828              		.loc 1 548 24 view .LVU235
- 829 00d6 2AF8023B 		strh	r3, [r10], #2	@ movhi
- 830              	.LVL63:
+ 820              		.loc 1 548 24 view .LVU234
+ 821 00d6 2AF8023B 		strh	r3, [r10], #2	@ movhi
+ 822              	.LVL63:
  549:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 831              		.loc 1 549 11 is_stmt 1 view .LVU236
- 832              	.L52:
+ 823              		.loc 1 549 11 is_stmt 1 view .LVU235
+ 824              	.L52:
  557:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         huart->RxXferCount--;
- 833              		.loc 1 557 9 view .LVU237
+ 825              		.loc 1 557 9 view .LVU236
  557:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         huart->RxXferCount--;
- 834              		.loc 1 557 16 is_stmt 0 view .LVU238
- 835 00da 2B88     		ldrh	r3, [r5]
- 836 00dc 0133     		adds	r3, r3, #1
- 837 00de 2B80     		strh	r3, [r5]	@ movhi
+ 826              		.loc 1 557 16 is_stmt 0 view .LVU237
+ 827 00da 2B88     		ldrh	r3, [r5]
+ 828 00dc 0133     		adds	r3, r3, #1
+ 829 00de 2B80     		strh	r3, [r5]	@ movhi
  558:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 838              		.loc 1 558 9 is_stmt 1 view .LVU239
+ 830              		.loc 1 558 9 is_stmt 1 view .LVU238
  558:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 839              		.loc 1 558 14 is_stmt 0 view .LVU240
- 840 00e0 B4F85A30 		ldrh	r3, [r4, #90]
- 841 00e4 9BB2     		uxth	r3, r3
-ARM GAS  /tmp/ccgzYV0G.s 			page 52
+ 831              		.loc 1 558 14 is_stmt 0 view .LVU239
+ 832 00e0 B4F85A30 		ldrh	r3, [r4, #90]
+ 833 00e4 9BB2     		uxth	r3, r3
+ 558:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
+ 834              		.loc 1 558 27 view .LVU240
+ 835 00e6 013B     		subs	r3, r3, #1
+ 836 00e8 9BB2     		uxth	r3, r3
+ 837 00ea A4F85A30 		strh	r3, [r4, #90]	@ movhi
+ 838              	.L50:
+ 562:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
+ 839              		.loc 1 562 7 is_stmt 1 view .LVU241
+ 562:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
+ARM GAS  /tmp/ccTgqUxq.s 			page 52
 
 
- 558:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 842              		.loc 1 558 27 view .LVU241
- 843 00e6 013B     		subs	r3, r3, #1
- 844 00e8 9BB2     		uxth	r3, r3
- 845 00ea A4F85A30 		strh	r3, [r4, #90]	@ movhi
- 846              	.L50:
- 562:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 847              		.loc 1 562 7 is_stmt 1 view .LVU242
- 562:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 848              		.loc 1 562 10 is_stmt 0 view .LVU243
- 849 00ee B6F1FF3F 		cmp	r6, #-1
- 850 00f2 1BD1     		bne	.L66
- 851              	.L48:
+ 840              		.loc 1 562 10 is_stmt 0 view .LVU242
+ 841 00ee B6F1FF3F 		cmp	r6, #-1
+ 842 00f2 1BD1     		bne	.L66
+ 843              	.L48:
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 852              		.loc 1 525 11 is_stmt 1 view .LVU244
+ 844              		.loc 1 525 11 is_stmt 1 view .LVU243
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 853              		.loc 1 525 17 is_stmt 0 view .LVU245
- 854 00f4 B4F85A20 		ldrh	r2, [r4, #90]
- 855 00f8 92B2     		uxth	r2, r2
+ 845              		.loc 1 525 17 is_stmt 0 view .LVU244
+ 846 00f4 B4F85A20 		ldrh	r2, [r4, #90]
+ 847 00f8 92B2     		uxth	r2, r2
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 856              		.loc 1 525 11 view .LVU246
- 857 00fa 1AB3     		cbz	r2, .L67
+ 848              		.loc 1 525 11 view .LVU245
+ 849 00fa 1AB3     		cbz	r2, .L67
  528:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 858              		.loc 1 528 7 is_stmt 1 view .LVU247
+ 850              		.loc 1 528 7 is_stmt 1 view .LVU246
  528:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 859              		.loc 1 528 11 is_stmt 0 view .LVU248
- 860 00fc 2368     		ldr	r3, [r4]
- 861 00fe DA69     		ldr	r2, [r3, #28]
+ 851              		.loc 1 528 11 is_stmt 0 view .LVU247
+ 852 00fc 2368     		ldr	r3, [r4]
+ 853 00fe DA69     		ldr	r2, [r3, #28]
  528:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 862              		.loc 1 528 10 view .LVU249
- 863 0100 12F0100F 		tst	r2, #16
- 864 0104 04D0     		beq	.L49
+ 854              		.loc 1 528 10 view .LVU248
+ 855 0100 12F0100F 		tst	r2, #16
+ 856 0104 04D0     		beq	.L49
  531:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 865              		.loc 1 531 9 is_stmt 1 view .LVU250
- 866 0106 1022     		movs	r2, #16
- 867 0108 1A62     		str	r2, [r3, #32]
+ 857              		.loc 1 531 9 is_stmt 1 view .LVU249
+ 858 0106 1022     		movs	r2, #16
+ 859 0108 1A62     		str	r2, [r3, #32]
  535:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 868              		.loc 1 535 9 view .LVU251
+ 860              		.loc 1 535 9 view .LVU250
  535:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 869              		.loc 1 535 13 is_stmt 0 view .LVU252
- 870 010a 2B88     		ldrh	r3, [r5]
+ 861              		.loc 1 535 13 is_stmt 0 view .LVU251
+ 862 010a 2B88     		ldrh	r3, [r5]
  535:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 871              		.loc 1 535 12 view .LVU253
- 872 010c 002B     		cmp	r3, #0
- 873 010e DBD1     		bne	.L68
- 874              	.L49:
+ 863              		.loc 1 535 12 view .LVU252
+ 864 010c 002B     		cmp	r3, #0
+ 865 010e DBD1     		bne	.L68
+ 866              	.L49:
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 875              		.loc 1 544 7 is_stmt 1 view .LVU254
+ 867              		.loc 1 544 7 is_stmt 1 view .LVU253
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 876              		.loc 1 544 11 is_stmt 0 view .LVU255
- 877 0110 2368     		ldr	r3, [r4]
- 878 0112 DA69     		ldr	r2, [r3, #28]
+ 868              		.loc 1 544 11 is_stmt 0 view .LVU254
+ 869 0110 2368     		ldr	r3, [r4]
+ 870 0112 DA69     		ldr	r2, [r3, #28]
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 879              		.loc 1 544 10 view .LVU256
- 880 0114 12F0200F 		tst	r2, #32
- 881 0118 E9D0     		beq	.L50
+ 871              		.loc 1 544 10 view .LVU255
+ 872 0114 12F0200F 		tst	r2, #32
+ 873 0118 E9D0     		beq	.L50
  546:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
-ARM GAS  /tmp/ccgzYV0G.s 			page 53
-
-
- 882              		.loc 1 546 9 is_stmt 1 view .LVU257
+ 874              		.loc 1 546 9 is_stmt 1 view .LVU256
  546:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 883              		.loc 1 546 12 is_stmt 0 view .LVU258
- 884 011a 002F     		cmp	r7, #0
- 885 011c D8D0     		beq	.L69
+ 875              		.loc 1 546 12 is_stmt 0 view .LVU257
+ 876 011a 002F     		cmp	r7, #0
+ 877 011c D8D0     		beq	.L69
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
- 886              		.loc 1 553 11 is_stmt 1 view .LVU259
+ 878              		.loc 1 553 11 is_stmt 1 view .LVU258
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
- 887              		.loc 1 553 50 is_stmt 0 view .LVU260
- 888 011e 9A8C     		ldrh	r2, [r3, #36]
+ 879              		.loc 1 553 50 is_stmt 0 view .LVU259
+ARM GAS  /tmp/ccTgqUxq.s 			page 53
+
+
+ 880 011e 9A8C     		ldrh	r2, [r3, #36]
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
- 889              		.loc 1 553 58 view .LVU261
- 890 0120 5FFA89F3 		uxtb	r3, r9
+ 881              		.loc 1 553 58 view .LVU260
+ 882 0120 5FFA89F3 		uxtb	r3, r9
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
- 891              		.loc 1 553 25 view .LVU262
- 892 0124 1340     		ands	r3, r3, r2
+ 883              		.loc 1 553 25 view .LVU261
+ 884 0124 1340     		ands	r3, r3, r2
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
- 893              		.loc 1 553 23 view .LVU263
- 894 0126 07F8013B 		strb	r3, [r7], #1
- 895              	.LVL64:
+ 885              		.loc 1 553 23 view .LVU262
+ 886 0126 07F8013B 		strb	r3, [r7], #1
+ 887              	.LVL64:
  554:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 896              		.loc 1 554 11 is_stmt 1 view .LVU264
+ 888              		.loc 1 554 11 is_stmt 1 view .LVU263
  554:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 897              		.loc 1 554 11 is_stmt 0 view .LVU265
- 898 012a D6E7     		b	.L52
- 899              	.L66:
+ 889              		.loc 1 554 11 is_stmt 0 view .LVU264
+ 890 012a D6E7     		b	.L52
+ 891              	.L66:
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 900              		.loc 1 564 9 is_stmt 1 view .LVU266
+ 892              		.loc 1 564 9 is_stmt 1 view .LVU265
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 901              		.loc 1 564 15 is_stmt 0 view .LVU267
- 902 012c FFF7FEFF 		bl	HAL_GetTick
- 903              	.LVL65:
+ 893              		.loc 1 564 15 is_stmt 0 view .LVU266
+ 894 012c FFF7FEFF 		bl	HAL_GetTick
+ 895              	.LVL65:
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 904              		.loc 1 564 29 view .LVU268
- 905 0130 A0EB0800 		sub	r0, r0, r8
+ 896              		.loc 1 564 29 view .LVU267
+ 897 0130 A0EB0800 		sub	r0, r0, r8
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 906              		.loc 1 564 12 view .LVU269
- 907 0134 B042     		cmp	r0, r6
- 908 0136 01D8     		bhi	.L54
+ 898              		.loc 1 564 12 view .LVU268
+ 899 0134 B042     		cmp	r0, r6
+ 900 0136 01D8     		bhi	.L54
  564:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         {
- 909              		.loc 1 564 53 discriminator 1 view .LVU270
- 910 0138 002E     		cmp	r6, #0
- 911 013a DBD1     		bne	.L48
- 912              	.L54:
+ 901              		.loc 1 564 53 discriminator 1 view .LVU269
+ 902 0138 002E     		cmp	r6, #0
+ 903 013a DBD1     		bne	.L48
+ 904              	.L54:
  566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 913              		.loc 1 566 11 is_stmt 1 view .LVU271
+ 905              		.loc 1 566 11 is_stmt 1 view .LVU270
  566:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 914              		.loc 1 566 26 is_stmt 0 view .LVU272
- 915 013c 2023     		movs	r3, #32
- 916 013e E367     		str	r3, [r4, #124]
+ 906              		.loc 1 566 26 is_stmt 0 view .LVU271
+ 907 013c 2023     		movs	r3, #32
+ 908 013e E367     		str	r3, [r4, #124]
  568:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 917              		.loc 1 568 11 is_stmt 1 view .LVU273
+ 909              		.loc 1 568 11 is_stmt 1 view .LVU272
  568:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         }
- 918              		.loc 1 568 18 is_stmt 0 view .LVU274
- 919 0140 0320     		movs	r0, #3
- 920 0142 0BE0     		b	.L39
- 921              	.L67:
-ARM GAS  /tmp/ccgzYV0G.s 			page 54
+ 910              		.loc 1 568 18 is_stmt 0 view .LVU273
+ 911 0140 0320     		movs	r0, #3
+ 912 0142 0BE0     		b	.L39
+ 913              	.L67:
+ 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
+ 914              		.loc 1 574 5 is_stmt 1 view .LVU274
+ 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
+ 915              		.loc 1 574 19 is_stmt 0 view .LVU275
+ 916 0144 B4F85830 		ldrh	r3, [r4, #88]
+ 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
+ 917              		.loc 1 574 39 view .LVU276
+ 918 0148 B4F85A20 		ldrh	r2, [r4, #90]
+ 919 014c 92B2     		uxth	r2, r2
+ARM GAS  /tmp/ccTgqUxq.s 			page 54
 
 
  574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
- 922              		.loc 1 574 5 is_stmt 1 view .LVU275
+ 920              		.loc 1 574 32 view .LVU277
+ 921 014e 9B1A     		subs	r3, r3, r2
  574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
- 923              		.loc 1 574 19 is_stmt 0 view .LVU276
- 924 0144 B4F85830 		ldrh	r3, [r4, #88]
- 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
- 925              		.loc 1 574 39 view .LVU277
- 926 0148 B4F85A20 		ldrh	r2, [r4, #90]
- 927 014c 92B2     		uxth	r2, r2
- 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
- 928              		.loc 1 574 32 view .LVU278
- 929 014e 9B1A     		subs	r3, r3, r2
- 574:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     /* At end of Rx process, restore huart->RxState to Ready */
- 930              		.loc 1 574 12 view .LVU279
- 931 0150 2B80     		strh	r3, [r5]	@ movhi
+ 922              		.loc 1 574 12 view .LVU278
+ 923 0150 2B80     		strh	r3, [r5]	@ movhi
  576:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 932              		.loc 1 576 5 is_stmt 1 view .LVU280
+ 924              		.loc 1 576 5 is_stmt 1 view .LVU279
  576:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 933              		.loc 1 576 20 is_stmt 0 view .LVU281
- 934 0152 2023     		movs	r3, #32
- 935 0154 E367     		str	r3, [r4, #124]
+ 925              		.loc 1 576 20 is_stmt 0 view .LVU280
+ 926 0152 2023     		movs	r3, #32
+ 927 0154 E367     		str	r3, [r4, #124]
  578:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 936              		.loc 1 578 5 is_stmt 1 view .LVU282
+ 928              		.loc 1 578 5 is_stmt 1 view .LVU281
  578:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 937              		.loc 1 578 12 is_stmt 0 view .LVU283
- 938 0156 0020     		movs	r0, #0
- 939 0158 00E0     		b	.L39
- 940              	.LVL66:
- 941              	.L56:
+ 929              		.loc 1 578 12 is_stmt 0 view .LVU282
+ 930 0156 0020     		movs	r0, #0
+ 931 0158 00E0     		b	.L39
+ 932              	.LVL66:
+ 933              	.L56:
  582:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 942              		.loc 1 582 12 view .LVU284
- 943 015a 0220     		movs	r0, #2
- 944              	.LVL67:
- 945              	.L39:
+ 934              		.loc 1 582 12 view .LVU283
+ 935 015a 0220     		movs	r0, #2
+ 936              	.LVL67:
+ 937              	.L39:
  584:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 946              		.loc 1 584 1 view .LVU285
- 947 015c BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
- 948              	.LVL68:
- 949              	.L57:
+ 938              		.loc 1 584 1 view .LVU284
+ 939 015c BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
+ 940              	.LVL68:
+ 941              	.L57:
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 950              		.loc 1 488 15 view .LVU286
- 951 0160 0120     		movs	r0, #1
- 952              	.LVL69:
+ 942              		.loc 1 488 15 view .LVU285
+ 943 0160 0120     		movs	r0, #1
+ 944              	.LVL69:
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 953              		.loc 1 488 15 view .LVU287
- 954 0162 FBE7     		b	.L39
- 955              	.LVL70:
- 956              	.L58:
+ 945              		.loc 1 488 15 view .LVU286
+ 946 0162 FBE7     		b	.L39
+ 947              	.LVL70:
+ 948              	.L58:
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 957              		.loc 1 488 15 view .LVU288
- 958 0164 0120     		movs	r0, #1
- 959              	.LVL71:
+ 949              		.loc 1 488 15 view .LVU287
+ 950 0164 0120     		movs	r0, #1
+ 951              	.LVL71:
  488:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 960              		.loc 1 488 15 view .LVU289
- 961 0166 F9E7     		b	.L39
- 962              	.LVL72:
- 963              	.L59:
-ARM GAS  /tmp/ccgzYV0G.s 			page 55
+ 952              		.loc 1 488 15 view .LVU288
+ 953 0166 F9E7     		b	.L39
+ 954              	.LVL72:
+ 955              	.L59:
+ 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 956              		.loc 1 491 5 view .LVU289
+ 957 0168 0220     		movs	r0, #2
+ 958              	.LVL73:
+ 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 959              		.loc 1 491 5 view .LVU290
+ 960 016a F7E7     		b	.L39
+ 961              		.cfi_endproc
+ 962              	.LFE129:
+ARM GAS  /tmp/ccTgqUxq.s 			page 55
 
 
- 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 964              		.loc 1 491 5 view .LVU290
- 965 0168 0220     		movs	r0, #2
- 966              	.LVL73:
- 491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 967              		.loc 1 491 5 view .LVU291
- 968 016a F7E7     		b	.L39
- 969              		.cfi_endproc
- 970              	.LFE129:
- 972              		.section	.text.HAL_UARTEx_ReceiveToIdle_IT,"ax",%progbits
- 973              		.align	1
- 974              		.global	HAL_UARTEx_ReceiveToIdle_IT
- 975              		.syntax unified
- 976              		.thumb
- 977              		.thumb_func
- 978              		.fpu fpv4-sp-d16
- 980              	HAL_UARTEx_ReceiveToIdle_IT:
- 981              	.LVL74:
- 982              	.LFB130:
+ 964              		.section	.text.HAL_UARTEx_ReceiveToIdle_IT,"ax",%progbits
+ 965              		.align	1
+ 966              		.global	HAL_UARTEx_ReceiveToIdle_IT
+ 967              		.syntax unified
+ 968              		.thumb
+ 969              		.thumb_func
+ 971              	HAL_UARTEx_ReceiveToIdle_IT:
+ 972              	.LVL74:
+ 973              	.LFB130:
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
- 983              		.loc 1 601 1 is_stmt 1 view -0
- 984              		.cfi_startproc
- 985              		@ args = 0, pretend = 0, frame = 0
- 986              		@ frame_needed = 0, uses_anonymous_args = 0
+ 974              		.loc 1 601 1 is_stmt 1 view -0
+ 975              		.cfi_startproc
+ 976              		@ args = 0, pretend = 0, frame = 0
+ 977              		@ frame_needed = 0, uses_anonymous_args = 0
  602:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 987              		.loc 1 602 3 view .LVU293
+ 978              		.loc 1 602 3 view .LVU292
  605:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 988              		.loc 1 605 3 view .LVU294
+ 979              		.loc 1 605 3 view .LVU293
  605:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 989              		.loc 1 605 12 is_stmt 0 view .LVU295
- 990 0000 C36F     		ldr	r3, [r0, #124]
+ 980              		.loc 1 605 12 is_stmt 0 view .LVU294
+ 981 0000 C36F     		ldr	r3, [r0, #124]
  605:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 991              		.loc 1 605 6 view .LVU296
- 992 0002 202B     		cmp	r3, #32
- 993 0004 20D1     		bne	.L74
+ 982              		.loc 1 605 6 view .LVU295
+ 983 0002 202B     		cmp	r3, #32
+ 984 0004 20D1     		bne	.L74
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
- 994              		.loc 1 601 1 view .LVU297
- 995 0006 10B5     		push	{r4, lr}
- 996              	.LCFI11:
- 997              		.cfi_def_cfa_offset 8
- 998              		.cfi_offset 4, -8
- 999              		.cfi_offset 14, -4
- 1000 0008 0446     		mov	r4, r0
+ 985              		.loc 1 601 1 view .LVU296
+ 986 0006 10B5     		push	{r4, lr}
+ 987              	.LCFI11:
+ 988              		.cfi_def_cfa_offset 8
+ 989              		.cfi_offset 4, -8
+ 990              		.cfi_offset 14, -4
+ 991 0008 0446     		mov	r4, r0
  607:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1001              		.loc 1 607 5 is_stmt 1 view .LVU298
+ 992              		.loc 1 607 5 is_stmt 1 view .LVU297
  607:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1002              		.loc 1 607 8 is_stmt 0 view .LVU299
- 1003 000a F9B1     		cbz	r1, .L75
+ 993              		.loc 1 607 8 is_stmt 0 view .LVU298
+ 994 000a F9B1     		cbz	r1, .L75
  607:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1004              		.loc 1 607 25 discriminator 1 view .LVU300
- 1005 000c 02B3     		cbz	r2, .L76
+ 995              		.loc 1 607 25 discriminator 1 view .LVU299
+ 996 000c 02B3     		cbz	r2, .L76
  612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1006              		.loc 1 612 5 is_stmt 1 view .LVU301
+ 997              		.loc 1 612 5 is_stmt 1 view .LVU300
  612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1007              		.loc 1 612 5 view .LVU302
- 1008 000e 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 1009 0012 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccgzYV0G.s 			page 56
+ 998              		.loc 1 612 5 view .LVU301
+ 999 000e 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ 1000 0012 012B     		cmp	r3, #1
+ 1001 0014 1ED0     		beq	.L77
+ 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1002              		.loc 1 612 5 discriminator 2 view .LVU302
+ 1003 0016 0123     		movs	r3, #1
+ 1004 0018 80F87430 		strb	r3, [r0, #116]
+ 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1005              		.loc 1 612 5 discriminator 2 view .LVU303
+ 615:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1006              		.loc 1 615 5 discriminator 2 view .LVU304
+ 615:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ARM GAS  /tmp/ccTgqUxq.s 			page 56
 
 
- 1010 0014 1ED0     		beq	.L77
- 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1011              		.loc 1 612 5 discriminator 2 view .LVU303
- 1012 0016 0123     		movs	r3, #1
- 1013 0018 80F87430 		strb	r3, [r0, #116]
- 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1014              		.loc 1 612 5 discriminator 2 view .LVU304
- 615:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1015              		.loc 1 615 5 discriminator 2 view .LVU305
- 615:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1016              		.loc 1 615 26 is_stmt 0 discriminator 2 view .LVU306
- 1017 001c 0366     		str	r3, [r0, #96]
+ 1007              		.loc 1 615 26 is_stmt 0 discriminator 2 view .LVU305
+ 1008 001c 0366     		str	r3, [r0, #96]
  617:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1018              		.loc 1 617 5 is_stmt 1 discriminator 2 view .LVU307
+ 1009              		.loc 1 617 5 is_stmt 1 discriminator 2 view .LVU306
  617:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1019              		.loc 1 617 15 is_stmt 0 discriminator 2 view .LVU308
- 1020 001e FFF7FEFF 		bl	UART_Start_Receive_IT
- 1021              	.LVL75:
+ 1010              		.loc 1 617 15 is_stmt 0 discriminator 2 view .LVU307
+ 1011 001e FFF7FEFF 		bl	UART_Start_Receive_IT
+ 1012              	.LVL75:
  620:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1022              		.loc 1 620 5 is_stmt 1 discriminator 2 view .LVU309
+ 1013              		.loc 1 620 5 is_stmt 1 discriminator 2 view .LVU308
  620:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1023              		.loc 1 620 8 is_stmt 0 discriminator 2 view .LVU310
- 1024 0022 B0B9     		cbnz	r0, .L71
+ 1014              		.loc 1 620 8 is_stmt 0 discriminator 2 view .LVU309
+ 1015 0022 B0B9     		cbnz	r0, .L71
  622:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1025              		.loc 1 622 7 is_stmt 1 view .LVU311
+ 1016              		.loc 1 622 7 is_stmt 1 view .LVU310
  622:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1026              		.loc 1 622 16 is_stmt 0 view .LVU312
- 1027 0024 236E     		ldr	r3, [r4, #96]
+ 1017              		.loc 1 622 16 is_stmt 0 view .LVU311
+ 1018 0024 236E     		ldr	r3, [r4, #96]
  622:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1028              		.loc 1 622 10 view .LVU313
- 1029 0026 012B     		cmp	r3, #1
- 1030 0028 01D0     		beq	.L83
+ 1019              		.loc 1 622 10 view .LVU312
+ 1020 0026 012B     		cmp	r3, #1
+ 1021 0028 01D0     		beq	.L83
  633:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1031              		.loc 1 633 16 view .LVU314
- 1032 002a 0120     		movs	r0, #1
- 1033              	.LVL76:
+ 1022              		.loc 1 633 16 view .LVU313
+ 1023 002a 0120     		movs	r0, #1
+ 1024              	.LVL76:
  637:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1034              		.loc 1 637 5 is_stmt 1 view .LVU315
+ 1025              		.loc 1 637 5 is_stmt 1 view .LVU314
  637:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1035              		.loc 1 637 12 is_stmt 0 view .LVU316
- 1036 002c 11E0     		b	.L71
- 1037              	.LVL77:
- 1038              	.L83:
+ 1026              		.loc 1 637 12 is_stmt 0 view .LVU315
+ 1027 002c 11E0     		b	.L71
+ 1028              	.LVL77:
+ 1029              	.L83:
  624:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         ATOMIC_SET_BIT(huart->Instance->CR1, USART_CR1_IDLEIE);
- 1039              		.loc 1 624 9 is_stmt 1 view .LVU317
- 1040 002e 2368     		ldr	r3, [r4]
- 1041 0030 1022     		movs	r2, #16
- 1042 0032 1A62     		str	r2, [r3, #32]
- 1043              	.L73:
+ 1030              		.loc 1 624 9 is_stmt 1 view .LVU316
+ 1031 002e 2368     		ldr	r3, [r4]
+ 1032 0030 1022     		movs	r2, #16
+ 1033 0032 1A62     		str	r2, [r3, #32]
+ 1034              	.L73:
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1044              		.loc 1 625 9 discriminator 1 view .LVU318
- 1045              	.LBB32:
+ 1035              		.loc 1 625 9 discriminator 1 view .LVU317
+ 1036              	.LBB32:
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1046              		.loc 1 625 9 discriminator 1 view .LVU319
+ 1037              		.loc 1 625 9 discriminator 1 view .LVU318
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1047              		.loc 1 625 9 discriminator 1 view .LVU320
+ 1038              		.loc 1 625 9 discriminator 1 view .LVU319
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
-ARM GAS  /tmp/ccgzYV0G.s 			page 57
-
-
- 1048              		.loc 1 625 9 discriminator 1 view .LVU321
- 1049 0034 2268     		ldr	r2, [r4]
- 1050              	.LVL78:
- 1051              	.LBB33:
- 1052              	.LBI33:
+ 1039              		.loc 1 625 9 discriminator 1 view .LVU320
+ 1040 0034 2268     		ldr	r2, [r4]
+ 1041              	.LVL78:
+ 1042              	.LBB33:
+ 1043              	.LBI33:
 1068:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 1053              		.loc 2 1068 31 discriminator 1 view .LVU322
- 1054              	.LBB34:
+ 1044              		.loc 2 1068 31 discriminator 1 view .LVU321
+ 1045              	.LBB34:
 1070:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 1055              		.loc 2 1070 5 discriminator 1 view .LVU323
+ 1046              		.loc 2 1070 5 discriminator 1 view .LVU322
+ARM GAS  /tmp/ccTgqUxq.s 			page 57
+
+
 1072:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 1056              		.loc 2 1072 4 discriminator 1 view .LVU324
- 1057              		.syntax unified
- 1058              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1059 0036 52E8003F 		ldrex r3, [r2]
- 1060              	@ 0 "" 2
- 1061              	.LVL79:
+ 1047              		.loc 2 1072 4 discriminator 1 view .LVU323
+ 1048              		.syntax unified
+ 1049              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1050 0036 52E8003F 		ldrex r3, [r2]
+ 1051              	@ 0 "" 2
+ 1052              	.LVL79:
 1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 1062              		.loc 2 1073 4 discriminator 1 view .LVU325
+ 1053              		.loc 2 1073 4 discriminator 1 view .LVU324
 1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 1063              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU326
- 1064              		.thumb
- 1065              		.syntax unified
- 1066              	.LBE34:
- 1067              	.LBE33:
+ 1054              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU325
+ 1055              		.thumb
+ 1056              		.syntax unified
+ 1057              	.LBE34:
+ 1058              	.LBE33:
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1068              		.loc 1 625 9 discriminator 1 view .LVU327
- 1069 003a 43F01003 		orr	r3, r3, #16
- 1070              	.LVL80:
+ 1059              		.loc 1 625 9 discriminator 1 view .LVU326
+ 1060 003a 43F01003 		orr	r3, r3, #16
+ 1061              	.LVL80:
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1071              		.loc 1 625 9 is_stmt 1 discriminator 1 view .LVU328
- 1072              	.LBB35:
- 1073              	.LBI35:
+ 1062              		.loc 1 625 9 is_stmt 1 discriminator 1 view .LVU327
+ 1063              	.LBB35:
+ 1064              	.LBI35:
 1119:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 1074              		.loc 2 1119 31 discriminator 1 view .LVU329
- 1075              	.LBB36:
+ 1065              		.loc 2 1119 31 discriminator 1 view .LVU328
+ 1066              	.LBB36:
 1121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 1076              		.loc 2 1121 4 discriminator 1 view .LVU330
+ 1067              		.loc 2 1121 4 discriminator 1 view .LVU329
 1123:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 1077              		.loc 2 1123 4 discriminator 1 view .LVU331
- 1078              		.syntax unified
- 1079              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1080 003e 42E80031 		strex r1, r3, [r2]
- 1081              	@ 0 "" 2
- 1082              	.LVL81:
- 1083              		.loc 2 1124 4 discriminator 1 view .LVU332
- 1084              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU333
- 1085              		.thumb
- 1086              		.syntax unified
- 1087              	.LBE36:
- 1088              	.LBE35:
+ 1068              		.loc 2 1123 4 discriminator 1 view .LVU330
+ 1069              		.syntax unified
+ 1070              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1071 003e 42E80031 		strex r1, r3, [r2]
+ 1072              	@ 0 "" 2
+ 1073              	.LVL81:
+ 1074              		.loc 2 1124 4 discriminator 1 view .LVU331
+ 1075              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU332
+ 1076              		.thumb
+ 1077              		.syntax unified
+ 1078              	.LBE36:
+ 1079              	.LBE35:
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1089              		.loc 1 625 9 discriminator 1 view .LVU334
- 1090 0042 0029     		cmp	r1, #0
- 1091 0044 F6D1     		bne	.L73
- 1092 0046 04E0     		b	.L71
- 1093              	.LVL82:
-ARM GAS  /tmp/ccgzYV0G.s 			page 58
-
-
- 1094              	.L74:
- 1095              	.LCFI12:
- 1096              		.cfi_def_cfa_offset 0
- 1097              		.cfi_restore 4
- 1098              		.cfi_restore 14
+ 1080              		.loc 1 625 9 discriminator 1 view .LVU333
+ 1081 0042 0029     		cmp	r1, #0
+ 1082 0044 F6D1     		bne	.L73
+ 1083 0046 04E0     		b	.L71
+ 1084              	.LVL82:
+ 1085              	.L74:
+ 1086              	.LCFI12:
+ 1087              		.cfi_def_cfa_offset 0
+ 1088              		.cfi_restore 4
+ 1089              		.cfi_restore 14
  625:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1099              		.loc 1 625 9 discriminator 1 view .LVU335
- 1100              	.LBE32:
+ 1090              		.loc 1 625 9 discriminator 1 view .LVU334
+ 1091              	.LBE32:
  641:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1101              		.loc 1 641 12 view .LVU336
- 1102 0048 0220     		movs	r0, #2
- 1103              	.LVL83:
- 643:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1104              		.loc 1 643 1 view .LVU337
- 1105 004a 7047     		bx	lr
- 1106              	.LVL84:
- 1107              	.L75:
- 1108              	.LCFI13:
- 1109              		.cfi_def_cfa_offset 8
- 1110              		.cfi_offset 4, -8
- 1111              		.cfi_offset 14, -4
- 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1112              		.loc 1 609 14 view .LVU338
- 1113 004c 0120     		movs	r0, #1
- 1114              	.LVL85:
- 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1115              		.loc 1 609 14 view .LVU339
- 1116 004e 00E0     		b	.L71
- 1117              	.LVL86:
- 1118              	.L76:
- 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1119              		.loc 1 609 14 view .LVU340
- 1120 0050 0120     		movs	r0, #1
- 1121              	.LVL87:
- 1122              	.L71:
- 643:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1123              		.loc 1 643 1 view .LVU341
- 1124 0052 10BD     		pop	{r4, pc}
- 1125              	.LVL88:
- 1126              	.L77:
- 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1127              		.loc 1 612 5 view .LVU342
- 1128 0054 0220     		movs	r0, #2
- 1129              	.LVL89:
- 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1130              		.loc 1 612 5 view .LVU343
- 1131 0056 FCE7     		b	.L71
- 1132              		.cfi_endproc
- 1133              	.LFE130:
- 1135              		.section	.text.HAL_UARTEx_ReceiveToIdle_DMA,"ax",%progbits
- 1136              		.align	1
- 1137              		.global	HAL_UARTEx_ReceiveToIdle_DMA
- 1138              		.syntax unified
- 1139              		.thumb
- 1140              		.thumb_func
- 1141              		.fpu fpv4-sp-d16
- 1143              	HAL_UARTEx_ReceiveToIdle_DMA:
-ARM GAS  /tmp/ccgzYV0G.s 			page 59
+ 1092              		.loc 1 641 12 view .LVU335
+ARM GAS  /tmp/ccTgqUxq.s 			page 58
 
 
- 1144              	.LVL90:
- 1145              	.LFB131:
+ 1093 0048 0220     		movs	r0, #2
+ 1094              	.LVL83:
+ 643:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1095              		.loc 1 643 1 view .LVU336
+ 1096 004a 7047     		bx	lr
+ 1097              	.LVL84:
+ 1098              	.L75:
+ 1099              	.LCFI13:
+ 1100              		.cfi_def_cfa_offset 8
+ 1101              		.cfi_offset 4, -8
+ 1102              		.cfi_offset 14, -4
+ 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
+ 1103              		.loc 1 609 14 view .LVU337
+ 1104 004c 0120     		movs	r0, #1
+ 1105              	.LVL85:
+ 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
+ 1106              		.loc 1 609 14 view .LVU338
+ 1107 004e 00E0     		b	.L71
+ 1108              	.LVL86:
+ 1109              	.L76:
+ 609:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
+ 1110              		.loc 1 609 14 view .LVU339
+ 1111 0050 0120     		movs	r0, #1
+ 1112              	.LVL87:
+ 1113              	.L71:
+ 643:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1114              		.loc 1 643 1 view .LVU340
+ 1115 0052 10BD     		pop	{r4, pc}
+ 1116              	.LVL88:
+ 1117              	.L77:
+ 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1118              		.loc 1 612 5 view .LVU341
+ 1119 0054 0220     		movs	r0, #2
+ 1120              	.LVL89:
+ 612:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
+ 1121              		.loc 1 612 5 view .LVU342
+ 1122 0056 FCE7     		b	.L71
+ 1123              		.cfi_endproc
+ 1124              	.LFE130:
+ 1126              		.section	.text.HAL_UARTEx_ReceiveToIdle_DMA,"ax",%progbits
+ 1127              		.align	1
+ 1128              		.global	HAL_UARTEx_ReceiveToIdle_DMA
+ 1129              		.syntax unified
+ 1130              		.thumb
+ 1131              		.thumb_func
+ 1133              	HAL_UARTEx_ReceiveToIdle_DMA:
+ 1134              	.LVL90:
+ 1135              	.LFB131:
  663:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
- 1146              		.loc 1 663 1 is_stmt 1 view -0
- 1147              		.cfi_startproc
- 1148              		@ args = 0, pretend = 0, frame = 0
- 1149              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1136              		.loc 1 663 1 is_stmt 1 view -0
+ 1137              		.cfi_startproc
+ 1138              		@ args = 0, pretend = 0, frame = 0
+ 1139              		@ frame_needed = 0, uses_anonymous_args = 0
  664:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1150              		.loc 1 664 3 view .LVU345
+ 1140              		.loc 1 664 3 view .LVU344
  667:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 1151              		.loc 1 667 3 view .LVU346
+ 1141              		.loc 1 667 3 view .LVU345
+ARM GAS  /tmp/ccTgqUxq.s 			page 59
+
+
  667:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 1152              		.loc 1 667 12 is_stmt 0 view .LVU347
- 1153 0000 C36F     		ldr	r3, [r0, #124]
+ 1142              		.loc 1 667 12 is_stmt 0 view .LVU346
+ 1143 0000 C36F     		ldr	r3, [r0, #124]
  667:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
- 1154              		.loc 1 667 6 view .LVU348
- 1155 0002 202B     		cmp	r3, #32
- 1156 0004 20D1     		bne	.L88
+ 1144              		.loc 1 667 6 view .LVU347
+ 1145 0002 202B     		cmp	r3, #32
+ 1146 0004 20D1     		bne	.L88
  663:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
- 1157              		.loc 1 663 1 view .LVU349
- 1158 0006 10B5     		push	{r4, lr}
- 1159              	.LCFI14:
- 1160              		.cfi_def_cfa_offset 8
- 1161              		.cfi_offset 4, -8
- 1162              		.cfi_offset 14, -4
- 1163 0008 0446     		mov	r4, r0
+ 1147              		.loc 1 663 1 view .LVU348
+ 1148 0006 10B5     		push	{r4, lr}
+ 1149              	.LCFI14:
+ 1150              		.cfi_def_cfa_offset 8
+ 1151              		.cfi_offset 4, -8
+ 1152              		.cfi_offset 14, -4
+ 1153 0008 0446     		mov	r4, r0
  669:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1164              		.loc 1 669 5 is_stmt 1 view .LVU350
+ 1154              		.loc 1 669 5 is_stmt 1 view .LVU349
  669:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1165              		.loc 1 669 8 is_stmt 0 view .LVU351
- 1166 000a F9B1     		cbz	r1, .L89
+ 1155              		.loc 1 669 8 is_stmt 0 view .LVU350
+ 1156 000a F9B1     		cbz	r1, .L89
  669:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1167              		.loc 1 669 25 discriminator 1 view .LVU352
- 1168 000c 02B3     		cbz	r2, .L90
+ 1157              		.loc 1 669 25 discriminator 1 view .LVU351
+ 1158 000c 02B3     		cbz	r2, .L90
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1169              		.loc 1 674 5 is_stmt 1 view .LVU353
+ 1159              		.loc 1 674 5 is_stmt 1 view .LVU352
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1170              		.loc 1 674 5 view .LVU354
- 1171 000e 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
- 1172 0012 012B     		cmp	r3, #1
- 1173 0014 1ED0     		beq	.L91
+ 1160              		.loc 1 674 5 view .LVU353
+ 1161 000e 90F87430 		ldrb	r3, [r0, #116]	@ zero_extendqisi2
+ 1162 0012 012B     		cmp	r3, #1
+ 1163 0014 1ED0     		beq	.L91
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1174              		.loc 1 674 5 discriminator 2 view .LVU355
- 1175 0016 0123     		movs	r3, #1
- 1176 0018 80F87430 		strb	r3, [r0, #116]
+ 1164              		.loc 1 674 5 discriminator 2 view .LVU354
+ 1165 0016 0123     		movs	r3, #1
+ 1166 0018 80F87430 		strb	r3, [r0, #116]
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1177              		.loc 1 674 5 discriminator 2 view .LVU356
+ 1167              		.loc 1 674 5 discriminator 2 view .LVU355
  677:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1178              		.loc 1 677 5 discriminator 2 view .LVU357
+ 1168              		.loc 1 677 5 discriminator 2 view .LVU356
  677:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1179              		.loc 1 677 26 is_stmt 0 discriminator 2 view .LVU358
- 1180 001c 0366     		str	r3, [r0, #96]
+ 1169              		.loc 1 677 26 is_stmt 0 discriminator 2 view .LVU357
+ 1170 001c 0366     		str	r3, [r0, #96]
  679:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1181              		.loc 1 679 5 is_stmt 1 discriminator 2 view .LVU359
+ 1171              		.loc 1 679 5 is_stmt 1 discriminator 2 view .LVU358
  679:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1182              		.loc 1 679 15 is_stmt 0 discriminator 2 view .LVU360
- 1183 001e FFF7FEFF 		bl	UART_Start_Receive_DMA
-ARM GAS  /tmp/ccgzYV0G.s 			page 60
+ 1172              		.loc 1 679 15 is_stmt 0 discriminator 2 view .LVU359
+ 1173 001e FFF7FEFF 		bl	UART_Start_Receive_DMA
+ 1174              	.LVL91:
+ 682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
+ 1175              		.loc 1 682 5 is_stmt 1 discriminator 2 view .LVU360
+ 682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
+ 1176              		.loc 1 682 8 is_stmt 0 discriminator 2 view .LVU361
+ 1177 0022 B0B9     		cbnz	r0, .L85
+ 684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
+ 1178              		.loc 1 684 7 is_stmt 1 view .LVU362
+ 684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
+ 1179              		.loc 1 684 16 is_stmt 0 view .LVU363
+ 1180 0024 236E     		ldr	r3, [r4, #96]
+ARM GAS  /tmp/ccTgqUxq.s 			page 60
 
 
- 1184              	.LVL91:
- 682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1185              		.loc 1 682 5 is_stmt 1 discriminator 2 view .LVU361
- 682:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
- 1186              		.loc 1 682 8 is_stmt 0 discriminator 2 view .LVU362
- 1187 0022 B0B9     		cbnz	r0, .L85
  684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1188              		.loc 1 684 7 is_stmt 1 view .LVU363
- 684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1189              		.loc 1 684 16 is_stmt 0 view .LVU364
- 1190 0024 236E     		ldr	r3, [r4, #96]
- 684:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       {
- 1191              		.loc 1 684 10 view .LVU365
- 1192 0026 012B     		cmp	r3, #1
- 1193 0028 01D0     		beq	.L97
+ 1181              		.loc 1 684 10 view .LVU364
+ 1182 0026 012B     		cmp	r3, #1
+ 1183 0028 01D0     		beq	.L97
  695:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1194              		.loc 1 695 16 view .LVU366
- 1195 002a 0120     		movs	r0, #1
- 1196              	.LVL92:
+ 1184              		.loc 1 695 16 view .LVU365
+ 1185 002a 0120     		movs	r0, #1
+ 1186              	.LVL92:
  699:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1197              		.loc 1 699 5 is_stmt 1 view .LVU367
+ 1187              		.loc 1 699 5 is_stmt 1 view .LVU366
  699:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1198              		.loc 1 699 12 is_stmt 0 view .LVU368
- 1199 002c 11E0     		b	.L85
- 1200              	.LVL93:
- 1201              	.L97:
+ 1188              		.loc 1 699 12 is_stmt 0 view .LVU367
+ 1189 002c 11E0     		b	.L85
+ 1190              	.LVL93:
+ 1191              	.L97:
  686:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         ATOMIC_SET_BIT(huart->Instance->CR1, USART_CR1_IDLEIE);
- 1202              		.loc 1 686 9 is_stmt 1 view .LVU369
- 1203 002e 2368     		ldr	r3, [r4]
- 1204 0030 1022     		movs	r2, #16
- 1205 0032 1A62     		str	r2, [r3, #32]
- 1206              	.L87:
+ 1192              		.loc 1 686 9 is_stmt 1 view .LVU368
+ 1193 002e 2368     		ldr	r3, [r4]
+ 1194 0030 1022     		movs	r2, #16
+ 1195 0032 1A62     		str	r2, [r3, #32]
+ 1196              	.L87:
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1207              		.loc 1 687 9 discriminator 1 view .LVU370
- 1208              	.LBB37:
+ 1197              		.loc 1 687 9 discriminator 1 view .LVU369
+ 1198              	.LBB37:
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1209              		.loc 1 687 9 discriminator 1 view .LVU371
+ 1199              		.loc 1 687 9 discriminator 1 view .LVU370
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1210              		.loc 1 687 9 discriminator 1 view .LVU372
+ 1200              		.loc 1 687 9 discriminator 1 view .LVU371
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1211              		.loc 1 687 9 discriminator 1 view .LVU373
- 1212 0034 2268     		ldr	r2, [r4]
- 1213              	.LVL94:
- 1214              	.LBB38:
- 1215              	.LBI38:
+ 1201              		.loc 1 687 9 discriminator 1 view .LVU372
+ 1202 0034 2268     		ldr	r2, [r4]
+ 1203              	.LVL94:
+ 1204              	.LBB38:
+ 1205              	.LBI38:
 1068:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 1216              		.loc 2 1068 31 discriminator 1 view .LVU374
- 1217              	.LBB39:
+ 1206              		.loc 2 1068 31 discriminator 1 view .LVU373
+ 1207              	.LBB39:
 1070:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 1218              		.loc 2 1070 5 discriminator 1 view .LVU375
+ 1208              		.loc 2 1070 5 discriminator 1 view .LVU374
 1072:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 1219              		.loc 2 1072 4 discriminator 1 view .LVU376
- 1220              		.syntax unified
- 1221              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1222 0036 52E8003F 		ldrex r3, [r2]
- 1223              	@ 0 "" 2
- 1224              	.LVL95:
-ARM GAS  /tmp/ccgzYV0G.s 			page 61
+ 1209              		.loc 2 1072 4 discriminator 1 view .LVU375
+ 1210              		.syntax unified
+ 1211              	@ 1072 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1212 0036 52E8003F 		ldrex r3, [r2]
+ 1213              	@ 0 "" 2
+ 1214              	.LVL95:
+1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1215              		.loc 2 1073 4 discriminator 1 view .LVU376
+1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
+ 1216              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU377
+ 1217              		.thumb
+ 1218              		.syntax unified
+ 1219              	.LBE39:
+ 1220              	.LBE38:
+ 687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
+ 1221              		.loc 1 687 9 discriminator 1 view .LVU378
+ 1222 003a 43F01003 		orr	r3, r3, #16
+ARM GAS  /tmp/ccTgqUxq.s 			page 61
 
 
-1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 1225              		.loc 2 1073 4 discriminator 1 view .LVU377
-1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
- 1226              		.loc 2 1073 4 is_stmt 0 discriminator 1 view .LVU378
- 1227              		.thumb
- 1228              		.syntax unified
- 1229              	.LBE39:
- 1230              	.LBE38:
+ 1223              	.LVL96:
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1231              		.loc 1 687 9 discriminator 1 view .LVU379
- 1232 003a 43F01003 		orr	r3, r3, #16
- 1233              	.LVL96:
- 687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1234              		.loc 1 687 9 is_stmt 1 discriminator 1 view .LVU380
- 1235              	.LBB40:
- 1236              	.LBI40:
+ 1224              		.loc 1 687 9 is_stmt 1 discriminator 1 view .LVU379
+ 1225              	.LBB40:
+ 1226              	.LBI40:
 1119:Drivers/CMSIS/Include/cmsis_gcc.h **** {
- 1237              		.loc 2 1119 31 discriminator 1 view .LVU381
- 1238              	.LBB41:
+ 1227              		.loc 2 1119 31 discriminator 1 view .LVU380
+ 1228              	.LBB41:
 1121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
- 1239              		.loc 2 1121 4 discriminator 1 view .LVU382
+ 1229              		.loc 2 1121 4 discriminator 1 view .LVU381
 1123:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
- 1240              		.loc 2 1123 4 discriminator 1 view .LVU383
- 1241              		.syntax unified
- 1242              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
- 1243 003e 42E80031 		strex r1, r3, [r2]
- 1244              	@ 0 "" 2
- 1245              	.LVL97:
- 1246              		.loc 2 1124 4 discriminator 1 view .LVU384
- 1247              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU385
- 1248              		.thumb
- 1249              		.syntax unified
- 1250              	.LBE41:
- 1251              	.LBE40:
+ 1230              		.loc 2 1123 4 discriminator 1 view .LVU382
+ 1231              		.syntax unified
+ 1232              	@ 1123 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
+ 1233 003e 42E80031 		strex r1, r3, [r2]
+ 1234              	@ 0 "" 2
+ 1235              	.LVL97:
+ 1236              		.loc 2 1124 4 discriminator 1 view .LVU383
+ 1237              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU384
+ 1238              		.thumb
+ 1239              		.syntax unified
+ 1240              	.LBE41:
+ 1241              	.LBE40:
+ 687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
+ 1242              		.loc 1 687 9 discriminator 1 view .LVU385
+ 1243 0042 0029     		cmp	r1, #0
+ 1244 0044 F6D1     		bne	.L87
+ 1245 0046 04E0     		b	.L85
+ 1246              	.LVL98:
+ 1247              	.L88:
+ 1248              	.LCFI15:
+ 1249              		.cfi_def_cfa_offset 0
+ 1250              		.cfi_restore 4
+ 1251              		.cfi_restore 14
  687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
  1252              		.loc 1 687 9 discriminator 1 view .LVU386
- 1253 0042 0029     		cmp	r1, #0
- 1254 0044 F6D1     		bne	.L87
- 1255 0046 04E0     		b	.L85
- 1256              	.LVL98:
- 1257              	.L88:
- 1258              	.LCFI15:
- 1259              		.cfi_def_cfa_offset 0
- 1260              		.cfi_restore 4
- 1261              		.cfi_restore 14
- 687:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
- 1262              		.loc 1 687 9 discriminator 1 view .LVU387
- 1263              	.LBE37:
+ 1253              	.LBE37:
  703:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
- 1264              		.loc 1 703 12 view .LVU388
- 1265 0048 0220     		movs	r0, #2
- 1266              	.LVL99:
+ 1254              		.loc 1 703 12 view .LVU387
+ 1255 0048 0220     		movs	r0, #2
+ 1256              	.LVL99:
  705:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1267              		.loc 1 705 1 view .LVU389
- 1268 004a 7047     		bx	lr
- 1269              	.LVL100:
- 1270              	.L89:
-ARM GAS  /tmp/ccgzYV0G.s 			page 62
+ 1257              		.loc 1 705 1 view .LVU388
+ 1258 004a 7047     		bx	lr
+ 1259              	.LVL100:
+ 1260              	.L89:
+ 1261              	.LCFI16:
+ 1262              		.cfi_def_cfa_offset 8
+ 1263              		.cfi_offset 4, -8
+ 1264              		.cfi_offset 14, -4
+ 671:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
+ 1265              		.loc 1 671 14 view .LVU389
+ 1266 004c 0120     		movs	r0, #1
+ 1267              	.LVL101:
+ 671:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
+ 1268              		.loc 1 671 14 view .LVU390
+ 1269 004e 00E0     		b	.L85
+ARM GAS  /tmp/ccTgqUxq.s 			page 62
 
 
- 1271              	.LCFI16:
- 1272              		.cfi_def_cfa_offset 8
- 1273              		.cfi_offset 4, -8
- 1274              		.cfi_offset 14, -4
+ 1270              	.LVL102:
+ 1271              	.L90:
  671:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1275              		.loc 1 671 14 view .LVU390
- 1276 004c 0120     		movs	r0, #1
- 1277              	.LVL101:
- 671:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1278              		.loc 1 671 14 view .LVU391
- 1279 004e 00E0     		b	.L85
- 1280              	.LVL102:
- 1281              	.L90:
- 671:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     }
- 1282              		.loc 1 671 14 view .LVU392
- 1283 0050 0120     		movs	r0, #1
- 1284              	.LVL103:
- 1285              	.L85:
+ 1272              		.loc 1 671 14 view .LVU391
+ 1273 0050 0120     		movs	r0, #1
+ 1274              	.LVL103:
+ 1275              	.L85:
  705:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1286              		.loc 1 705 1 view .LVU393
- 1287 0052 10BD     		pop	{r4, pc}
- 1288              	.LVL104:
- 1289              	.L91:
+ 1276              		.loc 1 705 1 view .LVU392
+ 1277 0052 10BD     		pop	{r4, pc}
+ 1278              	.LVL104:
+ 1279              	.L91:
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1290              		.loc 1 674 5 view .LVU394
- 1291 0054 0220     		movs	r0, #2
- 1292              	.LVL105:
+ 1280              		.loc 1 674 5 view .LVU393
+ 1281 0054 0220     		movs	r0, #2
+ 1282              	.LVL105:
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
- 1293              		.loc 1 674 5 view .LVU395
- 1294 0056 FCE7     		b	.L85
- 1295              		.cfi_endproc
- 1296              	.LFE131:
- 1298              		.text
- 1299              	.Letext0:
- 1300              		.file 3 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h"
- 1301              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 1302              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 1303              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
- 1304              		.file 7 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
- 1305              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 1306              		.file 9 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 1307              		.file 10 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
- 1308              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h"
- 1309              		.file 12 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
-ARM GAS  /tmp/ccgzYV0G.s 			page 63
+ 1283              		.loc 1 674 5 view .LVU394
+ 1284 0056 FCE7     		b	.L85
+ 1285              		.cfi_endproc
+ 1286              	.LFE131:
+ 1288              		.text
+ 1289              	.Letext0:
+ 1290              		.file 3 "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/ar
+ 1291              		.file 4 "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/ar
+ 1292              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
+ 1293              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ 1294              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 1295              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 1296              		.file 9 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 1297              		.file 10 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h"
+ 1298              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ARM GAS  /tmp/ccTgqUxq.s 			page 63
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_uart_ex.c
-     /tmp/ccgzYV0G.s:18     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
-     /tmp/ccgzYV0G.s:25     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
-     /tmp/ccgzYV0G.s:65     .text.HAL_RS485Ex_Init:0000000000000000 $t
-     /tmp/ccgzYV0G.s:72     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
-     /tmp/ccgzYV0G.s:209    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
-     /tmp/ccgzYV0G.s:216    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
-     /tmp/ccgzYV0G.s:231    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
-     /tmp/ccgzYV0G.s:238    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccgzYV0G.s:302    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
-     /tmp/ccgzYV0G.s:309    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-     /tmp/ccgzYV0G.s:434    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
-     /tmp/ccgzYV0G.s:441    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
-     /tmp/ccgzYV0G.s:534    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
-     /tmp/ccgzYV0G.s:541    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
-     /tmp/ccgzYV0G.s:633    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
-     /tmp/ccgzYV0G.s:640    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
-     /tmp/ccgzYV0G.s:973    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
-     /tmp/ccgzYV0G.s:980    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
-     /tmp/ccgzYV0G.s:1136   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
-     /tmp/ccgzYV0G.s:1143   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
+     /tmp/ccTgqUxq.s:20     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
+     /tmp/ccTgqUxq.s:25     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
+     /tmp/ccTgqUxq.s:65     .text.HAL_RS485Ex_Init:0000000000000000 $t
+     /tmp/ccTgqUxq.s:71     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
+     /tmp/ccTgqUxq.s:207    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
+     /tmp/ccTgqUxq.s:213    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
+     /tmp/ccTgqUxq.s:228    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
+     /tmp/ccTgqUxq.s:234    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/ccTgqUxq.s:298    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
+     /tmp/ccTgqUxq.s:304    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+     /tmp/ccTgqUxq.s:429    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
+     /tmp/ccTgqUxq.s:435    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
+     /tmp/ccTgqUxq.s:528    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
+     /tmp/ccTgqUxq.s:534    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
+     /tmp/ccTgqUxq.s:626    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
+     /tmp/ccTgqUxq.s:632    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
+     /tmp/ccTgqUxq.s:965    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
+     /tmp/ccTgqUxq.s:971    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
+     /tmp/ccTgqUxq.s:1127   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
+     /tmp/ccTgqUxq.s:1133   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
 
 UNDEFINED SYMBOLS
 UART_SetConfig

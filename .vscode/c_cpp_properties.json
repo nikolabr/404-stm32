@@ -2,9 +2,18 @@
   "configurations": [
     {
       "name": "STM32",
-      "includePath": [],
-      "defines": [],
-      "compilerPath": null
+      "includePath": [
+        "Core/Inc",
+        "Drivers/CMSIS/Device/ST/STM32F3xx/Include",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32F3xx_HAL_Driver/Inc",
+        "Drivers/STM32F3xx_HAL_Driver/Inc/Legacy"
+      ],
+      "defines": [
+        "STM32F303x8",
+        "USE_HAL_DRIVER"
+      ],
+      "compilerPath": "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/10.3.1-2.3.1/.content/bin/arm-none-eabi-gcc"
     }
   ],
   "version": 4

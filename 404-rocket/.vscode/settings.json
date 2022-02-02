@@ -1,5 +1,5 @@
 {
-        "stm32-for-vscode.armToolchainPath": "/usr/bin",
-        "cortex-debug.openocdPath": "/home/zavod404/.config/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/openocd/0.11.0-2.1/.content/bin/openocd",
-        "cortex-debug.armToolchainPath": "/usr/bin"
+        "stm32-for-vscode.armToolchainPath": "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/10.3.1-2.3.1/.content/bin",
+        "cortex-debug.openocdPath": "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/openocd/0.11.0-2.1/.content/bin/openocd",
+        "cortex-debug.armToolchainPath": "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/10.3.1-2.3.1/.content/bin"
 }

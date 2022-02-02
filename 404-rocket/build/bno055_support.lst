@@ -1,30 +1,30 @@
-ARM GAS  /tmp/ccnWsevW.s 			page 1
+ARM GAS  /tmp/ccMnb1Cf.s 			page 1
 
 
    1              		.cpu cortex-m4
-   2              		.eabi_attribute 27, 1
-   3              		.eabi_attribute 28, 1
-   4              		.eabi_attribute 20, 1
-   5              		.eabi_attribute 21, 1
-   6              		.eabi_attribute 23, 3
-   7              		.eabi_attribute 24, 1
-   8              		.eabi_attribute 25, 1
-   9              		.eabi_attribute 26, 1
-  10              		.eabi_attribute 30, 1
-  11              		.eabi_attribute 34, 1
-  12              		.eabi_attribute 18, 4
-  13              		.file	"bno055_support.c"
-  14              		.text
-  15              	.Ltext0:
-  16              		.cfi_sections	.debug_frame
-  17              		.section	.text.BNO055_I2C_bus_write,"ax",%progbits
-  18              		.align	1
-  19              		.global	BNO055_I2C_bus_write
-  20              		.arch armv7e-m
-  21              		.syntax unified
-  22              		.thumb
-  23              		.thumb_func
-  24              		.fpu fpv4-sp-d16
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"bno055_support.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.BNO055_I2C_bus_write,"ax",%progbits
+  20              		.align	1
+  21              		.global	BNO055_I2C_bus_write
+  22              		.syntax unified
+  23              		.thumb
+  24              		.thumb_func
   26              	BNO055_I2C_bus_write:
   27              	.LVL0:
   28              	.LFB125:
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
   27:Core/Src/bno055_support.c **** * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
   28:Core/Src/bno055_support.c **** * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
   29:Core/Src/bno055_support.c **** * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
-ARM GAS  /tmp/ccnWsevW.s 			page 2
+ARM GAS  /tmp/ccMnb1Cf.s 			page 2
 
 
   30:Core/Src/bno055_support.c **** * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
   84:Core/Src/bno055_support.c **** 
   85:Core/Src/bno055_support.c **** /********************End of I2C APIs declarations***********************/
   86:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 3
+ARM GAS  /tmp/ccMnb1Cf.s 			page 3
 
 
   87:Core/Src/bno055_support.c **** /* This API is an example for reading sensor data
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  141:Core/Src/bno055_support.c ****     /* structure used to read the mag xyz data */
  142:Core/Src/bno055_support.c ****     struct bno055_mag_t mag_xyz;
  143:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 4
+ARM GAS  /tmp/ccMnb1Cf.s 			page 4
 
 
  144:Core/Src/bno055_support.c ****     /***********read raw gyro data***********/
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  198:Core/Src/bno055_support.c **** 
  199:Core/Src/bno055_support.c ****     /*****************read raw gravity sensor data****************/
  200:Core/Src/bno055_support.c ****     /* variable used to read the gravity x data */
-ARM GAS  /tmp/ccnWsevW.s 			page 5
+ARM GAS  /tmp/ccMnb1Cf.s 			page 5
 
 
  201:Core/Src/bno055_support.c ****     s16 gravity_data_x = BNO055_INIT_VALUE;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  255:Core/Src/bno055_support.c ****     double d_euler_data_h = BNO055_INIT_VALUE;
  256:Core/Src/bno055_support.c **** 
  257:Core/Src/bno055_support.c ****     /* variable used to read the euler r data output
-ARM GAS  /tmp/ccnWsevW.s 			page 6
+ARM GAS  /tmp/ccMnb1Cf.s 			page 6
 
 
  258:Core/Src/bno055_support.c ****      * as degree or radians*/
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  312:Core/Src/bno055_support.c ****      *  Page id
  313:Core/Src/bno055_support.c ****      *  Accel revision id
  314:Core/Src/bno055_support.c ****      *  Mag revision id
-ARM GAS  /tmp/ccnWsevW.s 			page 7
+ARM GAS  /tmp/ccMnb1Cf.s 			page 7
 
 
  315:Core/Src/bno055_support.c ****      *  Gyro revision id
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  369:Core/Src/bno055_support.c ****      * page - page 0
  370:Core/Src/bno055_support.c ****      * register - 0x08 to 0x0D*/
  371:Core/Src/bno055_support.c ****     comres += bno055_read_accel_x(&accel_datax);
-ARM GAS  /tmp/ccnWsevW.s 			page 8
+ARM GAS  /tmp/ccMnb1Cf.s 			page 8
 
 
  372:Core/Src/bno055_support.c ****     comres += bno055_read_accel_y(&accel_datay);
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  426:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_wxyz(&quaternion_wxyz);
  427:Core/Src/bno055_support.c **** 
  428:Core/Src/bno055_support.c ****     /*  Raw Linear accel X, Y and Z data can read from the register
-ARM GAS  /tmp/ccnWsevW.s 			page 9
+ARM GAS  /tmp/ccMnb1Cf.s 			page 9
 
 
  429:Core/Src/bno055_support.c ****      * page - page 0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  483:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_rad(&d_euler_data_p);
  484:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_deg(&d_euler_hpr);
  485:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_rad(&d_euler_hpr);
-ARM GAS  /tmp/ccnWsevW.s 			page 10
+ARM GAS  /tmp/ccMnb1Cf.s 			page 10
 
 
  486:Core/Src/bno055_support.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  540:Core/Src/bno055_support.c ****     bno055.delay_msec = BNO055_delay_msek;
  541:Core/Src/bno055_support.c ****     bno055.dev_addr = BNO055_I2C_ADDR1;
  542:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 11
+ARM GAS  /tmp/ccMnb1Cf.s 			page 11
 
 
  543:Core/Src/bno055_support.c ****     return BNO055_INIT_VALUE;
@@ -633,65 +633,63 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
   32              		@ args = 0, pretend = 0, frame = 8
   33              		@ frame_needed = 0, uses_anonymous_args = 0
   34              		.loc 1 569 1 is_stmt 0 view .LVU1
-  35 0000 30B5     		push	{r4, r5, lr}
+  35 0000 00B5     		push	{lr}
   36              	.LCFI0:
-  37              		.cfi_def_cfa_offset 12
-  38              		.cfi_offset 4, -12
-  39              		.cfi_offset 5, -8
-  40              		.cfi_offset 14, -4
-  41 0002 85B0     		sub	sp, sp, #20
-  42              	.LCFI1:
-  43              		.cfi_def_cfa_offset 32
+  37              		.cfi_def_cfa_offset 4
+  38              		.cfi_offset 14, -4
+  39 0002 85B0     		sub	sp, sp, #20
+  40              	.LCFI1:
+  41              		.cfi_def_cfa_offset 24
  570:Core/Src/bno055_support.c ****     s32 BNO055_iERROR = BNO055_INIT_VALUE;
-  44              		.loc 1 570 5 is_stmt 1 view .LVU2
-  45              	.LVL1:
+  42              		.loc 1 570 5 is_stmt 1 view .LVU2
+  43              	.LVL1:
  571:Core/Src/bno055_support.c ****     u8 array[I2C_BUFFER_LEN];
-  46              		.loc 1 571 5 view .LVU3
+  44              		.loc 1 571 5 view .LVU3
  572:Core/Src/bno055_support.c ****     u8 stringpos = BNO055_INIT_VALUE;
-  47              		.loc 1 572 5 view .LVU4
+  45              		.loc 1 572 5 view .LVU4
  573:Core/Src/bno055_support.c **** 
  574:Core/Src/bno055_support.c ****     array[BNO055_INIT_VALUE] = reg_addr;
-  48              		.loc 1 574 5 view .LVU5
-  49              		.loc 1 574 30 is_stmt 0 view .LVU6
-  50 0004 8DF80810 		strb	r1, [sp, #8]
+  46              		.loc 1 574 5 view .LVU5
+  47              		.loc 1 574 30 is_stmt 0 view .LVU6
+  48 0004 8DF80810 		strb	r1, [sp, #8]
  575:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
-  51              		.loc 1 575 5 is_stmt 1 view .LVU7
-  52              		.loc 1 575 20 is_stmt 0 view .LVU8
-  53 0008 0021     		movs	r1, #0
-ARM GAS  /tmp/ccnWsevW.s 			page 12
+  49              		.loc 1 575 5 is_stmt 1 view .LVU7
+  50              		.loc 1 575 20 is_stmt 0 view .LVU8
+  51 0008 0021     		movs	r1, #0
+  52              	.LVL2:
+  53              		.loc 1 575 5 view .LVU9
+ARM GAS  /tmp/ccMnb1Cf.s 			page 12
 
 
-  54              	.LVL2:
-  55              		.loc 1 575 5 view .LVU9
-  56 000a 06E0     		b	.L2
-  57              	.LVL3:
-  58              	.L3:
+  54 000a 09E0     		b	.L2
+  55              	.LVL3:
+  56              	.L3:
  576:Core/Src/bno055_support.c ****     {
  577:Core/Src/bno055_support.c ****         array[stringpos + BNO055_I2C_BUS_WRITE_ARRAY_INDEX] = *(reg_data + stringpos);
-  59              		.loc 1 577 9 is_stmt 1 discriminator 3 view .LVU10
-  60              		.loc 1 577 25 is_stmt 0 discriminator 3 view .LVU11
-  61 000c 4C1C     		adds	r4, r1, #1
-  62              		.loc 1 577 63 discriminator 3 view .LVU12
-  63 000e 555C     		ldrb	r5, [r2, r1]	@ zero_extendqisi2
-  64              		.loc 1 577 61 discriminator 3 view .LVU13
-  65 0010 04A9     		add	r1, sp, #16
-  66              	.LVL4:
-  67              		.loc 1 577 61 discriminator 3 view .LVU14
-  68 0012 2144     		add	r1, r1, r4
-  69 0014 01F8085C 		strb	r5, [r1, #-8]
+  57              		.loc 1 577 9 is_stmt 1 discriminator 3 view .LVU10
+  58              		.loc 1 577 25 is_stmt 0 discriminator 3 view .LVU11
+  59 000c 01F1010C 		add	ip, r1, #1
+  60              		.loc 1 577 63 discriminator 3 view .LVU12
+  61 0010 12F801E0 		ldrb	lr, [r2, r1]	@ zero_extendqisi2
+  62              		.loc 1 577 61 discriminator 3 view .LVU13
+  63 0014 1131     		adds	r1, r1, #17
+  64              	.LVL4:
+  65              		.loc 1 577 61 discriminator 3 view .LVU14
+  66 0016 6944     		add	r1, sp, r1
+  67 0018 01F808EC 		strb	lr, [r1, #-8]
  575:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
-  70              		.loc 1 575 58 is_stmt 1 discriminator 3 view .LVU15
+  68              		.loc 1 575 58 is_stmt 1 discriminator 3 view .LVU15
  575:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
-  71              		.loc 1 575 67 is_stmt 0 discriminator 3 view .LVU16
-  72 0018 E1B2     		uxtb	r1, r4
-  73              	.LVL5:
-  74              	.L2:
+  69              		.loc 1 575 67 is_stmt 0 discriminator 3 view .LVU16
+  70 001c 5FFA8CF1 		uxtb	r1, ip
+  71              	.LVL5:
+  72              	.L2:
  575:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
-  75              		.loc 1 575 41 is_stmt 1 discriminator 1 view .LVU17
+  73              		.loc 1 575 41 is_stmt 1 discriminator 1 view .LVU17
  575:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
-  76              		.loc 1 575 5 is_stmt 0 discriminator 1 view .LVU18
-  77 001a 9942     		cmp	r1, r3
-  78 001c F6D3     		bcc	.L3
+  74              		.loc 1 575 5 is_stmt 0 discriminator 1 view .LVU18
+  75 0020 9942     		cmp	r1, r3
+  76 0022 F3D3     		bcc	.L3
  578:Core/Src/bno055_support.c ****     }
  579:Core/Src/bno055_support.c **** 
  580:Core/Src/bno055_support.c **** /*
@@ -712,123 +710,122 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  595:Core/Src/bno055_support.c ****  */
  596:Core/Src/bno055_support.c **** 
  597:Core/Src/bno055_support.c ****     BNO055_iERROR = HAL_I2C_Master_Transmit(&hi2c1, dev_addr << 1, array, cnt + 1, 10);
-  79              		.loc 1 597 5 is_stmt 1 view .LVU19
-  80              		.loc 1 597 21 is_stmt 0 view .LVU20
-  81 001e 0A22     		movs	r2, #10
-  82              	.LVL6:
-  83              		.loc 1 597 21 view .LVU21
-  84 0020 0092     		str	r2, [sp]
-ARM GAS  /tmp/ccnWsevW.s 			page 13
+  77              		.loc 1 597 5 is_stmt 1 view .LVU19
+  78              		.loc 1 597 21 is_stmt 0 view .LVU20
+  79 0024 0A22     		movs	r2, #10
+  80              	.LVL6:
+  81              		.loc 1 597 21 view .LVU21
+  82 0026 0092     		str	r2, [sp]
+  83 0028 0133     		adds	r3, r3, #1
+  84              	.LVL7:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 13
 
 
-  85 0022 0133     		adds	r3, r3, #1
-  86              	.LVL7:
-  87              		.loc 1 597 21 view .LVU22
-  88 0024 02AA     		add	r2, sp, #8
-  89 0026 4100     		lsls	r1, r0, #1
-  90              	.LVL8:
-  91              		.loc 1 597 21 view .LVU23
-  92 0028 0548     		ldr	r0, .L7
-  93              	.LVL9:
-  94              		.loc 1 597 21 view .LVU24
-  95 002a FFF7FEFF 		bl	HAL_I2C_Master_Transmit
-  96              	.LVL10:
-  97              		.loc 1 597 19 view .LVU25
-  98 002e 0346     		mov	r3, r0
-  99              	.LVL11:
+  85              		.loc 1 597 21 view .LVU22
+  86 002a 02AA     		add	r2, sp, #8
+  87 002c 4100     		lsls	r1, r0, #1
+  88              	.LVL8:
+  89              		.loc 1 597 21 view .LVU23
+  90 002e 0648     		ldr	r0, .L7
+  91              	.LVL9:
+  92              		.loc 1 597 21 view .LVU24
+  93 0030 FFF7FEFF 		bl	HAL_I2C_Master_Transmit
+  94              	.LVL10:
+  95              		.loc 1 597 19 view .LVU25
+  96 0034 0346     		mov	r3, r0
+  97              	.LVL11:
  598:Core/Src/bno055_support.c **** 
  599:Core/Src/bno055_support.c ****     if (BNO055_iERROR > 0) {
- 100              		.loc 1 599 5 is_stmt 1 view .LVU26
- 101              		.loc 1 599 8 is_stmt 0 view .LVU27
- 102 0030 0028     		cmp	r0, #0
- 103 0032 01DD     		ble	.L4
+  98              		.loc 1 599 5 is_stmt 1 view .LVU26
+  99              		.loc 1 599 8 is_stmt 0 view .LVU27
+ 100 0036 0028     		cmp	r0, #0
+ 101 0038 01DD     		ble	.L4
  600:Core/Src/bno055_support.c ****     	BNO055_iERROR = -1;
- 104              		.loc 1 600 20 view .LVU28
- 105 0034 4FF0FF33 		mov	r3, #-1
- 106              	.L4:
- 107              	.LVL12:
+ 102              		.loc 1 600 20 view .LVU28
+ 103 003a 4FF0FF33 		mov	r3, #-1
+ 104              	.L4:
+ 105              	.LVL12:
  601:Core/Src/bno055_support.c ****     }
  602:Core/Src/bno055_support.c **** 
  603:Core/Src/bno055_support.c **** 	return (s8)BNO055_iERROR;
- 108              		.loc 1 603 2 is_stmt 1 view .LVU29
+ 106              		.loc 1 603 2 is_stmt 1 view .LVU29
  604:Core/Src/bno055_support.c **** }
- 109              		.loc 1 604 1 is_stmt 0 view .LVU30
- 110 0038 58B2     		sxtb	r0, r3
- 111 003a 05B0     		add	sp, sp, #20
- 112              	.LCFI2:
- 113              		.cfi_def_cfa_offset 12
- 114              		@ sp needed
- 115 003c 30BD     		pop	{r4, r5, pc}
- 116              	.L8:
- 117 003e 00BF     		.align	2
- 118              	.L7:
- 119 0040 00000000 		.word	hi2c1
- 120              		.cfi_endproc
- 121              	.LFE125:
- 123              		.section	.text.BNO055_I2C_bus_read,"ax",%progbits
- 124              		.align	1
- 125              		.global	BNO055_I2C_bus_read
- 126              		.syntax unified
- 127              		.thumb
- 128              		.thumb_func
- 129              		.fpu fpv4-sp-d16
- 131              	BNO055_I2C_bus_read:
- 132              	.LVL13:
- 133              	.LFB126:
+ 107              		.loc 1 604 1 is_stmt 0 view .LVU30
+ 108 003e 58B2     		sxtb	r0, r3
+ 109 0040 05B0     		add	sp, sp, #20
+ 110              	.LCFI2:
+ 111              		.cfi_def_cfa_offset 4
+ 112              		@ sp needed
+ 113 0042 5DF804FB 		ldr	pc, [sp], #4
+ 114              	.L8:
+ 115 0046 00BF     		.align	2
+ 116              	.L7:
+ 117 0048 00000000 		.word	hi2c1
+ 118              		.cfi_endproc
+ 119              	.LFE125:
+ 121              		.section	.text.BNO055_I2C_bus_read,"ax",%progbits
+ 122              		.align	1
+ 123              		.global	BNO055_I2C_bus_read
+ 124              		.syntax unified
+ 125              		.thumb
+ 126              		.thumb_func
+ 128              	BNO055_I2C_bus_read:
+ 129              	.LVL13:
+ 130              	.LFB126:
  605:Core/Src/bno055_support.c **** 
  606:Core/Src/bno055_support.c **** /*  \Brief: The API is used as I2C bus read
  607:Core/Src/bno055_support.c ****  *  \Return : Status of the I2C read
-ARM GAS  /tmp/ccnWsevW.s 			page 14
-
-
  608:Core/Src/bno055_support.c ****  *  \param dev_addr : The device address of the sensor
  609:Core/Src/bno055_support.c ****  *  \param reg_addr : Address of the first register,
  610:Core/Src/bno055_support.c ****  *  will data is going to be read
+ARM GAS  /tmp/ccMnb1Cf.s 			page 14
+
+
  611:Core/Src/bno055_support.c ****  *  \param reg_data : This data read from the sensor,
  612:Core/Src/bno055_support.c ****  *   which is hold in an array
  613:Core/Src/bno055_support.c ****  *  \param cnt : The no of byte of data to be read
  614:Core/Src/bno055_support.c ****  */
  615:Core/Src/bno055_support.c **** s8 BNO055_I2C_bus_read(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt)
  616:Core/Src/bno055_support.c **** {
- 134              		.loc 1 616 1 is_stmt 1 view -0
- 135              		.cfi_startproc
- 136              		@ args = 0, pretend = 0, frame = 8
- 137              		@ frame_needed = 0, uses_anonymous_args = 0
- 138              		.loc 1 616 1 is_stmt 0 view .LVU32
- 139 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
- 140              	.LCFI3:
- 141              		.cfi_def_cfa_offset 24
- 142              		.cfi_offset 4, -24
- 143              		.cfi_offset 5, -20
- 144              		.cfi_offset 6, -16
- 145              		.cfi_offset 7, -12
- 146              		.cfi_offset 8, -8
- 147              		.cfi_offset 14, -4
- 148 0004 84B0     		sub	sp, sp, #16
- 149              	.LCFI4:
- 150              		.cfi_def_cfa_offset 40
- 151 0006 0446     		mov	r4, r0
- 152 0008 1646     		mov	r6, r2
- 153 000a 1D46     		mov	r5, r3
+ 131              		.loc 1 616 1 is_stmt 1 view -0
+ 132              		.cfi_startproc
+ 133              		@ args = 0, pretend = 0, frame = 8
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135              		.loc 1 616 1 is_stmt 0 view .LVU32
+ 136 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 137              	.LCFI3:
+ 138              		.cfi_def_cfa_offset 24
+ 139              		.cfi_offset 4, -24
+ 140              		.cfi_offset 5, -20
+ 141              		.cfi_offset 6, -16
+ 142              		.cfi_offset 7, -12
+ 143              		.cfi_offset 8, -8
+ 144              		.cfi_offset 14, -4
+ 145 0004 84B0     		sub	sp, sp, #16
+ 146              	.LCFI4:
+ 147              		.cfi_def_cfa_offset 40
+ 148 0006 0646     		mov	r6, r0
+ 149 0008 1546     		mov	r5, r2
+ 150 000a 1C46     		mov	r4, r3
  617:Core/Src/bno055_support.c ****     s32 BNO055_iERROR = BNO055_INIT_VALUE;
- 154              		.loc 1 617 5 is_stmt 1 view .LVU33
- 155              	.LVL14:
+ 151              		.loc 1 617 5 is_stmt 1 view .LVU33
+ 152              	.LVL14:
  618:Core/Src/bno055_support.c ****     u8 array[I2C_BUFFER_LEN] = { BNO055_INIT_VALUE };
- 156              		.loc 1 618 5 view .LVU34
- 157              		.loc 1 618 8 is_stmt 0 view .LVU35
- 158 000c 0023     		movs	r3, #0
- 159              	.LVL15:
- 160              		.loc 1 618 8 view .LVU36
- 161 000e 0293     		str	r3, [sp, #8]
- 162 0010 0393     		str	r3, [sp, #12]
+ 153              		.loc 1 618 5 view .LVU34
+ 154              		.loc 1 618 8 is_stmt 0 view .LVU35
+ 155 000c 0023     		movs	r3, #0
+ 156              	.LVL15:
+ 157              		.loc 1 618 8 view .LVU36
+ 158 000e 0293     		str	r3, [sp, #8]
+ 159 0010 0393     		str	r3, [sp, #12]
  619:Core/Src/bno055_support.c ****     u8 stringpos = BNO055_INIT_VALUE;
- 163              		.loc 1 619 5 is_stmt 1 view .LVU37
- 164              	.LVL16:
+ 160              		.loc 1 619 5 is_stmt 1 view .LVU37
+ 161              	.LVL16:
  620:Core/Src/bno055_support.c **** 
  621:Core/Src/bno055_support.c ****     array[BNO055_INIT_VALUE] = reg_addr;
- 165              		.loc 1 621 5 view .LVU38
- 166              		.loc 1 621 30 is_stmt 0 view .LVU39
- 167 0012 8DF80810 		strb	r1, [sp, #8]
+ 162              		.loc 1 621 5 view .LVU38
+ 163              		.loc 1 621 30 is_stmt 0 view .LVU39
+ 164 0012 8DF80810 		strb	r1, [sp, #8]
  622:Core/Src/bno055_support.c **** 
  623:Core/Src/bno055_support.c ****     /* Please take the below API as your reference
  624:Core/Src/bno055_support.c ****      * for read the data using I2C communication
@@ -838,1351 +835,1358 @@ ARM GAS  /tmp/ccnWsevW.s 			page 1
  628:Core/Src/bno055_support.c ****      * BNO055_iERROR is an return value of SPI write API
  629:Core/Src/bno055_support.c ****      * Please select your valid return value
  630:Core/Src/bno055_support.c ****      * In the driver BNO055_SUCCESS defined as 0
-ARM GAS  /tmp/ccnWsevW.s 			page 15
-
-
  631:Core/Src/bno055_support.c ****      * and FAILURE defined as -1
  632:Core/Src/bno055_support.c ****      */
  633:Core/Src/bno055_support.c ****     BNO055_iERROR = HAL_I2C_Master_Transmit(&hi2c1, dev_addr << 1, array, 1, 100);
- 168              		.loc 1 633 5 is_stmt 1 view .LVU40
- 169              		.loc 1 633 21 is_stmt 0 view .LVU41
- 170 0016 154F     		ldr	r7, .L16
- 171 0018 4FF06408 		mov	r8, #100
- 172 001c CDF80080 		str	r8, [sp]
- 173 0020 0123     		movs	r3, #1
- 174 0022 02AA     		add	r2, sp, #8
- 175              	.LVL17:
- 176              		.loc 1 633 21 view .LVU42
- 177 0024 00FA03F1 		lsl	r1, r0, r3
- 178              	.LVL18:
- 179              		.loc 1 633 21 view .LVU43
- 180 0028 3846     		mov	r0, r7
- 181              	.LVL19:
- 182              		.loc 1 633 21 view .LVU44
- 183 002a FFF7FEFF 		bl	HAL_I2C_Master_Transmit
- 184              	.LVL20:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 15
+
+
+ 165              		.loc 1 633 5 is_stmt 1 view .LVU40
+ 166              		.loc 1 633 21 is_stmt 0 view .LVU41
+ 167 0016 164F     		ldr	r7, .L15
+ 168 0018 4FF06408 		mov	r8, #100
+ 169 001c CDF80080 		str	r8, [sp]
+ 170 0020 0123     		movs	r3, #1
+ 171 0022 02AA     		add	r2, sp, #8
+ 172              	.LVL17:
+ 173              		.loc 1 633 21 view .LVU42
+ 174 0024 00FA03F1 		lsl	r1, r0, r3
+ 175              	.LVL18:
+ 176              		.loc 1 633 21 view .LVU43
+ 177 0028 3846     		mov	r0, r7
+ 178              	.LVL19:
+ 179              		.loc 1 633 21 view .LVU44
+ 180 002a FFF7FEFF 		bl	HAL_I2C_Master_Transmit
+ 181              	.LVL20:
  634:Core/Src/bno055_support.c **** 
  635:Core/Src/bno055_support.c ****     BNO055_iERROR = HAL_I2C_Master_Receive(&hi2c1, (dev_addr << 1) | 1, array, cnt, 100);
- 185              		.loc 1 635 5 is_stmt 1 view .LVU45
- 186              		.loc 1 635 62 is_stmt 0 view .LVU46
- 187 002e 6100     		lsls	r1, r4, #1
- 188              		.loc 1 635 21 view .LVU47
- 189 0030 CDF80080 		str	r8, [sp]
- 190 0034 2B46     		mov	r3, r5
- 191 0036 02AA     		add	r2, sp, #8
- 192 0038 41F00101 		orr	r1, r1, #1
- 193 003c 3846     		mov	r0, r7
- 194 003e FFF7FEFF 		bl	HAL_I2C_Master_Receive
- 195              	.LVL21:
- 196              		.loc 1 635 19 view .LVU48
- 197 0042 0346     		mov	r3, r0
- 198              	.LVL22:
+ 182              		.loc 1 635 5 is_stmt 1 view .LVU45
+ 183              		.loc 1 635 62 is_stmt 0 view .LVU46
+ 184 002e 7100     		lsls	r1, r6, #1
+ 185              		.loc 1 635 21 view .LVU47
+ 186 0030 CDF80080 		str	r8, [sp]
+ 187 0034 2346     		mov	r3, r4
+ 188 0036 02AA     		add	r2, sp, #8
+ 189 0038 41F00101 		orr	r1, r1, #1
+ 190 003c 3846     		mov	r0, r7
+ 191 003e FFF7FEFF 		bl	HAL_I2C_Master_Receive
+ 192              	.LVL21:
+ 193              		.loc 1 635 19 view .LVU48
+ 194 0042 0346     		mov	r3, r0
+ 195              	.LVL22:
  636:Core/Src/bno055_support.c **** 
  637:Core/Src/bno055_support.c ****     if (BNO055_iERROR > 0) {
- 199              		.loc 1 637 5 is_stmt 1 view .LVU49
- 200              		.loc 1 637 8 is_stmt 0 view .LVU50
- 201 0044 0028     		cmp	r0, #0
- 202 0046 01DD     		ble	.L10
+ 196              		.loc 1 637 5 is_stmt 1 view .LVU49
+ 197              		.loc 1 637 8 is_stmt 0 view .LVU50
+ 198 0044 0028     		cmp	r0, #0
+ 199 0046 01DD     		ble	.L10
  638:Core/Src/bno055_support.c ****     	BNO055_iERROR = -1;
- 203              		.loc 1 638 20 view .LVU51
- 204 0048 4FF0FF33 		mov	r3, #-1
- 205              	.L10:
- 206              	.LVL23:
+ 200              		.loc 1 638 20 view .LVU51
+ 201 0048 4FF0FF33 		mov	r3, #-1
+ 202              	.L10:
+ 203              	.LVL23:
  639:Core/Src/bno055_support.c ****     }
  640:Core/Src/bno055_support.c **** 
  641:Core/Src/bno055_support.c ****     for (stringpos = BNO055_INIT_VALUE; stringpos < cnt; stringpos++)
- 207              		.loc 1 641 5 is_stmt 1 view .LVU52
- 208              		.loc 1 641 20 is_stmt 0 view .LVU53
- 209 004c 0021     		movs	r1, #0
- 210              	.LVL24:
- 211              	.L11:
- 212              		.loc 1 641 41 is_stmt 1 discriminator 1 view .LVU54
- 213              		.loc 1 641 5 is_stmt 0 discriminator 1 view .LVU55
-ARM GAS  /tmp/ccnWsevW.s 			page 16
-
-
- 214 004e A942     		cmp	r1, r5
- 215 0050 07D2     		bcs	.L15
+ 204              		.loc 1 641 5 is_stmt 1 view .LVU52
+ 205              		.loc 1 641 20 is_stmt 0 view .LVU53
+ 206 004c 0021     		movs	r1, #0
+ 207              		.loc 1 641 5 view .LVU54
+ 208 004e 09E0     		b	.L11
+ 209              	.LVL24:
+ 210              	.L12:
  642:Core/Src/bno055_support.c ****     {
  643:Core/Src/bno055_support.c ****         *(reg_data + stringpos) = array[stringpos];
- 216              		.loc 1 643 9 is_stmt 1 discriminator 3 view .LVU56
- 217              		.loc 1 643 40 is_stmt 0 discriminator 3 view .LVU57
- 218 0052 04AA     		add	r2, sp, #16
- 219 0054 5418     		adds	r4, r2, r1
- 220 0056 14F8084C 		ldrb	r4, [r4, #-8]	@ zero_extendqisi2
- 221              		.loc 1 643 33 discriminator 3 view .LVU58
- 222 005a 7454     		strb	r4, [r6, r1]
+ 211              		.loc 1 643 9 is_stmt 1 discriminator 3 view .LVU55
+ARM GAS  /tmp/ccMnb1Cf.s 			page 16
+
+
+ 212              		.loc 1 643 40 is_stmt 0 discriminator 3 view .LVU56
+ 213 0050 01F11002 		add	r2, r1, #16
+ 214 0054 0DEB020C 		add	ip, sp, r2
+ 215 0058 1CF808CC 		ldrb	ip, [ip, #-8]	@ zero_extendqisi2
+ 216              		.loc 1 643 33 discriminator 3 view .LVU57
+ 217 005c 05F801C0 		strb	ip, [r5, r1]
  641:Core/Src/bno055_support.c ****     {
- 223              		.loc 1 641 58 is_stmt 1 discriminator 3 view .LVU59
+ 218              		.loc 1 641 58 is_stmt 1 discriminator 3 view .LVU58
  641:Core/Src/bno055_support.c ****     {
- 224              		.loc 1 641 67 is_stmt 0 discriminator 3 view .LVU60
- 225 005c 0131     		adds	r1, r1, #1
- 226              	.LVL25:
+ 219              		.loc 1 641 67 is_stmt 0 discriminator 3 view .LVU59
+ 220 0060 0131     		adds	r1, r1, #1
+ 221              	.LVL25:
  641:Core/Src/bno055_support.c ****     {
- 227              		.loc 1 641 67 discriminator 3 view .LVU61
- 228 005e C9B2     		uxtb	r1, r1
- 229              	.LVL26:
+ 222              		.loc 1 641 67 discriminator 3 view .LVU60
+ 223 0062 C9B2     		uxtb	r1, r1
+ 224              	.LVL26:
+ 225              	.L11:
  641:Core/Src/bno055_support.c ****     {
- 230              		.loc 1 641 67 discriminator 3 view .LVU62
- 231 0060 F5E7     		b	.L11
- 232              	.L15:
+ 226              		.loc 1 641 41 is_stmt 1 discriminator 1 view .LVU61
+ 641:Core/Src/bno055_support.c ****     {
+ 227              		.loc 1 641 5 is_stmt 0 discriminator 1 view .LVU62
+ 228 0064 A142     		cmp	r1, r4
+ 229 0066 F3D3     		bcc	.L12
  644:Core/Src/bno055_support.c ****     }
  645:Core/Src/bno055_support.c **** 
  646:Core/Src/bno055_support.c ****     return (s8)BNO055_iERROR;
- 233              		.loc 1 646 5 is_stmt 1 view .LVU63
+ 230              		.loc 1 646 5 is_stmt 1 view .LVU63
  647:Core/Src/bno055_support.c **** }
- 234              		.loc 1 647 1 is_stmt 0 view .LVU64
- 235 0062 58B2     		sxtb	r0, r3
- 236 0064 04B0     		add	sp, sp, #16
- 237              	.LCFI5:
- 238              		.cfi_def_cfa_offset 24
- 239              		@ sp needed
- 240 0066 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
- 241              	.LVL27:
- 242              	.L17:
- 243              		.loc 1 647 1 view .LVU65
- 244 006a 00BF     		.align	2
- 245              	.L16:
- 246 006c 00000000 		.word	hi2c1
- 247              		.cfi_endproc
- 248              	.LFE126:
- 250              		.section	.text.BNO055_delay_msek,"ax",%progbits
- 251              		.align	1
- 252              		.global	BNO055_delay_msek
- 253              		.syntax unified
- 254              		.thumb
- 255              		.thumb_func
- 256              		.fpu fpv4-sp-d16
- 258              	BNO055_delay_msek:
- 259              	.LVL28:
- 260              	.LFB127:
+ 231              		.loc 1 647 1 is_stmt 0 view .LVU64
+ 232 0068 58B2     		sxtb	r0, r3
+ 233 006a 04B0     		add	sp, sp, #16
+ 234              	.LCFI5:
+ 235              		.cfi_def_cfa_offset 24
+ 236              		@ sp needed
+ 237 006c BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 238              	.LVL27:
+ 239              	.L16:
+ 240              		.loc 1 647 1 view .LVU65
+ 241              		.align	2
+ 242              	.L15:
+ 243 0070 00000000 		.word	hi2c1
+ 244              		.cfi_endproc
+ 245              	.LFE126:
+ 247              		.section	.text.BNO055_delay_msek,"ax",%progbits
+ 248              		.align	1
+ 249              		.global	BNO055_delay_msek
+ 250              		.syntax unified
+ 251              		.thumb
+ 252              		.thumb_func
+ 254              	BNO055_delay_msek:
+ 255              	.LVL28:
+ 256              	.LFB127:
  648:Core/Src/bno055_support.c **** 
  649:Core/Src/bno055_support.c **** /*  Brief : The delay routine
-ARM GAS  /tmp/ccnWsevW.s 			page 17
-
-
  650:Core/Src/bno055_support.c ****  *  \param : delay in ms
  651:Core/Src/bno055_support.c ****  */
  652:Core/Src/bno055_support.c **** void BNO055_delay_msek(u32 msek)
+ARM GAS  /tmp/ccMnb1Cf.s 			page 17
+
+
  653:Core/Src/bno055_support.c **** {
- 261              		.loc 1 653 1 is_stmt 1 view -0
- 262              		.cfi_startproc
- 263              		@ args = 0, pretend = 0, frame = 0
- 264              		@ frame_needed = 0, uses_anonymous_args = 0
- 265              		.loc 1 653 1 is_stmt 0 view .LVU67
- 266 0000 08B5     		push	{r3, lr}
- 267              	.LCFI6:
- 268              		.cfi_def_cfa_offset 8
- 269              		.cfi_offset 3, -8
- 270              		.cfi_offset 14, -4
+ 257              		.loc 1 653 1 is_stmt 1 view -0
+ 258              		.cfi_startproc
+ 259              		@ args = 0, pretend = 0, frame = 0
+ 260              		@ frame_needed = 0, uses_anonymous_args = 0
+ 261              		.loc 1 653 1 is_stmt 0 view .LVU67
+ 262 0000 08B5     		push	{r3, lr}
+ 263              	.LCFI6:
+ 264              		.cfi_def_cfa_offset 8
+ 265              		.cfi_offset 3, -8
+ 266              		.cfi_offset 14, -4
  654:Core/Src/bno055_support.c **** 	HAL_Delay(msek);
- 271              		.loc 1 654 2 is_stmt 1 view .LVU68
- 272 0002 FFF7FEFF 		bl	HAL_Delay
- 273              	.LVL29:
+ 267              		.loc 1 654 2 is_stmt 1 view .LVU68
+ 268 0002 FFF7FEFF 		bl	HAL_Delay
+ 269              	.LVL29:
  655:Core/Src/bno055_support.c **** }
- 274              		.loc 1 655 1 is_stmt 0 view .LVU69
- 275 0006 08BD     		pop	{r3, pc}
- 276              		.cfi_endproc
- 277              	.LFE127:
- 279              		.section	.text.I2C_routine,"ax",%progbits
- 280              		.align	1
- 281              		.global	I2C_routine
- 282              		.syntax unified
- 283              		.thumb
- 284              		.thumb_func
- 285              		.fpu fpv4-sp-d16
- 287              	I2C_routine:
- 288              	.LFB124:
+ 270              		.loc 1 655 1 is_stmt 0 view .LVU69
+ 271 0006 08BD     		pop	{r3, pc}
+ 272              		.cfi_endproc
+ 273              	.LFE127:
+ 275              		.section	.text.I2C_routine,"ax",%progbits
+ 276              		.align	1
+ 277              		.global	I2C_routine
+ 278              		.syntax unified
+ 279              		.thumb
+ 280              		.thumb_func
+ 282              	I2C_routine:
+ 283              	.LFB124:
  537:Core/Src/bno055_support.c ****     bno055.bus_write = BNO055_I2C_bus_write;
- 289              		.loc 1 537 1 is_stmt 1 view -0
- 290              		.cfi_startproc
- 291              		@ args = 0, pretend = 0, frame = 0
- 292              		@ frame_needed = 0, uses_anonymous_args = 0
- 293              		@ link register save eliminated.
+ 284              		.loc 1 537 1 is_stmt 1 view -0
+ 285              		.cfi_startproc
+ 286              		@ args = 0, pretend = 0, frame = 0
+ 287              		@ frame_needed = 0, uses_anonymous_args = 0
+ 288              		@ link register save eliminated.
  538:Core/Src/bno055_support.c ****     bno055.bus_read = BNO055_I2C_bus_read;
- 294              		.loc 1 538 5 view .LVU71
+ 289              		.loc 1 538 5 view .LVU71
  538:Core/Src/bno055_support.c ****     bno055.bus_read = BNO055_I2C_bus_read;
- 295              		.loc 1 538 22 is_stmt 0 view .LVU72
- 296 0000 054B     		ldr	r3, .L21
- 297 0002 064A     		ldr	r2, .L21+4
- 298 0004 DA60     		str	r2, [r3, #12]
+ 290              		.loc 1 538 22 is_stmt 0 view .LVU72
+ 291 0000 054B     		ldr	r3, .L20
+ 292 0002 064A     		ldr	r2, .L20+4
+ 293 0004 DA60     		str	r2, [r3, #12]
  539:Core/Src/bno055_support.c ****     bno055.delay_msec = BNO055_delay_msek;
- 299              		.loc 1 539 5 is_stmt 1 view .LVU73
+ 294              		.loc 1 539 5 is_stmt 1 view .LVU73
  539:Core/Src/bno055_support.c ****     bno055.delay_msec = BNO055_delay_msek;
- 300              		.loc 1 539 21 is_stmt 0 view .LVU74
- 301 0006 064A     		ldr	r2, .L21+8
- 302 0008 1A61     		str	r2, [r3, #16]
+ 295              		.loc 1 539 21 is_stmt 0 view .LVU74
+ 296 0006 064A     		ldr	r2, .L20+8
+ 297 0008 1A61     		str	r2, [r3, #16]
  540:Core/Src/bno055_support.c ****     bno055.dev_addr = BNO055_I2C_ADDR1;
- 303              		.loc 1 540 5 is_stmt 1 view .LVU75
+ 298              		.loc 1 540 5 is_stmt 1 view .LVU75
  540:Core/Src/bno055_support.c ****     bno055.dev_addr = BNO055_I2C_ADDR1;
- 304              		.loc 1 540 23 is_stmt 0 view .LVU76
- 305 000a 064A     		ldr	r2, .L21+12
- 306 000c 5A61     		str	r2, [r3, #20]
-ARM GAS  /tmp/ccnWsevW.s 			page 18
+ 299              		.loc 1 540 23 is_stmt 0 view .LVU76
+ 300 000a 064A     		ldr	r2, .L20+12
+ 301 000c 5A61     		str	r2, [r3, #20]
+ 541:Core/Src/bno055_support.c **** 
+ 302              		.loc 1 541 5 is_stmt 1 view .LVU77
+ 541:Core/Src/bno055_support.c **** 
+ 303              		.loc 1 541 21 is_stmt 0 view .LVU78
+ARM GAS  /tmp/ccMnb1Cf.s 			page 18
 
 
- 541:Core/Src/bno055_support.c **** 
- 307              		.loc 1 541 5 is_stmt 1 view .LVU77
- 541:Core/Src/bno055_support.c **** 
- 308              		.loc 1 541 21 is_stmt 0 view .LVU78
- 309 000e 2822     		movs	r2, #40
- 310 0010 5A72     		strb	r2, [r3, #9]
+ 304 000e 2822     		movs	r2, #40
+ 305 0010 5A72     		strb	r2, [r3, #9]
  543:Core/Src/bno055_support.c **** }
- 311              		.loc 1 543 5 is_stmt 1 view .LVU79
+ 306              		.loc 1 543 5 is_stmt 1 view .LVU79
  544:Core/Src/bno055_support.c **** 
- 312              		.loc 1 544 1 is_stmt 0 view .LVU80
- 313 0012 0020     		movs	r0, #0
- 314 0014 7047     		bx	lr
- 315              	.L22:
- 316 0016 00BF     		.align	2
- 317              	.L21:
- 318 0018 00000000 		.word	bno055
- 319 001c 00000000 		.word	BNO055_I2C_bus_write
- 320 0020 00000000 		.word	BNO055_I2C_bus_read
- 321 0024 00000000 		.word	BNO055_delay_msek
- 322              		.cfi_endproc
- 323              	.LFE124:
- 325              		.section	.text.bno055_data_readout_template,"ax",%progbits
- 326              		.align	1
- 327              		.global	bno055_data_readout_template
- 328              		.syntax unified
- 329              		.thumb
- 330              		.thumb_func
- 331              		.fpu fpv4-sp-d16
- 333              	bno055_data_readout_template:
- 334              	.LFB123:
+ 307              		.loc 1 544 1 is_stmt 0 view .LVU80
+ 308 0012 0020     		movs	r0, #0
+ 309 0014 7047     		bx	lr
+ 310              	.L21:
+ 311 0016 00BF     		.align	2
+ 312              	.L20:
+ 313 0018 00000000 		.word	.LANCHOR0
+ 314 001c 00000000 		.word	BNO055_I2C_bus_write
+ 315 0020 00000000 		.word	BNO055_I2C_bus_read
+ 316 0024 00000000 		.word	BNO055_delay_msek
+ 317              		.cfi_endproc
+ 318              	.LFE124:
+ 320              		.section	.text.bno055_data_readout_template,"ax",%progbits
+ 321              		.align	1
+ 322              		.global	bno055_data_readout_template
+ 323              		.syntax unified
+ 324              		.thumb
+ 325              		.thumb_func
+ 327              	bno055_data_readout_template:
+ 328              	.LFB123:
  110:Core/Src/bno055_support.c ****     /* Variable used to return value of
- 335              		.loc 1 110 1 is_stmt 1 view -0
- 336              		.cfi_startproc
- 337              		@ args = 0, pretend = 0, frame = 376
- 338              		@ frame_needed = 0, uses_anonymous_args = 0
- 339 0000 30B5     		push	{r4, r5, lr}
- 340              	.LCFI7:
- 341              		.cfi_def_cfa_offset 12
- 342              		.cfi_offset 4, -12
- 343              		.cfi_offset 5, -8
- 344              		.cfi_offset 14, -4
- 345 0002 DFB0     		sub	sp, sp, #380
- 346              	.LCFI8:
- 347              		.cfi_def_cfa_offset 392
+ 329              		.loc 1 110 1 is_stmt 1 view -0
+ 330              		.cfi_startproc
+ 331              		@ args = 0, pretend = 0, frame = 376
+ 332              		@ frame_needed = 0, uses_anonymous_args = 0
+ 333 0000 30B5     		push	{r4, r5, lr}
+ 334              	.LCFI7:
+ 335              		.cfi_def_cfa_offset 12
+ 336              		.cfi_offset 4, -12
+ 337              		.cfi_offset 5, -8
+ 338              		.cfi_offset 14, -4
+ 339 0002 DFB0     		sub	sp, sp, #380
+ 340              	.LCFI8:
+ 341              		.cfi_def_cfa_offset 392
  113:Core/Src/bno055_support.c **** 
- 348              		.loc 1 113 5 view .LVU82
- 349              	.LVL30:
+ 342              		.loc 1 113 5 view .LVU82
+ 343              	.LVL30:
  116:Core/Src/bno055_support.c **** 
- 350              		.loc 1 116 5 view .LVU83
+ 344              		.loc 1 116 5 view .LVU83
  120:Core/Src/bno055_support.c **** 
- 351              		.loc 1 120 5 view .LVU84
+ 345              		.loc 1 120 5 view .LVU84
  120:Core/Src/bno055_support.c **** 
- 352              		.loc 1 120 9 is_stmt 0 view .LVU85
- 353 0004 0024     		movs	r4, #0
- 354 0006 ADF87641 		strh	r4, [sp, #374]	@ movhi
+ 346              		.loc 1 120 9 is_stmt 0 view .LVU85
+ 347 0004 0024     		movs	r4, #0
+ 348 0006 ADF87641 		strh	r4, [sp, #374]	@ movhi
  123:Core/Src/bno055_support.c **** 
- 355              		.loc 1 123 5 is_stmt 1 view .LVU86
-ARM GAS  /tmp/ccnWsevW.s 			page 19
+ 349              		.loc 1 123 5 is_stmt 1 view .LVU86
+ 123:Core/Src/bno055_support.c **** 
+ 350              		.loc 1 123 9 is_stmt 0 view .LVU87
+ 351 000a ADF87441 		strh	r4, [sp, #372]	@ movhi
+ 126:Core/Src/bno055_support.c **** 
+ 352              		.loc 1 126 5 is_stmt 1 view .LVU88
+ARM GAS  /tmp/ccMnb1Cf.s 			page 19
 
 
- 123:Core/Src/bno055_support.c **** 
- 356              		.loc 1 123 9 is_stmt 0 view .LVU87
- 357 000a ADF87441 		strh	r4, [sp, #372]	@ movhi
  126:Core/Src/bno055_support.c **** 
- 358              		.loc 1 126 5 is_stmt 1 view .LVU88
- 126:Core/Src/bno055_support.c **** 
- 359              		.loc 1 126 9 is_stmt 0 view .LVU89
- 360 000e ADF87241 		strh	r4, [sp, #370]	@ movhi
+ 353              		.loc 1 126 9 is_stmt 0 view .LVU89
+ 354 000e ADF87241 		strh	r4, [sp, #370]	@ movhi
  129:Core/Src/bno055_support.c **** 
- 361              		.loc 1 129 5 is_stmt 1 view .LVU90
+ 355              		.loc 1 129 5 is_stmt 1 view .LVU90
  133:Core/Src/bno055_support.c **** 
- 362              		.loc 1 133 5 view .LVU91
+ 356              		.loc 1 133 5 view .LVU91
  133:Core/Src/bno055_support.c **** 
- 363              		.loc 1 133 9 is_stmt 0 view .LVU92
- 364 0012 ADF86A41 		strh	r4, [sp, #362]	@ movhi
+ 357              		.loc 1 133 9 is_stmt 0 view .LVU92
+ 358 0012 ADF86A41 		strh	r4, [sp, #362]	@ movhi
  136:Core/Src/bno055_support.c **** 
- 365              		.loc 1 136 5 is_stmt 1 view .LVU93
+ 359              		.loc 1 136 5 is_stmt 1 view .LVU93
  136:Core/Src/bno055_support.c **** 
- 366              		.loc 1 136 9 is_stmt 0 view .LVU94
- 367 0016 ADF86841 		strh	r4, [sp, #360]	@ movhi
+ 360              		.loc 1 136 9 is_stmt 0 view .LVU94
+ 361 0016 ADF86841 		strh	r4, [sp, #360]	@ movhi
  139:Core/Src/bno055_support.c **** 
- 368              		.loc 1 139 5 is_stmt 1 view .LVU95
+ 362              		.loc 1 139 5 is_stmt 1 view .LVU95
  139:Core/Src/bno055_support.c **** 
- 369              		.loc 1 139 9 is_stmt 0 view .LVU96
- 370 001a ADF86641 		strh	r4, [sp, #358]	@ movhi
+ 363              		.loc 1 139 9 is_stmt 0 view .LVU96
+ 364 001a ADF86641 		strh	r4, [sp, #358]	@ movhi
  142:Core/Src/bno055_support.c **** 
- 371              		.loc 1 142 5 is_stmt 1 view .LVU97
+ 365              		.loc 1 142 5 is_stmt 1 view .LVU97
  146:Core/Src/bno055_support.c **** 
- 372              		.loc 1 146 5 view .LVU98
+ 366              		.loc 1 146 5 view .LVU98
  146:Core/Src/bno055_support.c **** 
- 373              		.loc 1 146 9 is_stmt 0 view .LVU99
- 374 001e ADF85E41 		strh	r4, [sp, #350]	@ movhi
+ 367              		.loc 1 146 9 is_stmt 0 view .LVU99
+ 368 001e ADF85E41 		strh	r4, [sp, #350]	@ movhi
  149:Core/Src/bno055_support.c **** 
- 375              		.loc 1 149 5 is_stmt 1 view .LVU100
+ 369              		.loc 1 149 5 is_stmt 1 view .LVU100
  149:Core/Src/bno055_support.c **** 
- 376              		.loc 1 149 9 is_stmt 0 view .LVU101
- 377 0022 ADF85C41 		strh	r4, [sp, #348]	@ movhi
+ 370              		.loc 1 149 9 is_stmt 0 view .LVU101
+ 371 0022 ADF85C41 		strh	r4, [sp, #348]	@ movhi
  152:Core/Src/bno055_support.c **** 
- 378              		.loc 1 152 5 is_stmt 1 view .LVU102
+ 372              		.loc 1 152 5 is_stmt 1 view .LVU102
  152:Core/Src/bno055_support.c **** 
- 379              		.loc 1 152 9 is_stmt 0 view .LVU103
- 380 0026 ADF85A41 		strh	r4, [sp, #346]	@ movhi
+ 373              		.loc 1 152 9 is_stmt 0 view .LVU103
+ 374 0026 ADF85A41 		strh	r4, [sp, #346]	@ movhi
  155:Core/Src/bno055_support.c **** 
- 381              		.loc 1 155 5 is_stmt 1 view .LVU104
+ 375              		.loc 1 155 5 is_stmt 1 view .LVU104
  159:Core/Src/bno055_support.c **** 
- 382              		.loc 1 159 5 view .LVU105
+ 376              		.loc 1 159 5 view .LVU105
  159:Core/Src/bno055_support.c **** 
- 383              		.loc 1 159 9 is_stmt 0 view .LVU106
- 384 002a ADF85241 		strh	r4, [sp, #338]	@ movhi
+ 377              		.loc 1 159 9 is_stmt 0 view .LVU106
+ 378 002a ADF85241 		strh	r4, [sp, #338]	@ movhi
  162:Core/Src/bno055_support.c **** 
- 385              		.loc 1 162 5 is_stmt 1 view .LVU107
+ 379              		.loc 1 162 5 is_stmt 1 view .LVU107
  162:Core/Src/bno055_support.c **** 
- 386              		.loc 1 162 9 is_stmt 0 view .LVU108
- 387 002e ADF85041 		strh	r4, [sp, #336]	@ movhi
+ 380              		.loc 1 162 9 is_stmt 0 view .LVU108
+ 381 002e ADF85041 		strh	r4, [sp, #336]	@ movhi
  165:Core/Src/bno055_support.c **** 
- 388              		.loc 1 165 5 is_stmt 1 view .LVU109
+ 382              		.loc 1 165 5 is_stmt 1 view .LVU109
  165:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 20
-
-
- 389              		.loc 1 165 9 is_stmt 0 view .LVU110
- 390 0032 ADF84E41 		strh	r4, [sp, #334]	@ movhi
+ 383              		.loc 1 165 9 is_stmt 0 view .LVU110
+ 384 0032 ADF84E41 		strh	r4, [sp, #334]	@ movhi
  168:Core/Src/bno055_support.c **** 
- 391              		.loc 1 168 5 is_stmt 1 view .LVU111
+ 385              		.loc 1 168 5 is_stmt 1 view .LVU111
  172:Core/Src/bno055_support.c **** 
- 392              		.loc 1 172 5 view .LVU112
+ARM GAS  /tmp/ccMnb1Cf.s 			page 20
+
+
+ 386              		.loc 1 172 5 view .LVU112
  172:Core/Src/bno055_support.c **** 
- 393              		.loc 1 172 9 is_stmt 0 view .LVU113
- 394 0036 ADF84641 		strh	r4, [sp, #326]	@ movhi
+ 387              		.loc 1 172 9 is_stmt 0 view .LVU113
+ 388 0036 ADF84641 		strh	r4, [sp, #326]	@ movhi
  175:Core/Src/bno055_support.c **** 
- 395              		.loc 1 175 5 is_stmt 1 view .LVU114
+ 389              		.loc 1 175 5 is_stmt 1 view .LVU114
  175:Core/Src/bno055_support.c **** 
- 396              		.loc 1 175 9 is_stmt 0 view .LVU115
- 397 003a ADF84441 		strh	r4, [sp, #324]	@ movhi
+ 390              		.loc 1 175 9 is_stmt 0 view .LVU115
+ 391 003a ADF84441 		strh	r4, [sp, #324]	@ movhi
  178:Core/Src/bno055_support.c **** 
- 398              		.loc 1 178 5 is_stmt 1 view .LVU116
+ 392              		.loc 1 178 5 is_stmt 1 view .LVU116
  178:Core/Src/bno055_support.c **** 
- 399              		.loc 1 178 9 is_stmt 0 view .LVU117
- 400 003e ADF84241 		strh	r4, [sp, #322]	@ movhi
+ 393              		.loc 1 178 9 is_stmt 0 view .LVU117
+ 394 003e ADF84241 		strh	r4, [sp, #322]	@ movhi
  181:Core/Src/bno055_support.c **** 
- 401              		.loc 1 181 5 is_stmt 1 view .LVU118
+ 395              		.loc 1 181 5 is_stmt 1 view .LVU118
  181:Core/Src/bno055_support.c **** 
- 402              		.loc 1 181 9 is_stmt 0 view .LVU119
- 403 0042 ADF84041 		strh	r4, [sp, #320]	@ movhi
+ 396              		.loc 1 181 9 is_stmt 0 view .LVU119
+ 397 0042 ADF84041 		strh	r4, [sp, #320]	@ movhi
  184:Core/Src/bno055_support.c **** 
- 404              		.loc 1 184 5 is_stmt 1 view .LVU120
+ 398              		.loc 1 184 5 is_stmt 1 view .LVU120
  188:Core/Src/bno055_support.c **** 
- 405              		.loc 1 188 5 view .LVU121
+ 399              		.loc 1 188 5 view .LVU121
  188:Core/Src/bno055_support.c **** 
- 406              		.loc 1 188 9 is_stmt 0 view .LVU122
- 407 0046 ADF83641 		strh	r4, [sp, #310]	@ movhi
+ 400              		.loc 1 188 9 is_stmt 0 view .LVU122
+ 401 0046 ADF83641 		strh	r4, [sp, #310]	@ movhi
  191:Core/Src/bno055_support.c **** 
- 408              		.loc 1 191 5 is_stmt 1 view .LVU123
+ 402              		.loc 1 191 5 is_stmt 1 view .LVU123
  191:Core/Src/bno055_support.c **** 
- 409              		.loc 1 191 9 is_stmt 0 view .LVU124
- 410 004a ADF83441 		strh	r4, [sp, #308]	@ movhi
+ 403              		.loc 1 191 9 is_stmt 0 view .LVU124
+ 404 004a ADF83441 		strh	r4, [sp, #308]	@ movhi
  194:Core/Src/bno055_support.c **** 
- 411              		.loc 1 194 5 is_stmt 1 view .LVU125
+ 405              		.loc 1 194 5 is_stmt 1 view .LVU125
  194:Core/Src/bno055_support.c **** 
- 412              		.loc 1 194 9 is_stmt 0 view .LVU126
- 413 004e ADF83241 		strh	r4, [sp, #306]	@ movhi
+ 406              		.loc 1 194 9 is_stmt 0 view .LVU126
+ 407 004e ADF83241 		strh	r4, [sp, #306]	@ movhi
  197:Core/Src/bno055_support.c **** 
- 414              		.loc 1 197 5 is_stmt 1 view .LVU127
+ 408              		.loc 1 197 5 is_stmt 1 view .LVU127
  201:Core/Src/bno055_support.c **** 
- 415              		.loc 1 201 5 view .LVU128
+ 409              		.loc 1 201 5 view .LVU128
  201:Core/Src/bno055_support.c **** 
- 416              		.loc 1 201 9 is_stmt 0 view .LVU129
- 417 0052 ADF82A41 		strh	r4, [sp, #298]	@ movhi
+ 410              		.loc 1 201 9 is_stmt 0 view .LVU129
+ 411 0052 ADF82A41 		strh	r4, [sp, #298]	@ movhi
  204:Core/Src/bno055_support.c **** 
- 418              		.loc 1 204 5 is_stmt 1 view .LVU130
+ 412              		.loc 1 204 5 is_stmt 1 view .LVU130
  204:Core/Src/bno055_support.c **** 
- 419              		.loc 1 204 9 is_stmt 0 view .LVU131
- 420 0056 ADF82841 		strh	r4, [sp, #296]	@ movhi
+ 413              		.loc 1 204 9 is_stmt 0 view .LVU131
+ 414 0056 ADF82841 		strh	r4, [sp, #296]	@ movhi
  207:Core/Src/bno055_support.c **** 
- 421              		.loc 1 207 5 is_stmt 1 view .LVU132
+ 415              		.loc 1 207 5 is_stmt 1 view .LVU132
  207:Core/Src/bno055_support.c **** 
- 422              		.loc 1 207 9 is_stmt 0 view .LVU133
-ARM GAS  /tmp/ccnWsevW.s 			page 21
-
-
- 423 005a ADF82641 		strh	r4, [sp, #294]	@ movhi
+ 416              		.loc 1 207 9 is_stmt 0 view .LVU133
+ 417 005a ADF82641 		strh	r4, [sp, #294]	@ movhi
  210:Core/Src/bno055_support.c **** 
- 424              		.loc 1 210 5 is_stmt 1 view .LVU134
+ 418              		.loc 1 210 5 is_stmt 1 view .LVU134
  214:Core/Src/bno055_support.c **** 
- 425              		.loc 1 214 5 view .LVU135
+ 419              		.loc 1 214 5 view .LVU135
+ARM GAS  /tmp/ccMnb1Cf.s 			page 21
+
+
  214:Core/Src/bno055_support.c **** 
- 426              		.loc 1 214 12 is_stmt 0 view .LVU136
- 427 005e 0022     		movs	r2, #0
- 428 0060 0023     		movs	r3, #0
- 429 0062 CDE94623 		strd	r2, [sp, #280]
+ 420              		.loc 1 214 12 is_stmt 0 view .LVU136
+ 421 005e 0022     		movs	r2, #0
+ 422 0060 0023     		movs	r3, #0
+ 423 0062 CDE94623 		strd	r2, [sp, #280]
  217:Core/Src/bno055_support.c **** 
- 430              		.loc 1 217 5 is_stmt 1 view .LVU137
+ 424              		.loc 1 217 5 is_stmt 1 view .LVU137
  217:Core/Src/bno055_support.c **** 
- 431              		.loc 1 217 12 is_stmt 0 view .LVU138
- 432 0066 CDE94423 		strd	r2, [sp, #272]
+ 425              		.loc 1 217 12 is_stmt 0 view .LVU138
+ 426 0066 CDE94423 		strd	r2, [sp, #272]
  220:Core/Src/bno055_support.c **** 
- 433              		.loc 1 220 5 is_stmt 1 view .LVU139
+ 427              		.loc 1 220 5 is_stmt 1 view .LVU139
  220:Core/Src/bno055_support.c **** 
- 434              		.loc 1 220 12 is_stmt 0 view .LVU140
- 435 006a CDE94223 		strd	r2, [sp, #264]
+ 428              		.loc 1 220 12 is_stmt 0 view .LVU140
+ 429 006a CDE94223 		strd	r2, [sp, #264]
  223:Core/Src/bno055_support.c **** 
- 436              		.loc 1 223 5 is_stmt 1 view .LVU141
+ 430              		.loc 1 223 5 is_stmt 1 view .LVU141
  227:Core/Src/bno055_support.c **** 
- 437              		.loc 1 227 5 view .LVU142
+ 431              		.loc 1 227 5 view .LVU142
  227:Core/Src/bno055_support.c **** 
- 438              		.loc 1 227 12 is_stmt 0 view .LVU143
- 439 006e CDE93A23 		strd	r2, [sp, #232]
+ 432              		.loc 1 227 12 is_stmt 0 view .LVU143
+ 433 006e CDE93A23 		strd	r2, [sp, #232]
  230:Core/Src/bno055_support.c **** 
- 440              		.loc 1 230 5 is_stmt 1 view .LVU144
+ 434              		.loc 1 230 5 is_stmt 1 view .LVU144
  230:Core/Src/bno055_support.c **** 
- 441              		.loc 1 230 12 is_stmt 0 view .LVU145
- 442 0072 CDE93823 		strd	r2, [sp, #224]
+ 435              		.loc 1 230 12 is_stmt 0 view .LVU145
+ 436 0072 CDE93823 		strd	r2, [sp, #224]
  233:Core/Src/bno055_support.c **** 
- 443              		.loc 1 233 5 is_stmt 1 view .LVU146
+ 437              		.loc 1 233 5 is_stmt 1 view .LVU146
  233:Core/Src/bno055_support.c **** 
- 444              		.loc 1 233 12 is_stmt 0 view .LVU147
- 445 0076 CDE93623 		strd	r2, [sp, #216]
+ 438              		.loc 1 233 12 is_stmt 0 view .LVU147
+ 439 0076 CDE93623 		strd	r2, [sp, #216]
  236:Core/Src/bno055_support.c **** 
- 446              		.loc 1 236 5 is_stmt 1 view .LVU148
+ 440              		.loc 1 236 5 is_stmt 1 view .LVU148
  240:Core/Src/bno055_support.c **** 
- 447              		.loc 1 240 5 view .LVU149
+ 441              		.loc 1 240 5 view .LVU149
  240:Core/Src/bno055_support.c **** 
- 448              		.loc 1 240 12 is_stmt 0 view .LVU150
- 449 007a CDE92E23 		strd	r2, [sp, #184]
+ 442              		.loc 1 240 12 is_stmt 0 view .LVU150
+ 443 007a CDE92E23 		strd	r2, [sp, #184]
  243:Core/Src/bno055_support.c **** 
- 450              		.loc 1 243 5 is_stmt 1 view .LVU151
+ 444              		.loc 1 243 5 is_stmt 1 view .LVU151
  243:Core/Src/bno055_support.c **** 
- 451              		.loc 1 243 12 is_stmt 0 view .LVU152
- 452 007e CDE92C23 		strd	r2, [sp, #176]
+ 445              		.loc 1 243 12 is_stmt 0 view .LVU152
+ 446 007e CDE92C23 		strd	r2, [sp, #176]
  246:Core/Src/bno055_support.c **** 
- 453              		.loc 1 246 5 is_stmt 1 view .LVU153
+ 447              		.loc 1 246 5 is_stmt 1 view .LVU153
  246:Core/Src/bno055_support.c **** 
- 454              		.loc 1 246 12 is_stmt 0 view .LVU154
- 455 0082 CDE92A23 		strd	r2, [sp, #168]
+ 448              		.loc 1 246 12 is_stmt 0 view .LVU154
+ 449 0082 CDE92A23 		strd	r2, [sp, #168]
  249:Core/Src/bno055_support.c **** 
- 456              		.loc 1 249 5 is_stmt 1 view .LVU155
+ 450              		.loc 1 249 5 is_stmt 1 view .LVU155
  255:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 22
+ 451              		.loc 1 255 5 view .LVU156
+ 255:Core/Src/bno055_support.c **** 
+ 452              		.loc 1 255 12 is_stmt 0 view .LVU157
+ 453 0086 CDE92223 		strd	r2, [sp, #136]
+ 259:Core/Src/bno055_support.c **** 
+ARM GAS  /tmp/ccMnb1Cf.s 			page 22
 
 
- 457              		.loc 1 255 5 view .LVU156
- 255:Core/Src/bno055_support.c **** 
- 458              		.loc 1 255 12 is_stmt 0 view .LVU157
- 459 0086 CDE92223 		strd	r2, [sp, #136]
+ 454              		.loc 1 259 5 is_stmt 1 view .LVU158
  259:Core/Src/bno055_support.c **** 
- 460              		.loc 1 259 5 is_stmt 1 view .LVU158
- 259:Core/Src/bno055_support.c **** 
- 461              		.loc 1 259 12 is_stmt 0 view .LVU159
- 462 008a CDE92023 		strd	r2, [sp, #128]
+ 455              		.loc 1 259 12 is_stmt 0 view .LVU159
+ 456 008a CDE92023 		strd	r2, [sp, #128]
  263:Core/Src/bno055_support.c **** 
- 463              		.loc 1 263 5 is_stmt 1 view .LVU160
+ 457              		.loc 1 263 5 is_stmt 1 view .LVU160
  263:Core/Src/bno055_support.c **** 
- 464              		.loc 1 263 12 is_stmt 0 view .LVU161
- 465 008e CDE91E23 		strd	r2, [sp, #120]
+ 458              		.loc 1 263 12 is_stmt 0 view .LVU161
+ 459 008e CDE91E23 		strd	r2, [sp, #120]
  267:Core/Src/bno055_support.c **** 
- 466              		.loc 1 267 5 is_stmt 1 view .LVU162
+ 460              		.loc 1 267 5 is_stmt 1 view .LVU162
  271:Core/Src/bno055_support.c **** 
- 467              		.loc 1 271 5 view .LVU163
+ 461              		.loc 1 271 5 view .LVU163
  271:Core/Src/bno055_support.c **** 
- 468              		.loc 1 271 12 is_stmt 0 view .LVU164
- 469 0092 CDE91623 		strd	r2, [sp, #88]
+ 462              		.loc 1 271 12 is_stmt 0 view .LVU164
+ 463 0092 CDE91623 		strd	r2, [sp, #88]
  274:Core/Src/bno055_support.c **** 
- 470              		.loc 1 274 5 is_stmt 1 view .LVU165
+ 464              		.loc 1 274 5 is_stmt 1 view .LVU165
  274:Core/Src/bno055_support.c **** 
- 471              		.loc 1 274 12 is_stmt 0 view .LVU166
- 472 0096 CDE91423 		strd	r2, [sp, #80]
+ 465              		.loc 1 274 12 is_stmt 0 view .LVU166
+ 466 0096 CDE91423 		strd	r2, [sp, #80]
  277:Core/Src/bno055_support.c **** 
- 473              		.loc 1 277 5 is_stmt 1 view .LVU167
+ 467              		.loc 1 277 5 is_stmt 1 view .LVU167
  277:Core/Src/bno055_support.c **** 
- 474              		.loc 1 277 12 is_stmt 0 view .LVU168
- 475 009a CDE91223 		strd	r2, [sp, #72]
+ 468              		.loc 1 277 12 is_stmt 0 view .LVU168
+ 469 009a CDE91223 		strd	r2, [sp, #72]
  280:Core/Src/bno055_support.c **** 
- 476              		.loc 1 280 5 is_stmt 1 view .LVU169
+ 470              		.loc 1 280 5 is_stmt 1 view .LVU169
  284:Core/Src/bno055_support.c **** 
- 477              		.loc 1 284 5 view .LVU170
+ 471              		.loc 1 284 5 view .LVU170
  284:Core/Src/bno055_support.c **** 
- 478              		.loc 1 284 12 is_stmt 0 view .LVU171
- 479 009e CDE90A23 		strd	r2, [sp, #40]
+ 472              		.loc 1 284 12 is_stmt 0 view .LVU171
+ 473 009e CDE90A23 		strd	r2, [sp, #40]
  287:Core/Src/bno055_support.c **** 
- 480              		.loc 1 287 5 is_stmt 1 view .LVU172
+ 474              		.loc 1 287 5 is_stmt 1 view .LVU172
  287:Core/Src/bno055_support.c **** 
- 481              		.loc 1 287 12 is_stmt 0 view .LVU173
- 482 00a2 CDE90823 		strd	r2, [sp, #32]
+ 475              		.loc 1 287 12 is_stmt 0 view .LVU173
+ 476 00a2 CDE90823 		strd	r2, [sp, #32]
  290:Core/Src/bno055_support.c **** 
- 483              		.loc 1 290 5 is_stmt 1 view .LVU174
+ 477              		.loc 1 290 5 is_stmt 1 view .LVU174
  290:Core/Src/bno055_support.c **** 
- 484              		.loc 1 290 12 is_stmt 0 view .LVU175
- 485 00a6 CDE90623 		strd	r2, [sp, #24]
+ 478              		.loc 1 290 12 is_stmt 0 view .LVU175
+ 479 00a6 CDE90623 		strd	r2, [sp, #24]
  293:Core/Src/bno055_support.c **** 
- 486              		.loc 1 293 5 is_stmt 1 view .LVU176
+ 480              		.loc 1 293 5 is_stmt 1 view .LVU176
  302:Core/Src/bno055_support.c **** #endif
- 487              		.loc 1 302 5 view .LVU177
- 488 00aa FFF7FEFF 		bl	I2C_routine
- 489              	.LVL31:
+ 481              		.loc 1 302 5 view .LVU177
+ 482 00aa FFF7FEFF 		bl	I2C_routine
+ 483              	.LVL31:
  319:Core/Src/bno055_support.c **** 
- 490              		.loc 1 319 5 view .LVU178
+ 484              		.loc 1 319 5 view .LVU178
  319:Core/Src/bno055_support.c **** 
-ARM GAS  /tmp/ccnWsevW.s 			page 23
+ 485              		.loc 1 319 14 is_stmt 0 view .LVU179
+ 486 00ae 9448     		ldr	r0, .L24
+ 487 00b0 FFF7FEFF 		bl	bno055_init
+ 488              	.LVL32:
+ 489 00b4 0546     		mov	r5, r0
+ARM GAS  /tmp/ccMnb1Cf.s 			page 23
 
 
- 491              		.loc 1 319 14 is_stmt 0 view .LVU179
- 492 00ae 9448     		ldr	r0, .L25
- 493 00b0 FFF7FEFF 		bl	bno055_init
- 494              	.LVL32:
- 495 00b4 0546     		mov	r5, r0
- 496              	.LVL33:
+ 490              	.LVL33:
  327:Core/Src/bno055_support.c **** 
- 497              		.loc 1 327 5 is_stmt 1 view .LVU180
+ 491              		.loc 1 327 5 is_stmt 1 view .LVU180
  330:Core/Src/bno055_support.c **** 
- 498              		.loc 1 330 5 view .LVU181
+ 492              		.loc 1 330 5 view .LVU181
  330:Core/Src/bno055_support.c **** 
- 499              		.loc 1 330 15 is_stmt 0 view .LVU182
- 500 00b6 2046     		mov	r0, r4
- 501              	.LVL34:
+ 493              		.loc 1 330 15 is_stmt 0 view .LVU182
+ 494 00b6 2046     		mov	r0, r4
+ 495              	.LVL34:
  330:Core/Src/bno055_support.c **** 
- 502              		.loc 1 330 15 view .LVU183
- 503 00b8 FFF7FEFF 		bl	bno055_set_power_mode
- 504              	.LVL35:
+ 496              		.loc 1 330 15 view .LVU183
+ 497 00b8 FFF7FEFF 		bl	bno055_set_power_mode
+ 498              	.LVL35:
  330:Core/Src/bno055_support.c **** 
- 505              		.loc 1 330 12 view .LVU184
- 506 00bc 4419     		adds	r4, r0, r5
- 507              	.LVL36:
+ 499              		.loc 1 330 12 view .LVU184
+ 500 00bc 4419     		adds	r4, r0, r5
+ 501              	.LVL36:
  366:Core/Src/bno055_support.c **** 
- 508              		.loc 1 366 5 is_stmt 1 view .LVU185
+ 502              		.loc 1 366 5 is_stmt 1 view .LVU185
  366:Core/Src/bno055_support.c **** 
- 509              		.loc 1 366 15 is_stmt 0 view .LVU186
- 510 00be 0720     		movs	r0, #7
- 511 00c0 FFF7FEFF 		bl	bno055_set_operation_mode
- 512              	.LVL37:
+ 503              		.loc 1 366 15 is_stmt 0 view .LVU186
+ 504 00be 0720     		movs	r0, #7
+ 505 00c0 FFF7FEFF 		bl	bno055_set_operation_mode
+ 506              	.LVL37:
  366:Core/Src/bno055_support.c **** 
- 513              		.loc 1 366 12 view .LVU187
- 514 00c4 0444     		add	r4, r4, r0
- 515              	.LVL38:
+ 507              		.loc 1 366 12 view .LVU187
+ 508 00c4 0444     		add	r4, r4, r0
+ 509              	.LVL38:
  371:Core/Src/bno055_support.c ****     comres += bno055_read_accel_y(&accel_datay);
- 516              		.loc 1 371 5 is_stmt 1 view .LVU188
+ 510              		.loc 1 371 5 is_stmt 1 view .LVU188
  371:Core/Src/bno055_support.c ****     comres += bno055_read_accel_y(&accel_datay);
- 517              		.loc 1 371 15 is_stmt 0 view .LVU189
- 518 00c6 0DF5BB70 		add	r0, sp, #374
- 519 00ca FFF7FEFF 		bl	bno055_read_accel_x
- 520              	.LVL39:
+ 511              		.loc 1 371 15 is_stmt 0 view .LVU189
+ 512 00c6 0DF5BB70 		add	r0, sp, #374
+ 513 00ca FFF7FEFF 		bl	bno055_read_accel_x
+ 514              	.LVL39:
  371:Core/Src/bno055_support.c ****     comres += bno055_read_accel_y(&accel_datay);
- 521              		.loc 1 371 12 view .LVU190
- 522 00ce 0444     		add	r4, r4, r0
- 523              	.LVL40:
+ 515              		.loc 1 371 12 view .LVU190
+ 516 00ce 0444     		add	r4, r4, r0
+ 517              	.LVL40:
  372:Core/Src/bno055_support.c ****     comres += bno055_read_accel_z(&accel_dataz);
- 524              		.loc 1 372 5 is_stmt 1 view .LVU191
+ 518              		.loc 1 372 5 is_stmt 1 view .LVU191
  372:Core/Src/bno055_support.c ****     comres += bno055_read_accel_z(&accel_dataz);
- 525              		.loc 1 372 15 is_stmt 0 view .LVU192
- 526 00d0 5DA8     		add	r0, sp, #372
- 527 00d2 FFF7FEFF 		bl	bno055_read_accel_y
- 528              	.LVL41:
+ 519              		.loc 1 372 15 is_stmt 0 view .LVU192
+ 520 00d0 5DA8     		add	r0, sp, #372
+ 521 00d2 FFF7FEFF 		bl	bno055_read_accel_y
+ 522              	.LVL41:
  372:Core/Src/bno055_support.c ****     comres += bno055_read_accel_z(&accel_dataz);
- 529              		.loc 1 372 12 view .LVU193
- 530 00d6 0444     		add	r4, r4, r0
- 531              	.LVL42:
+ 523              		.loc 1 372 12 view .LVU193
+ 524 00d6 0444     		add	r4, r4, r0
+ 525              	.LVL42:
  373:Core/Src/bno055_support.c ****     comres += bno055_read_accel_xyz(&accel_xyz);
- 532              		.loc 1 373 5 is_stmt 1 view .LVU194
-ARM GAS  /tmp/ccnWsevW.s 			page 24
+ 526              		.loc 1 373 5 is_stmt 1 view .LVU194
+ 373:Core/Src/bno055_support.c ****     comres += bno055_read_accel_xyz(&accel_xyz);
+ 527              		.loc 1 373 15 is_stmt 0 view .LVU195
+ 528 00d8 0DF5B970 		add	r0, sp, #370
+ 529 00dc FFF7FEFF 		bl	bno055_read_accel_z
+ 530              	.LVL43:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 24
 
 
  373:Core/Src/bno055_support.c ****     comres += bno055_read_accel_xyz(&accel_xyz);
- 533              		.loc 1 373 15 is_stmt 0 view .LVU195
- 534 00d8 0DF5B970 		add	r0, sp, #370
- 535 00dc FFF7FEFF 		bl	bno055_read_accel_z
- 536              	.LVL43:
- 373:Core/Src/bno055_support.c ****     comres += bno055_read_accel_xyz(&accel_xyz);
- 537              		.loc 1 373 12 view .LVU196
- 538 00e0 0444     		add	r4, r4, r0
- 539              	.LVL44:
+ 531              		.loc 1 373 12 view .LVU196
+ 532 00e0 0444     		add	r4, r4, r0
+ 533              	.LVL44:
  374:Core/Src/bno055_support.c **** 
- 540              		.loc 1 374 5 is_stmt 1 view .LVU197
+ 534              		.loc 1 374 5 is_stmt 1 view .LVU197
  374:Core/Src/bno055_support.c **** 
- 541              		.loc 1 374 15 is_stmt 0 view .LVU198
- 542 00e2 5BA8     		add	r0, sp, #364
- 543 00e4 FFF7FEFF 		bl	bno055_read_accel_xyz
- 544              	.LVL45:
+ 535              		.loc 1 374 15 is_stmt 0 view .LVU198
+ 536 00e2 5BA8     		add	r0, sp, #364
+ 537 00e4 FFF7FEFF 		bl	bno055_read_accel_xyz
+ 538              	.LVL45:
  374:Core/Src/bno055_support.c **** 
- 545              		.loc 1 374 12 view .LVU199
- 546 00e8 0444     		add	r4, r4, r0
- 547              	.LVL46:
+ 539              		.loc 1 374 12 view .LVU199
+ 540 00e8 0444     		add	r4, r4, r0
+ 541              	.LVL46:
  379:Core/Src/bno055_support.c ****     comres += bno055_read_mag_y(&mag_datay);
- 548              		.loc 1 379 5 is_stmt 1 view .LVU200
+ 542              		.loc 1 379 5 is_stmt 1 view .LVU200
  379:Core/Src/bno055_support.c ****     comres += bno055_read_mag_y(&mag_datay);
- 549              		.loc 1 379 15 is_stmt 0 view .LVU201
- 550 00ea 0DF5B570 		add	r0, sp, #362
- 551 00ee FFF7FEFF 		bl	bno055_read_mag_x
- 552              	.LVL47:
+ 543              		.loc 1 379 15 is_stmt 0 view .LVU201
+ 544 00ea 0DF5B570 		add	r0, sp, #362
+ 545 00ee FFF7FEFF 		bl	bno055_read_mag_x
+ 546              	.LVL47:
  379:Core/Src/bno055_support.c ****     comres += bno055_read_mag_y(&mag_datay);
- 553              		.loc 1 379 12 view .LVU202
- 554 00f2 0444     		add	r4, r4, r0
- 555              	.LVL48:
+ 547              		.loc 1 379 12 view .LVU202
+ 548 00f2 0444     		add	r4, r4, r0
+ 549              	.LVL48:
  380:Core/Src/bno055_support.c ****     comres += bno055_read_mag_z(&mag_dataz);
- 556              		.loc 1 380 5 is_stmt 1 view .LVU203
+ 550              		.loc 1 380 5 is_stmt 1 view .LVU203
  380:Core/Src/bno055_support.c ****     comres += bno055_read_mag_z(&mag_dataz);
- 557              		.loc 1 380 15 is_stmt 0 view .LVU204
- 558 00f4 5AA8     		add	r0, sp, #360
- 559 00f6 FFF7FEFF 		bl	bno055_read_mag_y
- 560              	.LVL49:
+ 551              		.loc 1 380 15 is_stmt 0 view .LVU204
+ 552 00f4 5AA8     		add	r0, sp, #360
+ 553 00f6 FFF7FEFF 		bl	bno055_read_mag_y
+ 554              	.LVL49:
  380:Core/Src/bno055_support.c ****     comres += bno055_read_mag_z(&mag_dataz);
- 561              		.loc 1 380 12 view .LVU205
- 562 00fa 0444     		add	r4, r4, r0
- 563              	.LVL50:
+ 555              		.loc 1 380 12 view .LVU205
+ 556 00fa 0444     		add	r4, r4, r0
+ 557              	.LVL50:
  381:Core/Src/bno055_support.c ****     comres += bno055_read_mag_xyz(&mag_xyz);
- 564              		.loc 1 381 5 is_stmt 1 view .LVU206
+ 558              		.loc 1 381 5 is_stmt 1 view .LVU206
  381:Core/Src/bno055_support.c ****     comres += bno055_read_mag_xyz(&mag_xyz);
- 565              		.loc 1 381 15 is_stmt 0 view .LVU207
- 566 00fc 0DF5B370 		add	r0, sp, #358
- 567 0100 FFF7FEFF 		bl	bno055_read_mag_z
- 568              	.LVL51:
+ 559              		.loc 1 381 15 is_stmt 0 view .LVU207
+ 560 00fc 0DF5B370 		add	r0, sp, #358
+ 561 0100 FFF7FEFF 		bl	bno055_read_mag_z
+ 562              	.LVL51:
  381:Core/Src/bno055_support.c ****     comres += bno055_read_mag_xyz(&mag_xyz);
- 569              		.loc 1 381 12 view .LVU208
- 570 0104 0444     		add	r4, r4, r0
- 571              	.LVL52:
+ 563              		.loc 1 381 12 view .LVU208
+ 564 0104 0444     		add	r4, r4, r0
+ 565              	.LVL52:
  382:Core/Src/bno055_support.c **** 
- 572              		.loc 1 382 5 is_stmt 1 view .LVU209
+ 566              		.loc 1 382 5 is_stmt 1 view .LVU209
  382:Core/Src/bno055_support.c **** 
- 573              		.loc 1 382 15 is_stmt 0 view .LVU210
-ARM GAS  /tmp/ccnWsevW.s 			page 25
-
-
- 574 0106 58A8     		add	r0, sp, #352
- 575 0108 FFF7FEFF 		bl	bno055_read_mag_xyz
- 576              	.LVL53:
+ 567              		.loc 1 382 15 is_stmt 0 view .LVU210
+ 568 0106 58A8     		add	r0, sp, #352
+ 569 0108 FFF7FEFF 		bl	bno055_read_mag_xyz
+ 570              	.LVL53:
  382:Core/Src/bno055_support.c **** 
- 577              		.loc 1 382 12 view .LVU211
- 578 010c 0444     		add	r4, r4, r0
- 579              	.LVL54:
+ 571              		.loc 1 382 12 view .LVU211
+ARM GAS  /tmp/ccMnb1Cf.s 			page 25
+
+
+ 572 010c 0444     		add	r4, r4, r0
+ 573              	.LVL54:
  387:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_y(&gyro_datay);
- 580              		.loc 1 387 5 is_stmt 1 view .LVU212
+ 574              		.loc 1 387 5 is_stmt 1 view .LVU212
  387:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_y(&gyro_datay);
- 581              		.loc 1 387 15 is_stmt 0 view .LVU213
- 582 010e 0DF5AF70 		add	r0, sp, #350
- 583 0112 FFF7FEFF 		bl	bno055_read_gyro_x
- 584              	.LVL55:
+ 575              		.loc 1 387 15 is_stmt 0 view .LVU213
+ 576 010e 0DF5AF70 		add	r0, sp, #350
+ 577 0112 FFF7FEFF 		bl	bno055_read_gyro_x
+ 578              	.LVL55:
  387:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_y(&gyro_datay);
- 585              		.loc 1 387 12 view .LVU214
- 586 0116 0444     		add	r4, r4, r0
- 587              	.LVL56:
+ 579              		.loc 1 387 12 view .LVU214
+ 580 0116 0444     		add	r4, r4, r0
+ 581              	.LVL56:
  388:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_z(&gyro_dataz);
- 588              		.loc 1 388 5 is_stmt 1 view .LVU215
+ 582              		.loc 1 388 5 is_stmt 1 view .LVU215
  388:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_z(&gyro_dataz);
- 589              		.loc 1 388 15 is_stmt 0 view .LVU216
- 590 0118 57A8     		add	r0, sp, #348
- 591 011a FFF7FEFF 		bl	bno055_read_gyro_y
- 592              	.LVL57:
+ 583              		.loc 1 388 15 is_stmt 0 view .LVU216
+ 584 0118 57A8     		add	r0, sp, #348
+ 585 011a FFF7FEFF 		bl	bno055_read_gyro_y
+ 586              	.LVL57:
  388:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_z(&gyro_dataz);
- 593              		.loc 1 388 12 view .LVU217
- 594 011e 0444     		add	r4, r4, r0
- 595              	.LVL58:
+ 587              		.loc 1 388 12 view .LVU217
+ 588 011e 0444     		add	r4, r4, r0
+ 589              	.LVL58:
  389:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_xyz(&gyro_xyz);
- 596              		.loc 1 389 5 is_stmt 1 view .LVU218
+ 590              		.loc 1 389 5 is_stmt 1 view .LVU218
  389:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_xyz(&gyro_xyz);
- 597              		.loc 1 389 15 is_stmt 0 view .LVU219
- 598 0120 0DF5AD70 		add	r0, sp, #346
- 599 0124 FFF7FEFF 		bl	bno055_read_gyro_z
- 600              	.LVL59:
+ 591              		.loc 1 389 15 is_stmt 0 view .LVU219
+ 592 0120 0DF5AD70 		add	r0, sp, #346
+ 593 0124 FFF7FEFF 		bl	bno055_read_gyro_z
+ 594              	.LVL59:
  389:Core/Src/bno055_support.c ****     comres += bno055_read_gyro_xyz(&gyro_xyz);
- 601              		.loc 1 389 12 view .LVU220
- 602 0128 0444     		add	r4, r4, r0
- 603              	.LVL60:
+ 595              		.loc 1 389 12 view .LVU220
+ 596 0128 0444     		add	r4, r4, r0
+ 597              	.LVL60:
  390:Core/Src/bno055_support.c **** 
- 604              		.loc 1 390 5 is_stmt 1 view .LVU221
+ 598              		.loc 1 390 5 is_stmt 1 view .LVU221
  390:Core/Src/bno055_support.c **** 
- 605              		.loc 1 390 15 is_stmt 0 view .LVU222
- 606 012a 55A8     		add	r0, sp, #340
- 607 012c FFF7FEFF 		bl	bno055_read_gyro_xyz
- 608              	.LVL61:
+ 599              		.loc 1 390 15 is_stmt 0 view .LVU222
+ 600 012a 55A8     		add	r0, sp, #340
+ 601 012c FFF7FEFF 		bl	bno055_read_gyro_xyz
+ 602              	.LVL61:
  390:Core/Src/bno055_support.c **** 
- 609              		.loc 1 390 12 view .LVU223
- 610 0130 0444     		add	r4, r4, r0
- 611              	.LVL62:
+ 603              		.loc 1 390 12 view .LVU223
+ 604 0130 0444     		add	r4, r4, r0
+ 605              	.LVL62:
  409:Core/Src/bno055_support.c **** 
- 612              		.loc 1 409 5 is_stmt 1 view .LVU224
+ 606              		.loc 1 409 5 is_stmt 1 view .LVU224
  409:Core/Src/bno055_support.c **** 
- 613              		.loc 1 409 15 is_stmt 0 view .LVU225
- 614 0132 0C20     		movs	r0, #12
- 615 0134 FFF7FEFF 		bl	bno055_set_operation_mode
-ARM GAS  /tmp/ccnWsevW.s 			page 26
-
-
- 616              	.LVL63:
+ 607              		.loc 1 409 15 is_stmt 0 view .LVU225
+ 608 0132 0C20     		movs	r0, #12
+ 609 0134 FFF7FEFF 		bl	bno055_set_operation_mode
+ 610              	.LVL63:
  409:Core/Src/bno055_support.c **** 
- 617              		.loc 1 409 12 view .LVU226
- 618 0138 0444     		add	r4, r4, r0
- 619              	.LVL64:
+ 611              		.loc 1 409 12 view .LVU226
+ 612 0138 0444     		add	r4, r4, r0
+ 613              	.LVL64:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 26
+
+
  414:Core/Src/bno055_support.c ****     comres += bno055_read_euler_r(&euler_data_r);
- 620              		.loc 1 414 5 is_stmt 1 view .LVU227
+ 614              		.loc 1 414 5 is_stmt 1 view .LVU227
  414:Core/Src/bno055_support.c ****     comres += bno055_read_euler_r(&euler_data_r);
- 621              		.loc 1 414 15 is_stmt 0 view .LVU228
- 622 013a 0DF5A970 		add	r0, sp, #338
- 623 013e FFF7FEFF 		bl	bno055_read_euler_h
- 624              	.LVL65:
+ 615              		.loc 1 414 15 is_stmt 0 view .LVU228
+ 616 013a 0DF5A970 		add	r0, sp, #338
+ 617 013e FFF7FEFF 		bl	bno055_read_euler_h
+ 618              	.LVL65:
  414:Core/Src/bno055_support.c ****     comres += bno055_read_euler_r(&euler_data_r);
- 625              		.loc 1 414 12 view .LVU229
- 626 0142 0444     		add	r4, r4, r0
- 627              	.LVL66:
+ 619              		.loc 1 414 12 view .LVU229
+ 620 0142 0444     		add	r4, r4, r0
+ 621              	.LVL66:
  415:Core/Src/bno055_support.c ****     comres += bno055_read_euler_p(&euler_data_p);
- 628              		.loc 1 415 5 is_stmt 1 view .LVU230
+ 622              		.loc 1 415 5 is_stmt 1 view .LVU230
  415:Core/Src/bno055_support.c ****     comres += bno055_read_euler_p(&euler_data_p);
- 629              		.loc 1 415 15 is_stmt 0 view .LVU231
- 630 0144 54A8     		add	r0, sp, #336
- 631 0146 FFF7FEFF 		bl	bno055_read_euler_r
- 632              	.LVL67:
+ 623              		.loc 1 415 15 is_stmt 0 view .LVU231
+ 624 0144 54A8     		add	r0, sp, #336
+ 625 0146 FFF7FEFF 		bl	bno055_read_euler_r
+ 626              	.LVL67:
  415:Core/Src/bno055_support.c ****     comres += bno055_read_euler_p(&euler_data_p);
- 633              		.loc 1 415 12 view .LVU232
- 634 014a 0444     		add	r4, r4, r0
- 635              	.LVL68:
+ 627              		.loc 1 415 12 view .LVU232
+ 628 014a 0444     		add	r4, r4, r0
+ 629              	.LVL68:
  416:Core/Src/bno055_support.c ****     comres += bno055_read_euler_hrp(&euler_hrp);
- 636              		.loc 1 416 5 is_stmt 1 view .LVU233
+ 630              		.loc 1 416 5 is_stmt 1 view .LVU233
  416:Core/Src/bno055_support.c ****     comres += bno055_read_euler_hrp(&euler_hrp);
- 637              		.loc 1 416 15 is_stmt 0 view .LVU234
- 638 014c 0DF5A770 		add	r0, sp, #334
- 639 0150 FFF7FEFF 		bl	bno055_read_euler_p
- 640              	.LVL69:
+ 631              		.loc 1 416 15 is_stmt 0 view .LVU234
+ 632 014c 0DF5A770 		add	r0, sp, #334
+ 633 0150 FFF7FEFF 		bl	bno055_read_euler_p
+ 634              	.LVL69:
  416:Core/Src/bno055_support.c ****     comres += bno055_read_euler_hrp(&euler_hrp);
- 641              		.loc 1 416 12 view .LVU235
- 642 0154 0444     		add	r4, r4, r0
- 643              	.LVL70:
+ 635              		.loc 1 416 12 view .LVU235
+ 636 0154 0444     		add	r4, r4, r0
+ 637              	.LVL70:
  417:Core/Src/bno055_support.c **** 
- 644              		.loc 1 417 5 is_stmt 1 view .LVU236
+ 638              		.loc 1 417 5 is_stmt 1 view .LVU236
  417:Core/Src/bno055_support.c **** 
- 645              		.loc 1 417 15 is_stmt 0 view .LVU237
- 646 0156 52A8     		add	r0, sp, #328
- 647 0158 FFF7FEFF 		bl	bno055_read_euler_hrp
- 648              	.LVL71:
+ 639              		.loc 1 417 15 is_stmt 0 view .LVU237
+ 640 0156 52A8     		add	r0, sp, #328
+ 641 0158 FFF7FEFF 		bl	bno055_read_euler_hrp
+ 642              	.LVL71:
  417:Core/Src/bno055_support.c **** 
- 649              		.loc 1 417 12 view .LVU238
- 650 015c 0444     		add	r4, r4, r0
- 651              	.LVL72:
+ 643              		.loc 1 417 12 view .LVU238
+ 644 015c 0444     		add	r4, r4, r0
+ 645              	.LVL72:
  422:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_x(&quaternion_data_x);
- 652              		.loc 1 422 5 is_stmt 1 view .LVU239
+ 646              		.loc 1 422 5 is_stmt 1 view .LVU239
  422:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_x(&quaternion_data_x);
- 653              		.loc 1 422 15 is_stmt 0 view .LVU240
- 654 015e 0DF5A370 		add	r0, sp, #326
- 655 0162 FFF7FEFF 		bl	bno055_read_quaternion_w
- 656              	.LVL73:
+ 647              		.loc 1 422 15 is_stmt 0 view .LVU240
+ 648 015e 0DF5A370 		add	r0, sp, #326
+ 649 0162 FFF7FEFF 		bl	bno055_read_quaternion_w
+ 650              	.LVL73:
  422:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_x(&quaternion_data_x);
-ARM GAS  /tmp/ccnWsevW.s 			page 27
-
-
- 657              		.loc 1 422 12 view .LVU241
- 658 0166 0444     		add	r4, r4, r0
- 659              	.LVL74:
+ 651              		.loc 1 422 12 view .LVU241
+ 652 0166 0444     		add	r4, r4, r0
+ 653              	.LVL74:
  423:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_y(&quaternion_data_y);
- 660              		.loc 1 423 5 is_stmt 1 view .LVU242
+ 654              		.loc 1 423 5 is_stmt 1 view .LVU242
+ARM GAS  /tmp/ccMnb1Cf.s 			page 27
+
+
  423:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_y(&quaternion_data_y);
- 661              		.loc 1 423 15 is_stmt 0 view .LVU243
- 662 0168 51A8     		add	r0, sp, #324
- 663 016a FFF7FEFF 		bl	bno055_read_quaternion_x
- 664              	.LVL75:
+ 655              		.loc 1 423 15 is_stmt 0 view .LVU243
+ 656 0168 51A8     		add	r0, sp, #324
+ 657 016a FFF7FEFF 		bl	bno055_read_quaternion_x
+ 658              	.LVL75:
  423:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_y(&quaternion_data_y);
- 665              		.loc 1 423 12 view .LVU244
- 666 016e 0444     		add	r4, r4, r0
- 667              	.LVL76:
+ 659              		.loc 1 423 12 view .LVU244
+ 660 016e 0444     		add	r4, r4, r0
+ 661              	.LVL76:
  424:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_z(&quaternion_data_z);
- 668              		.loc 1 424 5 is_stmt 1 view .LVU245
+ 662              		.loc 1 424 5 is_stmt 1 view .LVU245
  424:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_z(&quaternion_data_z);
- 669              		.loc 1 424 15 is_stmt 0 view .LVU246
- 670 0170 0DF5A170 		add	r0, sp, #322
- 671 0174 FFF7FEFF 		bl	bno055_read_quaternion_y
- 672              	.LVL77:
+ 663              		.loc 1 424 15 is_stmt 0 view .LVU246
+ 664 0170 0DF5A170 		add	r0, sp, #322
+ 665 0174 FFF7FEFF 		bl	bno055_read_quaternion_y
+ 666              	.LVL77:
  424:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_z(&quaternion_data_z);
- 673              		.loc 1 424 12 view .LVU247
- 674 0178 0444     		add	r4, r4, r0
- 675              	.LVL78:
+ 667              		.loc 1 424 12 view .LVU247
+ 668 0178 0444     		add	r4, r4, r0
+ 669              	.LVL78:
  425:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_wxyz(&quaternion_wxyz);
- 676              		.loc 1 425 5 is_stmt 1 view .LVU248
+ 670              		.loc 1 425 5 is_stmt 1 view .LVU248
  425:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_wxyz(&quaternion_wxyz);
- 677              		.loc 1 425 15 is_stmt 0 view .LVU249
- 678 017a 50A8     		add	r0, sp, #320
- 679 017c FFF7FEFF 		bl	bno055_read_quaternion_z
- 680              	.LVL79:
+ 671              		.loc 1 425 15 is_stmt 0 view .LVU249
+ 672 017a 50A8     		add	r0, sp, #320
+ 673 017c FFF7FEFF 		bl	bno055_read_quaternion_z
+ 674              	.LVL79:
  425:Core/Src/bno055_support.c ****     comres += bno055_read_quaternion_wxyz(&quaternion_wxyz);
- 681              		.loc 1 425 12 view .LVU250
- 682 0180 0444     		add	r4, r4, r0
- 683              	.LVL80:
+ 675              		.loc 1 425 12 view .LVU250
+ 676 0180 0444     		add	r4, r4, r0
+ 677              	.LVL80:
  426:Core/Src/bno055_support.c **** 
- 684              		.loc 1 426 5 is_stmt 1 view .LVU251
+ 678              		.loc 1 426 5 is_stmt 1 view .LVU251
  426:Core/Src/bno055_support.c **** 
- 685              		.loc 1 426 15 is_stmt 0 view .LVU252
- 686 0182 4EA8     		add	r0, sp, #312
- 687 0184 FFF7FEFF 		bl	bno055_read_quaternion_wxyz
- 688              	.LVL81:
+ 679              		.loc 1 426 15 is_stmt 0 view .LVU252
+ 680 0182 4EA8     		add	r0, sp, #312
+ 681 0184 FFF7FEFF 		bl	bno055_read_quaternion_wxyz
+ 682              	.LVL81:
  426:Core/Src/bno055_support.c **** 
- 689              		.loc 1 426 12 view .LVU253
- 690 0188 0444     		add	r4, r4, r0
- 691              	.LVL82:
+ 683              		.loc 1 426 12 view .LVU253
+ 684 0188 0444     		add	r4, r4, r0
+ 685              	.LVL82:
  431:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_y(&linear_accel_data_y);
- 692              		.loc 1 431 5 is_stmt 1 view .LVU254
+ 686              		.loc 1 431 5 is_stmt 1 view .LVU254
  431:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_y(&linear_accel_data_y);
- 693              		.loc 1 431 15 is_stmt 0 view .LVU255
- 694 018a 0DF59B70 		add	r0, sp, #310
- 695 018e FFF7FEFF 		bl	bno055_read_linear_accel_x
- 696              	.LVL83:
+ 687              		.loc 1 431 15 is_stmt 0 view .LVU255
+ 688 018a 0DF59B70 		add	r0, sp, #310
+ 689 018e FFF7FEFF 		bl	bno055_read_linear_accel_x
+ 690              	.LVL83:
  431:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_y(&linear_accel_data_y);
- 697              		.loc 1 431 12 view .LVU256
- 698 0192 0444     		add	r4, r4, r0
-ARM GAS  /tmp/ccnWsevW.s 			page 28
-
-
- 699              	.LVL84:
+ 691              		.loc 1 431 12 view .LVU256
+ 692 0192 0444     		add	r4, r4, r0
+ 693              	.LVL84:
  432:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_z(&linear_accel_data_z);
- 700              		.loc 1 432 5 is_stmt 1 view .LVU257
+ 694              		.loc 1 432 5 is_stmt 1 view .LVU257
  432:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_z(&linear_accel_data_z);
- 701              		.loc 1 432 15 is_stmt 0 view .LVU258
- 702 0194 4DA8     		add	r0, sp, #308
- 703 0196 FFF7FEFF 		bl	bno055_read_linear_accel_y
- 704              	.LVL85:
+ 695              		.loc 1 432 15 is_stmt 0 view .LVU258
+ARM GAS  /tmp/ccMnb1Cf.s 			page 28
+
+
+ 696 0194 4DA8     		add	r0, sp, #308
+ 697 0196 FFF7FEFF 		bl	bno055_read_linear_accel_y
+ 698              	.LVL85:
  432:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_z(&linear_accel_data_z);
- 705              		.loc 1 432 12 view .LVU259
- 706 019a 0444     		add	r4, r4, r0
- 707              	.LVL86:
+ 699              		.loc 1 432 12 view .LVU259
+ 700 019a 0444     		add	r4, r4, r0
+ 701              	.LVL86:
  433:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_xyz(&linear_acce_xyz);
- 708              		.loc 1 433 5 is_stmt 1 view .LVU260
+ 702              		.loc 1 433 5 is_stmt 1 view .LVU260
  433:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_xyz(&linear_acce_xyz);
- 709              		.loc 1 433 15 is_stmt 0 view .LVU261
- 710 019c 0DF59970 		add	r0, sp, #306
- 711 01a0 FFF7FEFF 		bl	bno055_read_linear_accel_z
- 712              	.LVL87:
+ 703              		.loc 1 433 15 is_stmt 0 view .LVU261
+ 704 019c 0DF59970 		add	r0, sp, #306
+ 705 01a0 FFF7FEFF 		bl	bno055_read_linear_accel_z
+ 706              	.LVL87:
  433:Core/Src/bno055_support.c ****     comres += bno055_read_linear_accel_xyz(&linear_acce_xyz);
- 713              		.loc 1 433 12 view .LVU262
- 714 01a4 0444     		add	r4, r4, r0
- 715              	.LVL88:
+ 707              		.loc 1 433 12 view .LVU262
+ 708 01a4 0444     		add	r4, r4, r0
+ 709              	.LVL88:
  434:Core/Src/bno055_support.c **** 
- 716              		.loc 1 434 5 is_stmt 1 view .LVU263
+ 710              		.loc 1 434 5 is_stmt 1 view .LVU263
  434:Core/Src/bno055_support.c **** 
- 717              		.loc 1 434 15 is_stmt 0 view .LVU264
- 718 01a6 4BA8     		add	r0, sp, #300
- 719 01a8 FFF7FEFF 		bl	bno055_read_linear_accel_xyz
- 720              	.LVL89:
+ 711              		.loc 1 434 15 is_stmt 0 view .LVU264
+ 712 01a6 4BA8     		add	r0, sp, #300
+ 713 01a8 FFF7FEFF 		bl	bno055_read_linear_accel_xyz
+ 714              	.LVL89:
  434:Core/Src/bno055_support.c **** 
- 721              		.loc 1 434 12 view .LVU265
- 722 01ac 0444     		add	r4, r4, r0
- 723              	.LVL90:
+ 715              		.loc 1 434 12 view .LVU265
+ 716 01ac 0444     		add	r4, r4, r0
+ 717              	.LVL90:
  439:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_y(&gravity_data_y);
- 724              		.loc 1 439 5 is_stmt 1 view .LVU266
+ 718              		.loc 1 439 5 is_stmt 1 view .LVU266
  439:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_y(&gravity_data_y);
- 725              		.loc 1 439 15 is_stmt 0 view .LVU267
- 726 01ae 0DF59570 		add	r0, sp, #298
- 727 01b2 FFF7FEFF 		bl	bno055_read_gravity_x
- 728              	.LVL91:
+ 719              		.loc 1 439 15 is_stmt 0 view .LVU267
+ 720 01ae 0DF59570 		add	r0, sp, #298
+ 721 01b2 FFF7FEFF 		bl	bno055_read_gravity_x
+ 722              	.LVL91:
  439:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_y(&gravity_data_y);
- 729              		.loc 1 439 12 view .LVU268
- 730 01b6 0444     		add	r4, r4, r0
- 731              	.LVL92:
+ 723              		.loc 1 439 12 view .LVU268
+ 724 01b6 0444     		add	r4, r4, r0
+ 725              	.LVL92:
  440:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_z(&gravity_data_z);
- 732              		.loc 1 440 5 is_stmt 1 view .LVU269
+ 726              		.loc 1 440 5 is_stmt 1 view .LVU269
  440:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_z(&gravity_data_z);
- 733              		.loc 1 440 15 is_stmt 0 view .LVU270
- 734 01b8 4AA8     		add	r0, sp, #296
- 735 01ba FFF7FEFF 		bl	bno055_read_gravity_y
- 736              	.LVL93:
+ 727              		.loc 1 440 15 is_stmt 0 view .LVU270
+ 728 01b8 4AA8     		add	r0, sp, #296
+ 729 01ba FFF7FEFF 		bl	bno055_read_gravity_y
+ 730              	.LVL93:
  440:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_z(&gravity_data_z);
- 737              		.loc 1 440 12 view .LVU271
- 738 01be 0444     		add	r4, r4, r0
- 739              	.LVL94:
+ 731              		.loc 1 440 12 view .LVU271
+ 732 01be 0444     		add	r4, r4, r0
+ 733              	.LVL94:
  441:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_xyz(&gravity_xyz);
-ARM GAS  /tmp/ccnWsevW.s 			page 29
-
-
- 740              		.loc 1 441 5 is_stmt 1 view .LVU272
+ 734              		.loc 1 441 5 is_stmt 1 view .LVU272
  441:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_xyz(&gravity_xyz);
- 741              		.loc 1 441 15 is_stmt 0 view .LVU273
- 742 01c0 0DF59370 		add	r0, sp, #294
- 743 01c4 FFF7FEFF 		bl	bno055_read_gravity_z
- 744              	.LVL95:
+ 735              		.loc 1 441 15 is_stmt 0 view .LVU273
+ 736 01c0 0DF59370 		add	r0, sp, #294
+ 737 01c4 FFF7FEFF 		bl	bno055_read_gravity_z
+ARM GAS  /tmp/ccMnb1Cf.s 			page 29
+
+
+ 738              	.LVL95:
  441:Core/Src/bno055_support.c ****     comres += bno055_read_gravity_xyz(&gravity_xyz);
- 745              		.loc 1 441 12 view .LVU274
- 746 01c8 0444     		add	r4, r4, r0
- 747              	.LVL96:
+ 739              		.loc 1 441 12 view .LVU274
+ 740 01c8 0444     		add	r4, r4, r0
+ 741              	.LVL96:
  442:Core/Src/bno055_support.c **** 
- 748              		.loc 1 442 5 is_stmt 1 view .LVU275
+ 742              		.loc 1 442 5 is_stmt 1 view .LVU275
  442:Core/Src/bno055_support.c **** 
- 749              		.loc 1 442 15 is_stmt 0 view .LVU276
- 750 01ca 48A8     		add	r0, sp, #288
- 751 01cc FFF7FEFF 		bl	bno055_read_gravity_xyz
- 752              	.LVL97:
+ 743              		.loc 1 442 15 is_stmt 0 view .LVU276
+ 744 01ca 48A8     		add	r0, sp, #288
+ 745 01cc FFF7FEFF 		bl	bno055_read_gravity_xyz
+ 746              	.LVL97:
  442:Core/Src/bno055_support.c **** 
- 753              		.loc 1 442 12 view .LVU277
- 754 01d0 0444     		add	r4, r4, r0
- 755              	.LVL98:
+ 747              		.loc 1 442 12 view .LVU277
+ 748 01d0 0444     		add	r4, r4, r0
+ 749              	.LVL98:
  449:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_x_mg(&d_accel_datax);
- 756              		.loc 1 449 5 is_stmt 1 view .LVU278
+ 750              		.loc 1 449 5 is_stmt 1 view .LVU278
  449:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_x_mg(&d_accel_datax);
- 757              		.loc 1 449 15 is_stmt 0 view .LVU279
- 758 01d2 46A8     		add	r0, sp, #280
- 759 01d4 FFF7FEFF 		bl	bno055_convert_double_accel_x_msq
- 760              	.LVL99:
+ 751              		.loc 1 449 15 is_stmt 0 view .LVU279
+ 752 01d2 46A8     		add	r0, sp, #280
+ 753 01d4 FFF7FEFF 		bl	bno055_convert_double_accel_x_msq
+ 754              	.LVL99:
  449:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_x_mg(&d_accel_datax);
- 761              		.loc 1 449 12 view .LVU280
- 762 01d8 0444     		add	r4, r4, r0
- 763              	.LVL100:
+ 755              		.loc 1 449 12 view .LVU280
+ 756 01d8 0444     		add	r4, r4, r0
+ 757              	.LVL100:
  450:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_msq(&d_accel_datay);
- 764              		.loc 1 450 5 is_stmt 1 view .LVU281
+ 758              		.loc 1 450 5 is_stmt 1 view .LVU281
  450:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_msq(&d_accel_datay);
- 765              		.loc 1 450 15 is_stmt 0 view .LVU282
- 766 01da 46A8     		add	r0, sp, #280
- 767 01dc FFF7FEFF 		bl	bno055_convert_double_accel_x_mg
- 768              	.LVL101:
+ 759              		.loc 1 450 15 is_stmt 0 view .LVU282
+ 760 01da 46A8     		add	r0, sp, #280
+ 761 01dc FFF7FEFF 		bl	bno055_convert_double_accel_x_mg
+ 762              	.LVL101:
  450:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_msq(&d_accel_datay);
- 769              		.loc 1 450 12 view .LVU283
- 770 01e0 0444     		add	r4, r4, r0
- 771              	.LVL102:
+ 763              		.loc 1 450 12 view .LVU283
+ 764 01e0 0444     		add	r4, r4, r0
+ 765              	.LVL102:
  451:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_mg(&d_accel_datay);
- 772              		.loc 1 451 5 is_stmt 1 view .LVU284
+ 766              		.loc 1 451 5 is_stmt 1 view .LVU284
  451:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_mg(&d_accel_datay);
- 773              		.loc 1 451 15 is_stmt 0 view .LVU285
- 774 01e2 44A8     		add	r0, sp, #272
- 775 01e4 FFF7FEFF 		bl	bno055_convert_double_accel_y_msq
- 776              	.LVL103:
+ 767              		.loc 1 451 15 is_stmt 0 view .LVU285
+ 768 01e2 44A8     		add	r0, sp, #272
+ 769 01e4 FFF7FEFF 		bl	bno055_convert_double_accel_y_msq
+ 770              	.LVL103:
  451:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_y_mg(&d_accel_datay);
- 777              		.loc 1 451 12 view .LVU286
- 778 01e8 0444     		add	r4, r4, r0
- 779              	.LVL104:
+ 771              		.loc 1 451 12 view .LVU286
+ 772 01e8 0444     		add	r4, r4, r0
+ 773              	.LVL104:
  452:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_msq(&d_accel_dataz);
- 780              		.loc 1 452 5 is_stmt 1 view .LVU287
+ 774              		.loc 1 452 5 is_stmt 1 view .LVU287
  452:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_msq(&d_accel_dataz);
-ARM GAS  /tmp/ccnWsevW.s 			page 30
-
-
- 781              		.loc 1 452 15 is_stmt 0 view .LVU288
- 782 01ea 44A8     		add	r0, sp, #272
- 783 01ec FFF7FEFF 		bl	bno055_convert_double_accel_y_mg
- 784              	.LVL105:
+ 775              		.loc 1 452 15 is_stmt 0 view .LVU288
+ 776 01ea 44A8     		add	r0, sp, #272
+ 777 01ec FFF7FEFF 		bl	bno055_convert_double_accel_y_mg
+ 778              	.LVL105:
  452:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_msq(&d_accel_dataz);
- 785              		.loc 1 452 12 view .LVU289
- 786 01f0 0444     		add	r4, r4, r0
- 787              	.LVL106:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 30
+
+
+ 779              		.loc 1 452 12 view .LVU289
+ 780 01f0 0444     		add	r4, r4, r0
+ 781              	.LVL106:
  453:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_mg(&d_accel_dataz);
- 788              		.loc 1 453 5 is_stmt 1 view .LVU290
+ 782              		.loc 1 453 5 is_stmt 1 view .LVU290
  453:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_mg(&d_accel_dataz);
- 789              		.loc 1 453 15 is_stmt 0 view .LVU291
- 790 01f2 42A8     		add	r0, sp, #264
- 791 01f4 FFF7FEFF 		bl	bno055_convert_double_accel_z_msq
- 792              	.LVL107:
+ 783              		.loc 1 453 15 is_stmt 0 view .LVU291
+ 784 01f2 42A8     		add	r0, sp, #264
+ 785 01f4 FFF7FEFF 		bl	bno055_convert_double_accel_z_msq
+ 786              	.LVL107:
  453:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_z_mg(&d_accel_dataz);
- 793              		.loc 1 453 12 view .LVU292
- 794 01f8 0444     		add	r4, r4, r0
- 795              	.LVL108:
+ 787              		.loc 1 453 12 view .LVU292
+ 788 01f8 0444     		add	r4, r4, r0
+ 789              	.LVL108:
  454:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_msq(&d_accel_xyz);
- 796              		.loc 1 454 5 is_stmt 1 view .LVU293
+ 790              		.loc 1 454 5 is_stmt 1 view .LVU293
  454:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_msq(&d_accel_xyz);
- 797              		.loc 1 454 15 is_stmt 0 view .LVU294
- 798 01fa 42A8     		add	r0, sp, #264
- 799 01fc FFF7FEFF 		bl	bno055_convert_double_accel_z_mg
- 800              	.LVL109:
+ 791              		.loc 1 454 15 is_stmt 0 view .LVU294
+ 792 01fa 42A8     		add	r0, sp, #264
+ 793 01fc FFF7FEFF 		bl	bno055_convert_double_accel_z_mg
+ 794              	.LVL109:
  454:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_msq(&d_accel_xyz);
- 801              		.loc 1 454 12 view .LVU295
- 802 0200 0444     		add	r4, r4, r0
- 803              	.LVL110:
+ 795              		.loc 1 454 12 view .LVU295
+ 796 0200 0444     		add	r4, r4, r0
+ 797              	.LVL110:
  455:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_mg(&d_accel_xyz);
- 804              		.loc 1 455 5 is_stmt 1 view .LVU296
+ 798              		.loc 1 455 5 is_stmt 1 view .LVU296
  455:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_mg(&d_accel_xyz);
- 805              		.loc 1 455 15 is_stmt 0 view .LVU297
- 806 0202 3CA8     		add	r0, sp, #240
- 807 0204 FFF7FEFF 		bl	bno055_convert_double_accel_xyz_msq
- 808              	.LVL111:
+ 799              		.loc 1 455 15 is_stmt 0 view .LVU297
+ 800 0202 3CA8     		add	r0, sp, #240
+ 801 0204 FFF7FEFF 		bl	bno055_convert_double_accel_xyz_msq
+ 802              	.LVL111:
  455:Core/Src/bno055_support.c ****     comres += bno055_convert_double_accel_xyz_mg(&d_accel_xyz);
- 809              		.loc 1 455 12 view .LVU298
- 810 0208 0444     		add	r4, r4, r0
- 811              	.LVL112:
+ 803              		.loc 1 455 12 view .LVU298
+ 804 0208 0444     		add	r4, r4, r0
+ 805              	.LVL112:
  456:Core/Src/bno055_support.c **** 
- 812              		.loc 1 456 5 is_stmt 1 view .LVU299
+ 806              		.loc 1 456 5 is_stmt 1 view .LVU299
  456:Core/Src/bno055_support.c **** 
- 813              		.loc 1 456 15 is_stmt 0 view .LVU300
- 814 020a 3CA8     		add	r0, sp, #240
- 815 020c FFF7FEFF 		bl	bno055_convert_double_accel_xyz_mg
- 816              	.LVL113:
+ 807              		.loc 1 456 15 is_stmt 0 view .LVU300
+ 808 020a 3CA8     		add	r0, sp, #240
+ 809 020c FFF7FEFF 		bl	bno055_convert_double_accel_xyz_mg
+ 810              	.LVL113:
  456:Core/Src/bno055_support.c **** 
- 817              		.loc 1 456 12 view .LVU301
- 818 0210 0444     		add	r4, r4, r0
- 819              	.LVL114:
+ 811              		.loc 1 456 12 view .LVU301
+ 812 0210 0444     		add	r4, r4, r0
+ 813              	.LVL114:
  460:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_y_uT(&d_mag_datay);
- 820              		.loc 1 460 5 is_stmt 1 view .LVU302
+ 814              		.loc 1 460 5 is_stmt 1 view .LVU302
  460:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_y_uT(&d_mag_datay);
- 821              		.loc 1 460 15 is_stmt 0 view .LVU303
- 822 0212 3AA8     		add	r0, sp, #232
-ARM GAS  /tmp/ccnWsevW.s 			page 31
-
-
- 823 0214 FFF7FEFF 		bl	bno055_convert_double_mag_x_uT
- 824              	.LVL115:
+ 815              		.loc 1 460 15 is_stmt 0 view .LVU303
+ 816 0212 3AA8     		add	r0, sp, #232
+ 817 0214 FFF7FEFF 		bl	bno055_convert_double_mag_x_uT
+ 818              	.LVL115:
  460:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_y_uT(&d_mag_datay);
- 825              		.loc 1 460 12 view .LVU304
- 826 0218 0444     		add	r4, r4, r0
- 827              	.LVL116:
+ 819              		.loc 1 460 12 view .LVU304
+ 820 0218 0444     		add	r4, r4, r0
+ARM GAS  /tmp/ccMnb1Cf.s 			page 31
+
+
+ 821              	.LVL116:
  461:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_z_uT(&d_mag_dataz);
- 828              		.loc 1 461 5 is_stmt 1 view .LVU305
+ 822              		.loc 1 461 5 is_stmt 1 view .LVU305
  461:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_z_uT(&d_mag_dataz);
- 829              		.loc 1 461 15 is_stmt 0 view .LVU306
- 830 021a 38A8     		add	r0, sp, #224
- 831 021c FFF7FEFF 		bl	bno055_convert_double_mag_y_uT
- 832              	.LVL117:
+ 823              		.loc 1 461 15 is_stmt 0 view .LVU306
+ 824 021a 38A8     		add	r0, sp, #224
+ 825 021c FFF7FEFF 		bl	bno055_convert_double_mag_y_uT
+ 826              	.LVL117:
  461:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_z_uT(&d_mag_dataz);
- 833              		.loc 1 461 12 view .LVU307
- 834 0220 0444     		add	r4, r4, r0
- 835              	.LVL118:
+ 827              		.loc 1 461 12 view .LVU307
+ 828 0220 0444     		add	r4, r4, r0
+ 829              	.LVL118:
  462:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_xyz_uT(&d_mag_xyz);
- 836              		.loc 1 462 5 is_stmt 1 view .LVU308
+ 830              		.loc 1 462 5 is_stmt 1 view .LVU308
  462:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_xyz_uT(&d_mag_xyz);
- 837              		.loc 1 462 15 is_stmt 0 view .LVU309
- 838 0222 36A8     		add	r0, sp, #216
- 839 0224 FFF7FEFF 		bl	bno055_convert_double_mag_z_uT
- 840              	.LVL119:
+ 831              		.loc 1 462 15 is_stmt 0 view .LVU309
+ 832 0222 36A8     		add	r0, sp, #216
+ 833 0224 FFF7FEFF 		bl	bno055_convert_double_mag_z_uT
+ 834              	.LVL119:
  462:Core/Src/bno055_support.c ****     comres += bno055_convert_double_mag_xyz_uT(&d_mag_xyz);
- 841              		.loc 1 462 12 view .LVU310
- 842 0228 0444     		add	r4, r4, r0
- 843              	.LVL120:
+ 835              		.loc 1 462 12 view .LVU310
+ 836 0228 0444     		add	r4, r4, r0
+ 837              	.LVL120:
  463:Core/Src/bno055_support.c **** 
- 844              		.loc 1 463 5 is_stmt 1 view .LVU311
+ 838              		.loc 1 463 5 is_stmt 1 view .LVU311
  463:Core/Src/bno055_support.c **** 
- 845              		.loc 1 463 15 is_stmt 0 view .LVU312
- 846 022a 30A8     		add	r0, sp, #192
- 847 022c FFF7FEFF 		bl	bno055_convert_double_mag_xyz_uT
- 848              	.LVL121:
+ 839              		.loc 1 463 15 is_stmt 0 view .LVU312
+ 840 022a 30A8     		add	r0, sp, #192
+ 841 022c FFF7FEFF 		bl	bno055_convert_double_mag_xyz_uT
+ 842              	.LVL121:
  463:Core/Src/bno055_support.c **** 
- 849              		.loc 1 463 12 view .LVU313
- 850 0230 0444     		add	r4, r4, r0
- 851              	.LVL122:
+ 843              		.loc 1 463 12 view .LVU313
+ 844 0230 0444     		add	r4, r4, r0
+ 845              	.LVL122:
  467:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_dps(&d_gyro_datay);
- 852              		.loc 1 467 5 is_stmt 1 view .LVU314
+ 846              		.loc 1 467 5 is_stmt 1 view .LVU314
  467:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_dps(&d_gyro_datay);
- 853              		.loc 1 467 15 is_stmt 0 view .LVU315
- 854 0232 2EA8     		add	r0, sp, #184
- 855 0234 FFF7FEFF 		bl	bno055_convert_double_gyro_x_dps
- 856              	.LVL123:
+ 847              		.loc 1 467 15 is_stmt 0 view .LVU315
+ 848 0232 2EA8     		add	r0, sp, #184
+ 849 0234 FFF7FEFF 		bl	bno055_convert_double_gyro_x_dps
+ 850              	.LVL123:
  467:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_dps(&d_gyro_datay);
- 857              		.loc 1 467 12 view .LVU316
- 858 0238 0444     		add	r4, r4, r0
- 859              	.LVL124:
+ 851              		.loc 1 467 12 view .LVU316
+ 852 0238 0444     		add	r4, r4, r0
+ 853              	.LVL124:
  468:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_dps(&d_gyro_dataz);
- 860              		.loc 1 468 5 is_stmt 1 view .LVU317
+ 854              		.loc 1 468 5 is_stmt 1 view .LVU317
  468:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_dps(&d_gyro_dataz);
- 861              		.loc 1 468 15 is_stmt 0 view .LVU318
- 862 023a 2CA8     		add	r0, sp, #176
- 863 023c FFF7FEFF 		bl	bno055_convert_double_gyro_y_dps
- 864              	.LVL125:
-ARM GAS  /tmp/ccnWsevW.s 			page 32
-
-
+ 855              		.loc 1 468 15 is_stmt 0 view .LVU318
+ 856 023a 2CA8     		add	r0, sp, #176
+ 857 023c FFF7FEFF 		bl	bno055_convert_double_gyro_y_dps
+ 858              	.LVL125:
  468:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_dps(&d_gyro_dataz);
- 865              		.loc 1 468 12 view .LVU319
- 866 0240 0444     		add	r4, r4, r0
- 867              	.LVL126:
+ 859              		.loc 1 468 12 view .LVU319
+ 860 0240 0444     		add	r4, r4, r0
+ 861              	.LVL126:
  469:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_x_rps(&d_gyro_datax);
- 868              		.loc 1 469 5 is_stmt 1 view .LVU320
+ARM GAS  /tmp/ccMnb1Cf.s 			page 32
+
+
+ 862              		.loc 1 469 5 is_stmt 1 view .LVU320
  469:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_x_rps(&d_gyro_datax);
- 869              		.loc 1 469 15 is_stmt 0 view .LVU321
- 870 0242 2AA8     		add	r0, sp, #168
- 871 0244 FFF7FEFF 		bl	bno055_convert_double_gyro_z_dps
- 872              	.LVL127:
+ 863              		.loc 1 469 15 is_stmt 0 view .LVU321
+ 864 0242 2AA8     		add	r0, sp, #168
+ 865 0244 FFF7FEFF 		bl	bno055_convert_double_gyro_z_dps
+ 866              	.LVL127:
  469:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_x_rps(&d_gyro_datax);
- 873              		.loc 1 469 12 view .LVU322
- 874 0248 0444     		add	r4, r4, r0
- 875              	.LVL128:
+ 867              		.loc 1 469 12 view .LVU322
+ 868 0248 0444     		add	r4, r4, r0
+ 869              	.LVL128:
  470:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_rps(&d_gyro_datay);
- 876              		.loc 1 470 5 is_stmt 1 view .LVU323
+ 870              		.loc 1 470 5 is_stmt 1 view .LVU323
  470:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_rps(&d_gyro_datay);
- 877              		.loc 1 470 15 is_stmt 0 view .LVU324
- 878 024a 2EA8     		add	r0, sp, #184
- 879 024c FFF7FEFF 		bl	bno055_convert_double_gyro_x_rps
- 880              	.LVL129:
+ 871              		.loc 1 470 15 is_stmt 0 view .LVU324
+ 872 024a 2EA8     		add	r0, sp, #184
+ 873 024c FFF7FEFF 		bl	bno055_convert_double_gyro_x_rps
+ 874              	.LVL129:
  470:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_y_rps(&d_gyro_datay);
- 881              		.loc 1 470 12 view .LVU325
- 882 0250 0444     		add	r4, r4, r0
- 883              	.LVL130:
+ 875              		.loc 1 470 12 view .LVU325
+ 876 0250 0444     		add	r4, r4, r0
+ 877              	.LVL130:
  471:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_rps(&d_gyro_dataz);
- 884              		.loc 1 471 5 is_stmt 1 view .LVU326
+ 878              		.loc 1 471 5 is_stmt 1 view .LVU326
  471:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_rps(&d_gyro_dataz);
- 885              		.loc 1 471 15 is_stmt 0 view .LVU327
- 886 0252 2CA8     		add	r0, sp, #176
- 887 0254 FFF7FEFF 		bl	bno055_convert_double_gyro_y_rps
- 888              	.LVL131:
+ 879              		.loc 1 471 15 is_stmt 0 view .LVU327
+ 880 0252 2CA8     		add	r0, sp, #176
+ 881 0254 FFF7FEFF 		bl	bno055_convert_double_gyro_y_rps
+ 882              	.LVL131:
  471:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_z_rps(&d_gyro_dataz);
- 889              		.loc 1 471 12 view .LVU328
- 890 0258 0444     		add	r4, r4, r0
- 891              	.LVL132:
+ 883              		.loc 1 471 12 view .LVU328
+ 884 0258 0444     		add	r4, r4, r0
+ 885              	.LVL132:
  472:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_dps(&d_gyro_xyz);
- 892              		.loc 1 472 5 is_stmt 1 view .LVU329
+ 886              		.loc 1 472 5 is_stmt 1 view .LVU329
  472:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_dps(&d_gyro_xyz);
- 893              		.loc 1 472 15 is_stmt 0 view .LVU330
- 894 025a 2AA8     		add	r0, sp, #168
- 895 025c FFF7FEFF 		bl	bno055_convert_double_gyro_z_rps
- 896              	.LVL133:
+ 887              		.loc 1 472 15 is_stmt 0 view .LVU330
+ 888 025a 2AA8     		add	r0, sp, #168
+ 889 025c FFF7FEFF 		bl	bno055_convert_double_gyro_z_rps
+ 890              	.LVL133:
  472:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_dps(&d_gyro_xyz);
- 897              		.loc 1 472 12 view .LVU331
- 898 0260 0444     		add	r4, r4, r0
- 899              	.LVL134:
+ 891              		.loc 1 472 12 view .LVU331
+ 892 0260 0444     		add	r4, r4, r0
+ 893              	.LVL134:
  473:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_rps(&d_gyro_xyz);
- 900              		.loc 1 473 5 is_stmt 1 view .LVU332
+ 894              		.loc 1 473 5 is_stmt 1 view .LVU332
  473:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_rps(&d_gyro_xyz);
- 901              		.loc 1 473 15 is_stmt 0 view .LVU333
- 902 0262 24A8     		add	r0, sp, #144
- 903 0264 FFF7FEFF 		bl	bno055_convert_double_gyro_xyz_dps
- 904              	.LVL135:
+ 895              		.loc 1 473 15 is_stmt 0 view .LVU333
+ 896 0262 24A8     		add	r0, sp, #144
+ 897 0264 FFF7FEFF 		bl	bno055_convert_double_gyro_xyz_dps
+ 898              	.LVL135:
  473:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gyro_xyz_rps(&d_gyro_xyz);
- 905              		.loc 1 473 12 view .LVU334
-ARM GAS  /tmp/ccnWsevW.s 			page 33
-
-
- 906 0268 0444     		add	r4, r4, r0
- 907              	.LVL136:
+ 899              		.loc 1 473 12 view .LVU334
+ 900 0268 0444     		add	r4, r4, r0
+ 901              	.LVL136:
  474:Core/Src/bno055_support.c **** 
- 908              		.loc 1 474 5 is_stmt 1 view .LVU335
+ 902              		.loc 1 474 5 is_stmt 1 view .LVU335
  474:Core/Src/bno055_support.c **** 
- 909              		.loc 1 474 15 is_stmt 0 view .LVU336
- 910 026a 24A8     		add	r0, sp, #144
- 911 026c FFF7FEFF 		bl	bno055_convert_double_gyro_xyz_rps
- 912              	.LVL137:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 33
+
+
+ 903              		.loc 1 474 15 is_stmt 0 view .LVU336
+ 904 026a 24A8     		add	r0, sp, #144
+ 905 026c FFF7FEFF 		bl	bno055_convert_double_gyro_xyz_rps
+ 906              	.LVL137:
  474:Core/Src/bno055_support.c **** 
- 913              		.loc 1 474 12 view .LVU337
- 914 0270 0444     		add	r4, r4, r0
- 915              	.LVL138:
+ 907              		.loc 1 474 12 view .LVU337
+ 908 0270 0444     		add	r4, r4, r0
+ 909              	.LVL138:
  478:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_deg(&d_euler_data_r);
- 916              		.loc 1 478 5 is_stmt 1 view .LVU338
+ 910              		.loc 1 478 5 is_stmt 1 view .LVU338
  478:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_deg(&d_euler_data_r);
- 917              		.loc 1 478 15 is_stmt 0 view .LVU339
- 918 0272 22A8     		add	r0, sp, #136
- 919 0274 FFF7FEFF 		bl	bno055_convert_double_euler_h_deg
- 920              	.LVL139:
+ 911              		.loc 1 478 15 is_stmt 0 view .LVU339
+ 912 0272 22A8     		add	r0, sp, #136
+ 913 0274 FFF7FEFF 		bl	bno055_convert_double_euler_h_deg
+ 914              	.LVL139:
  478:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_deg(&d_euler_data_r);
- 921              		.loc 1 478 12 view .LVU340
- 922 0278 0444     		add	r4, r4, r0
- 923              	.LVL140:
+ 915              		.loc 1 478 12 view .LVU340
+ 916 0278 0444     		add	r4, r4, r0
+ 917              	.LVL140:
  479:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_deg(&d_euler_data_p);
- 924              		.loc 1 479 5 is_stmt 1 view .LVU341
+ 918              		.loc 1 479 5 is_stmt 1 view .LVU341
  479:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_deg(&d_euler_data_p);
- 925              		.loc 1 479 15 is_stmt 0 view .LVU342
- 926 027a 20A8     		add	r0, sp, #128
- 927 027c FFF7FEFF 		bl	bno055_convert_double_euler_r_deg
- 928              	.LVL141:
+ 919              		.loc 1 479 15 is_stmt 0 view .LVU342
+ 920 027a 20A8     		add	r0, sp, #128
+ 921 027c FFF7FEFF 		bl	bno055_convert_double_euler_r_deg
+ 922              	.LVL141:
  479:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_deg(&d_euler_data_p);
- 929              		.loc 1 479 12 view .LVU343
- 930 0280 0444     		add	r4, r4, r0
- 931              	.LVL142:
+ 923              		.loc 1 479 12 view .LVU343
+ 924 0280 0444     		add	r4, r4, r0
+ 925              	.LVL142:
  480:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_h_rad(&d_euler_data_h);
- 932              		.loc 1 480 5 is_stmt 1 view .LVU344
+ 926              		.loc 1 480 5 is_stmt 1 view .LVU344
  480:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_h_rad(&d_euler_data_h);
- 933              		.loc 1 480 15 is_stmt 0 view .LVU345
- 934 0282 1EA8     		add	r0, sp, #120
- 935 0284 FFF7FEFF 		bl	bno055_convert_double_euler_p_deg
- 936              	.LVL143:
+ 927              		.loc 1 480 15 is_stmt 0 view .LVU345
+ 928 0282 1EA8     		add	r0, sp, #120
+ 929 0284 FFF7FEFF 		bl	bno055_convert_double_euler_p_deg
+ 930              	.LVL143:
  480:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_h_rad(&d_euler_data_h);
- 937              		.loc 1 480 12 view .LVU346
- 938 0288 0444     		add	r4, r4, r0
- 939              	.LVL144:
+ 931              		.loc 1 480 12 view .LVU346
+ 932 0288 0444     		add	r4, r4, r0
+ 933              	.LVL144:
  481:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_rad(&d_euler_data_r);
- 940              		.loc 1 481 5 is_stmt 1 view .LVU347
+ 934              		.loc 1 481 5 is_stmt 1 view .LVU347
  481:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_rad(&d_euler_data_r);
- 941              		.loc 1 481 15 is_stmt 0 view .LVU348
- 942 028a 22A8     		add	r0, sp, #136
- 943 028c FFF7FEFF 		bl	bno055_convert_double_euler_h_rad
- 944              	.LVL145:
+ 935              		.loc 1 481 15 is_stmt 0 view .LVU348
+ 936 028a 22A8     		add	r0, sp, #136
+ 937 028c FFF7FEFF 		bl	bno055_convert_double_euler_h_rad
+ 938              	.LVL145:
  481:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_r_rad(&d_euler_data_r);
- 945              		.loc 1 481 12 view .LVU349
- 946 0290 0444     		add	r4, r4, r0
- 947              	.LVL146:
-ARM GAS  /tmp/ccnWsevW.s 			page 34
-
-
+ 939              		.loc 1 481 12 view .LVU349
+ 940 0290 0444     		add	r4, r4, r0
+ 941              	.LVL146:
  482:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_rad(&d_euler_data_p);
- 948              		.loc 1 482 5 is_stmt 1 view .LVU350
+ 942              		.loc 1 482 5 is_stmt 1 view .LVU350
  482:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_rad(&d_euler_data_p);
- 949              		.loc 1 482 15 is_stmt 0 view .LVU351
- 950 0292 20A8     		add	r0, sp, #128
- 951 0294 FFF7FEFF 		bl	bno055_convert_double_euler_r_rad
- 952              	.LVL147:
+ 943              		.loc 1 482 15 is_stmt 0 view .LVU351
+ 944 0292 20A8     		add	r0, sp, #128
+ARM GAS  /tmp/ccMnb1Cf.s 			page 34
+
+
+ 945 0294 FFF7FEFF 		bl	bno055_convert_double_euler_r_rad
+ 946              	.LVL147:
  482:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_p_rad(&d_euler_data_p);
- 953              		.loc 1 482 12 view .LVU352
- 954 0298 0444     		add	r4, r4, r0
- 955              	.LVL148:
+ 947              		.loc 1 482 12 view .LVU352
+ 948 0298 0444     		add	r4, r4, r0
+ 949              	.LVL148:
  483:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_deg(&d_euler_hpr);
- 956              		.loc 1 483 5 is_stmt 1 view .LVU353
+ 950              		.loc 1 483 5 is_stmt 1 view .LVU353
  483:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_deg(&d_euler_hpr);
- 957              		.loc 1 483 15 is_stmt 0 view .LVU354
- 958 029a 1EA8     		add	r0, sp, #120
- 959 029c FFF7FEFF 		bl	bno055_convert_double_euler_p_rad
- 960              	.LVL149:
+ 951              		.loc 1 483 15 is_stmt 0 view .LVU354
+ 952 029a 1EA8     		add	r0, sp, #120
+ 953 029c FFF7FEFF 		bl	bno055_convert_double_euler_p_rad
+ 954              	.LVL149:
  483:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_deg(&d_euler_hpr);
- 961              		.loc 1 483 12 view .LVU355
- 962 02a0 0444     		add	r4, r4, r0
- 963              	.LVL150:
+ 955              		.loc 1 483 12 view .LVU355
+ 956 02a0 0444     		add	r4, r4, r0
+ 957              	.LVL150:
  484:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_rad(&d_euler_hpr);
- 964              		.loc 1 484 5 is_stmt 1 view .LVU356
+ 958              		.loc 1 484 5 is_stmt 1 view .LVU356
  484:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_rad(&d_euler_hpr);
- 965              		.loc 1 484 15 is_stmt 0 view .LVU357
- 966 02a2 18A8     		add	r0, sp, #96
- 967 02a4 FFF7FEFF 		bl	bno055_convert_double_euler_hpr_deg
- 968              	.LVL151:
+ 959              		.loc 1 484 15 is_stmt 0 view .LVU357
+ 960 02a2 18A8     		add	r0, sp, #96
+ 961 02a4 FFF7FEFF 		bl	bno055_convert_double_euler_hpr_deg
+ 962              	.LVL151:
  484:Core/Src/bno055_support.c ****     comres += bno055_convert_double_euler_hpr_rad(&d_euler_hpr);
- 969              		.loc 1 484 12 view .LVU358
- 970 02a8 0444     		add	r4, r4, r0
- 971              	.LVL152:
+ 963              		.loc 1 484 12 view .LVU358
+ 964 02a8 0444     		add	r4, r4, r0
+ 965              	.LVL152:
  485:Core/Src/bno055_support.c **** 
- 972              		.loc 1 485 5 is_stmt 1 view .LVU359
+ 966              		.loc 1 485 5 is_stmt 1 view .LVU359
  485:Core/Src/bno055_support.c **** 
- 973              		.loc 1 485 15 is_stmt 0 view .LVU360
- 974 02aa 18A8     		add	r0, sp, #96
- 975 02ac FFF7FEFF 		bl	bno055_convert_double_euler_hpr_rad
- 976              	.LVL153:
+ 967              		.loc 1 485 15 is_stmt 0 view .LVU360
+ 968 02aa 18A8     		add	r0, sp, #96
+ 969 02ac FFF7FEFF 		bl	bno055_convert_double_euler_hpr_rad
+ 970              	.LVL153:
  485:Core/Src/bno055_support.c **** 
- 977              		.loc 1 485 12 view .LVU361
- 978 02b0 0444     		add	r4, r4, r0
- 979              	.LVL154:
+ 971              		.loc 1 485 12 view .LVU361
+ 972 02b0 0444     		add	r4, r4, r0
+ 973              	.LVL154:
  489:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_y_msq(&d_linear_accel_datay);
- 980              		.loc 1 489 5 is_stmt 1 view .LVU362
+ 974              		.loc 1 489 5 is_stmt 1 view .LVU362
  489:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_y_msq(&d_linear_accel_datay);
- 981              		.loc 1 489 15 is_stmt 0 view .LVU363
- 982 02b2 16A8     		add	r0, sp, #88
- 983 02b4 FFF7FEFF 		bl	bno055_convert_double_linear_accel_x_msq
- 984              	.LVL155:
+ 975              		.loc 1 489 15 is_stmt 0 view .LVU363
+ 976 02b2 16A8     		add	r0, sp, #88
+ 977 02b4 FFF7FEFF 		bl	bno055_convert_double_linear_accel_x_msq
+ 978              	.LVL155:
  489:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_y_msq(&d_linear_accel_datay);
- 985              		.loc 1 489 12 view .LVU364
- 986 02b8 0444     		add	r4, r4, r0
- 987              	.LVL156:
+ 979              		.loc 1 489 12 view .LVU364
+ 980 02b8 0444     		add	r4, r4, r0
+ 981              	.LVL156:
  490:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_z_msq(&d_linear_accel_dataz);
- 988              		.loc 1 490 5 is_stmt 1 view .LVU365
-ARM GAS  /tmp/ccnWsevW.s 			page 35
+ 982              		.loc 1 490 5 is_stmt 1 view .LVU365
+ 490:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_z_msq(&d_linear_accel_dataz);
+ 983              		.loc 1 490 15 is_stmt 0 view .LVU366
+ 984 02ba 14A8     		add	r0, sp, #80
+ 985 02bc FFF7FEFF 		bl	bno055_convert_double_linear_accel_y_msq
+ 986              	.LVL157:
+ARM GAS  /tmp/ccMnb1Cf.s 			page 35
 
 
  490:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_z_msq(&d_linear_accel_dataz);
- 989              		.loc 1 490 15 is_stmt 0 view .LVU366
- 990 02ba 14A8     		add	r0, sp, #80
- 991 02bc FFF7FEFF 		bl	bno055_convert_double_linear_accel_y_msq
- 992              	.LVL157:
- 490:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_z_msq(&d_linear_accel_dataz);
- 993              		.loc 1 490 12 view .LVU367
- 994 02c0 0444     		add	r4, r4, r0
- 995              	.LVL158:
+ 987              		.loc 1 490 12 view .LVU367
+ 988 02c0 0444     		add	r4, r4, r0
+ 989              	.LVL158:
  491:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_xyz_msq(&d_linear_accel_xyz);
- 996              		.loc 1 491 5 is_stmt 1 view .LVU368
+ 990              		.loc 1 491 5 is_stmt 1 view .LVU368
  491:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_xyz_msq(&d_linear_accel_xyz);
- 997              		.loc 1 491 15 is_stmt 0 view .LVU369
- 998 02c2 12A8     		add	r0, sp, #72
- 999 02c4 FFF7FEFF 		bl	bno055_convert_double_linear_accel_z_msq
- 1000              	.LVL159:
+ 991              		.loc 1 491 15 is_stmt 0 view .LVU369
+ 992 02c2 12A8     		add	r0, sp, #72
+ 993 02c4 FFF7FEFF 		bl	bno055_convert_double_linear_accel_z_msq
+ 994              	.LVL159:
  491:Core/Src/bno055_support.c ****     comres += bno055_convert_double_linear_accel_xyz_msq(&d_linear_accel_xyz);
- 1001              		.loc 1 491 12 view .LVU370
- 1002 02c8 0444     		add	r4, r4, r0
- 1003              	.LVL160:
+ 995              		.loc 1 491 12 view .LVU370
+ 996 02c8 0444     		add	r4, r4, r0
+ 997              	.LVL160:
  492:Core/Src/bno055_support.c **** 
- 1004              		.loc 1 492 5 is_stmt 1 view .LVU371
+ 998              		.loc 1 492 5 is_stmt 1 view .LVU371
  492:Core/Src/bno055_support.c **** 
- 1005              		.loc 1 492 15 is_stmt 0 view .LVU372
- 1006 02ca 0CA8     		add	r0, sp, #48
- 1007 02cc FFF7FEFF 		bl	bno055_convert_double_linear_accel_xyz_msq
- 1008              	.LVL161:
+ 999              		.loc 1 492 15 is_stmt 0 view .LVU372
+ 1000 02ca 0CA8     		add	r0, sp, #48
+ 1001 02cc FFF7FEFF 		bl	bno055_convert_double_linear_accel_xyz_msq
+ 1002              	.LVL161:
  492:Core/Src/bno055_support.c **** 
- 1009              		.loc 1 492 12 view .LVU373
- 1010 02d0 0444     		add	r4, r4, r0
- 1011              	.LVL162:
+ 1003              		.loc 1 492 12 view .LVU373
+ 1004 02d0 0444     		add	r4, r4, r0
+ 1005              	.LVL162:
  496:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_y_msq(&d_gravity_data_y);
- 1012              		.loc 1 496 5 is_stmt 1 view .LVU374
+ 1006              		.loc 1 496 5 is_stmt 1 view .LVU374
  496:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_y_msq(&d_gravity_data_y);
- 1013              		.loc 1 496 15 is_stmt 0 view .LVU375
- 1014 02d2 0AA8     		add	r0, sp, #40
- 1015 02d4 FFF7FEFF 		bl	bno055_convert_gravity_double_x_msq
- 1016              	.LVL163:
+ 1007              		.loc 1 496 15 is_stmt 0 view .LVU375
+ 1008 02d2 0AA8     		add	r0, sp, #40
+ 1009 02d4 FFF7FEFF 		bl	bno055_convert_gravity_double_x_msq
+ 1010              	.LVL163:
  496:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_y_msq(&d_gravity_data_y);
- 1017              		.loc 1 496 12 view .LVU376
- 1018 02d8 0444     		add	r4, r4, r0
- 1019              	.LVL164:
+ 1011              		.loc 1 496 12 view .LVU376
+ 1012 02d8 0444     		add	r4, r4, r0
+ 1013              	.LVL164:
  497:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_z_msq(&d_gravity_data_z);
- 1020              		.loc 1 497 5 is_stmt 1 view .LVU377
+ 1014              		.loc 1 497 5 is_stmt 1 view .LVU377
  497:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_z_msq(&d_gravity_data_z);
- 1021              		.loc 1 497 15 is_stmt 0 view .LVU378
- 1022 02da 08A8     		add	r0, sp, #32
- 1023 02dc FFF7FEFF 		bl	bno055_convert_gravity_double_y_msq
- 1024              	.LVL165:
+ 1015              		.loc 1 497 15 is_stmt 0 view .LVU378
+ 1016 02da 08A8     		add	r0, sp, #32
+ 1017 02dc FFF7FEFF 		bl	bno055_convert_gravity_double_y_msq
+ 1018              	.LVL165:
  497:Core/Src/bno055_support.c ****     comres += bno055_convert_gravity_double_z_msq(&d_gravity_data_z);
- 1025              		.loc 1 497 12 view .LVU379
- 1026 02e0 0444     		add	r4, r4, r0
- 1027              	.LVL166:
+ 1019              		.loc 1 497 12 view .LVU379
+ 1020 02e0 0444     		add	r4, r4, r0
+ 1021              	.LVL166:
  498:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gravity_xyz_msq(&d_gravity_xyz);
- 1028              		.loc 1 498 5 is_stmt 1 view .LVU380
+ 1022              		.loc 1 498 5 is_stmt 1 view .LVU380
  498:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gravity_xyz_msq(&d_gravity_xyz);
- 1029              		.loc 1 498 15 is_stmt 0 view .LVU381
-ARM GAS  /tmp/ccnWsevW.s 			page 36
+ 1023              		.loc 1 498 15 is_stmt 0 view .LVU381
+ 1024 02e2 06A8     		add	r0, sp, #24
+ 1025 02e4 FFF7FEFF 		bl	bno055_convert_gravity_double_z_msq
+ 1026              	.LVL167:
+ 498:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gravity_xyz_msq(&d_gravity_xyz);
+ 1027              		.loc 1 498 12 view .LVU382
+ARM GAS  /tmp/ccMnb1Cf.s 			page 36
 
 
- 1030 02e2 06A8     		add	r0, sp, #24
- 1031 02e4 FFF7FEFF 		bl	bno055_convert_gravity_double_z_msq
- 1032              	.LVL167:
- 498:Core/Src/bno055_support.c ****     comres += bno055_convert_double_gravity_xyz_msq(&d_gravity_xyz);
- 1033              		.loc 1 498 12 view .LVU382
- 1034 02e8 0444     		add	r4, r4, r0
- 1035              	.LVL168:
+ 1028 02e8 0444     		add	r4, r4, r0
+ 1029              	.LVL168:
  499:Core/Src/bno055_support.c **** 
- 1036              		.loc 1 499 5 is_stmt 1 view .LVU383
+ 1030              		.loc 1 499 5 is_stmt 1 view .LVU383
  499:Core/Src/bno055_support.c **** 
- 1037              		.loc 1 499 15 is_stmt 0 view .LVU384
- 1038 02ea 6846     		mov	r0, sp
- 1039 02ec FFF7FEFF 		bl	bno055_convert_double_gravity_xyz_msq
- 1040              	.LVL169:
+ 1031              		.loc 1 499 15 is_stmt 0 view .LVU384
+ 1032 02ea 6846     		mov	r0, sp
+ 1033 02ec FFF7FEFF 		bl	bno055_convert_double_gravity_xyz_msq
+ 1034              	.LVL169:
  499:Core/Src/bno055_support.c **** 
- 1041              		.loc 1 499 12 view .LVU385
- 1042 02f0 0444     		add	r4, r4, r0
- 1043              	.LVL170:
+ 1035              		.loc 1 499 12 view .LVU385
+ 1036 02f0 0444     		add	r4, r4, r0
+ 1037              	.LVL170:
  511:Core/Src/bno055_support.c **** 
- 1044              		.loc 1 511 5 is_stmt 1 view .LVU386
+ 1038              		.loc 1 511 5 is_stmt 1 view .LVU386
  514:Core/Src/bno055_support.c **** 
- 1045              		.loc 1 514 5 view .LVU387
+ 1039              		.loc 1 514 5 view .LVU387
  514:Core/Src/bno055_support.c **** 
- 1046              		.loc 1 514 15 is_stmt 0 view .LVU388
- 1047 02f2 0220     		movs	r0, #2
- 1048 02f4 FFF7FEFF 		bl	bno055_set_power_mode
- 1049              	.LVL171:
+ 1040              		.loc 1 514 15 is_stmt 0 view .LVU388
+ 1041 02f2 0220     		movs	r0, #2
+ 1042 02f4 FFF7FEFF 		bl	bno055_set_power_mode
+ 1043              	.LVL171:
  519:Core/Src/bno055_support.c **** }
- 1050              		.loc 1 519 5 is_stmt 1 view .LVU389
+ 1044              		.loc 1 519 5 is_stmt 1 view .LVU389
  520:Core/Src/bno055_support.c **** 
- 1051              		.loc 1 520 1 is_stmt 0 view .LVU390
- 1052 02f8 2044     		add	r0, r0, r4
- 1053              	.LVL172:
+ 1045              		.loc 1 520 1 is_stmt 0 view .LVU390
+ 1046 02f8 2044     		add	r0, r0, r4
+ 1047              	.LVL172:
  520:Core/Src/bno055_support.c **** 
- 1054              		.loc 1 520 1 view .LVU391
- 1055 02fa 5FB0     		add	sp, sp, #380
- 1056              	.LCFI9:
- 1057              		.cfi_def_cfa_offset 12
- 1058              		@ sp needed
- 1059 02fc 30BD     		pop	{r4, r5, pc}
- 1060              	.L26:
- 1061 02fe 00BF     		.align	2
- 1062              	.L25:
- 1063 0300 00000000 		.word	bno055
- 1064              		.cfi_endproc
- 1065              	.LFE123:
- 1067              		.comm	bno055,24,4
- 1068              		.text
- 1069              	.Letext0:
- 1070              		.file 2 "Core/Inc/bno055.h"
- 1071              		.file 3 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h"
- 1072              		.file 4 "Drivers/CMSIS/Include/core_cm4.h"
- 1073              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/system_stm32f3xx.h"
- 1074              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
- 1075              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
- 1076              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
- 1077              		.file 9 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h"
-ARM GAS  /tmp/ccnWsevW.s 			page 37
+ 1048              		.loc 1 520 1 view .LVU391
+ 1049 02fa 5FB0     		add	sp, sp, #380
+ 1050              	.LCFI9:
+ 1051              		.cfi_def_cfa_offset 12
+ 1052              		@ sp needed
+ 1053 02fc 30BD     		pop	{r4, r5, pc}
+ 1054              	.L25:
+ 1055 02fe 00BF     		.align	2
+ 1056              	.L24:
+ 1057 0300 00000000 		.word	.LANCHOR0
+ 1058              		.cfi_endproc
+ 1059              	.LFE123:
+ 1061              		.global	bno055
+ 1062              		.section	.bss.bno055,"aw",%nobits
+ 1063              		.align	2
+ 1064              		.set	.LANCHOR0,. + 0
+ 1067              	bno055:
+ 1068 0000 00000000 		.space	24
+ 1068      00000000 
+ 1068      00000000 
+ 1068      00000000 
+ 1068      00000000 
+ 1069              		.text
+ 1070              	.Letext0:
+ 1071              		.file 2 "Core/Inc/bno055.h"
+ 1072              		.file 3 "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/ar
+ 1073              		.file 4 "/home/dqnk/.config/Code - OSS/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/ar
+ 1074              		.file 5 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
+ARM GAS  /tmp/ccMnb1Cf.s 			page 37
 
 
- 1078              		.file 10 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
- 1079              		.file 11 "Core/Inc/main.h"
-ARM GAS  /tmp/ccnWsevW.s 			page 38
+ 1075              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 1076              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 1077              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_i2c.h"
+ 1078              		.file 9 "Core/Inc/main.h"
+ 1079              		.file 10 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
+ARM GAS  /tmp/ccMnb1Cf.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 bno055_support.c
-     /tmp/ccnWsevW.s:18     .text.BNO055_I2C_bus_write:0000000000000000 $t
-     /tmp/ccnWsevW.s:26     .text.BNO055_I2C_bus_write:0000000000000000 BNO055_I2C_bus_write
-     /tmp/ccnWsevW.s:119    .text.BNO055_I2C_bus_write:0000000000000040 $d
-     /tmp/ccnWsevW.s:124    .text.BNO055_I2C_bus_read:0000000000000000 $t
-     /tmp/ccnWsevW.s:131    .text.BNO055_I2C_bus_read:0000000000000000 BNO055_I2C_bus_read
-     /tmp/ccnWsevW.s:246    .text.BNO055_I2C_bus_read:000000000000006c $d
-     /tmp/ccnWsevW.s:251    .text.BNO055_delay_msek:0000000000000000 $t
-     /tmp/ccnWsevW.s:258    .text.BNO055_delay_msek:0000000000000000 BNO055_delay_msek
-     /tmp/ccnWsevW.s:280    .text.I2C_routine:0000000000000000 $t
-     /tmp/ccnWsevW.s:287    .text.I2C_routine:0000000000000000 I2C_routine
-     /tmp/ccnWsevW.s:318    .text.I2C_routine:0000000000000018 $d
-                            *COM*:0000000000000018 bno055
-     /tmp/ccnWsevW.s:326    .text.bno055_data_readout_template:0000000000000000 $t
-     /tmp/ccnWsevW.s:333    .text.bno055_data_readout_template:0000000000000000 bno055_data_readout_template
-     /tmp/ccnWsevW.s:1063   .text.bno055_data_readout_template:0000000000000300 $d
+     /tmp/ccMnb1Cf.s:20     .text.BNO055_I2C_bus_write:0000000000000000 $t
+     /tmp/ccMnb1Cf.s:26     .text.BNO055_I2C_bus_write:0000000000000000 BNO055_I2C_bus_write
+     /tmp/ccMnb1Cf.s:117    .text.BNO055_I2C_bus_write:0000000000000048 $d
+     /tmp/ccMnb1Cf.s:122    .text.BNO055_I2C_bus_read:0000000000000000 $t
+     /tmp/ccMnb1Cf.s:128    .text.BNO055_I2C_bus_read:0000000000000000 BNO055_I2C_bus_read
+     /tmp/ccMnb1Cf.s:243    .text.BNO055_I2C_bus_read:0000000000000070 $d
+     /tmp/ccMnb1Cf.s:248    .text.BNO055_delay_msek:0000000000000000 $t
+     /tmp/ccMnb1Cf.s:254    .text.BNO055_delay_msek:0000000000000000 BNO055_delay_msek
+     /tmp/ccMnb1Cf.s:276    .text.I2C_routine:0000000000000000 $t
+     /tmp/ccMnb1Cf.s:282    .text.I2C_routine:0000000000000000 I2C_routine
+     /tmp/ccMnb1Cf.s:313    .text.I2C_routine:0000000000000018 $d
+     /tmp/ccMnb1Cf.s:321    .text.bno055_data_readout_template:0000000000000000 $t
+     /tmp/ccMnb1Cf.s:327    .text.bno055_data_readout_template:0000000000000000 bno055_data_readout_template
+     /tmp/ccMnb1Cf.s:1057   .text.bno055_data_readout_template:0000000000000300 $d
+     /tmp/ccMnb1Cf.s:1067   .bss.bno055:0000000000000000 bno055
+     /tmp/ccMnb1Cf.s:1063   .bss.bno055:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 HAL_I2C_Master_Transmit
@@ -2222,10 +2226,10 @@ bno055_read_gravity_y
 bno055_read_gravity_z
 bno055_read_gravity_xyz
 bno055_convert_double_accel_x_msq
+ARM GAS  /tmp/ccMnb1Cf.s 			page 39
+
+
 bno055_convert_double_accel_x_mg
-ARM GAS  /tmp/ccnWsevW.s 			page 39
-
-
 bno055_convert_double_accel_y_msq
 bno055_convert_double_accel_y_mg
 bno055_convert_double_accel_z_msq
