@@ -55,10 +55,12 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern DMA_HandleTypeDef hdma_adc1;
+extern ADC_HandleTypeDef hadc1;
 extern TIM_HandleTypeDef htim1;
 /* USER CODE BEGIN EV */
-extern uint32_t adc_value;
+extern struct bno055_euler_double_t orientation_data;
+extern uint8_t flag;
+uint16_t l = 0;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -200,19 +202,17 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles DMA1 channel1 global interrupt.
+  * @brief This function handles ADC1 and ADC2 interrupts.
   */
-void DMA1_Channel1_IRQHandler(void)
+void ADC1_2_IRQHandler(void)
 {
-  /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
+  /* USER CODE BEGIN ADC1_2_IRQn 0 */
 
-  /* USER CODE END DMA1_Channel1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_adc1);
-  /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
+  /* USER CODE END ADC1_2_IRQn 0 */
+  HAL_ADC_IRQHandler(&hadc1);
+  /* USER CODE BEGIN ADC1_2_IRQn 1 */
 
-  HAL_NVIC_DisableIRQ(DMA1_Channel1_IRQn);
-
-  /* USER CODE END DMA1_Channel1_IRQn 1 */
+  /* USER CODE END ADC1_2_IRQn 1 */
 }
 
 /**
@@ -221,9 +221,12 @@ void DMA1_Channel1_IRQHandler(void)
 void TIM1_UP_TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
-	TIM1->CCR1 = (adc_value * 16 / 3) + 0x5555;
-	TIM1->CCR2 = (adc_value * 8 / 3) + 0x5555;
-	TIM1->CCR3 = (adc_value * 4 / 3) + 0x5555;
+	l = (l + 20) % (0x5555);
+	TIM1->CCR2 = l + 0x5555;
+	TIM1->CCR1 = TIM1->CCR2;
+
+	/*TIM1->CCR2 = (adc_value * 8 / 3) + 0x5555;
+	TIM1->CCR3 = (adc_value * 4 / 3) + 0x5555;*/
 
   /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);

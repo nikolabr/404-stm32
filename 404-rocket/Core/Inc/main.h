@@ -33,6 +33,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "bno055.h"
 #include "bno055_support.h"
+#include "pid.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -47,7 +48,7 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+#define ESC_SPEED 0.3
 /* USER CODE END EM */
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
@@ -62,6 +63,9 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 /* USER CODE BEGIN Private defines */
 extern I2C_HandleTypeDef hi2c1;
+extern struct bno055_euler_double_t orientation_data;
+extern uint8_t flag;
+
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
