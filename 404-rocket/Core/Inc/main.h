@@ -48,7 +48,6 @@ extern "C" {
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-#define ESC_SPEED 0.3
 /* USER CODE END EM */
 
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
@@ -65,6 +64,7 @@ void Error_Handler(void);
 extern I2C_HandleTypeDef hi2c1;
 extern struct bno055_euler_double_t orientation_data;
 extern uint8_t flag;
+extern uint16_t esc_speed;
 
 /* USER CODE END Private defines */
 

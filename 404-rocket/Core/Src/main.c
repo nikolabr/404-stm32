@@ -53,6 +53,7 @@ HAL_StatusTypeDef ret;
 struct bno055_t imu;
 uint8_t flag;
 uint32_t adc_value;
+uint16_t esc_speed;
 
 /* USER CODE END PV */
 
@@ -78,10 +79,7 @@ static void MX_ADC1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	uint32_t x;
-	uint32_t y;
 	uint32_t t = 0;
-	char output[128];
 	HAL_StatusTypeDef stat;
 
   /* USER CODE END 1 */
@@ -100,10 +98,10 @@ int main(void)
   double PIDOut, TempSetpoint;
   TempSetpoint = 0;
 
-  PID(&TPID, &orientation_data.h, &PIDOut, &TempSetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
+  /*PID(&TPID, &orientation_data.h, &PIDOut, &TempSetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
   PID_SetMode(&TPID, _PID_MODE_AUTOMATIC);
   PID_SetSampleTime(&TPID, 10);
-  PID_SetOutputLimits(&TPID, 0, 0x5555);
+  PID_SetOutputLimits(&TPID, 0, 0x5555);*/
 
   /* USER CODE END Init */
 
@@ -130,7 +128,7 @@ int main(void)
   while (HAL_GetTick() - t < 5000) {
 
   }
-  TIM1->CCR3 = 0x5555 * (1 + ESC_SPEED);
+  TIM1->CCR3 = 0x5555 * (1 + esc_speed / 256);
   HAL_ADC_Start_IT(&hadc1);
 
   imu.bus_read = BNO055_I2C_bus_read;
@@ -150,9 +148,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  while (bno055_convert_double_euler_hpr_rad(&orientation_data) != BNO055_SUCCESS) {
+	  /*while (bno055_convert_double_euler_hpr_rad(&orientation_data) != BNO055_SUCCESS) {
 
-	  };
+	  };*/
 	  if (HAL_GetTick() - t > 1000) {
 		  HAL_ADC_PollForConversion(&hadc1, 1);
 		  adc_value = HAL_ADC_GetValue(&hadc1);
@@ -426,13 +424,30 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : PA5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  /*Configure GPIO pin : PA2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF1_TIM2;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA3 PA4 PA5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI2_TSC_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI2_TSC_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI3_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 
