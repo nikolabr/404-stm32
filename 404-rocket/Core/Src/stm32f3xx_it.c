@@ -263,27 +263,14 @@ void ADC1_2_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles EXTI line[9:5] interrupts.
-  */
-void EXTI9_5_IRQHandler(void)
-{
-  /* USER CODE BEGIN EXTI9_5_IRQn 0 */
-  /* USER CODE END EXTI9_5_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_5);
-  /* USER CODE BEGIN EXTI9_5_IRQn 1 */
-
-  /* USER CODE END EXTI9_5_IRQn 1 */
-}
-
-/**
   * @brief This function handles TIM1 update and TIM16 interrupts.
   */
 void TIM1_UP_TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
-	 TIM1->CCR3 = 0x5555 + 0x5555 * esc_speed / 256;
-	/*TIM1->CCR2 = (adc_value * 8 / 3) + 0x5555;
-	TIM1->CCR3 = (adc_value * 4 / 3) + 0x5555;*/
+	 //TIM1->CCR3 = 0x5555 + 0x5555 * esc_speed / 256;
+	TIM1->CCR1 = 32768 + xout;
+	TIM1->CCR2 = 32768 + yout;
   /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 1 */

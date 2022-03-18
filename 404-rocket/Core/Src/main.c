@@ -45,15 +45,17 @@ I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim1;
 
+UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN PV */
-struct bno055_euler_double_t orientation_data;
 uint8_t buf[3];
 
 HAL_StatusTypeDef ret;
 struct bno055_t imu;
 uint8_t flag;
 uint32_t adc_value;
-uint16_t esc_speed;
+uint16_t esc_speed = 0;
+double xout, yout;
 
 /* USER CODE END PV */
 
@@ -63,6 +65,7 @@ static void MX_GPIO_Init(void);
 static void MX_TIM1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_ADC1_Init(void);
+static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -90,18 +93,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  float Kp = 0.2;
-  float Ki = 0.5;
-  float Kd = 0.1;
-  PID_TypeDef TPID;
 
-  double PIDOut, TempSetpoint;
-  TempSetpoint = 0;
-
-  /*PID(&TPID, &orientation_data.h, &PIDOut, &TempSetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
-  PID_SetMode(&TPID, _PID_MODE_AUTOMATIC);
-  PID_SetSampleTime(&TPID, 10);
-  PID_SetOutputLimits(&TPID, 0, 0x5555);*/
 
   /* USER CODE END Init */
 
@@ -117,7 +109,42 @@ int main(void)
   MX_TIM1_Init();
   MX_I2C1_Init();
   MX_ADC1_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+
+  imu.bus_read = BNO055_I2C_bus_read;
+  imu.bus_write = BNO055_I2C_bus_write;
+  imu.delay_msec = BNO055_delay_msek;
+  imu.dev_addr = BNO055_I2C_ADDR1;
+
+  bno055_init(&imu);
+  bno055_set_power_mode(BNO055_POWER_MODE_NORMAL);
+  bno055_set_operation_mode(BNO055_OPERATION_MODE_IMUPLUS);
+
+  struct bno055_euler_double_t orientation_data;
+  while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
+
+  };
+
+  float Kp = 0 - 200.0;
+  float Ki = 0;
+  float Kd = 0;
+  PID_TypeDef xPID;
+  PID_TypeDef yPID;
+
+  double xSetpoint, ySetpoint;
+  xSetpoint = orientation_data.p;
+  ySetpoint = orientation_data.r;
+
+  PID(&xPID, &orientation_data.p, &xout, &xSetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
+  PID_SetMode(&xPID, _PID_MODE_AUTOMATIC);
+  PID_SetSampleTime(&xPID, 10);
+  PID_SetOutputLimits(&xPID, -5000.5, 5000.5);
+
+  PID(&yPID, &orientation_data.r, &yout, &ySetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
+  PID_SetMode(&yPID, _PID_MODE_AUTOMATIC);
+  PID_SetSampleTime(&yPID, 10);
+  PID_SetOutputLimits(&yPID, -10922.5, 10922.5);
   HAL_TIM_Base_Start_IT(&htim1);
   HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_1);
   HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_2);
@@ -125,22 +152,10 @@ int main(void)
   //HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_4);
 
   t = HAL_GetTick();
-  while (HAL_GetTick() - t < 5000) {
+  while (HAL_GetTick() - t < 3000) {
 
   }
-  TIM1->CCR3 = 0x5555 * (1 + esc_speed / 256);
-  HAL_ADC_Start_IT(&hadc1);
-
-  imu.bus_read = BNO055_I2C_bus_read;
-  imu.bus_write = BNO055_I2C_bus_write;
-  imu.delay_msec = BNO055_delay_msek;
-  imu.dev_addr = BNO055_I2C_ADDR1;
-
-  //TIM1->CCR1 = 0x5555;
-
-  bno055_init(&imu);
-  bno055_set_power_mode(BNO055_POWER_MODE_NORMAL);
-  bno055_set_operation_mode(BNO055_OPERATION_MODE_IMUPLUS);
+  esc_speed = 64;
 
   /* USER CODE END 2 */
 
@@ -148,14 +163,20 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  /*while (bno055_convert_double_euler_hpr_rad(&orientation_data) != BNO055_SUCCESS) {
+	  while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
 
-	  };*/
-	  if (HAL_GetTick() - t > 1000) {
+	  };
+
+	  HAL_NVIC_DisableIRQ(TIM1_UP_TIM16_IRQn);
+	  PID_Compute(&xPID);
+	  PID_Compute(&yPID);
+	  HAL_NVIC_EnableIRQ(TIM1_UP_TIM16_IRQn);
+
+	  /*if (HAL_GetTick() - t > 1000) {
 		  HAL_ADC_PollForConversion(&hadc1, 1);
 		  adc_value = HAL_ADC_GetValue(&hadc1);
 		  t = HAL_GetTick();
-	  }
+	  }*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -412,6 +433,41 @@ static void MX_TIM1_Init(void)
 }
 
 /**
+  * @brief USART2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART2_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART2_Init 0 */
+
+  /* USER CODE END USART2_Init 0 */
+
+  /* USER CODE BEGIN USART2_Init 1 */
+
+  /* USER CODE END USART2_Init 1 */
+  huart2.Instance = USART2;
+  huart2.Init.BaudRate = 38400;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART2_Init 2 */
+
+  /* USER CODE END USART2_Init 2 */
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -424,14 +480,8 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : PA2 */
-  GPIO_InitStruct.Pin = GPIO_PIN_2;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PA3 PA4 PA5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
+  /*Configure GPIO pins : PA2 PA3 PA4 */
+  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3|GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -445,9 +495,6 @@ static void MX_GPIO_Init(void)
 
   HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI4_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 }
 
