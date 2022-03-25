@@ -125,10 +125,22 @@ int main(void)
   while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
 
   };
+  /*
+  float Kpp = 160.0;
+  float Kip = 0;
+  float Kdp = 80;
 
-  float Kp = 0 - 200.0;
-  float Ki = 0;
-  float Kd = 0;
+  float Kpr = 160.0;
+  float Kir = 0;
+  float Kdr = 80;*/
+  //these are just absolute values, you have to correct directions in pid.c
+  float Kpp = 120.0;
+  float Kip = 0;
+  float Kdp = 60;
+
+  float Kpr = 160.0;
+  float Kir = 0;
+  float Kdr = 80;
   PID_TypeDef xPID;
   PID_TypeDef yPID;
 
@@ -136,12 +148,12 @@ int main(void)
   xSetpoint = orientation_data.p;
   ySetpoint = orientation_data.r;
 
-  PID(&xPID, &orientation_data.p, &xout, &xSetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
+  PID(&xPID, &orientation_data.p, &xout, &xSetpoint, Kpp, Kip, Kdp, _PID_P_ON_E, _PID_CD_DIRECT);
   PID_SetMode(&xPID, _PID_MODE_AUTOMATIC);
   PID_SetSampleTime(&xPID, 10);
   PID_SetOutputLimits(&xPID, -5000.5, 5000.5);
 
-  PID(&yPID, &orientation_data.r, &yout, &ySetpoint, Kp, Ki, Kd, _PID_P_ON_E, _PID_CD_DIRECT);
+  PID(&yPID, &orientation_data.r, &yout, &ySetpoint, Kpr, Kir, Kdr, _PID_P_ON_E, _PID_CD_DIRECT);
   PID_SetMode(&yPID, _PID_MODE_AUTOMATIC);
   PID_SetSampleTime(&yPID, 10);
   PID_SetOutputLimits(&yPID, -10922.5, 10922.5);
@@ -155,7 +167,7 @@ int main(void)
   while (HAL_GetTick() - t < 3000) {
 
   }
-  esc_speed = 64;
+  esc_speed = 96;
 
   /* USER CODE END 2 */
 

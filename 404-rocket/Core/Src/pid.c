@@ -90,17 +90,19 @@ uint8_t PID_Compute(PID_TypeDef *uPID)
 	{
 		/* ..... Compute all the working error variables ..... */
 		input   = *uPID->MyInput;
-		error   = *uPID->MySetpoint - input;
+		error   = input - *uPID->MySetpoint;
 		dInput  = (input - uPID->LastInput);
 		
 		uPID->OutputSum     += (uPID->Ki * error);
 		
 		/* ..... Add Proportional on Measurement, if P_ON_M is specified ..... */
+		//we do not use this
 		if (!uPID->POnE)
 		{
 			uPID->OutputSum -= uPID->Kp * dInput;
 		}
-		
+
+
 		if (uPID->OutputSum > uPID->OutMax)
 		{
 			uPID->OutputSum = uPID->OutMax;
@@ -114,6 +116,7 @@ uint8_t PID_Compute(PID_TypeDef *uPID)
 		/* ..... Add Proportional on Error, if P_ON_E is specified ..... */
 		if (uPID->POnE)
 		{
+			//has to be a - sign
 			output = uPID->Kp * error;
 		}
 		else
@@ -122,7 +125,7 @@ uint8_t PID_Compute(PID_TypeDef *uPID)
 		}
 		
 		/* ..... Compute Rest of PID Output ..... */
-		output += uPID->OutputSum - uPID->Kd * dInput;
+		output += uPID->OutputSum + uPID->Kd * dInput;
 		
 		if (output > uPID->OutMax)
 		{
