@@ -268,9 +268,11 @@ void ADC1_2_IRQHandler(void)
 void TIM1_UP_TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
-	 //TIM1->CCR3 = 0x5555 + 0x5555 * esc_speed / 256;
+
+	TIM1->CCR3 = 0x5555 + 0x5555 * esc_speed / 256;
 	TIM1->CCR1 = 32768 + xout;
 	TIM1->CCR2 = 32768 + yout;
+
   /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 1 */
