@@ -134,9 +134,9 @@ int main(void)
   float Kir = 0;
   float Kdr = 80;*/
   //these are just absolute values, you have to correct directions in pid.c
-  float Kpp = 120.0;
+  float Kpp = 110.0;
   float Kip = 0;
-  float Kdp = 60;
+  float Kdp = 55;
 
   float Kpr = 160.0;
   float Kir = 0;
