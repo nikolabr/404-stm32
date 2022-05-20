@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/404-rocket.elf",
+            "name": "Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stm32f303x8.s",
+            "svdFile": "./STM32F303.svd",
+            "configFiles": [
+                "openocd.cfg"
+            ]
+        }
+    ]
+}
