@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc6XiQIJ.s 			page 1
+ARM GAS  /tmp/ccfrwKfp.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -19,16 +19,16 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
   16              		.text
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
-  19              		.section	.text.HAL_PWR_ConfigPVD,"ax",%progbits
-  20              		.align	1
-  21              		.global	HAL_PWR_ConfigPVD
-  22              		.syntax unified
-  23              		.thumb
-  24              		.thumb_func
-  26              	HAL_PWR_ConfigPVD:
-  27              	.LVL0:
-  28              	.LFB123:
-  29              		.file 1 "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c"
+  19              		.file 1 "Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c"
+  20              		.section	.text.HAL_PWR_ConfigPVD,"ax",%progbits
+  21              		.align	1
+  22              		.global	HAL_PWR_ConfigPVD
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	HAL_PWR_ConfigPVD:
+  28              	.LVL0:
+  29              	.LFB123:
    1:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /**
    2:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   ******************************************************************************
    3:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @file    stm32f3xx_hal_pwr_ex.c
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
   27:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** /** @addtogroup STM32F3xx_HAL_Driver
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   * @{
-ARM GAS  /tmp/cc6XiQIJ.s 			page 2
+ARM GAS  /tmp/ccfrwKfp.s 			page 2
 
 
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
   84:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     [..]
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****       (+) The voltage regulator is always enabled after Reset. It works in three different
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           modes.
-ARM GAS  /tmp/cc6XiQIJ.s 			page 3
+ARM GAS  /tmp/ccfrwKfp.s 			page 3
 
 
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****           In Run mode, the regulator supplies full power to the 1.8V domain (core, memories
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
  134:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
  135:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   /* Set PLS[7:5] bits according to PVDLevel value */
  136:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   MODIFY_REG(PWR->CR, PWR_CR_PLS, sConfigPVD->PVDLevel);
-ARM GAS  /tmp/cc6XiQIJ.s 			page 4
+ARM GAS  /tmp/ccfrwKfp.s 			page 4
 
 
   37              		.loc 1 136 3 view .LVU3
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
   77 0044 13F4003F 		tst	r3, #131072
   78 0048 04D0     		beq	.L3
  151:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
-ARM GAS  /tmp/cc6XiQIJ.s 			page 5
+ARM GAS  /tmp/ccfrwKfp.s 			page 5
 
 
  152:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****     __HAL_PWR_PVD_EXTI_ENABLE_EVENT();
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
  120              		.align	1
  121              		.global	HAL_PWR_EnablePVD
  122              		.syntax unified
-ARM GAS  /tmp/cc6XiQIJ.s 			page 6
+ARM GAS  /tmp/ccfrwKfp.s 			page 6
 
 
  123              		.thumb
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
  163 0002 1368     		ldr	r3, [r2]
  164 0004 23F01003 		bic	r3, r3, #16
  165 0008 1360     		str	r3, [r2]
-ARM GAS  /tmp/cc6XiQIJ.s 			page 7
+ARM GAS  /tmp/ccfrwKfp.s 			page 7
 
 
  183:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** }
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
  192              	.LFE127:
  194              		.section	.text.HAL_PWR_PVD_IRQHandler,"ax",%progbits
  195              		.align	1
-ARM GAS  /tmp/cc6XiQIJ.s 			page 8
+ARM GAS  /tmp/ccfrwKfp.s 			page 8
 
 
  196              		.global	HAL_PWR_PVD_IRQHandler
@@ -433,68 +433,67 @@ ARM GAS  /tmp/cc6XiQIJ.s 			page 1
  205              		@ args = 0, pretend = 0, frame = 0
  206              		@ frame_needed = 0, uses_anonymous_args = 0
  207 0000 08B5     		push	{r3, lr}
- 208              	.LCFI0:
- 209              		.cfi_def_cfa_offset 8
- 210              		.cfi_offset 3, -8
- 211              		.cfi_offset 14, -4
+ 208              		.cfi_def_cfa_offset 8
+ 209              		.cfi_offset 3, -8
+ 210              		.cfi_offset 14, -4
  193:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
- 212              		.loc 1 193 3 view .LVU34
+ 211              		.loc 1 193 3 view .LVU34
  193:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
- 213              		.loc 1 193 6 is_stmt 0 view .LVU35
- 214 0002 064B     		ldr	r3, .L19
- 215 0004 5B69     		ldr	r3, [r3, #20]
+ 212              		.loc 1 193 6 is_stmt 0 view .LVU35
+ 213 0002 064B     		ldr	r3, .L19
+ 214 0004 5B69     		ldr	r3, [r3, #20]
  193:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   {
- 216              		.loc 1 193 5 view .LVU36
- 217 0006 13F4803F 		tst	r3, #65536
- 218 000a 00D1     		bne	.L18
- 219              	.L15:
+ 215              		.loc 1 193 5 view .LVU36
+ 216 0006 13F4803F 		tst	r3, #65536
+ 217 000a 00D1     		bne	.L18
+ 218              	.L15:
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
- 220              		.loc 1 201 1 view .LVU37
- 221 000c 08BD     		pop	{r3, pc}
- 222              	.L18:
+ 219              		.loc 1 201 1 view .LVU37
+ 220 000c 08BD     		pop	{r3, pc}
+ 221              	.L18:
  196:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
- 223              		.loc 1 196 5 is_stmt 1 view .LVU38
- 224 000e FFF7FEFF 		bl	HAL_PWR_PVDCallback
- 225              	.LVL1:
+ 222              		.loc 1 196 5 is_stmt 1 view .LVU38
+ 223 000e FFF7FEFF 		bl	HAL_PWR_PVDCallback
+ 224              	.LVL1:
  199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c ****   }
- 226              		.loc 1 199 5 view .LVU39
- 227 0012 024B     		ldr	r3, .L19
- 228 0014 4FF48032 		mov	r2, #65536
- 229 0018 5A61     		str	r2, [r3, #20]
+ 225              		.loc 1 199 5 view .LVU39
+ 226 0012 024B     		ldr	r3, .L19
+ 227 0014 4FF48032 		mov	r2, #65536
+ 228 0018 5A61     		str	r2, [r3, #20]
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr_ex.c **** 
- 230              		.loc 1 201 1 is_stmt 0 view .LVU40
- 231 001a F7E7     		b	.L15
- 232              	.L20:
- 233              		.align	2
- 234              	.L19:
- 235 001c 00040140 		.word	1073808384
- 236              		.cfi_endproc
- 237              	.LFE126:
- 239              		.text
- 240              	.Letext0:
- 241              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 242              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 243              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
- 244              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h"
- 245              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
-ARM GAS  /tmp/cc6XiQIJ.s 			page 9
+ 229              		.loc 1 201 1 is_stmt 0 view .LVU40
+ 230 001a F7E7     		b	.L15
+ 231              	.L20:
+ 232              		.align	2
+ 233              	.L19:
+ 234 001c 00040140 		.word	1073808384
+ 235              		.cfi_endproc
+ 236              	.LFE126:
+ 238              		.text
+ 239              	.Letext0:
+ 240              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 241              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 242              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
+ 243              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h"
+ 244              		.file 6 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f3xx.h"
+ARM GAS  /tmp/ccfrwKfp.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_pwr_ex.c
-     /tmp/cc6XiQIJ.s:20     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
-     /tmp/cc6XiQIJ.s:26     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
-     /tmp/cc6XiQIJ.s:114    .text.HAL_PWR_ConfigPVD:000000000000007c $d
-     /tmp/cc6XiQIJ.s:120    .text.HAL_PWR_EnablePVD:0000000000000000 $t
-     /tmp/cc6XiQIJ.s:126    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
-     /tmp/cc6XiQIJ.s:143    .text.HAL_PWR_EnablePVD:000000000000000c $d
-     /tmp/cc6XiQIJ.s:148    .text.HAL_PWR_DisablePVD:0000000000000000 $t
-     /tmp/cc6XiQIJ.s:154    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
-     /tmp/cc6XiQIJ.s:171    .text.HAL_PWR_DisablePVD:000000000000000c $d
-     /tmp/cc6XiQIJ.s:176    .text.HAL_PWR_PVDCallback:0000000000000000 $t
-     /tmp/cc6XiQIJ.s:182    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
-     /tmp/cc6XiQIJ.s:195    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
-     /tmp/cc6XiQIJ.s:201    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
-     /tmp/cc6XiQIJ.s:235    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
+     /tmp/ccfrwKfp.s:21     .text.HAL_PWR_ConfigPVD:0000000000000000 $t
+     /tmp/ccfrwKfp.s:27     .text.HAL_PWR_ConfigPVD:0000000000000000 HAL_PWR_ConfigPVD
+     /tmp/ccfrwKfp.s:114    .text.HAL_PWR_ConfigPVD:000000000000007c $d
+     /tmp/ccfrwKfp.s:120    .text.HAL_PWR_EnablePVD:0000000000000000 $t
+     /tmp/ccfrwKfp.s:126    .text.HAL_PWR_EnablePVD:0000000000000000 HAL_PWR_EnablePVD
+     /tmp/ccfrwKfp.s:143    .text.HAL_PWR_EnablePVD:000000000000000c $d
+     /tmp/ccfrwKfp.s:148    .text.HAL_PWR_DisablePVD:0000000000000000 $t
+     /tmp/ccfrwKfp.s:154    .text.HAL_PWR_DisablePVD:0000000000000000 HAL_PWR_DisablePVD
+     /tmp/ccfrwKfp.s:171    .text.HAL_PWR_DisablePVD:000000000000000c $d
+     /tmp/ccfrwKfp.s:176    .text.HAL_PWR_PVDCallback:0000000000000000 $t
+     /tmp/ccfrwKfp.s:182    .text.HAL_PWR_PVDCallback:0000000000000000 HAL_PWR_PVDCallback
+     /tmp/ccfrwKfp.s:195    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 $t
+     /tmp/ccfrwKfp.s:201    .text.HAL_PWR_PVD_IRQHandler:0000000000000000 HAL_PWR_PVD_IRQHandler
+     /tmp/ccfrwKfp.s:234    .text.HAL_PWR_PVD_IRQHandler:000000000000001c $d
 
 NO UNDEFINED SYMBOLS

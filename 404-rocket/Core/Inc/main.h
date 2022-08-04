@@ -64,9 +64,10 @@ void Error_Handler(void);
 extern I2C_HandleTypeDef hi2c1;
 extern struct bno055_euler_double_t orientation_data;
 extern uint8_t flag;
-extern uint16_t esc_speed;
 extern double xout, yout;
+extern double esc_output;
 
+extern uint32_t rpm_length;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

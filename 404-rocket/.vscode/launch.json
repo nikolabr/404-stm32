@@ -14,6 +14,20 @@
             "configFiles": [
                 "openocd.cfg"
             ]
+        },
+        {
+            "showDevDebugOutput": "parsed",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/404-rocket.elf",
+            "name": "Attach STM32",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stm32f303x8.s",
+            "configFiles": [
+                "openocd.cfg"
+            ]
         }
     ]
 }

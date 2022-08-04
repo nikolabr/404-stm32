@@ -56,12 +56,7 @@
 
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim1;
-extern DMA_HandleTypeDef hdma_usart2_rx;
-extern UART_HandleTypeDef huart2;
 /* USER CODE BEGIN EV */
-extern struct bno055_euler_double_t orientation_data;
-extern uint8_t flag;
-uint16_t l = 0;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -203,17 +198,22 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles DMA1 channel6 global interrupt.
+  * @brief This function handles EXTI line 0 interrupt.
   */
-void DMA1_Channel6_IRQHandler(void)
+void EXTI0_IRQHandler(void)
 {
-  /* USER CODE BEGIN DMA1_Channel6_IRQn 0 */
-
-  /* USER CODE END DMA1_Channel6_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_usart2_rx);
-  /* USER CODE BEGIN DMA1_Channel6_IRQn 1 */
-
-  /* USER CODE END DMA1_Channel6_IRQn 1 */
+  /* USER CODE BEGIN EXTI0_IRQn 0 */
+  HAL_NVIC_DisableIRQ(EXTI0_IRQn);
+  rpm_length = TIM2->CNT;
+  TIM2->CNT = 0;
+  /* USER CODE END EXTI0_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_0);
+  /* USER CODE BEGIN EXTI0_IRQn 1 */
+  for (int i = 0; i < 1024; i++) {
+    asm("nop\r\n");
+  }
+  HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+  /* USER CODE END EXTI0_IRQn 1 */
 }
 
 /**
@@ -223,8 +223,8 @@ void TIM1_UP_TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
 
-	TIM1->CCR3 = 0x5555 + 0x5555 * esc_speed / 256;
-	TIM1->CCR1 = 32768 - xout;
+  TIM1->CCR3 = 0x5555 + esc_output * 0x5555;
+  TIM1->CCR1 = 32768 - xout;
 	TIM1->CCR2 = 32768 + yout;
 
   /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
@@ -232,20 +232,6 @@ void TIM1_UP_TIM16_IRQHandler(void)
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 1 */
 
   /* USER CODE END TIM1_UP_TIM16_IRQn 1 */
-}
-
-/**
-  * @brief This function handles USART2 global interrupt / USART2 wake-up interrupt through EXT line 26.
-  */
-void USART2_IRQHandler(void)
-{
-  /* USER CODE BEGIN USART2_IRQn 0 */
-
-  /* USER CODE END USART2_IRQn 0 */
-  HAL_UART_IRQHandler(&huart2);
-  /* USER CODE BEGIN USART2_IRQn 1 */
-
-  /* USER CODE END USART2_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

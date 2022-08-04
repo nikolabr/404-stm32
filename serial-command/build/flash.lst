@@ -1,0 +1,348 @@
+ARM GAS  /tmp/ccIM4OwL.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"flash.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/flash.c"
+  20              		.section	.text.flash_init,"ax",%progbits
+  21              		.align	1
+  22              		.global	flash_init
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	flash_init:
+  28              	.LFB126:
+   1:Core/Src/flash.c **** #include "flash.h"
+   2:Core/Src/flash.c **** 
+   3:Core/Src/flash.c **** HAL_StatusTypeDef flash_init() {
+  29              		.loc 1 3 32 view -0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 16
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 00B5     		push	{lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 4
+  36              		.cfi_offset 14, -4
+  37 0002 85B0     		sub	sp, sp, #20
+  38              	.LCFI1:
+  39              		.cfi_def_cfa_offset 24
+   4:Core/Src/flash.c ****     HAL_FLASH_Unlock();
+  40              		.loc 1 4 5 view .LVU1
+  41 0004 FFF7FEFF 		bl	HAL_FLASH_Unlock
+  42              	.LVL0:
+   5:Core/Src/flash.c ****     FLASH_EraseInitTypeDef FLASH_EraseInitStruct = {0};
+  43              		.loc 1 5 5 view .LVU2
+  44              		.loc 1 5 28 is_stmt 0 view .LVU3
+  45 0008 0023     		movs	r3, #0
+  46 000a 0193     		str	r3, [sp, #4]
+  47 000c 0293     		str	r3, [sp, #8]
+  48 000e 0393     		str	r3, [sp, #12]
+   6:Core/Src/flash.c **** 
+   7:Core/Src/flash.c ****     FLASH_EraseInitStruct.TypeErase = FLASH_TYPEERASE_PAGES;
+  49              		.loc 1 7 5 is_stmt 1 view .LVU4
+   8:Core/Src/flash.c ****     FLASH_EraseInitStruct.PageAddress = TABLE_START_ADDR;
+  50              		.loc 1 8 5 view .LVU5
+ARM GAS  /tmp/ccIM4OwL.s 			page 2
+
+
+  51              		.loc 1 8 39 is_stmt 0 view .LVU6
+  52 0010 054A     		ldr	r2, .L3
+  53 0012 0292     		str	r2, [sp, #8]
+   9:Core/Src/flash.c ****     FLASH_EraseInitStruct.NbPages = 1;
+  54              		.loc 1 9 5 is_stmt 1 view .LVU7
+  55              		.loc 1 9 35 is_stmt 0 view .LVU8
+  56 0014 0122     		movs	r2, #1
+  57 0016 0392     		str	r2, [sp, #12]
+  10:Core/Src/flash.c **** 
+  11:Core/Src/flash.c ****     uint32_t error = 0;
+  58              		.loc 1 11 5 is_stmt 1 view .LVU9
+  59              		.loc 1 11 14 is_stmt 0 view .LVU10
+  60 0018 0093     		str	r3, [sp]
+  12:Core/Src/flash.c ****     return HAL_FLASHEx_Erase(&FLASH_EraseInitStruct, &error);
+  61              		.loc 1 12 5 is_stmt 1 view .LVU11
+  62              		.loc 1 12 12 is_stmt 0 view .LVU12
+  63 001a 6946     		mov	r1, sp
+  64 001c 01A8     		add	r0, sp, #4
+  65 001e FFF7FEFF 		bl	HAL_FLASHEx_Erase
+  66              	.LVL1:
+  13:Core/Src/flash.c **** }
+  67              		.loc 1 13 1 view .LVU13
+  68 0022 05B0     		add	sp, sp, #20
+  69              	.LCFI2:
+  70              		.cfi_def_cfa_offset 4
+  71              		@ sp needed
+  72 0024 5DF804FB 		ldr	pc, [sp], #4
+  73              	.L4:
+  74              		.align	2
+  75              	.L3:
+  76 0028 00F00008 		.word	134279168
+  77              		.cfi_endproc
+  78              	.LFE126:
+  80              		.section	.text.write_halfword,"ax",%progbits
+  81              		.align	1
+  82              		.global	write_halfword
+  83              		.syntax unified
+  84              		.thumb
+  85              		.thumb_func
+  87              	write_halfword:
+  88              	.LVL2:
+  89              	.LFB127:
+  14:Core/Src/flash.c **** 
+  15:Core/Src/flash.c **** HAL_StatusTypeDef write_halfword(uint16_t hword, uint32_t offset) {
+  90              		.loc 1 15 67 is_stmt 1 view -0
+  91              		.cfi_startproc
+  92              		@ args = 0, pretend = 0, frame = 0
+  93              		@ frame_needed = 0, uses_anonymous_args = 0
+  94              		.loc 1 15 67 is_stmt 0 view .LVU15
+  95 0000 08B5     		push	{r3, lr}
+  96              	.LCFI3:
+  97              		.cfi_def_cfa_offset 8
+  98              		.cfi_offset 3, -8
+  99              		.cfi_offset 14, -4
+ 100 0002 0246     		mov	r2, r0
+  16:Core/Src/flash.c ****     return HAL_FLASH_Program(FLASH_TYPEPROGRAM_HALFWORD, TABLE_START_ADDR + offset, hword);
+ 101              		.loc 1 16 5 is_stmt 1 view .LVU16
+ARM GAS  /tmp/ccIM4OwL.s 			page 3
+
+
+ 102              		.loc 1 16 12 is_stmt 0 view .LVU17
+ 103 0004 0023     		movs	r3, #0
+ 104 0006 01F10061 		add	r1, r1, #134217728
+ 105              	.LVL3:
+ 106              		.loc 1 16 12 view .LVU18
+ 107 000a 01F57041 		add	r1, r1, #61440
+ 108              	.LVL4:
+ 109              		.loc 1 16 12 view .LVU19
+ 110 000e 0120     		movs	r0, #1
+ 111              	.LVL5:
+ 112              		.loc 1 16 12 view .LVU20
+ 113 0010 FFF7FEFF 		bl	HAL_FLASH_Program
+ 114              	.LVL6:
+  17:Core/Src/flash.c **** }
+ 115              		.loc 1 17 1 view .LVU21
+ 116 0014 08BD     		pop	{r3, pc}
+ 117              		.cfi_endproc
+ 118              	.LFE127:
+ 120              		.section	.text.write_dword,"ax",%progbits
+ 121              		.align	1
+ 122              		.global	write_dword
+ 123              		.syntax unified
+ 124              		.thumb
+ 125              		.thumb_func
+ 127              	write_dword:
+ 128              	.LVL7:
+ 129              	.LFB128:
+  18:Core/Src/flash.c **** 
+  19:Core/Src/flash.c **** HAL_StatusTypeDef write_dword(uint64_t dword, uint32_t offset) {
+ 130              		.loc 1 19 64 is_stmt 1 view -0
+ 131              		.cfi_startproc
+ 132              		@ args = 0, pretend = 0, frame = 0
+ 133              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134              		.loc 1 19 64 is_stmt 0 view .LVU23
+ 135 0000 38B5     		push	{r3, r4, r5, lr}
+ 136              	.LCFI4:
+ 137              		.cfi_def_cfa_offset 16
+ 138              		.cfi_offset 3, -16
+ 139              		.cfi_offset 4, -12
+ 140              		.cfi_offset 5, -8
+ 141              		.cfi_offset 14, -4
+ 142 0002 0D46     		mov	r5, r1
+ 143 0004 1146     		mov	r1, r2
+  20:Core/Src/flash.c ****     return HAL_FLASH_Program(FLASH_TYPEPROGRAM_DOUBLEWORD, TABLE_START_ADDR + offset, dword);
+ 144              		.loc 1 20 5 is_stmt 1 view .LVU24
+ 145              		.loc 1 20 12 is_stmt 0 view .LVU25
+ 146 0006 0246     		mov	r2, r0
+ 147              	.LVL8:
+ 148              		.loc 1 20 12 view .LVU26
+ 149 0008 2B46     		mov	r3, r5
+ 150 000a 01F10061 		add	r1, r1, #134217728
+ 151              	.LVL9:
+ 152              		.loc 1 20 12 view .LVU27
+ 153 000e 01F57041 		add	r1, r1, #61440
+ 154              	.LVL10:
+ 155              		.loc 1 20 12 view .LVU28
+ 156 0012 0320     		movs	r0, #3
+ARM GAS  /tmp/ccIM4OwL.s 			page 4
+
+
+ 157              	.LVL11:
+ 158              		.loc 1 20 12 view .LVU29
+ 159 0014 FFF7FEFF 		bl	HAL_FLASH_Program
+ 160              	.LVL12:
+  21:Core/Src/flash.c **** }
+ 161              		.loc 1 21 1 view .LVU30
+ 162 0018 38BD     		pop	{r3, r4, r5, pc}
+ 163              		.cfi_endproc
+ 164              	.LFE128:
+ 166              		.section	.text.write_word,"ax",%progbits
+ 167              		.align	1
+ 168              		.global	write_word
+ 169              		.syntax unified
+ 170              		.thumb
+ 171              		.thumb_func
+ 173              	write_word:
+ 174              	.LVL13:
+ 175              	.LFB129:
+  22:Core/Src/flash.c **** 
+  23:Core/Src/flash.c **** HAL_StatusTypeDef write_word(uint32_t word, uint32_t offset) {
+ 176              		.loc 1 23 62 is_stmt 1 view -0
+ 177              		.cfi_startproc
+ 178              		@ args = 0, pretend = 0, frame = 0
+ 179              		@ frame_needed = 0, uses_anonymous_args = 0
+ 180              		.loc 1 23 62 is_stmt 0 view .LVU32
+ 181 0000 08B5     		push	{r3, lr}
+ 182              	.LCFI5:
+ 183              		.cfi_def_cfa_offset 8
+ 184              		.cfi_offset 3, -8
+ 185              		.cfi_offset 14, -4
+ 186 0002 0246     		mov	r2, r0
+  24:Core/Src/flash.c ****     return HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, TABLE_START_ADDR + offset, word);
+ 187              		.loc 1 24 5 is_stmt 1 view .LVU33
+ 188              		.loc 1 24 12 is_stmt 0 view .LVU34
+ 189 0004 0023     		movs	r3, #0
+ 190 0006 01F10061 		add	r1, r1, #134217728
+ 191              	.LVL14:
+ 192              		.loc 1 24 12 view .LVU35
+ 193 000a 01F57041 		add	r1, r1, #61440
+ 194              	.LVL15:
+ 195              		.loc 1 24 12 view .LVU36
+ 196 000e 0220     		movs	r0, #2
+ 197              	.LVL16:
+ 198              		.loc 1 24 12 view .LVU37
+ 199 0010 FFF7FEFF 		bl	HAL_FLASH_Program
+ 200              	.LVL17:
+  25:Core/Src/flash.c **** }
+ 201              		.loc 1 25 1 view .LVU38
+ 202 0014 08BD     		pop	{r3, pc}
+ 203              		.cfi_endproc
+ 204              	.LFE129:
+ 206              		.section	.text.write_words,"ax",%progbits
+ 207              		.align	1
+ 208              		.global	write_words
+ 209              		.syntax unified
+ 210              		.thumb
+ 211              		.thumb_func
+ARM GAS  /tmp/ccIM4OwL.s 			page 5
+
+
+ 213              	write_words:
+ 214              	.LVL18:
+ 215              	.LFB130:
+  26:Core/Src/flash.c **** 
+  27:Core/Src/flash.c **** HAL_StatusTypeDef write_words(uint32_t * words, uint32_t offset, size_t n) {
+ 216              		.loc 1 27 76 is_stmt 1 view -0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 220              		.loc 1 27 76 is_stmt 0 view .LVU40
+ 221 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 222              	.LCFI6:
+ 223              		.cfi_def_cfa_offset 24
+ 224              		.cfi_offset 4, -24
+ 225              		.cfi_offset 5, -20
+ 226              		.cfi_offset 6, -16
+ 227              		.cfi_offset 7, -12
+ 228              		.cfi_offset 8, -8
+ 229              		.cfi_offset 14, -4
+ 230 0004 8046     		mov	r8, r0
+ 231 0006 0F46     		mov	r7, r1
+ 232 0008 1646     		mov	r6, r2
+  28:Core/Src/flash.c ****     HAL_StatusTypeDef stat = HAL_OK;
+ 233              		.loc 1 28 5 is_stmt 1 view .LVU41
+ 234              	.LVL19:
+  29:Core/Src/flash.c ****     for (int i = 0; i < n; i++) {
+ 235              		.loc 1 29 5 view .LVU42
+ 236              	.LBB2:
+ 237              		.loc 1 29 10 view .LVU43
+ 238              		.loc 1 29 14 is_stmt 0 view .LVU44
+ 239 000a 0024     		movs	r4, #0
+ 240              	.LBE2:
+  28:Core/Src/flash.c ****     HAL_StatusTypeDef stat = HAL_OK;
+ 241              		.loc 1 28 23 view .LVU45
+ 242 000c 2546     		mov	r5, r4
+ 243              	.LBB3:
+ 244              		.loc 1 29 5 view .LVU46
+ 245 000e 08E0     		b	.L12
+ 246              	.LVL20:
+ 247              	.L13:
+  30:Core/Src/flash.c ****         stat |= write_word(words[i], offset + i * 4);
+ 248              		.loc 1 30 9 is_stmt 1 discriminator 3 view .LVU47
+ 249              		.loc 1 30 17 is_stmt 0 discriminator 3 view .LVU48
+ 250 0010 07EB8401 		add	r1, r7, r4, lsl #2
+ 251 0014 58F82400 		ldr	r0, [r8, r4, lsl #2]
+ 252 0018 FFF7FEFF 		bl	write_word
+ 253              	.LVL21:
+ 254              		.loc 1 30 14 discriminator 3 view .LVU49
+ 255 001c 0543     		orrs	r5, r5, r0
+ 256              	.LVL22:
+ 257              		.loc 1 30 14 discriminator 3 view .LVU50
+ 258 001e EDB2     		uxtb	r5, r5
+ 259              	.LVL23:
+  29:Core/Src/flash.c ****     for (int i = 0; i < n; i++) {
+ 260              		.loc 1 29 29 is_stmt 1 discriminator 3 view .LVU51
+ 261 0020 0134     		adds	r4, r4, #1
+ 262              	.LVL24:
+ARM GAS  /tmp/ccIM4OwL.s 			page 6
+
+
+ 263              	.L12:
+  29:Core/Src/flash.c ****     for (int i = 0; i < n; i++) {
+ 264              		.loc 1 29 23 discriminator 1 view .LVU52
+ 265 0022 B442     		cmp	r4, r6
+ 266 0024 F4D3     		bcc	.L13
+ 267              	.LBE3:
+  31:Core/Src/flash.c ****     }
+  32:Core/Src/flash.c ****     return stat;
+ 268              		.loc 1 32 5 view .LVU53
+  33:Core/Src/flash.c **** }...
+ 269              		.loc 1 33 1 is_stmt 0 view .LVU54
+ 270 0026 2846     		mov	r0, r5
+ 271 0028 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 272              		.loc 1 33 1 view .LVU55
+ 273              		.cfi_endproc
+ 274              	.LFE130:
+ 276              		.text
+ 277              	.Letext0:
+ 278              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 279              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 280              		.file 4 "/usr/lib/gcc/arm-none-eabi/12.1.0/include/stddef.h"
+ 281              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 282              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash_ex.h"
+ 283              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_flash.h"
+ARM GAS  /tmp/ccIM4OwL.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 flash.c
+     /tmp/ccIM4OwL.s:21     .text.flash_init:0000000000000000 $t
+     /tmp/ccIM4OwL.s:27     .text.flash_init:0000000000000000 flash_init
+     /tmp/ccIM4OwL.s:76     .text.flash_init:0000000000000028 $d
+     /tmp/ccIM4OwL.s:81     .text.write_halfword:0000000000000000 $t
+     /tmp/ccIM4OwL.s:87     .text.write_halfword:0000000000000000 write_halfword
+     /tmp/ccIM4OwL.s:121    .text.write_dword:0000000000000000 $t
+     /tmp/ccIM4OwL.s:127    .text.write_dword:0000000000000000 write_dword
+     /tmp/ccIM4OwL.s:167    .text.write_word:0000000000000000 $t
+     /tmp/ccIM4OwL.s:173    .text.write_word:0000000000000000 write_word
+     /tmp/ccIM4OwL.s:207    .text.write_words:0000000000000000 $t
+     /tmp/ccIM4OwL.s:213    .text.write_words:0000000000000000 write_words
+
+UNDEFINED SYMBOLS
+HAL_FLASH_Unlock
+HAL_FLASHEx_Erase
+HAL_FLASH_Program

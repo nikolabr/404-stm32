@@ -1,0 +1,622 @@
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"command.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/command.c"
+  20              		.section	.text.command_get_line,"ax",%progbits
+  21              		.align	1
+  22              		.global	command_get_line
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	command_get_line:
+  28              	.LVL0:
+  29              	.LFB126:
+   1:Core/Src/command.c **** #include "command.h"
+   2:Core/Src/command.c **** 
+   3:Core/Src/command.c **** char ret[128];
+   4:Core/Src/command.c **** double constants[9];
+   5:Core/Src/command.c **** 
+   6:Core/Src/command.c **** const char add_command[] = "ADD";
+   7:Core/Src/command.c **** const char lst_command[] = "LST";
+   8:Core/Src/command.c **** const char sel_command[] = "SEL";
+   9:Core/Src/command.c **** 
+  10:Core/Src/command.c **** const char waiting_for_line[] = "Waiting for line..\r\n";
+  11:Core/Src/command.c **** const char line_error[] = "Could not receive line, timeout or error happened\r\n";
+  12:Core/Src/command.c **** const char command_error[] = "Command error\r\n";
+  13:Core/Src/command.c **** 
+  14:Core/Src/command.c **** char prompt[] = "Set Servo X Y: ";
+  15:Core/Src/command.c **** 
+  16:Core/Src/command.c **** /** @brief Receive a single line through serial interface
+  17:Core/Src/command.c ****  * @param huart Pointer to serial interface
+  18:Core/Src/command.c ****  * @param timeout Serial input timeout
+  19:Core/Src/command.c ****  * @retval String containing line or NULL if error
+  20:Core/Src/command.c ****  */
+  21:Core/Src/command.c **** char* command_get_line(UART_HandleTypeDef *huart, uint32_t timeout) {
+  30              		.loc 1 21 69 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 8
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 21 69 is_stmt 0 view .LVU1
+  35 0000 70B5     		push	{r4, r5, r6, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 16
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 2
+
+
+  38              		.cfi_offset 4, -16
+  39              		.cfi_offset 5, -12
+  40              		.cfi_offset 6, -8
+  41              		.cfi_offset 14, -4
+  42 0002 82B0     		sub	sp, sp, #8
+  43              	.LCFI1:
+  44              		.cfi_def_cfa_offset 24
+  45 0004 0646     		mov	r6, r0
+  46 0006 0D46     		mov	r5, r1
+  22:Core/Src/command.c ****     //HAL_UART_Transmit(huart, waiting_for_line, sizeof(waiting_for_line), timeout);
+  23:Core/Src/command.c ****     HAL_StatusTypeDef stat;
+  47              		.loc 1 23 5 is_stmt 1 view .LVU2
+  24:Core/Src/command.c ****     char * next_char = ret;
+  48              		.loc 1 24 5 view .LVU3
+  49              	.LVL1:
+  25:Core/Src/command.c ****     unsigned char byte = '\0';
+  50              		.loc 1 25 5 view .LVU4
+  51              		.loc 1 25 19 is_stmt 0 view .LVU5
+  52 0008 0023     		movs	r3, #0
+  53 000a 8DF80730 		strb	r3, [sp, #7]
+  26:Core/Src/command.c ****     unsigned char* received_byte = &byte;
+  54              		.loc 1 26 5 is_stmt 1 view .LVU6
+  55              	.LVL2:
+  27:Core/Src/command.c **** 
+  28:Core/Src/command.c ****     while ( *received_byte != '\r' ) {
+  56              		.loc 1 28 5 view .LVU7
+  24:Core/Src/command.c ****     unsigned char byte = '\0';
+  57              		.loc 1 24 12 is_stmt 0 view .LVU8
+  58 000e 0F4C     		ldr	r4, .L10
+  59              		.loc 1 28 11 view .LVU9
+  60 0010 03E0     		b	.L2
+  61              	.LVL3:
+  62              	.L9:
+  29:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  30:Core/Src/command.c **** 
+  31:Core/Src/command.c ****         if ( (stat == HAL_ERROR) || (stat == HAL_TIMEOUT) ) {
+  32:Core/Src/command.c ****             //HAL_UART_Transmit(huart, line_error, sizeof(line_error), timeout);
+  33:Core/Src/command.c ****             return NULL;
+  34:Core/Src/command.c ****         }
+  35:Core/Src/command.c **** 
+  36:Core/Src/command.c ****         *next_char = *received_byte;
+  63              		.loc 1 36 9 is_stmt 1 view .LVU10
+  64              		.loc 1 36 22 is_stmt 0 view .LVU11
+  65 0012 9DF80720 		ldrb	r2, [sp, #7]	@ zero_extendqisi2
+  66              		.loc 1 36 20 view .LVU12
+  67 0016 04F8012B 		strb	r2, [r4], #1
+  68              	.LVL4:
+  37:Core/Src/command.c ****         next_char++;
+  69              		.loc 1 37 9 is_stmt 1 view .LVU13
+  70              	.L2:
+  28:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  71              		.loc 1 28 28 view .LVU14
+  28:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  72              		.loc 1 28 13 is_stmt 0 view .LVU15
+  73 001a 9DF80720 		ldrb	r2, [sp, #7]	@ zero_extendqisi2
+  28:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  74              		.loc 1 28 28 view .LVU16
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 3
+
+
+  75 001e 0D2A     		cmp	r2, #13
+  76 0020 0CD0     		beq	.L8
+  29:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  77              		.loc 1 29 9 is_stmt 1 view .LVU17
+  29:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  78              		.loc 1 29 16 is_stmt 0 view .LVU18
+  79 0022 2B46     		mov	r3, r5
+  80 0024 0122     		movs	r2, #1
+  81 0026 0DF10701 		add	r1, sp, #7
+  82              	.LVL5:
+  29:Core/Src/command.c ****         stat = HAL_UART_Receive(huart, received_byte, 1U, timeout);
+  83              		.loc 1 29 16 view .LVU19
+  84 002a 3046     		mov	r0, r6
+  85 002c FFF7FEFF 		bl	HAL_UART_Receive
+  86              	.LVL6:
+  31:Core/Src/command.c ****             //HAL_UART_Transmit(huart, line_error, sizeof(line_error), timeout);
+  87              		.loc 1 31 9 is_stmt 1 view .LVU20
+  31:Core/Src/command.c ****             //HAL_UART_Transmit(huart, line_error, sizeof(line_error), timeout);
+  88              		.loc 1 31 12 is_stmt 0 view .LVU21
+  89 0030 0128     		cmp	r0, #1
+  90 0032 08D0     		beq	.L5
+  31:Core/Src/command.c ****             //HAL_UART_Transmit(huart, line_error, sizeof(line_error), timeout);
+  91              		.loc 1 31 34 discriminator 1 view .LVU22
+  92 0034 0328     		cmp	r0, #3
+  93 0036 ECD1     		bne	.L9
+  33:Core/Src/command.c ****         }
+  94              		.loc 1 33 20 view .LVU23
+  95 0038 0020     		movs	r0, #0
+  96              	.LVL7:
+  33:Core/Src/command.c ****         }
+  97              		.loc 1 33 20 view .LVU24
+  98 003a 02E0     		b	.L1
+  99              	.LVL8:
+ 100              	.L8:
+  38:Core/Src/command.c ****     } 
+  39:Core/Src/command.c **** 
+  40:Core/Src/command.c ****     *next_char = '\0';
+ 101              		.loc 1 40 5 is_stmt 1 view .LVU25
+ 102              		.loc 1 40 16 is_stmt 0 view .LVU26
+ 103 003c 0023     		movs	r3, #0
+ 104 003e 2370     		strb	r3, [r4]
+  41:Core/Src/command.c **** 
+  42:Core/Src/command.c ****     return ret;
+ 105              		.loc 1 42 5 is_stmt 1 view .LVU27
+ 106              		.loc 1 42 12 is_stmt 0 view .LVU28
+ 107 0040 0248     		ldr	r0, .L10
+ 108              	.L1:
+  43:Core/Src/command.c **** }
+ 109              		.loc 1 43 1 view .LVU29
+ 110 0042 02B0     		add	sp, sp, #8
+ 111              	.LCFI2:
+ 112              		.cfi_remember_state
+ 113              		.cfi_def_cfa_offset 16
+ 114              		@ sp needed
+ 115 0044 70BD     		pop	{r4, r5, r6, pc}
+ 116              	.LVL9:
+ 117              	.L5:
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 4
+
+
+ 118              	.LCFI3:
+ 119              		.cfi_restore_state
+  33:Core/Src/command.c ****         }
+ 120              		.loc 1 33 20 view .LVU30
+ 121 0046 0020     		movs	r0, #0
+ 122              	.LVL10:
+  33:Core/Src/command.c ****         }
+ 123              		.loc 1 33 20 view .LVU31
+ 124 0048 FBE7     		b	.L1
+ 125              	.L11:
+ 126 004a 00BF     		.align	2
+ 127              	.L10:
+ 128 004c 00000000 		.word	ret
+ 129              		.cfi_endproc
+ 130              	.LFE126:
+ 132              		.section	.text.parse_command,"ax",%progbits
+ 133              		.align	1
+ 134              		.global	parse_command
+ 135              		.syntax unified
+ 136              		.thumb
+ 137              		.thumb_func
+ 139              	parse_command:
+ 140              	.LVL11:
+ 141              	.LFB127:
+  44:Core/Src/command.c **** 
+  45:Core/Src/command.c **** CommandType parse_command(char * str) {
+ 142              		.loc 1 45 39 is_stmt 1 view -0
+ 143              		.cfi_startproc
+ 144              		@ args = 0, pretend = 0, frame = 0
+ 145              		@ frame_needed = 0, uses_anonymous_args = 0
+ 146              		.loc 1 45 39 is_stmt 0 view .LVU33
+ 147 0000 10B5     		push	{r4, lr}
+ 148              	.LCFI4:
+ 149              		.cfi_def_cfa_offset 8
+ 150              		.cfi_offset 4, -8
+ 151              		.cfi_offset 14, -4
+ 152 0002 0446     		mov	r4, r0
+  46:Core/Src/command.c ****     if ( strncmp(str, add_command, 3) == 0 ) {
+ 153              		.loc 1 46 5 is_stmt 1 view .LVU34
+ 154              		.loc 1 46 10 is_stmt 0 view .LVU35
+ 155 0004 0322     		movs	r2, #3
+ 156 0006 0B49     		ldr	r1, .L18
+ 157 0008 FFF7FEFF 		bl	strncmp
+ 158              	.LVL12:
+ 159              		.loc 1 46 8 view .LVU36
+ 160 000c 68B1     		cbz	r0, .L14
+  47:Core/Src/command.c ****         return ADD_COMMAND;
+  48:Core/Src/command.c ****     }
+  49:Core/Src/command.c ****     else if ( strncmp(str, lst_command, 3) == 0) {
+ 161              		.loc 1 49 10 is_stmt 1 view .LVU37
+ 162              		.loc 1 49 15 is_stmt 0 view .LVU38
+ 163 000e 0322     		movs	r2, #3
+ 164 0010 0949     		ldr	r1, .L18+4
+ 165 0012 2046     		mov	r0, r4
+ 166 0014 FFF7FEFF 		bl	strncmp
+ 167              	.LVL13:
+ 168              		.loc 1 49 13 view .LVU39
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 5
+
+
+ 169 0018 48B1     		cbz	r0, .L15
+  50:Core/Src/command.c ****         return LST_COMMAND;
+  51:Core/Src/command.c ****     }
+  52:Core/Src/command.c ****     else if ( strncmp(str, sel_command, 3) == 0) {
+ 170              		.loc 1 52 10 is_stmt 1 view .LVU40
+ 171              		.loc 1 52 15 is_stmt 0 view .LVU41
+ 172 001a 0322     		movs	r2, #3
+ 173 001c 0749     		ldr	r1, .L18+8
+ 174 001e 2046     		mov	r0, r4
+ 175 0020 FFF7FEFF 		bl	strncmp
+ 176              	.LVL14:
+ 177              		.loc 1 52 13 view .LVU42
+ 178 0024 10B9     		cbnz	r0, .L12
+  53:Core/Src/command.c ****         return SEL_COMMAND;
+ 179              		.loc 1 53 16 view .LVU43
+ 180 0026 0220     		movs	r0, #2
+ 181 0028 00E0     		b	.L12
+ 182              	.L14:
+  47:Core/Src/command.c ****         return ADD_COMMAND;
+ 183              		.loc 1 47 16 view .LVU44
+ 184 002a 0020     		movs	r0, #0
+ 185              	.L12:
+  54:Core/Src/command.c ****     }
+  55:Core/Src/command.c **** }
+ 186              		.loc 1 55 1 view .LVU45
+ 187 002c 10BD     		pop	{r4, pc}
+ 188              	.LVL15:
+ 189              	.L15:
+  50:Core/Src/command.c ****     }
+ 190              		.loc 1 50 16 view .LVU46
+ 191 002e 0120     		movs	r0, #1
+ 192 0030 FCE7     		b	.L12
+ 193              	.L19:
+ 194 0032 00BF     		.align	2
+ 195              	.L18:
+ 196 0034 00000000 		.word	add_command
+ 197 0038 00000000 		.word	lst_command
+ 198 003c 00000000 		.word	sel_command
+ 199              		.cfi_endproc
+ 200              	.LFE127:
+ 202              		.section	.text.print_command_error,"ax",%progbits
+ 203              		.align	1
+ 204              		.global	print_command_error
+ 205              		.syntax unified
+ 206              		.thumb
+ 207              		.thumb_func
+ 209              	print_command_error:
+ 210              	.LVL16:
+ 211              	.LFB128:
+  56:Core/Src/command.c **** 
+  57:Core/Src/command.c **** void print_command_error(UART_HandleTypeDef *huart) {
+ 212              		.loc 1 57 53 is_stmt 1 view -0
+ 213              		.cfi_startproc
+ 214              		@ args = 0, pretend = 0, frame = 0
+ 215              		@ frame_needed = 0, uses_anonymous_args = 0
+ 216              		.loc 1 57 53 is_stmt 0 view .LVU48
+ 217 0000 08B5     		push	{r3, lr}
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 6
+
+
+ 218              	.LCFI5:
+ 219              		.cfi_def_cfa_offset 8
+ 220              		.cfi_offset 3, -8
+ 221              		.cfi_offset 14, -4
+  58:Core/Src/command.c ****     HAL_UART_Transmit(huart, command_error, sizeof(command_error), 5000);
+ 222              		.loc 1 58 5 is_stmt 1 view .LVU49
+ 223 0002 41F28833 		movw	r3, #5000
+ 224 0006 1022     		movs	r2, #16
+ 225 0008 0149     		ldr	r1, .L22
+ 226 000a FFF7FEFF 		bl	HAL_UART_Transmit
+ 227              	.LVL17:
+  59:Core/Src/command.c **** }
+ 228              		.loc 1 59 1 is_stmt 0 view .LVU50
+ 229 000e 08BD     		pop	{r3, pc}
+ 230              	.L23:
+ 231              		.align	2
+ 232              	.L22:
+ 233 0010 00000000 		.word	command_error
+ 234              		.cfi_endproc
+ 235              	.LFE128:
+ 237              		.section	.rodata.get_constants.str1.4,"aMS",%progbits,1
+ 238              		.align	2
+ 239              	.LC0:
+ 240 0000 58594500 		.ascii	"XYE\000"
+ 241              		.align	2
+ 242              	.LC1:
+ 243 0004 50494400 		.ascii	"PID\000"
+ 244              		.section	.text.get_constants,"ax",%progbits
+ 245              		.align	1
+ 246              		.global	get_constants
+ 247              		.syntax unified
+ 248              		.thumb
+ 249              		.thumb_func
+ 251              	get_constants:
+ 252              	.LVL18:
+ 253              	.LFB129:
+  60:Core/Src/command.c **** 
+  61:Core/Src/command.c **** /**
+  62:Core/Src/command.c ****  * @brief Get PID values through UART interface
+  63:Core/Src/command.c ****  * @param huart pointer to serial interface struct 
+  64:Core/Src/command.c ****  * @retval Pointer to array of PID constants of length 9 or NULL if error
+  65:Core/Src/command.c ****  */ 
+  66:Core/Src/command.c **** double* get_constants(UART_HandleTypeDef *huart) {
+ 254              		.loc 1 66 50 is_stmt 1 view -0
+ 255              		.cfi_startproc
+ 256              		@ args = 0, pretend = 0, frame = 0
+ 257              		@ frame_needed = 0, uses_anonymous_args = 0
+ 258              		.loc 1 66 50 is_stmt 0 view .LVU52
+ 259 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 260              	.LCFI6:
+ 261              		.cfi_def_cfa_offset 24
+ 262              		.cfi_offset 3, -24
+ 263              		.cfi_offset 4, -20
+ 264              		.cfi_offset 5, -16
+ 265              		.cfi_offset 6, -12
+ 266              		.cfi_offset 7, -8
+ 267              		.cfi_offset 14, -4
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 7
+
+
+ 268 0002 0746     		mov	r7, r0
+  67:Core/Src/command.c ****     char* line = NULL;
+ 269              		.loc 1 67 5 is_stmt 1 view .LVU53
+ 270              	.LVL19:
+  68:Core/Src/command.c ****     const char* servo_names = "XYE";
+ 271              		.loc 1 68 5 view .LVU54
+  69:Core/Src/command.c ****     const char* pid_names = "PID";
+ 272              		.loc 1 69 5 view .LVU55
+  70:Core/Src/command.c **** 
+  71:Core/Src/command.c ****     for (int i = 0; i < 3; i++) {
+ 273              		.loc 1 71 5 view .LVU56
+ 274              	.LBB2:
+ 275              		.loc 1 71 10 view .LVU57
+ 276              		.loc 1 71 14 is_stmt 0 view .LVU58
+ 277 0004 0026     		movs	r6, #0
+ 278              		.loc 1 71 5 view .LVU59
+ 279 0006 1BE0     		b	.L25
+ 280              	.LVL20:
+ 281              	.L27:
+ 282              	.LBB3:
+  72:Core/Src/command.c ****         prompt[10] = servo_names[i];
+  73:Core/Src/command.c ****         for (int j = 0; j < 3; j++) {
+  74:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 283              		.loc 1 74 13 is_stmt 1 discriminator 3 view .LVU60
+ 284              		.loc 1 74 35 is_stmt 0 discriminator 3 view .LVU61
+ 285 0008 124B     		ldr	r3, .L31
+ 286 000a 1B5D     		ldrb	r3, [r3, r4]	@ zero_extendqisi2
+ 287              		.loc 1 74 24 discriminator 3 view .LVU62
+ 288 000c 1249     		ldr	r1, .L31+4
+ 289 000e 0B73     		strb	r3, [r1, #12]
+  75:Core/Src/command.c ****             HAL_UART_Transmit(huart, prompt, 16, 5000);
+ 290              		.loc 1 75 13 is_stmt 1 discriminator 3 view .LVU63
+ 291 0010 41F28833 		movw	r3, #5000
+ 292 0014 1022     		movs	r2, #16
+ 293 0016 3846     		mov	r0, r7
+ 294 0018 FFF7FEFF 		bl	HAL_UART_Transmit
+ 295              	.LVL21:
+  76:Core/Src/command.c ****             line = command_get_line(huart, 1000000);
+ 296              		.loc 1 76 13 discriminator 3 view .LVU64
+ 297              		.loc 1 76 20 is_stmt 0 discriminator 3 view .LVU65
+ 298 001c 0F49     		ldr	r1, .L31+8
+ 299 001e 3846     		mov	r0, r7
+ 300 0020 FFF7FEFF 		bl	command_get_line
+ 301              	.LVL22:
+  77:Core/Src/command.c ****             constants[i * 3 + j] = atof(line);
+ 302              		.loc 1 77 13 is_stmt 1 discriminator 3 view .LVU66
+ 303              		.loc 1 77 25 is_stmt 0 discriminator 3 view .LVU67
+ 304 0024 06EB4605 		add	r5, r6, r6, lsl #1
+ 305              		.loc 1 77 29 discriminator 3 view .LVU68
+ 306 0028 2544     		add	r5, r5, r4
+ 307              		.loc 1 77 36 discriminator 3 view .LVU69
+ 308 002a FFF7FEFF 		bl	atof
+ 309              	.LVL23:
+ 310              		.loc 1 77 34 discriminator 3 view .LVU70
+ 311 002e 0C4B     		ldr	r3, .L31+12
+ 312 0030 03EBC503 		add	r3, r3, r5, lsl #3
+ 313 0034 83ED000B 		vstr.64	d0, [r3]
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 8
+
+
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 314              		.loc 1 73 33 is_stmt 1 discriminator 3 view .LVU71
+ 315 0038 0134     		adds	r4, r4, #1
+ 316              	.LVL24:
+ 317              	.L26:
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 318              		.loc 1 73 27 discriminator 1 view .LVU72
+ 319 003a 022C     		cmp	r4, #2
+ 320 003c E4DD     		ble	.L27
+ 321              	.LBE3:
+  71:Core/Src/command.c ****         prompt[10] = servo_names[i];
+ 322              		.loc 1 71 29 discriminator 2 view .LVU73
+ 323 003e 0136     		adds	r6, r6, #1
+ 324              	.LVL25:
+ 325              	.L25:
+  71:Core/Src/command.c ****         prompt[10] = servo_names[i];
+ 326              		.loc 1 71 23 discriminator 1 view .LVU74
+ 327 0040 022E     		cmp	r6, #2
+ 328 0042 05DC     		bgt	.L30
+  72:Core/Src/command.c ****         for (int j = 0; j < 3; j++) {
+ 329              		.loc 1 72 9 view .LVU75
+  72:Core/Src/command.c ****         for (int j = 0; j < 3; j++) {
+ 330              		.loc 1 72 33 is_stmt 0 view .LVU76
+ 331 0044 074B     		ldr	r3, .L31+16
+ 332 0046 9A5D     		ldrb	r2, [r3, r6]	@ zero_extendqisi2
+  72:Core/Src/command.c ****         for (int j = 0; j < 3; j++) {
+ 333              		.loc 1 72 20 view .LVU77
+ 334 0048 034B     		ldr	r3, .L31+4
+ 335 004a 9A72     		strb	r2, [r3, #10]
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 336              		.loc 1 73 9 is_stmt 1 view .LVU78
+ 337              	.LBB4:
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 338              		.loc 1 73 14 view .LVU79
+ 339              	.LVL26:
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 340              		.loc 1 73 18 is_stmt 0 view .LVU80
+ 341 004c 0024     		movs	r4, #0
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 342              		.loc 1 73 9 view .LVU81
+ 343 004e F4E7     		b	.L26
+ 344              	.LVL27:
+ 345              	.L30:
+  73:Core/Src/command.c ****             prompt[12] = pid_names[j];
+ 346              		.loc 1 73 9 view .LVU82
+ 347              	.LBE4:
+ 348              	.LBE2:
+  78:Core/Src/command.c ****         } 
+  79:Core/Src/command.c ****     }
+  80:Core/Src/command.c ****     return constants;
+ 349              		.loc 1 80 5 is_stmt 1 view .LVU83
+  81:Core/Src/command.c ****     
+  82:Core/Src/command.c ****     print_command_error(huart);
+  83:Core/Src/command.c ****     return NULL;
+  84:Core/Src/command.c **** 
+  85:Core/Src/command.c **** }...
+ 350              		.loc 1 85 1 is_stmt 0 view .LVU84
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 9
+
+
+ 351 0050 0348     		ldr	r0, .L31+12
+ 352 0052 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 353              	.LVL28:
+ 354              	.L32:
+ 355              		.loc 1 85 1 view .LVU85
+ 356              		.align	2
+ 357              	.L31:
+ 358 0054 04000000 		.word	.LC1
+ 359 0058 00000000 		.word	prompt
+ 360 005c 40420F00 		.word	1000000
+ 361 0060 00000000 		.word	constants
+ 362 0064 00000000 		.word	.LC0
+ 363              		.cfi_endproc
+ 364              	.LFE129:
+ 366              		.global	prompt
+ 367              		.section	.data.prompt,"aw"
+ 368              		.align	2
+ 371              	prompt:
+ 372 0000 53657420 		.ascii	"Set Servo X Y: \000"
+ 372      53657276 
+ 372      6F205820 
+ 372      593A2000 
+ 373              		.global	command_error
+ 374              		.section	.rodata.command_error,"a"
+ 375              		.align	2
+ 378              	command_error:
+ 379 0000 436F6D6D 		.ascii	"Command error\015\012\000"
+ 379      616E6420 
+ 379      6572726F 
+ 379      720D0A00 
+ 380              		.global	line_error
+ 381              		.section	.rodata.line_error,"a"
+ 382              		.align	2
+ 385              	line_error:
+ 386 0000 436F756C 		.ascii	"Could not receive line, timeout or error happened\015"
+ 386      64206E6F 
+ 386      74207265 
+ 386      63656976 
+ 386      65206C69 
+ 387 0032 0A00     		.ascii	"\012\000"
+ 388              		.global	waiting_for_line
+ 389              		.section	.rodata.waiting_for_line,"a"
+ 390              		.align	2
+ 393              	waiting_for_line:
+ 394 0000 57616974 		.ascii	"Waiting for line..\015\012\000"
+ 394      696E6720 
+ 394      666F7220 
+ 394      6C696E65 
+ 394      2E2E0D0A 
+ 395              		.global	sel_command
+ 396              		.section	.rodata.sel_command,"a"
+ 397              		.align	2
+ 400              	sel_command:
+ 401 0000 53454C00 		.ascii	"SEL\000"
+ 402              		.global	lst_command
+ 403              		.section	.rodata.lst_command,"a"
+ 404              		.align	2
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 10
+
+
+ 407              	lst_command:
+ 408 0000 4C535400 		.ascii	"LST\000"
+ 409              		.global	add_command
+ 410              		.section	.rodata.add_command,"a"
+ 411              		.align	2
+ 414              	add_command:
+ 415 0000 41444400 		.ascii	"ADD\000"
+ 416              		.global	constants
+ 417              		.section	.bss.constants,"aw",%nobits
+ 418              		.align	3
+ 421              	constants:
+ 422 0000 00000000 		.space	72
+ 422      00000000 
+ 422      00000000 
+ 422      00000000 
+ 422      00000000 
+ 423              		.global	ret
+ 424              		.section	.bss.ret,"aw",%nobits
+ 425              		.align	2
+ 428              	ret:
+ 429 0000 00000000 		.space	128
+ 429      00000000 
+ 429      00000000 
+ 429      00000000 
+ 429      00000000 
+ 430              		.text
+ 431              	.Letext0:
+ 432              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 433              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 434              		.file 4 "Drivers/CMSIS/Device/ST/STM32F3xx/Include/stm32f303x8.h"
+ 435              		.file 5 "/usr/lib/gcc/arm-none-eabi/12.1.0/include/stddef.h"
+ 436              		.file 6 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 437              		.file 7 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_dma.h"
+ 438              		.file 8 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
+ 439              		.file 9 "Core/Inc/command.h"
+ 440              		.file 10 "/usr/arm-none-eabi/include/stdlib.h"
+ 441              		.file 11 "/usr/arm-none-eabi/include/string.h"
+ARM GAS  /tmp/ccnZ9C3Q.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 command.c
+     /tmp/ccnZ9C3Q.s:21     .text.command_get_line:0000000000000000 $t
+     /tmp/ccnZ9C3Q.s:27     .text.command_get_line:0000000000000000 command_get_line
+     /tmp/ccnZ9C3Q.s:128    .text.command_get_line:000000000000004c $d
+     /tmp/ccnZ9C3Q.s:428    .bss.ret:0000000000000000 ret
+     /tmp/ccnZ9C3Q.s:133    .text.parse_command:0000000000000000 $t
+     /tmp/ccnZ9C3Q.s:139    .text.parse_command:0000000000000000 parse_command
+     /tmp/ccnZ9C3Q.s:196    .text.parse_command:0000000000000034 $d
+     /tmp/ccnZ9C3Q.s:414    .rodata.add_command:0000000000000000 add_command
+     /tmp/ccnZ9C3Q.s:407    .rodata.lst_command:0000000000000000 lst_command
+     /tmp/ccnZ9C3Q.s:400    .rodata.sel_command:0000000000000000 sel_command
+     /tmp/ccnZ9C3Q.s:203    .text.print_command_error:0000000000000000 $t
+     /tmp/ccnZ9C3Q.s:209    .text.print_command_error:0000000000000000 print_command_error
+     /tmp/ccnZ9C3Q.s:233    .text.print_command_error:0000000000000010 $d
+     /tmp/ccnZ9C3Q.s:378    .rodata.command_error:0000000000000000 command_error
+     /tmp/ccnZ9C3Q.s:238    .rodata.get_constants.str1.4:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:245    .text.get_constants:0000000000000000 $t
+     /tmp/ccnZ9C3Q.s:251    .text.get_constants:0000000000000000 get_constants
+     /tmp/ccnZ9C3Q.s:358    .text.get_constants:0000000000000054 $d
+     /tmp/ccnZ9C3Q.s:371    .data.prompt:0000000000000000 prompt
+     /tmp/ccnZ9C3Q.s:421    .bss.constants:0000000000000000 constants
+     /tmp/ccnZ9C3Q.s:368    .data.prompt:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:375    .rodata.command_error:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:385    .rodata.line_error:0000000000000000 line_error
+     /tmp/ccnZ9C3Q.s:382    .rodata.line_error:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:393    .rodata.waiting_for_line:0000000000000000 waiting_for_line
+     /tmp/ccnZ9C3Q.s:390    .rodata.waiting_for_line:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:397    .rodata.sel_command:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:404    .rodata.lst_command:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:411    .rodata.add_command:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:418    .bss.constants:0000000000000000 $d
+     /tmp/ccnZ9C3Q.s:425    .bss.ret:0000000000000000 $d
+
+UNDEFINED SYMBOLS
+HAL_UART_Receive
+strncmp
+HAL_UART_Transmit
+atof

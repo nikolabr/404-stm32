@@ -1,0 +1,375 @@
+ARM GAS  /tmp/cc3hFhlA.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"table.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/table.c"
+  20              		.section	.text.read_row,"ax",%progbits
+  21              		.align	1
+  22              		.global	read_row
+  23              		.syntax unified
+  24              		.thumb
+  25              		.thumb_func
+  27              	read_row:
+  28              	.LVL0:
+  29              	.LFB126:
+   1:Core/Src/table.c **** #include "table.h"
+   2:Core/Src/table.c **** 
+   3:Core/Src/table.c **** TableRow read_row(uint32_t offset) {
+  30              		.loc 1 3 36 view -0
+  31              		.cfi_startproc
+  32              		@ args = 0, pretend = 0, frame = 80
+  33              		@ frame_needed = 0, uses_anonymous_args = 0
+  34              		.loc 1 3 36 is_stmt 0 view .LVU1
+  35 0000 70B5     		push	{r4, r5, r6, lr}
+  36              	.LCFI0:
+  37              		.cfi_def_cfa_offset 16
+  38              		.cfi_offset 4, -16
+  39              		.cfi_offset 5, -12
+  40              		.cfi_offset 6, -8
+  41              		.cfi_offset 14, -4
+  42 0002 94B0     		sub	sp, sp, #80
+  43              	.LCFI1:
+  44              		.cfi_def_cfa_offset 96
+  45 0004 0546     		mov	r5, r0
+  46 0006 0C46     		mov	r4, r1
+   4:Core/Src/table.c ****     TableRow row = {0};
+  47              		.loc 1 4 5 is_stmt 1 view .LVU2
+  48              		.loc 1 4 14 is_stmt 0 view .LVU3
+  49 0008 5026     		movs	r6, #80
+  50 000a 3246     		mov	r2, r6
+  51 000c 0021     		movs	r1, #0
+  52              	.LVL1:
+  53              		.loc 1 4 14 view .LVU4
+  54 000e 6846     		mov	r0, sp
+ARM GAS  /tmp/cc3hFhlA.s 			page 2
+
+
+  55              	.LVL2:
+  56              		.loc 1 4 14 view .LVU5
+  57 0010 FFF7FEFF 		bl	memset
+  58              	.LVL3:
+   5:Core/Src/table.c **** 
+   6:Core/Src/table.c ****     uint8_t * ptr = (uint8_t *)TABLE_START_ADDR + offset;
+  59              		.loc 1 6 5 is_stmt 1 view .LVU6
+  60              		.loc 1 6 15 is_stmt 0 view .LVU7
+  61 0014 04F10061 		add	r1, r4, #134217728
+  62 0018 01F57041 		add	r1, r1, #61440
+  63              	.LVL4:
+   7:Core/Src/table.c **** 
+   8:Core/Src/table.c ****     memcpy(row.header, ptr, 4);
+  64              		.loc 1 8 5 is_stmt 1 view .LVU8
+  65 001c 0B68     		ldr	r3, [r1]	@ unaligned
+  66 001e 0093     		str	r3, [sp]
+   9:Core/Src/table.c ****     ptr += 4;
+  67              		.loc 1 9 5 view .LVU9
+  68              	.LVL5:
+  10:Core/Src/table.c **** 
+  11:Core/Src/table.c ****     row.speed = *(uint32_t*)ptr;
+  69              		.loc 1 11 5 view .LVU10
+  70              		.loc 1 11 17 is_stmt 0 view .LVU11
+  71 0020 4B68     		ldr	r3, [r1, #4]
+  72              		.loc 1 11 15 view .LVU12
+  73 0022 0193     		str	r3, [sp, #4]
+  12:Core/Src/table.c ****     ptr += 4;
+  74              		.loc 1 12 5 is_stmt 1 view .LVU13
+  75              	.LVL6:
+  13:Core/Src/table.c **** 
+  14:Core/Src/table.c ****     memcpy(row.header, ptr, sizeof(double) * 9);
+  76              		.loc 1 14 5 view .LVU14
+  77 0024 4822     		movs	r2, #72
+  78 0026 0831     		adds	r1, r1, #8
+  79              	.LVL7:
+  80              		.loc 1 14 5 is_stmt 0 view .LVU15
+  81 0028 6846     		mov	r0, sp
+  82 002a FFF7FEFF 		bl	memcpy
+  83              	.LVL8:
+  15:Core/Src/table.c **** 
+  16:Core/Src/table.c ****     return row;  
+  84              		.loc 1 16 5 is_stmt 1 view .LVU16
+  85              		.loc 1 16 12 is_stmt 0 view .LVU17
+  86 002e 3246     		mov	r2, r6
+  87 0030 6946     		mov	r1, sp
+  88 0032 2846     		mov	r0, r5
+  89 0034 FFF7FEFF 		bl	memcpy
+  90              	.LVL9:
+  17:Core/Src/table.c **** }
+  91              		.loc 1 17 1 view .LVU18
+  92 0038 2846     		mov	r0, r5
+  93 003a 14B0     		add	sp, sp, #80
+  94              	.LCFI2:
+  95              		.cfi_def_cfa_offset 16
+  96              		@ sp needed
+  97 003c 70BD     		pop	{r4, r5, r6, pc}
+  98              		.loc 1 17 1 view .LVU19
+ARM GAS  /tmp/cc3hFhlA.s 			page 3
+
+
+  99              		.cfi_endproc
+ 100              	.LFE126:
+ 102              		.section	.rodata.write_row.str1.4,"aMS",%progbits,1
+ 103              		.align	2
+ 104              	.LC0:
+ 105 0000 524F5700 		.ascii	"ROW\000"
+ 106              		.section	.text.write_row,"ax",%progbits
+ 107              		.align	1
+ 108              		.global	write_row
+ 109              		.syntax unified
+ 110              		.thumb
+ 111              		.thumb_func
+ 113              	write_row:
+ 114              	.LVL10:
+ 115              	.LFB127:
+  18:Core/Src/table.c **** 
+  19:Core/Src/table.c **** HAL_StatusTypeDef write_row(uint32_t offset, double* constants) {
+ 116              		.loc 1 19 65 is_stmt 1 view -0
+ 117              		.cfi_startproc
+ 118              		@ args = 0, pretend = 0, frame = 80
+ 119              		@ frame_needed = 0, uses_anonymous_args = 0
+ 120              		.loc 1 19 65 is_stmt 0 view .LVU21
+ 121 0000 30B5     		push	{r4, r5, lr}
+ 122              	.LCFI3:
+ 123              		.cfi_def_cfa_offset 12
+ 124              		.cfi_offset 4, -12
+ 125              		.cfi_offset 5, -8
+ 126              		.cfi_offset 14, -4
+ 127 0002 95B0     		sub	sp, sp, #84
+ 128              	.LCFI4:
+ 129              		.cfi_def_cfa_offset 96
+ 130 0004 0446     		mov	r4, r0
+ 131 0006 0D46     		mov	r5, r1
+  20:Core/Src/table.c ****     TableRow row = {0};
+ 132              		.loc 1 20 5 is_stmt 1 view .LVU22
+ 133              		.loc 1 20 14 is_stmt 0 view .LVU23
+ 134 0008 5022     		movs	r2, #80
+ 135 000a 0021     		movs	r1, #0
+ 136              	.LVL11:
+ 137              		.loc 1 20 14 view .LVU24
+ 138 000c 6846     		mov	r0, sp
+ 139              	.LVL12:
+ 140              		.loc 1 20 14 view .LVU25
+ 141 000e FFF7FEFF 		bl	memset
+ 142              	.LVL13:
+  21:Core/Src/table.c **** 
+  22:Core/Src/table.c ****     memcpy(row.header, "ROW", 3);
+ 143              		.loc 1 22 5 is_stmt 1 view .LVU26
+ 144 0012 094B     		ldr	r3, .L5
+ 145 0014 1B68     		ldr	r3, [r3]
+ 146 0016 ADF80030 		strh	r3, [sp]	@ movhi
+ 147 001a 1B0C     		lsrs	r3, r3, #16
+ 148 001c 8DF80230 		strb	r3, [sp, #2]
+  23:Core/Src/table.c ****     row.speed = 0;
+ 149              		.loc 1 23 5 view .LVU27
+  24:Core/Src/table.c ****     memcpy(row.constants, constants, sizeof(double) * 9);
+ 150              		.loc 1 24 5 view .LVU28
+ARM GAS  /tmp/cc3hFhlA.s 			page 4
+
+
+ 151 0020 4822     		movs	r2, #72
+ 152 0022 2946     		mov	r1, r5
+ 153 0024 02A8     		add	r0, sp, #8
+ 154 0026 FFF7FEFF 		bl	memcpy
+ 155              	.LVL14:
+  25:Core/Src/table.c **** 
+  26:Core/Src/table.c ****     return write_words((uint32_t *)&row, offset, sizeof(TableRow) / 4);
+ 156              		.loc 1 26 5 view .LVU29
+ 157              		.loc 1 26 12 is_stmt 0 view .LVU30
+ 158 002a 1422     		movs	r2, #20
+ 159 002c 2146     		mov	r1, r4
+ 160 002e 6846     		mov	r0, sp
+ 161 0030 FFF7FEFF 		bl	write_words
+ 162              	.LVL15:
+  27:Core/Src/table.c **** }
+ 163              		.loc 1 27 1 view .LVU31
+ 164 0034 15B0     		add	sp, sp, #84
+ 165              	.LCFI5:
+ 166              		.cfi_def_cfa_offset 12
+ 167              		@ sp needed
+ 168 0036 30BD     		pop	{r4, r5, pc}
+ 169              	.LVL16:
+ 170              	.L6:
+ 171              		.loc 1 27 1 view .LVU32
+ 172              		.align	2
+ 173              	.L5:
+ 174 0038 00000000 		.word	.LC0
+ 175              		.cfi_endproc
+ 176              	.LFE127:
+ 178              		.section	.text.get_table_size,"ax",%progbits
+ 179              		.align	1
+ 180              		.global	get_table_size
+ 181              		.syntax unified
+ 182              		.thumb
+ 183              		.thumb_func
+ 185              	get_table_size:
+ 186              	.LFB128:
+  28:Core/Src/table.c **** 
+  29:Core/Src/table.c **** size_t get_table_size() {
+ 187              		.loc 1 29 25 is_stmt 1 view -0
+ 188              		.cfi_startproc
+ 189              		@ args = 0, pretend = 0, frame = 0
+ 190              		@ frame_needed = 0, uses_anonymous_args = 0
+ 191              		@ link register save eliminated.
+  30:Core/Src/table.c ****     size_t size = 0;
+ 192              		.loc 1 30 5 view .LVU34
+ 193              	.LVL17:
+  31:Core/Src/table.c **** 
+  32:Core/Src/table.c ****     uint32_t header = *(uint32_t *)(TABLE_START_ADDR) & 0xFFFFFF;
+ 194              		.loc 1 32 5 view .LVU35
+ 195              		.loc 1 32 23 is_stmt 0 view .LVU36
+ 196 0000 0A4B     		ldr	r3, .L10
+ 197 0002 1B68     		ldr	r3, [r3]
+ 198              		.loc 1 32 14 view .LVU37
+ 199 0004 23F07F43 		bic	r3, r3, #-16777216
+ 200              	.LVL18:
+  33:Core/Src/table.c ****     while ( header == ROW_HEADER ) {
+ARM GAS  /tmp/cc3hFhlA.s 			page 5
+
+
+ 201              		.loc 1 33 5 is_stmt 1 view .LVU38
+  30:Core/Src/table.c ****     size_t size = 0;
+ 202              		.loc 1 30 12 is_stmt 0 view .LVU39
+ 203 0008 0020     		movs	r0, #0
+ 204              		.loc 1 33 11 view .LVU40
+ 205 000a 0AE0     		b	.L8
+ 206              	.LVL19:
+ 207              	.L9:
+  34:Core/Src/table.c ****         size++;
+ 208              		.loc 1 34 9 is_stmt 1 view .LVU41
+ 209              		.loc 1 34 13 is_stmt 0 view .LVU42
+ 210 000c 0130     		adds	r0, r0, #1
+ 211              	.LVL20:
+  35:Core/Src/table.c ****         header = *(uint32_t *)(TABLE_START_ADDR + size * sizeof(TableRow)) & 0xFFFFFF;
+ 212              		.loc 1 35 9 is_stmt 1 view .LVU43
+ 213              		.loc 1 35 56 is_stmt 0 view .LVU44
+ 214 000e 00EB8002 		add	r2, r0, r0, lsl #2
+ 215 0012 1301     		lsls	r3, r2, #4
+ 216              	.LVL21:
+ 217              		.loc 1 35 49 view .LVU45
+ 218 0014 03F10063 		add	r3, r3, #134217728
+ 219 0018 03F57043 		add	r3, r3, #61440
+ 220              		.loc 1 35 18 view .LVU46
+ 221 001c 1B68     		ldr	r3, [r3]
+ 222              		.loc 1 35 16 view .LVU47
+ 223 001e 23F07F43 		bic	r3, r3, #-16777216
+ 224              	.LVL22:
+ 225              	.L8:
+  33:Core/Src/table.c ****     while ( header == ROW_HEADER ) {
+ 226              		.loc 1 33 20 is_stmt 1 view .LVU48
+ 227 0022 034A     		ldr	r2, .L10+4
+ 228 0024 9342     		cmp	r3, r2
+ 229 0026 F1D0     		beq	.L9
+  36:Core/Src/table.c ****     }
+  37:Core/Src/table.c ****     return size;
+ 230              		.loc 1 37 5 view .LVU49
+  38:Core/Src/table.c **** }
+ 231              		.loc 1 38 1 is_stmt 0 view .LVU50
+ 232 0028 7047     		bx	lr
+ 233              	.L11:
+ 234 002a 00BF     		.align	2
+ 235              	.L10:
+ 236 002c 00F00008 		.word	134279168
+ 237 0030 524F5700 		.word	5721938
+ 238              		.cfi_endproc
+ 239              	.LFE128:
+ 241              		.section	.text.get_table,"ax",%progbits
+ 242              		.align	1
+ 243              		.global	get_table
+ 244              		.syntax unified
+ 245              		.thumb
+ 246              		.thumb_func
+ 248              	get_table:
+ 249              	.LVL23:
+ 250              	.LFB129:
+  39:Core/Src/table.c **** 
+  40:Core/Src/table.c **** Table get_table() {
+ARM GAS  /tmp/cc3hFhlA.s 			page 6
+
+
+ 251              		.loc 1 40 19 is_stmt 1 view -0
+ 252              		.cfi_startproc
+ 253              		@ args = 0, pretend = 0, frame = 0
+ 254              		@ frame_needed = 0, uses_anonymous_args = 0
+ 255              		.loc 1 40 19 is_stmt 0 view .LVU52
+ 256 0000 10B5     		push	{r4, lr}
+ 257              	.LCFI6:
+ 258              		.cfi_def_cfa_offset 8
+ 259              		.cfi_offset 4, -8
+ 260              		.cfi_offset 14, -4
+ 261 0002 0446     		mov	r4, r0
+  41:Core/Src/table.c ****     Table table;
+ 262              		.loc 1 41 5 is_stmt 1 view .LVU53
+  42:Core/Src/table.c ****     table.size = get_table_size();
+ 263              		.loc 1 42 5 view .LVU54
+ 264              		.loc 1 42 18 is_stmt 0 view .LVU55
+ 265 0004 FFF7FEFF 		bl	get_table_size
+ 266              	.LVL24:
+ 267              		.loc 1 42 16 view .LVU56
+ 268 0008 2060     		str	r0, [r4]
+  43:Core/Src/table.c ****     table.rows = (TableRow *) TABLE_START_ADDR;
+ 269              		.loc 1 43 5 is_stmt 1 view .LVU57
+ 270              		.loc 1 43 16 is_stmt 0 view .LVU58
+ 271 000a 024B     		ldr	r3, .L14
+ 272 000c 6360     		str	r3, [r4, #4]
+  44:Core/Src/table.c **** 
+  45:Core/Src/table.c ****     return table;
+ 273              		.loc 1 45 5 is_stmt 1 view .LVU59
+  46:Core/Src/table.c **** }...
+ 274              		.loc 1 46 1 is_stmt 0 view .LVU60
+ 275 000e 2046     		mov	r0, r4
+ 276 0010 10BD     		pop	{r4, pc}
+ 277              	.LVL25:
+ 278              	.L15:
+ 279              		.loc 1 46 1 view .LVU61
+ 280 0012 00BF     		.align	2
+ 281              	.L14:
+ 282 0014 00F00008 		.word	134279168
+ 283              		.cfi_endproc
+ 284              	.LFE129:
+ 286              		.text
+ 287              	.Letext0:
+ 288              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 289              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 290              		.file 4 "/usr/lib/gcc/arm-none-eabi/12.1.0/include/stddef.h"
+ 291              		.file 5 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_def.h"
+ 292              		.file 6 "Core/Inc/table.h"
+ 293              		.file 7 "Core/Inc/flash.h"
+ 294              		.file 8 "/usr/arm-none-eabi/include/string.h"
+ 295              		.file 9 "<built-in>"
+ARM GAS  /tmp/cc3hFhlA.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 table.c
+     /tmp/cc3hFhlA.s:21     .text.read_row:0000000000000000 $t
+     /tmp/cc3hFhlA.s:27     .text.read_row:0000000000000000 read_row
+     /tmp/cc3hFhlA.s:103    .rodata.write_row.str1.4:0000000000000000 $d
+     /tmp/cc3hFhlA.s:107    .text.write_row:0000000000000000 $t
+     /tmp/cc3hFhlA.s:113    .text.write_row:0000000000000000 write_row
+     /tmp/cc3hFhlA.s:174    .text.write_row:0000000000000038 $d
+     /tmp/cc3hFhlA.s:179    .text.get_table_size:0000000000000000 $t
+     /tmp/cc3hFhlA.s:185    .text.get_table_size:0000000000000000 get_table_size
+     /tmp/cc3hFhlA.s:236    .text.get_table_size:000000000000002c $d
+     /tmp/cc3hFhlA.s:242    .text.get_table:0000000000000000 $t
+     /tmp/cc3hFhlA.s:248    .text.get_table:0000000000000000 get_table
+     /tmp/cc3hFhlA.s:282    .text.get_table:0000000000000014 $d
+
+UNDEFINED SYMBOLS
+memset
+memcpy
+write_words
