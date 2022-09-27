@@ -29,7 +29,7 @@ build/bno055_support.o: Core/Src/bno055_support.c \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h \
  Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h \
- Core/Inc/bno055_support.h Core/Inc/pid.h
+ Core/Inc/bno055_support.h Core/Inc/pid.h Core/Inc/simple_regulator.h
 Core/Inc/bno055_support.h:
 Core/Inc/bno055.h:
 Core/Inc/main.h:
@@ -66,3 +66,4 @@ Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:
 Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h:
 Core/Inc/bno055_support.h:
 Core/Inc/pid.h:
+Core/Inc/simple_regulator.h:

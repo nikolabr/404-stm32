@@ -1,0 +1,188 @@
+ARM GAS  /tmp/ccMRTG2Q.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 1
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"simple_regulator.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/simple_regulator.c"
+  20              		.global	__aeabi_dsub
+  21              		.global	__aeabi_dmul
+  22              		.global	__aeabi_ui2d
+  23              		.global	__aeabi_dadd
+  24              		.global	__aeabi_dcmplt
+  25              		.global	__aeabi_dcmpgt
+  26              		.section	.text.simple_regulator_update,"ax",%progbits
+  27              		.align	1
+  28              		.global	simple_regulator_update
+  29              		.syntax unified
+  30              		.thumb
+  31              		.thumb_func
+  33              	simple_regulator_update:
+  34              	.LVL0:
+  35              	.LFB0:
+   1:Core/Src/simple_regulator.c **** #include "simple_regulator.h"
+   2:Core/Src/simple_regulator.c **** 
+   3:Core/Src/simple_regulator.c **** void simple_regulator_update(SimpleRegulatorStruct* regulator)
+   4:Core/Src/simple_regulator.c **** {
+  36              		.loc 1 4 1 view -0
+  37              		.cfi_startproc
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 0, uses_anonymous_args = 0
+  40              		.loc 1 4 1 is_stmt 0 view .LVU1
+  41 0000 2DE9F843 		push	{r3, r4, r5, r6, r7, r8, r9, lr}
+  42              		.cfi_def_cfa_offset 32
+  43              		.cfi_offset 3, -32
+  44              		.cfi_offset 4, -28
+  45              		.cfi_offset 5, -24
+  46              		.cfi_offset 6, -20
+  47              		.cfi_offset 7, -16
+  48              		.cfi_offset 8, -12
+  49              		.cfi_offset 9, -8
+  50              		.cfi_offset 14, -4
+  51 0004 0446     		mov	r4, r0
+   5:Core/Src/simple_regulator.c ****     unsigned long sampling_time = HAL_GetTick() - regulator->prev_time;
+  52              		.loc 1 5 5 is_stmt 1 view .LVU2
+  53              		.loc 1 5 35 is_stmt 0 view .LVU3
+ARM GAS  /tmp/ccMRTG2Q.s 			page 2
+
+
+  54 0006 FFF7FEFF 		bl	HAL_GetTick
+  55              	.LVL1:
+  56              		.loc 1 5 60 view .LVU4
+  57 000a 236B     		ldr	r3, [r4, #48]
+  58              		.loc 1 5 19 view .LVU5
+  59 000c C51A     		subs	r5, r0, r3
+  60              	.LVL2:
+   6:Core/Src/simple_regulator.c **** 
+   7:Core/Src/simple_regulator.c ****     regulator->error += ( regulator->reference - *(regulator->input) ) * (regulator->Ki) * sampling
+  61              		.loc 1 7 5 is_stmt 1 view .LVU6
+  62              		.loc 1 7 14 is_stmt 0 view .LVU7
+  63 000e D4E90689 		ldrd	r8, [r4, #24]
+  64              		.loc 1 7 61 view .LVU8
+  65 0012 A368     		ldr	r3, [r4, #8]
+  66              		.loc 1 7 48 view .LVU9
+  67 0014 D3E90023 		ldrd	r2, [r3]
+  68 0018 D4E90401 		ldrd	r0, [r4, #16]
+  69 001c FFF7FEFF 		bl	__aeabi_dsub
+  70              	.LVL3:
+  71              		.loc 1 7 72 view .LVU10
+  72 0020 D4E90023 		ldrd	r2, [r4]
+  73 0024 FFF7FEFF 		bl	__aeabi_dmul
+  74              	.LVL4:
+  75 0028 0646     		mov	r6, r0
+  76 002a 0F46     		mov	r7, r1
+  77              		.loc 1 7 90 view .LVU11
+  78 002c 2846     		mov	r0, r5
+  79 002e FFF7FEFF 		bl	__aeabi_ui2d
+  80              	.LVL5:
+  81 0032 3246     		mov	r2, r6
+  82 0034 3B46     		mov	r3, r7
+  83 0036 FFF7FEFF 		bl	__aeabi_dmul
+  84              	.LVL6:
+  85 003a 0246     		mov	r2, r0
+  86 003c 0B46     		mov	r3, r1
+  87              		.loc 1 7 22 view .LVU12
+  88 003e 4046     		mov	r0, r8
+  89 0040 4946     		mov	r1, r9
+  90 0042 FFF7FEFF 		bl	__aeabi_dadd
+  91              	.LVL7:
+  92 0046 0246     		mov	r2, r0
+  93 0048 0B46     		mov	r3, r1
+  94 004a C4E90623 		strd	r2, [r4, #24]
+   8:Core/Src/simple_regulator.c **** 
+   9:Core/Src/simple_regulator.c ****     if (regulator->error < regulator->min)
+  95              		.loc 1 9 5 is_stmt 1 view .LVU13
+  96              		.loc 1 9 37 is_stmt 0 view .LVU14
+  97 004e D4E90867 		ldrd	r6, [r4, #32]
+  98              		.loc 1 9 8 view .LVU15
+  99 0052 3246     		mov	r2, r6
+ 100 0054 3B46     		mov	r3, r7
+ 101 0056 FFF7FEFF 		bl	__aeabi_dcmplt
+ 102              	.LVL8:
+ 103 005a 08B1     		cbz	r0, .L2
+  10:Core/Src/simple_regulator.c ****     {
+  11:Core/Src/simple_regulator.c ****         regulator->error = regulator->min;
+ 104              		.loc 1 11 9 is_stmt 1 view .LVU16
+ARM GAS  /tmp/ccMRTG2Q.s 			page 3
+
+
+ 105              		.loc 1 11 26 is_stmt 0 view .LVU17
+ 106 005c C4E90667 		strd	r6, [r4, #24]
+ 107              	.L2:
+  12:Core/Src/simple_regulator.c ****     }
+  13:Core/Src/simple_regulator.c **** 
+  14:Core/Src/simple_regulator.c ****     if (regulator->error > regulator->max)
+ 108              		.loc 1 14 5 is_stmt 1 view .LVU18
+ 109              		.loc 1 14 37 is_stmt 0 view .LVU19
+ 110 0060 D4E90A67 		ldrd	r6, [r4, #40]
+ 111              		.loc 1 14 8 view .LVU20
+ 112 0064 3246     		mov	r2, r6
+ 113 0066 3B46     		mov	r3, r7
+ 114 0068 D4E90601 		ldrd	r0, [r4, #24]
+ 115 006c FFF7FEFF 		bl	__aeabi_dcmpgt
+ 116              	.LVL9:
+ 117 0070 08B1     		cbz	r0, .L4
+  15:Core/Src/simple_regulator.c ****     {
+  16:Core/Src/simple_regulator.c ****         regulator->error = regulator->max;
+ 118              		.loc 1 16 9 is_stmt 1 view .LVU21
+ 119              		.loc 1 16 26 is_stmt 0 view .LVU22
+ 120 0072 C4E90667 		strd	r6, [r4, #24]
+ 121              	.L4:
+  17:Core/Src/simple_regulator.c ****     }
+  18:Core/Src/simple_regulator.c **** 
+  19:Core/Src/simple_regulator.c ****     *(regulator->output) = regulator->error;
+ 122              		.loc 1 19 5 is_stmt 1 view .LVU23
+ 123              		.loc 1 19 16 is_stmt 0 view .LVU24
+ 124 0076 E368     		ldr	r3, [r4, #12]
+ 125              		.loc 1 19 37 view .LVU25
+ 126 0078 D4E90601 		ldrd	r0, [r4, #24]
+ 127              		.loc 1 19 26 view .LVU26
+ 128 007c C3E90001 		strd	r0, [r3]
+  20:Core/Src/simple_regulator.c **** 
+  21:Core/Src/simple_regulator.c ****     regulator->prev_time = HAL_GetTick();
+ 129              		.loc 1 21 5 is_stmt 1 view .LVU27
+ 130              		.loc 1 21 28 is_stmt 0 view .LVU28
+ 131 0080 FFF7FEFF 		bl	HAL_GetTick
+ 132              	.LVL10:
+ 133              		.loc 1 21 26 view .LVU29
+ 134 0084 2063     		str	r0, [r4, #48]
+  22:Core/Src/simple_regulator.c **** }...
+ 135              		.loc 1 22 1 view .LVU30
+ 136 0086 BDE8F883 		pop	{r3, r4, r5, r6, r7, r8, r9, pc}
+ 137              		.loc 1 22 1 view .LVU31
+ 138              		.cfi_endproc
+ 139              	.LFE0:
+ 141              		.text
+ 142              	.Letext0:
+ 143              		.file 2 "Core/Inc/simple_regulator.h"
+ARM GAS  /tmp/ccMRTG2Q.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 simple_regulator.c
+     /tmp/ccMRTG2Q.s:27     .text.simple_regulator_update:0000000000000000 $t
+     /tmp/ccMRTG2Q.s:33     .text.simple_regulator_update:0000000000000000 simple_regulator_update
+
+UNDEFINED SYMBOLS
+__aeabi_dsub
+__aeabi_dmul
+__aeabi_ui2d
+__aeabi_dadd
+__aeabi_dcmplt
+__aeabi_dcmpgt
+HAL_GetTick

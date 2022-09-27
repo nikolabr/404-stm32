@@ -41,7 +41,8 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-
+static const unsigned int neutral_X = 32768;
+static const unsigned int neutral_Y = 32768 + 3000;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -223,9 +224,11 @@ void TIM1_UP_TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM1_UP_TIM16_IRQn 0 */
 
-  TIM1->CCR3 = 0x5555 + esc_output * 0x5555;
-  TIM1->CCR1 = 32768 - xout;
-	TIM1->CCR2 = 32768 + yout;
+  //TIM1->CCR3 = 0x5555 + esc_output * 0x5555;
+  // TIM1->CCR1 = 32768 + xout;
+	// TIM1->CCR2 = 32768 + yout;
+  TIM1->CCR1 = neutral_X - xout;
+  TIM1->CCR2 = neutral_Y - yout;
 
   /* USER CODE END TIM1_UP_TIM16_IRQn 0 */
   HAL_TIM_IRQHandler(&htim1);

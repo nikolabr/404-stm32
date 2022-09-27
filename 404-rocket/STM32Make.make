@@ -40,6 +40,7 @@ Core/Src/bno055.c \
 Core/Src/bno055_support.c \
 Core/Src/main.c \
 Core/Src/pid.c \
+Core/Src/simple_regulator.c \
 Core/Src/stm32f3xx_hal_msp.c \
 Core/Src/stm32f3xx_it.c \
 Core/Src/syscalls.c \

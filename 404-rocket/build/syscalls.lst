@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwqOCTx.s 			page 1
+ARM GAS  /tmp/ccreOYsu.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
   28:Core/Src/syscalls.c **** #include <signal.h>
   29:Core/Src/syscalls.c **** #include <time.h>
   30:Core/Src/syscalls.c **** #include <sys/time.h>
-ARM GAS  /tmp/ccwqOCTx.s 			page 2
+ARM GAS  /tmp/ccreOYsu.s 			page 2
 
 
   31:Core/Src/syscalls.c **** #include <sys/times.h>
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
   65              		.thumb_func
   67              	_kill:
   68              	.LVL0:
-ARM GAS  /tmp/ccwqOCTx.s 			page 3
+ARM GAS  /tmp/ccreOYsu.s 			page 3
 
 
   69              	.LFB27:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  115              	.LVL3:
  116              	.L6:
   62:Core/Src/syscalls.c **** 	while (1) {}		/* Make sure we hang here */
-ARM GAS  /tmp/ccwqOCTx.s 			page 4
+ARM GAS  /tmp/ccreOYsu.s 			page 4
 
 
  117              		.loc 1 62 2 discriminator 1 view .LVU14
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  164 0010 01F8010B 		strb	r0, [r1], #1
  165              	.LVL9:
   69:Core/Src/syscalls.c **** 	{
-ARM GAS  /tmp/ccwqOCTx.s 			page 5
+ARM GAS  /tmp/ccreOYsu.s 			page 5
 
 
  166              		.loc 1 69 42 is_stmt 1 discriminator 3 view .LVU27
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  211 0006 0025     		movs	r5, #0
  212              		.loc 1 81 2 view .LVU38
  213 0008 04E0     		b	.L13
-ARM GAS  /tmp/ccwqOCTx.s 			page 6
+ARM GAS  /tmp/ccreOYsu.s 			page 6
 
 
  214              	.LVL14:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  258 0004 7047     		bx	lr
  259              		.cfi_endproc
  260              	.LFE31:
-ARM GAS  /tmp/ccwqOCTx.s 			page 7
+ARM GAS  /tmp/ccreOYsu.s 			page 7
 
 
  262              		.section	.text._fstat,"ax",%progbits
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  307 0000 0120     		movs	r0, #1
  308              	.LVL23:
  309              		.loc 1 103 1 view .LVU60
-ARM GAS  /tmp/ccwqOCTx.s 			page 8
+ARM GAS  /tmp/ccreOYsu.s 			page 8
 
 
  310 0002 7047     		bx	lr
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  113:Core/Src/syscalls.c **** 	return -1;
  359              		.loc 1 113 2 is_stmt 1 view .LVU67
  114:Core/Src/syscalls.c **** }
-ARM GAS  /tmp/ccwqOCTx.s 			page 9
+ARM GAS  /tmp/ccreOYsu.s 			page 9
 
 
  360              		.loc 1 114 1 is_stmt 0 view .LVU68
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  412              	_unlink:
  413              	.LVL30:
  414              	.LFB37:
-ARM GAS  /tmp/ccwqOCTx.s 			page 10
+ARM GAS  /tmp/ccreOYsu.s 			page 10
 
 
  121:Core/Src/syscalls.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  461              		.section	.text._stat,"ax",%progbits
  462              		.align	1
  463              		.global	_stat
-ARM GAS  /tmp/ccwqOCTx.s 			page 11
+ARM GAS  /tmp/ccreOYsu.s 			page 11
 
 
  464              		.syntax unified
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  511              		.loc 1 141 8 is_stmt 0 view .LVU95
  512 0006 1F23     		movs	r3, #31
  513 0008 0360     		str	r3, [r0]
-ARM GAS  /tmp/ccwqOCTx.s 			page 12
+ARM GAS  /tmp/ccreOYsu.s 			page 12
 
 
  142:Core/Src/syscalls.c **** 	return -1;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  561              		.loc 1 152 1 is_stmt 1 view -0
  562              		.cfi_startproc
  563              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccwqOCTx.s 			page 13
+ARM GAS  /tmp/ccreOYsu.s 			page 13
 
 
  564              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -764,51 +764,51 @@ ARM GAS  /tmp/ccwqOCTx.s 			page 1
  606              		.file 7 "/usr/arm-none-eabi/include/sys/stat.h"
  607              		.file 8 "/usr/arm-none-eabi/include/sys/times.h"
  608              		.file 9 "/usr/arm-none-eabi/include/sys/errno.h"
-ARM GAS  /tmp/ccwqOCTx.s 			page 14
+ARM GAS  /tmp/ccreOYsu.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 syscalls.c
-     /tmp/ccwqOCTx.s:21     .text.initialise_monitor_handles:0000000000000000 $t
-     /tmp/ccwqOCTx.s:27     .text.initialise_monitor_handles:0000000000000000 initialise_monitor_handles
-     /tmp/ccwqOCTx.s:40     .text._getpid:0000000000000000 $t
-     /tmp/ccwqOCTx.s:46     .text._getpid:0000000000000000 _getpid
-     /tmp/ccwqOCTx.s:61     .text._kill:0000000000000000 $t
-     /tmp/ccwqOCTx.s:67     .text._kill:0000000000000000 _kill
-     /tmp/ccwqOCTx.s:93     .text._exit:0000000000000000 $t
-     /tmp/ccwqOCTx.s:99     .text._exit:0000000000000000 _exit
-     /tmp/ccwqOCTx.s:125    .text._read:0000000000000000 $t
-     /tmp/ccwqOCTx.s:131    .text._read:0000000000000000 _read
-     /tmp/ccwqOCTx.s:185    .text._write:0000000000000000 $t
-     /tmp/ccwqOCTx.s:191    .text._write:0000000000000000 _write
-     /tmp/ccwqOCTx.s:239    .text._close:0000000000000000 $t
-     /tmp/ccwqOCTx.s:245    .text._close:0000000000000000 _close
-     /tmp/ccwqOCTx.s:263    .text._fstat:0000000000000000 $t
-     /tmp/ccwqOCTx.s:269    .text._fstat:0000000000000000 _fstat
-     /tmp/ccwqOCTx.s:291    .text._isatty:0000000000000000 $t
-     /tmp/ccwqOCTx.s:297    .text._isatty:0000000000000000 _isatty
-     /tmp/ccwqOCTx.s:315    .text._lseek:0000000000000000 $t
-     /tmp/ccwqOCTx.s:321    .text._lseek:0000000000000000 _lseek
-     /tmp/ccwqOCTx.s:339    .text._open:0000000000000000 $t
-     /tmp/ccwqOCTx.s:345    .text._open:0000000000000000 _open
-     /tmp/ccwqOCTx.s:374    .text._wait:0000000000000000 $t
-     /tmp/ccwqOCTx.s:380    .text._wait:0000000000000000 _wait
-     /tmp/ccwqOCTx.s:406    .text._unlink:0000000000000000 $t
-     /tmp/ccwqOCTx.s:412    .text._unlink:0000000000000000 _unlink
-     /tmp/ccwqOCTx.s:438    .text._times:0000000000000000 $t
-     /tmp/ccwqOCTx.s:444    .text._times:0000000000000000 _times
-     /tmp/ccwqOCTx.s:462    .text._stat:0000000000000000 $t
-     /tmp/ccwqOCTx.s:468    .text._stat:0000000000000000 _stat
-     /tmp/ccwqOCTx.s:490    .text._link:0000000000000000 $t
-     /tmp/ccwqOCTx.s:496    .text._link:0000000000000000 _link
-     /tmp/ccwqOCTx.s:522    .text._fork:0000000000000000 $t
-     /tmp/ccwqOCTx.s:528    .text._fork:0000000000000000 _fork
-     /tmp/ccwqOCTx.s:552    .text._execve:0000000000000000 $t
-     /tmp/ccwqOCTx.s:558    .text._execve:0000000000000000 _execve
-     /tmp/ccwqOCTx.s:588    .data.environ:0000000000000000 environ
-     /tmp/ccwqOCTx.s:585    .data.environ:0000000000000000 $d
-     /tmp/ccwqOCTx.s:595    .bss.__env:0000000000000000 __env
-     /tmp/ccwqOCTx.s:592    .bss.__env:0000000000000000 $d
+     /tmp/ccreOYsu.s:21     .text.initialise_monitor_handles:0000000000000000 $t
+     /tmp/ccreOYsu.s:27     .text.initialise_monitor_handles:0000000000000000 initialise_monitor_handles
+     /tmp/ccreOYsu.s:40     .text._getpid:0000000000000000 $t
+     /tmp/ccreOYsu.s:46     .text._getpid:0000000000000000 _getpid
+     /tmp/ccreOYsu.s:61     .text._kill:0000000000000000 $t
+     /tmp/ccreOYsu.s:67     .text._kill:0000000000000000 _kill
+     /tmp/ccreOYsu.s:93     .text._exit:0000000000000000 $t
+     /tmp/ccreOYsu.s:99     .text._exit:0000000000000000 _exit
+     /tmp/ccreOYsu.s:125    .text._read:0000000000000000 $t
+     /tmp/ccreOYsu.s:131    .text._read:0000000000000000 _read
+     /tmp/ccreOYsu.s:185    .text._write:0000000000000000 $t
+     /tmp/ccreOYsu.s:191    .text._write:0000000000000000 _write
+     /tmp/ccreOYsu.s:239    .text._close:0000000000000000 $t
+     /tmp/ccreOYsu.s:245    .text._close:0000000000000000 _close
+     /tmp/ccreOYsu.s:263    .text._fstat:0000000000000000 $t
+     /tmp/ccreOYsu.s:269    .text._fstat:0000000000000000 _fstat
+     /tmp/ccreOYsu.s:291    .text._isatty:0000000000000000 $t
+     /tmp/ccreOYsu.s:297    .text._isatty:0000000000000000 _isatty
+     /tmp/ccreOYsu.s:315    .text._lseek:0000000000000000 $t
+     /tmp/ccreOYsu.s:321    .text._lseek:0000000000000000 _lseek
+     /tmp/ccreOYsu.s:339    .text._open:0000000000000000 $t
+     /tmp/ccreOYsu.s:345    .text._open:0000000000000000 _open
+     /tmp/ccreOYsu.s:374    .text._wait:0000000000000000 $t
+     /tmp/ccreOYsu.s:380    .text._wait:0000000000000000 _wait
+     /tmp/ccreOYsu.s:406    .text._unlink:0000000000000000 $t
+     /tmp/ccreOYsu.s:412    .text._unlink:0000000000000000 _unlink
+     /tmp/ccreOYsu.s:438    .text._times:0000000000000000 $t
+     /tmp/ccreOYsu.s:444    .text._times:0000000000000000 _times
+     /tmp/ccreOYsu.s:462    .text._stat:0000000000000000 $t
+     /tmp/ccreOYsu.s:468    .text._stat:0000000000000000 _stat
+     /tmp/ccreOYsu.s:490    .text._link:0000000000000000 $t
+     /tmp/ccreOYsu.s:496    .text._link:0000000000000000 _link
+     /tmp/ccreOYsu.s:522    .text._fork:0000000000000000 $t
+     /tmp/ccreOYsu.s:528    .text._fork:0000000000000000 _fork
+     /tmp/ccreOYsu.s:552    .text._execve:0000000000000000 $t
+     /tmp/ccreOYsu.s:558    .text._execve:0000000000000000 _execve
+     /tmp/ccreOYsu.s:588    .data.environ:0000000000000000 environ
+     /tmp/ccreOYsu.s:585    .data.environ:0000000000000000 $d
+     /tmp/ccreOYsu.s:595    .bss.__env:0000000000000000 __env
+     /tmp/ccreOYsu.s:592    .bss.__env:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __errno

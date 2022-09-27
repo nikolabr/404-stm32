@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccbyYvza.s 			page 1
+ARM GAS  /tmp/ccrHrb5f.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
   28:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *
   29:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * This software component is licensed by ST under BSD 3-Clause license,
   30:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * the "License"; You may not use this file except in compliance with the
-ARM GAS  /tmp/ccbyYvza.s 			page 2
+ARM GAS  /tmp/ccrHrb5f.s 			page 2
 
 
   31:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * License. You may obtain a copy of the License at:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
   85:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Parity: If the parity is enabled, then the MSB bit of the data written
   86:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****              in the data register is transmitted but is changed by the parity bit.
   87:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Hardware flow control
-ARM GAS  /tmp/ccbyYvza.s 			page 3
+ARM GAS  /tmp/ccrHrb5f.s 			page 3
 
 
   88:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (++) Receiver/transmitter modes
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  142:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       5-bit value defining the time between the end of the last stop bit, in a
  143:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       transmitted message, and the de-activation of the DE (Driver Enable) signal.
  144:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       It is expressed in sample time units (1/8 or 1/16 bit time, depending on the
-ARM GAS  /tmp/ccbyYvza.s 			page 4
+ARM GAS  /tmp/ccrHrb5f.s 			page 4
 
 
  145:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *       oversampling rate).
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  199:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     return HAL_ERROR;
  200:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
  201:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 5
+ARM GAS  /tmp/ccrHrb5f.s 			page 5
 
 
  202:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   if (huart->AdvancedInit.AdvFeatureInit != UART_ADVFEATURE_NO_INIT)
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  256:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****             the HAL_UARTEx_WakeupCallback can be implemented in the user file.
  257:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****    */
  258:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** }
-ARM GAS  /tmp/ccbyYvza.s 			page 6
+ARM GAS  /tmp/ccrHrb5f.s 			page 6
 
 
  259:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  313:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****         (+) HAL_UARTEx_ReceiveToIdle_DMA()
  314:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  315:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** @endverbatim
-ARM GAS  /tmp/ccbyYvza.s 			page 7
+ARM GAS  /tmp/ccrHrb5f.s 			page 7
 
 
  316:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @{
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  370:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_StopModeWakeUpSourceConfig(UART_HandleTypeDef *huart, UART_WakeUpTypeD
  371:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** {
  372:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status = HAL_OK;
-ARM GAS  /tmp/ccbyYvza.s 			page 8
+ARM GAS  /tmp/ccrHrb5f.s 			page 8
 
 
  373:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint32_t tickstart;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  427:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Process Locked */
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   __HAL_LOCK(huart);
  429:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 9
+ARM GAS  /tmp/ccrHrb5f.s 			page 9
 
 
  430:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   /* Set UESM bit */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  484:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   if (huart->RxState == HAL_UART_STATE_READY)
  485:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   {
  486:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     if ((pData == NULL) || (Size == 0U))
-ARM GAS  /tmp/ccbyYvza.s 			page 10
+ARM GAS  /tmp/ccrHrb5f.s 			page 10
 
 
  487:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  541:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       }
  542:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  543:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       /* Check if RXNE flag is set */
-ARM GAS  /tmp/ccbyYvza.s 			page 11
+ARM GAS  /tmp/ccrHrb5f.s 			page 11
 
 
  544:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****       if (__HAL_UART_GET_FLAG(huart, UART_FLAG_RXNE))
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  598:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @retval HAL status
  599:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   */
  600:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle_IT(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t S
-ARM GAS  /tmp/ccbyYvza.s 			page 12
+ARM GAS  /tmp/ccrHrb5f.s 			page 12
 
 
  601:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** {
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  655:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *        the received data is handled as a set of uint16_t. In this case, Size must indicate the 
  656:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   *        of uint16_t available through pData.
  657:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @param huart UART handle.
-ARM GAS  /tmp/ccbyYvza.s 			page 13
+ARM GAS  /tmp/ccrHrb5f.s 			page 13
 
 
  658:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @param pData Pointer to data buffer (uint8_t or uint16_t data elements).
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  712:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   * @}
  713:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   */
  714:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 14
+ARM GAS  /tmp/ccrHrb5f.s 			page 14
 
 
  715:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** /** @addtogroup UARTEx_Private_Functions
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
   64              		.global	HAL_RS485Ex_Init
   65              		.syntax unified
   66              		.thumb
-ARM GAS  /tmp/ccbyYvza.s 			page 15
+ARM GAS  /tmp/ccrHrb5f.s 			page 15
 
 
   67              		.thumb_func
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  108 0012 2423     		movs	r3, #36
  109 0014 A367     		str	r3, [r4, #120]
  194:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 16
+ARM GAS  /tmp/ccrHrb5f.s 			page 16
 
 
  110              		.loc 1 194 3 is_stmt 1 view .LVU20
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  151 004c 0B68     		ldr	r3, [r1]
  152 004e 23F07F73 		bic	r3, r3, #66846720
  153 0052 23F44033 		bic	r3, r3, #196608
-ARM GAS  /tmp/ccbyYvza.s 			page 17
+ARM GAS  /tmp/ccrHrb5f.s 			page 17
 
 
  154 0056 1343     		orrs	r3, r3, r2
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  197 007e 0120     		movs	r0, #1
  198              	.LVL14:
  223:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 18
+ARM GAS  /tmp/ccrHrb5f.s 			page 18
 
 
  199              		.loc 1 223 1 view .LVU45
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  343:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  249              		.loc 1 343 3 view .LVU54
  343:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 19
+ARM GAS  /tmp/ccrHrb5f.s 			page 19
 
 
  250              		.loc 1 343 17 is_stmt 0 view .LVU55
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  295              		.global	HAL_UARTEx_StopModeWakeUpSourceConfig
  296              		.syntax unified
  297              		.thumb
-ARM GAS  /tmp/ccbyYvza.s 			page 20
+ARM GAS  /tmp/ccrHrb5f.s 			page 20
 
 
  298              		.thumb_func
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  389:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  340              		.loc 1 389 3 discriminator 2 view .LVU79
  341 0028 0168     		ldr	r1, [r0]
-ARM GAS  /tmp/ccbyYvza.s 			page 21
+ARM GAS  /tmp/ccrHrb5f.s 			page 21
 
 
  342 002a 8B68     		ldr	r3, [r1, #8]
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  384 0062 04AB     		add	r3, sp, #16
  385 0064 13E90600 		ldmdb	r3, {r1, r2}
  386 0068 FFF7FEFF 		bl	UARTEx_Wakeup_AddressConfig
-ARM GAS  /tmp/ccbyYvza.s 			page 22
+ARM GAS  /tmp/ccrHrb5f.s 			page 22
 
 
  387              	.LVL30:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  433              		@ args = 0, pretend = 0, frame = 0
  434              		@ frame_needed = 0, uses_anonymous_args = 0
  435              		@ link register save eliminated.
-ARM GAS  /tmp/ccbyYvza.s 			page 23
+ARM GAS  /tmp/ccrHrb5f.s 			page 23
 
 
  428:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
   27:Drivers/CMSIS/Include/cmsis_gcc.h **** 
   28:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ignore some GCC warnings */
   29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
-ARM GAS  /tmp/ccbyYvza.s 			page 24
+ARM GAS  /tmp/ccrHrb5f.s 			page 24
 
 
   30:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
   84:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT16_WRITE(addr, val)    (void)((((struct T_UINT16_WRITE *)(void *)(addr))-
   85:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
-ARM GAS  /tmp/ccbyYvza.s 			page 25
+ARM GAS  /tmp/ccrHrb5f.s 			page 25
 
 
   87:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  141:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  142:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("cpsid i" : : : "memory");
  143:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccbyYvza.s 			page 26
+ARM GAS  /tmp/ccrHrb5f.s 			page 26
 
 
  144:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  198:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  199:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  200:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccbyYvza.s 			page 27
+ARM GAS  /tmp/ccrHrb5f.s 			page 27
 
 
  201:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get IPSR Register
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  255:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  256:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  257:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccbyYvza.s 			page 28
+ARM GAS  /tmp/ccrHrb5f.s 			page 28
 
 
  258:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Process Stack Pointer (non-secure)
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  312:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer (non-secure)
  313:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Main Stack Pointer (MSP) when in secure stat
  314:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               MSP Register value
-ARM GAS  /tmp/ccbyYvza.s 			page 29
+ARM GAS  /tmp/ccrHrb5f.s 			page 29
 
 
  315:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  369:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  370:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_SP_NS(uint32_t topOfStack)
  371:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccbyYvza.s 			page 30
+ARM GAS  /tmp/ccrHrb5f.s 			page 30
 
 
  372:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR sp_ns, %0" : : "r" (topOfStack) : );
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  426:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR primask_ns, %0" : : "r" (priMask) : "memory");
  427:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  428:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccbyYvza.s 			page 31
+ARM GAS  /tmp/ccrHrb5f.s 			page 31
 
 
  429:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  483:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  484:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  485:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 32
+ARM GAS  /tmp/ccrHrb5f.s 			page 32
 
 
  486:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  540:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Fault Mask register value
  541:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  542:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_FAULTMASK_NS(void)
-ARM GAS  /tmp/ccbyYvza.s 			page 33
+ARM GAS  /tmp/ccrHrb5f.s 			page 33
 
 
  543:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  597:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
  598:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  599:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccbyYvza.s 			page 34
+ARM GAS  /tmp/ccrHrb5f.s 			page 34
 
 
  600:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psplim"  : "=r" (result) );
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  654:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  655:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Process Stack Pointer Limit (PSPLIM) when in s
  656:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ProcStackPtrLimit  Process Stack Pointer Limit value to set
-ARM GAS  /tmp/ccbyYvza.s 			page 35
+ARM GAS  /tmp/ccrHrb5f.s 			page 35
 
 
  657:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  711:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  712:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  713:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccbyYvza.s 			page 36
+ARM GAS  /tmp/ccrHrb5f.s 			page 36
 
 
  714:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  768:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__FPU_PRESENT) && (__FPU_PRESENT == 1U)) && \
  769:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__FPU_USED   ) && (__FPU_USED    == 1U))     )
  770:Drivers/CMSIS/Include/cmsis_gcc.h **** #if __has_builtin(__builtin_arm_get_fpscr) 
-ARM GAS  /tmp/ccbyYvza.s 			page 37
+ARM GAS  /tmp/ccrHrb5f.s 			page 37
 
 
  771:Drivers/CMSIS/Include/cmsis_gcc.h **** // Re-enable using built-in when GCC has been fixed
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  825:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_USE_REG(r) "l" (r)
  826:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
  827:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_OUT_REG(r) "=r" (r)
-ARM GAS  /tmp/ccbyYvza.s 			page 38
+ARM GAS  /tmp/ccrHrb5f.s 			page 38
 
 
  828:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __CMSIS_GCC_RW_REG(r) "+r" (r)
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  882:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  883:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  884:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Data Memory Barrier
-ARM GAS  /tmp/ccbyYvza.s 			page 39
+ARM GAS  /tmp/ccrHrb5f.s 			page 39
 
 
  885:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Ensures the apparent order of the explicit memory operations before
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  939:Drivers/CMSIS/Include/cmsis_gcc.h ****   int16_t result;
  940:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  941:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("revsh %0, %1" : __CMSIS_GCC_OUT_REG (result) : __CMSIS_GCC_USE_REG (value) );
-ARM GAS  /tmp/ccbyYvza.s 			page 40
+ARM GAS  /tmp/ccrHrb5f.s 			page 40
 
 
  942:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  996:Drivers/CMSIS/Include/cmsis_gcc.h ****     result |= value & 1U;
  997:Drivers/CMSIS/Include/cmsis_gcc.h ****     s--;
  998:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
-ARM GAS  /tmp/ccbyYvza.s 			page 41
+ARM GAS  /tmp/ccrHrb5f.s 			page 41
 
 
  999:Drivers/CMSIS/Include/cmsis_gcc.h ****   result <<= s;                        /* shift when v's highest bits are zero */
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
 1053:Drivers/CMSIS/Include/cmsis_gcc.h ****     /* Prior to GCC 4.8, "Q" will be expanded to [rx, #0] which is not
 1054:Drivers/CMSIS/Include/cmsis_gcc.h ****        accepted by assembler. So has to use following less efficient pattern.
 1055:Drivers/CMSIS/Include/cmsis_gcc.h ****     */
-ARM GAS  /tmp/ccbyYvza.s 			page 42
+ARM GAS  /tmp/ccrHrb5f.s 			page 42
 
 
 1056:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("ldrexh %0, [%1]" : "=r" (result) : "r" (addr) : "memory" );
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
 1087:Drivers/CMSIS/Include/cmsis_gcc.h ****    uint32_t result;
 1088:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 1089:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("strexb %0, %2, %1" : "=&r" (result), "=Q" (*addr) : "r" ((uint32_t)value) );
-ARM GAS  /tmp/ccbyYvza.s 			page 43
+ARM GAS  /tmp/ccrHrb5f.s 			page 43
 
 
 1090:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  495              	.LBE22:
  431:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  496              		.loc 1 431 3 is_stmt 1 discriminator 2 view .LVU123
-ARM GAS  /tmp/ccbyYvza.s 			page 44
+ARM GAS  /tmp/ccrHrb5f.s 			page 44
 
 
  434:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  540              		.loc 1 447 3 discriminator 2 view .LVU136
  541 0008 0123     		movs	r3, #1
  542 000a 80F87430 		strb	r3, [r0, #116]
-ARM GAS  /tmp/ccbyYvza.s 			page 45
+ARM GAS  /tmp/ccrHrb5f.s 			page 45
 
 
  543              	.L36:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  582              	@ 0 "" 2
  583              	.LVL49:
  584              		.loc 2 1124 4 discriminator 1 view .LVU152
-ARM GAS  /tmp/ccbyYvza.s 			page 46
+ARM GAS  /tmp/ccrHrb5f.s 			page 46
 
 
  585              		.loc 2 1124 4 is_stmt 0 discriminator 1 view .LVU153
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  629              		.cfi_startproc
  630              		@ args = 4, pretend = 0, frame = 0
  631              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccbyYvza.s 			page 47
+ARM GAS  /tmp/ccrHrb5f.s 			page 47
 
 
  477:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   uint8_t  *pdata8bits;
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  672 002c 0123     		movs	r3, #1
  673 002e 80F87430 		strb	r3, [r0, #116]
  491:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 48
+ARM GAS  /tmp/ccrHrb5f.s 			page 48
 
 
  674              		.loc 1 491 5 discriminator 2 view .LVU180
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  710 0058 72B9     		cbnz	r2, .L44
  504:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     uhMask = huart->Mask;
  711              		.loc 1 504 5 discriminator 7 view .LVU199
-ARM GAS  /tmp/ccbyYvza.s 			page 49
+ARM GAS  /tmp/ccrHrb5f.s 			page 49
 
 
  712 005a FF22     		movs	r2, #255
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  519:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
  754              		.loc 1 519 5 is_stmt 1 view .LVU212
  519:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 50
+ARM GAS  /tmp/ccrHrb5f.s 			page 50
 
 
  755              		.loc 1 519 5 view .LVU213
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  795 00c6 E8E7     		b	.L47
  796              	.LVL64:
  797              	.L68:
-ARM GAS  /tmp/ccbyYvza.s 			page 51
+ARM GAS  /tmp/ccrHrb5f.s 			page 51
 
 
  537:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
  836              		.loc 1 525 31 is_stmt 1 view .LVU244
  525:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
-ARM GAS  /tmp/ccbyYvza.s 			page 52
+ARM GAS  /tmp/ccrHrb5f.s 			page 52
 
 
  837              		.loc 1 525 17 is_stmt 0 view .LVU245
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
  875              		.loc 1 553 25 view .LVU262
  876 0124 1340     		ands	r3, r3, r2
-ARM GAS  /tmp/ccbyYvza.s 			page 53
+ARM GAS  /tmp/ccrHrb5f.s 			page 53
 
 
  553:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****           pdata8bits++;
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  914              		.loc 1 574 12 view .LVU279
  915 0150 2B80     		strh	r3, [r5]	@ movhi
  576:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 54
+ARM GAS  /tmp/ccrHrb5f.s 			page 54
 
 
  916              		.loc 1 576 5 is_stmt 1 view .LVU280
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  960              		.thumb
  961              		.thumb_func
  963              	HAL_UARTEx_ReceiveToIdle_IT:
-ARM GAS  /tmp/ccbyYvza.s 			page 55
+ARM GAS  /tmp/ccrHrb5f.s 			page 55
 
 
  964              	.LVL76:
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  1001              		.loc 1 617 15 is_stmt 0 discriminator 2 view .LVU308
  1002 001e FFF7FEFF 		bl	UART_Start_Receive_IT
  1003              	.LVL77:
-ARM GAS  /tmp/ccbyYvza.s 			page 56
+ARM GAS  /tmp/ccrHrb5f.s 			page 56
 
 
  620:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****     {
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  1042              	@ 0 "" 2
  1043              	.LVL81:
 1073:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccbyYvza.s 			page 57
+ARM GAS  /tmp/ccrHrb5f.s 			page 57
 
 
  1044              		.loc 2 1073 4 discriminator 1 view .LVU325
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  1088              	.L75:
  1089              		.cfi_def_cfa_offset 8
  1090              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccbyYvza.s 			page 58
+ARM GAS  /tmp/ccrHrb5f.s 			page 58
 
 
  1091              		.cfi_offset 14, -4
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  663:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
  1136              		.loc 1 663 1 view .LVU349
  1137 0006 10B5     		push	{r4, lr}
-ARM GAS  /tmp/ccbyYvza.s 			page 59
+ARM GAS  /tmp/ccrHrb5f.s 			page 59
 
 
  1138              		.cfi_def_cfa_offset 8
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  699:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
  1175              		.loc 1 699 5 is_stmt 1 view .LVU367
  699:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccbyYvza.s 			page 60
+ARM GAS  /tmp/ccrHrb5f.s 			page 60
 
 
  1176              		.loc 1 699 12 is_stmt 0 view .LVU368
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
 1121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  1217              		.loc 2 1121 4 discriminator 1 view .LVU382
 1123:Drivers/CMSIS/Include/cmsis_gcc.h ****    return(result);
-ARM GAS  /tmp/ccbyYvza.s 			page 61
+ARM GAS  /tmp/ccrHrb5f.s 			page 61
 
 
  1218              		.loc 2 1123 4 discriminator 1 view .LVU383
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  1264              	.LVL106:
  1265              	.L91:
  674:Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccbyYvza.s 			page 62
+ARM GAS  /tmp/ccrHrb5f.s 			page 62
 
 
  1266              		.loc 1 674 5 view .LVU394
@@ -3680,31 +3680,31 @@ ARM GAS  /tmp/ccbyYvza.s 			page 1
  1282              		.file 9 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h"
  1283              		.file 10 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart_ex.h"
  1284              		.file 11 "Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h"
-ARM GAS  /tmp/ccbyYvza.s 			page 63
+ARM GAS  /tmp/ccrHrb5f.s 			page 63
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32f3xx_hal_uart_ex.c
-     /tmp/ccbyYvza.s:21     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
-     /tmp/ccbyYvza.s:26     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
-     /tmp/ccbyYvza.s:63     .text.HAL_RS485Ex_Init:0000000000000000 $t
-     /tmp/ccbyYvza.s:69     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
-     /tmp/ccbyYvza.s:205    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
-     /tmp/ccbyYvza.s:211    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
-     /tmp/ccbyYvza.s:226    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
-     /tmp/ccbyYvza.s:232    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccbyYvza.s:294    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
-     /tmp/ccbyYvza.s:300    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-     /tmp/ccbyYvza.s:422    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
-     /tmp/ccbyYvza.s:428    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
-     /tmp/ccbyYvza.s:521    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
-     /tmp/ccbyYvza.s:527    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
-     /tmp/ccbyYvza.s:619    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
-     /tmp/ccbyYvza.s:625    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
-     /tmp/ccbyYvza.s:957    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
-     /tmp/ccbyYvza.s:963    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
-     /tmp/ccbyYvza.s:1116   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
-     /tmp/ccbyYvza.s:1122   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
+     /tmp/ccrHrb5f.s:21     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
+     /tmp/ccrHrb5f.s:26     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
+     /tmp/ccrHrb5f.s:63     .text.HAL_RS485Ex_Init:0000000000000000 $t
+     /tmp/ccrHrb5f.s:69     .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
+     /tmp/ccrHrb5f.s:205    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
+     /tmp/ccrHrb5f.s:211    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
+     /tmp/ccrHrb5f.s:226    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
+     /tmp/ccrHrb5f.s:232    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/ccrHrb5f.s:294    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
+     /tmp/ccrHrb5f.s:300    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+     /tmp/ccrHrb5f.s:422    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
+     /tmp/ccrHrb5f.s:428    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
+     /tmp/ccrHrb5f.s:521    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
+     /tmp/ccrHrb5f.s:527    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
+     /tmp/ccrHrb5f.s:619    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
+     /tmp/ccrHrb5f.s:625    .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
+     /tmp/ccrHrb5f.s:957    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
+     /tmp/ccrHrb5f.s:963    .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
+     /tmp/ccrHrb5f.s:1116   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
+     /tmp/ccrHrb5f.s:1122   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
 
 UNDEFINED SYMBOLS
 UART_SetConfig

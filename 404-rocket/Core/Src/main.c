@@ -31,6 +31,11 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+// Uncomment line below if BNO is connected and working
+
+#define BNO_CONNECTED
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -49,17 +54,34 @@ TIM_HandleTypeDef htim2;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint8_t buf[3];
+
+// SET PID VARIABLES HERE
+static const float pid_variables[] =
+{
+  // P, I and D for Servo X
+  110.0, 0.0, 55.0,
+  // 500.0, 0.0, 0.0,
+
+  // P, I and D for Servo Y
+  // 270.0, 0.0, 40.0,
+  271.3, 0.0, 40.0,
+
+  // P, I and D for ESC servo
+  0.2, 0.0002, 0
+};
 
 HAL_StatusTypeDef ret;
 struct bno055_t imu;
 
 uint32_t adc_value;
-double esc_speed = 0.0;
+double esc_speed = 0.3;
 double esc_rpm;
 double esc_output = 0.0;
 double xout, yout;
 uint8_t serial_output[60] = {0};
+
+double esc_measurements[8];
+unsigned char cur_measurement;
 
 uint32_t rpm_length;
 
@@ -89,6 +111,7 @@ static void MX_TIM2_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+  long measurement_sum = 0;
 	uint32_t t = 0;
 	volatile HAL_StatusTypeDef stat;
 
@@ -120,40 +143,38 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim2);
+  struct bno055_euler_double_t orientation_data;
 
-  /*imu.bus_read = BNO055_I2C_bus_read;
+  imu.bus_read = BNO055_I2C_bus_read;
   imu.bus_write = BNO055_I2C_bus_write;
   imu.delay_msec = BNO055_delay_msek;
   imu.dev_addr = BNO055_I2C_ADDR1;
+#ifdef BNO_CONNECTED
 
   bno055_init(&imu);
   bno055_set_power_mode(BNO055_POWER_MODE_NORMAL);
-  bno055_set_operation_mode(BNO055_OPERATION_MODE_IMUPLUS);
-*/
-  struct bno055_euler_double_t orientation_data;
-  /*while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
+  bno055_set_operation_mode(BNO055_OPERATION_MODE_NDOF);
 
-  };*/
-  /*
-  float Kpp = 160.0;
-  float Kip = 0;
-  float Kdp = 80;
-
-  float Kpr = 160.0;
-  float Kir = 0;
-  float Kdr = 80;*/
+  for (int i = 0; i < 32; i++)
+  {
+    while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
+    
+    };
+  }
+#endif
+  
   //these are just absolute values, you have to correct directions in pid.c
-  float Kpp = 110.0;
-  float Kip = 0;
-  float Kdp = 55;
+  double Kpp = pid_variables[0];
+  double Kip = pid_variables[1];
+  double Kdp = pid_variables[2];
 
-  float Kpr = 160.0;
-  float Kir = 0;
-  float Kdr = 80;
+  double Kpr = pid_variables[3];
+  double Kir = pid_variables[4];
+  double Kdr = pid_variables[5];
 
-  float Kpe = 1;
-  float Kie = 0;
-  float Kde = 0;
+  double Kpe = pid_variables[6];
+  double Kie = pid_variables[7];
+  double Kde = pid_variables[8];
 
   PID_TypeDef escPID;
   PID_TypeDef xPID;
@@ -173,11 +194,14 @@ int main(void)
   PID_SetSampleTime(&yPID, 10);
   PID_SetOutputLimits(&yPID, -10922.5, 10922.5);
 
+  /*
   esc_speed = 0.3;
-  PID(&escPID, &esc_rpm, &esc_output, &esc_speed, Kpe, Kie, Kde, _PID_P_ON_E, _PID_CD_DIRECT);
+  esc_rpm = esc_speed;
+  PID(&escPID, &esc_rpm, &esc_output, &esc_speed, Kpe, Kie, Kde, _PID_P_ON_M, _PID_CD_DIRECT);
   PID_SetMode(&escPID, _PID_MODE_AUTOMATIC);
   PID_SetSampleTime(&escPID, 10);
-  PID_SetOutputLimits(&escPID, 0.0, 1.0);
+  PID_SetOutputLimits(&escPID, -1.0, 1.0);
+  */
 
   HAL_TIM_Base_Start_IT(&htim1);
   HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_1);
@@ -185,17 +209,32 @@ int main(void)
   HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_3);
   //HAL_TIM_OC_Start_IT(&htim1, TIM_CHANNEL_4);
 
+  SimpleRegulatorStruct regulator =
+  {
+    .Ki = Kie,
+    .input = &esc_rpm,
+    .output = &esc_output,
+    .reference = 0.4,
+    .error = 0.0,
+    .min = 0.3,
+    .max = 0.7,
+    .prev_time = HAL_GetTick()
+  };
+
+  esc_speed = 0.5;
+
   t = HAL_GetTick();
+  TIM1->CCR3 = 0x5555;
   while (HAL_GetTick() - t < 3000) {
 
   }
-
-  esc_output = 0.3;
+  cur_measurement = 0;
+  TIM1->CCR3 = 0x5555 + esc_speed * 0x5555;
   t = HAL_GetTick();
   while (HAL_GetTick() - t < 500) {
 
   }
-  //HAL_UART_Receive_DMA(&huart2, serial_input, 1);
+  HAL_NVIC_DisableIRQ(EXTI0_IRQn);
 
   /* USER CODE END 2 */
 
@@ -203,19 +242,54 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    #ifdef BNO_CONNECTED
 	  while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
 
 	  };
-	  orientation_data.p = -fabs(orientation_data.p); // Fix pitch orientation
-    esc_rpm = (1.0 / rpm_length) / 3000.0;
+    #endif
+    // esc_rpm = (1000000.0 / rpm_length) / 3000.0;
+    
+    /*
+    esc_measurements[cur_measurement] = rpm_length;
+    cur_measurement++;
+    
+    // This section filters out some noise on the digital signal
+    if (cur_measurement >= 8)
+    {
+      for (int i = 1; i < 8; i++ )
+      {
+        for (int j = 0; j < i; j++ )
+        {
+          if (esc_measurements[j] > esc_measurements[j + 1])
+          {
+            long temp = esc_measurements[j + 1];
+            esc_measurements[j + 1] = esc_measurements[j];
+            esc_measurements[j] = temp;
+          }
+        }
+      }
+
+      measurement_sum = 0;
+
+      for (int i = 0; i < 4; i++)
+      {
+        measurement_sum += esc_measurements[i + 1];
+      }
+
+      esc_rpm = 500.0 / measurement_sum; 
+
+      cur_measurement = 0;
+      simple_regulator_update(&regulator);
+      TIM1->CCR3 = esc_output * 0x5555 + 0x5555;
+    }
+    */
 
 	  HAL_NVIC_DisableIRQ(TIM1_UP_TIM16_IRQn);
 	  PID_Compute(&xPID);
 	  PID_Compute(&yPID);
-    PID_Compute(&escPID);
     
-    sprintf(serial_output, "%ld\r\n", rpm_length);
-    stat = HAL_UART_Transmit(&huart2, serial_output, 60, 1000);
+    // snprintf(serial_output, 10, "%ld\r\n", rpm_length);
+    // stat = HAL_UART_Transmit(&huart2, serial_output, 60, 1000);
     
 	  HAL_NVIC_EnableIRQ(TIM1_UP_TIM16_IRQn);
     
@@ -559,7 +633,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PB0 */
   GPIO_InitStruct.Pin = GPIO_PIN_0;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 

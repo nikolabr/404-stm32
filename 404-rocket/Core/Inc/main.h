@@ -34,6 +34,7 @@ extern "C" {
 #include "bno055.h"
 #include "bno055_support.h"
 #include "pid.h"
+#include "simple_regulator.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
