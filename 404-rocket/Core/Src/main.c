@@ -36,6 +36,10 @@
 
 #define BNO_CONNECTED
 
+// Uncomment line below to enable RPM regulatiob
+
+// #define ENABLE_RPM_REGULATION
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -211,9 +215,9 @@ int main(void)
     .Ki = Kie,
     .input = &esc_rpm,
     .output = &esc_output,
-    .reference = 0.4,
+    .reference = 0.5,
     .error = 0.0,
-    .min = 0.3,
+    .min = 0.4,
     .max = 0.7,
     .prev_time = HAL_GetTick()
   };
@@ -245,9 +249,8 @@ int main(void)
 	  };
     orientation_data.p = fabs(orientation_data.p);
     #endif
-    // esc_rpm = (1000000.0 / rpm_length) / 3000.0;
     
-    /*
+    #ifdef ENABLE_RPM_REGULATION
     esc_measurements[cur_measurement] = rpm_length;
     cur_measurement++;
     
@@ -280,7 +283,7 @@ int main(void)
       simple_regulator_update(&regulator);
       TIM1->CCR3 = esc_output * 0x5555 + 0x5555;
     }
-    */
+    #endif
 
 	  HAL_NVIC_DisableIRQ(TIM1_UP_TIM16_IRQn);
 	  PID_Compute(&xPID);
