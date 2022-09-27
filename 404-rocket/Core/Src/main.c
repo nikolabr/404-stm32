@@ -64,7 +64,7 @@ static const float pid_variables[] =
 
   // P, I and D for Servo Y
   // 270.0, 0.0, 40.0,
-  271.3, 0.0, 40.0,
+  271.0, 0.0, 40.0,
 
   // P, I and D for ESC servo
   0.2, 0.0002, 0
@@ -155,12 +155,9 @@ int main(void)
   bno055_set_power_mode(BNO055_POWER_MODE_NORMAL);
   bno055_set_operation_mode(BNO055_OPERATION_MODE_NDOF);
 
-  for (int i = 0; i < 32; i++)
-  {
-    while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
-    
-    };
-  }
+  while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
+  
+  };
 #endif
   
   //these are just absolute values, you have to correct directions in pid.c
@@ -181,7 +178,7 @@ int main(void)
   PID_TypeDef yPID;
 
   double xSetpoint, ySetpoint;
-  xSetpoint = orientation_data.p;
+  xSetpoint = fabs(orientation_data.p);
   ySetpoint = orientation_data.r;
 
   PID(&xPID, &orientation_data.p, &xout, &xSetpoint, Kpp, Kip, Kdp, _PID_P_ON_E, _PID_CD_DIRECT);
@@ -246,6 +243,7 @@ int main(void)
 	  while (bno055_convert_double_euler_hpr_deg(&orientation_data) != BNO055_SUCCESS) {
 
 	  };
+    orientation_data.p = fabs(orientation_data.p);
     #endif
     // esc_rpm = (1000000.0 / rpm_length) / 3000.0;
     
