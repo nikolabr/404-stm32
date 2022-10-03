@@ -36,9 +36,9 @@
 
 #define BNO_CONNECTED
 
-// Uncomment line below to enable RPM regulatiob
+// Uncomment line below to enable RPM regulation
 
-// #define ENABLE_RPM_REGULATION
+#define ENABLE_RPM_REGULATION
 
 /* USER CODE END PD */
 
@@ -215,14 +215,14 @@ int main(void)
     .Ki = Kie,
     .input = &esc_rpm,
     .output = &esc_output,
-    .reference = 0.5,
+    .reference = 0.4,
     .error = 0.0,
-    .min = 0.4,
+    .min = 0.3,
     .max = 0.7,
     .prev_time = HAL_GetTick()
   };
 
-  esc_speed = 0.5;
+  esc_speed = 0.3;
 
   t = HAL_GetTick();
   TIM1->CCR3 = 0x5555;
@@ -235,7 +235,6 @@ int main(void)
   while (HAL_GetTick() - t < 500) {
 
   }
-  HAL_NVIC_DisableIRQ(EXTI0_IRQn);
 
   /* USER CODE END 2 */
 

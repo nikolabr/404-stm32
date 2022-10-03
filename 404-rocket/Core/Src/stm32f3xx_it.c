@@ -42,7 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
 static const unsigned int neutral_X = 32768;
-static const unsigned int neutral_Y = 32768 + 3000;
+static const unsigned int neutral_Y = 32768 + 5000;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
